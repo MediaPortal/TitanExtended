@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Swedish -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 12th October 2011 -->
+<strings>
+ 
+ <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Skin-uppdatering</string>
+  <string Field="UpdateInstall">Uppdatera och installera</string>
+  <string Field="NoUpdatesAvailable">Inga patchar är tillgängliga just nu</string>
+  <string Field="DownloadingPatch">Hämta patch: {0}</string>
+  <string Field="DownloadingProgress">Hämtat {0}KB av {1}KB ({2}%)</string>
+  <string Field="NumPatchesInstalled">Antal filer i patchen installerade: {0}</string>
+  <string Field="PatchUpdateComplete">Uppdatera till skin-version: {0} färdigt</string>
+  <string Field="UpdateAvailableHeading">Uppdatering är tillgänglig - nya ändringar</string>
+  <string Field="mupdateheader">Patch-installerare hämtad till skrivbordet</string>
+  <string Field="mupdateline1">Manuell uppdatering krävs - stäng för att tillämpa</string>
+  <string Field="mupdateline2">MediaPortal och/eller Configuration</string>
+  <string Field="mupdateline3">och kör:  {0}</string>
+  <string Field="mupdateline4">som finns på Skrivbordet</string>
+  <!-- Skin Settings --> 
+  <string Field="SkinSettings">Skin-inställningar</string>
+  <string Field="SkinUpdateNF">Uppdatering tillgänglig</string>
+  <string Field="SkinSettingsUpdate">Uppdatering</string>
+</strings>

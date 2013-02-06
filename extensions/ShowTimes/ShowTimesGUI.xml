@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>7111992</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:#currentmodule</define>
+  <define>#useSelectedFanart:Yes</define>
+  <controls>
+     <!--            :: DUMMY ::            -->
+	<control>
+		<description>showtimes label</description>
+		<type>fadelabel</type>
+		<id>46</id>
+		<posX>-2000</posX>
+		<posY>10</posY>
+	</control>
+	
+	<control>
+		<description>theatre label</description>
+		<type>fadelabel</type>
+		<id>47</id>
+		<posX>-2000</posX>
+		<posY>10</posY>
+		<visible>false</visible>
+	</control>
+    <!--            :: MOVIE BACKDROP ::            -->
+  <control>
+    <description>DEFAULT BACKGROUND</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1920</width>
+    <height>1080</height>
+    <texture>background.png</texture>
+    <shouldCache>true</shouldCache>
+  </control>
+  <control>
+    <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+    <type>image</type>
+    <id>1</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1920</width>
+    <height>1080</height>
+    <texture>#st_backdrop</texture>
+    <animation effect="fade" time="300">visible</animation>
+    <animation effect="fade" time="300" delay="300">hidden</animation>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+  </control>
+    <!--            :: IMPORT ::            -->
+  <import>ShowTimesGUI.background.xml</import>
+	
+	<control>
+		<id>0</id>
+    <type>image</type>
+		<posX>60</posX>
+		<posY>34</posY>
+		<width>68</width>
+		<height>60</height>
+		<texture>icon_movies.png</texture>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+  </control>
+  <control>
+    <id>1</id>
+    <description>Heading text label</description>
+    <type>label</type>
+    <posX>772</posX>
+    <posY>123</posY>
+    <width>380</width>
+    <font>fontB20</font>
+    <textcolor>ff393939</textcolor>
+    <label>2053</label>
+    <visible>Control.IsVisible(51)</visible>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+  </control>	
+  <!-- COMMON TIME -->
+  <control>
+    <id>0</id>
+    <type>label</type>
+    <posX>144</posX>
+    <posY>38</posY>
+    <width>855</width>
+    <font>TitanLight22</font>
+    <textcolor>ffffff</textcolor>
+    <label>#header.label</label>
+		<align>left</align>
+		<visible>true</visible>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+  </control>
+      
+	<control>
+    <id>0</id>
+    <type>label</type>
+    <posX>1848</posX>
+    <posY>36</posY>
+    <width>555</width>
+    <font>TitanLight22</font>
+    <textcolor>ffffff</textcolor>
+    <label>#time</label>
+		<align>right</align>
+		<visible>true</visible>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+  </control>
+      
+	<control>
+    <description>Date / Weather</description>
+    <id>0</id>
+    <type>label</type>
+    <posX>1845</posX>
+    <posY>96</posY>
+    <font>TitanLight12</font>
+    <textcolor>ffffff</textcolor>
+    <label>#date / #WorldWeather.TodayTemperature</label>
+		<align>right</align>
+		<visible>plugin.isenabled(World Weather)</visible>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+ 	</control>
+      
+	<control>
+    <description>Date</description>
+    <id>0</id>
+    <type>label</type>
+    <posX>1845</posX>
+    <posY>96</posY>
+    <font>TitanLight12</font>
+    <textcolor>ffffff</textcolor>
+    <label>#date</label>
+		<align>right</align>
+		<visible>!plugin.isenabled(World Weather)</visible>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+  </control>	
+	
+	<import>ShowTimesGUI.hiddenmenu.xml</import>
+  <import>ShowTimesGUI.views.xml</import>
+  <import>ShowTimesGUI.facade.xml</import>
+	<import>ShowTimesGUI.details.xml</import>
+  <import>common.overlay.xml</import>
+			
+	<!-- Labels -->
+	
+  <control>
+    <type>fadelabel</type>
+    <description>Theater</description>
+    <id>44</id>
+	  <posX>96</posX>
+    <posY>998</posY>
+		<width>1740</width>
+    <align>left</align>
+    <font>TitanLight12</font>
+		<textcolor>000000</textcolor>
+    <label>#st_theater / #st_moviedate @ #st_showtimes</label>
+		<visible>Control.HasText(46) + Control.IsVisible(24)+!Control.IsVisible(47)</visible>
+    <animation effect="Fade" time="250">WlindowOpen</animation>
+    <animation effect="Fade" time="250">WindowClose</animation>
+  </control>
+		
+  <control>
+    <type>fadelabel</type>
+    <description>Theater</description>
+    <id>1</id>
+		<posX>568</posX>
+		<posY>928</posY>
+		<width>552</width>
+    <align>left</align>
+    <font>TitanLight12</font>
+		<textcolor>FF00b7ff</textcolor>
+		<shadowAngle>120</shadowAngle>
+		<shadowDistance>2</shadowDistance>
+		<shadowColor>FF000000</shadowColor>
+    <label>#st_theater / #st_moviedate @ #st_showtimes</label>
+		<visible>facadeview.list + Control.HasText(46) + !Control.IsVisible(24)+!Control.IsVisible(47)</visible>
+    <animation effect="Fade" time="250">WlindowOpen</animation>
+    <animation effect="Fade" time="250">WindowClose</animation>
+  </control>
+	
+  <control>
+    <type>fadelabel</type>
+    <description>Theater</description>
+    <id>1</id>
+		<posX>1040</posX>
+		<posY>944</posY>
+		<width>790</width>
+    <align>left</align>
+    <font>TitanLight12</font>
+		<textcolor>FF00b7ff</textcolor>
+		<shadowAngle>120</shadowAngle>
+		<shadowDistance>2</shadowDistance>
+		<shadowColor>FF000000</shadowColor>
+    <label>#st_theater / #st_moviedate @ #st_showtimes</label>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.HasText(46) + !Control.IsVisible(24)+!Control.IsVisible(47)</visible>
+    <animation effect="Fade" time="250">WlindowOpen</animation>
+    <animation effect="Fade" time="250">WindowClose</animation>
+  </control>
+	
+	<control>
+    <type>fadelabel</type>
+    <description>Next Refresh</description>
+    <id>45</id>
+		<posX>72</posX>
+    <posY>94</posY>
+		<width>240</width>
+    <align>left</align>
+    <font>TitanLight12</font>
+    <textcolor>ffffff</textcolor>
+    <label>#showtimes_nextupdate</label>
+  </control>
+	
+  </controls>
+</window>

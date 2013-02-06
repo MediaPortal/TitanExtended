@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- German (DE) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 10th November 2012 -->
+<strings>
+  <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Skin Aktualisierung</string>
+  <string Field="UpdateInstall">Update installieren</string>
+  <string Field="NoUpdatesAvailable">Zur Zeit keine Updates verfügbar</string>
+  <string Field="DownloadingPatch">Patch {0} wird heruntergeladen</string>
+  <string Field="DownloadingProgress">{0}KB von {1}KB ({2}%) geladen</string>
+  <string Field="NumPatchesInstalled">Anzahl installierter Patches: {0}</string>
+  <string Field="PatchUpdateComplete">Update zu Skin Version {0} fertiggestellt</string>
+  <string Field="UpdateAvailableHeading">Update verfügbar - Change Log</string>
+  <string Field="mupdateheader">Patch Installer wurde auf den Desktop heruntergeladen</string>
+  <string Field="mupdateline1">Manuelles Update erforderlich - zur Ausführung</string>
+  <string Field="mupdateline2">MediaPortal und/oder Konfiguration schließen</string>
+  <string Field="mupdateline3">und den Patch: {0} ausführen</string>
+  <string Field="mupdateline4">der sich auf Ihrem Desktop befindet</string>
+  <!-- Skin Settings --> 
+  <string Field="SkinSettings">Skin Einstellungen</string>
+  <string Field="SkinUpdateNF">Update verfügbar</string>
+  <string Field="SkinSettingsUpdate">Aktualisierung</string>
+</strings>

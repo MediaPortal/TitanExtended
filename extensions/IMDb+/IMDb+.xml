@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>31415</id>
+	<defaultcontrol>101</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:#IMDb.Translation.ScraperOptionsTitle.Label</define>
+	<controls>
+	
+  <!--            :: BACKGROUNDS ::           	 -->
+    
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+
+	<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>fanart_overlay.png</texture>
+	</control>
+
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>66</posX>
+		<posY>34</posY>
+		<width>68</width>
+		<height>60</height>
+		<texture>icon_movies.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+ 	<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>10</posX>
+		<posY>252</posY>
+		<width>1903</width>
+		<height>790</height>
+		<texture>panel_list.png</texture>	
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>	
+	
+		<!--						:: LIST / THUMBVIEW ::						-->
+	
+ 	<control Style="smallTitle">
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>510</posX>
+		<posY>1015</posY>
+		<label>#selecteditem</label>
+		<visible>control.isvisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+		
+	<import>common.time.xml</import>
+	
+	<control>
+		<description>Refresh Progress Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>72</posX>
+		<posY>94</posY>
+		<align>left</align>
+		<font>fontB12</font>
+		<label>#IMDb.Movie.Refresh.Status</label>
+		<textcolor>White</textcolor>
+		<visible>string.equals(#IMDb.Movie.Refresh.Active,true)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+		
+	<!--						:: Listview Lines ::						-->
+
+	<control>
+		<description>List Lines</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1222</posX>
+		<posY>385</posY>
+		<width>607</width>
+		<height>506</height>
+		<texture>list_lines.png</texture>
+		<visible>facadeview.list</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>facadeview</type>
+		<id>50</id>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<control>
+			<type>listcontrol</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<scrollOffset>1</scrollOffset>
+			<posX>1165</posX>
+			<posY>331</posY>
+			<height>700</height>
+			<width>698</width>
+			<textXOff>44</textXOff>
+			<textXOff2>650</textXOff2>
+			<textcolor>FF85CFFF</textcolor>
+			<textcolor2>FF85CFFF</textcolor2>
+			<textcolor3>FFFFFFFF</textcolor3>		
+			<textureHeight>54</textureHeight>
+			<textureFocus>listcontrol_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<dimColor>ffffffff</dimColor>
+			<spinPosX>1828</spinPosX>
+			<spinPosY>1000</spinPosY>
+		</control>
+	</control>
+
+		
+	<control>
+		<id>500</id>
+		<description>Chosen Option Description</description>
+		<type>textboxscrollup</type>
+		<visible>facadeview.list</visible>
+		<posX>168</posX>
+		<posY>360</posY>
+		<width>955</width>
+		<height>610</height>
+		<onright>101</onright>
+		<onleft>101</onleft>
+		<ondown>101</ondown>
+		<onup>101</onup>
+		<lineSpacing>0.92</lineSpacing>
+		<seperator>---------------------------------------------------</seperator>
+		<font>TitanLight12</font>
+		<label>#IMDb.Option.Description</label>
+		<scrollStartDelaySec>8</scrollStartDelaySec>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+		
+		<!--						:: HIDDEN MENU ::					 	 -->
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Titan.HiddenMenu, false)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+	</control>
+		
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>858</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Titan.HiddenMenu, false)</visible>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+	</control>	
+		
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>0</posY>
+			<posX>0</posX>
+			<width>612</width>
+			<height>1074</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" start="-150,0" time="100">visible</animation>
+				<animation effect="fade" time="50">visible</animation>
+				<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>375</posY>
+			<posX>116</posX>
+			<width>369</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>116</posX>
+			<posY>100</posY>
+			<label>924</label>
+			<font>fontB16</font>
+			<textcolor>393939</textcolor>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+	 		<animation effect="fade" time="0">WindowClose</animation>
+	 		<animation effect="slide" start="-150,0" time="100">visible</animation>
+			<animation effect="fade" time="50">visible</animation>
+			<animation effect="fade" time="0">hidden</animation>
+	 	</control>
+		
+		<control>
+			<description>Jump to label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>116</posX>
+			<posY>385</posY>
+			<label>1065</label>
+			<font>fontB12</font>
+			<textcolor>393939</textcolor>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
+		</control>
+		
+		<control>
+			<type>group</type>
+			<description>group element</description>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="-150,0" time="100">visible</animation>
+			<animation effect="fade" time="50">visible</animation>
+			<animation effect="fade" time="0">hidden</animation>
+			<posX>53</posX>
+			<posY>155</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>	
+			<control>
+				<description>Force IMDb+</description>
+				<type>button</type>
+				<id>2</id>
+				<onup>96742</onup>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<label>#IMDb.Translation.ForceIMDbPlus.Label</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+			</control>
+			<control>
+				<description>Refresh Movies</description>
+				<type>button</type>
+				<id>3</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<label>-</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+			</control>
+			<control>
+				<description>IMDb+ Information</description>
+				<type>button</type>
+				<id>4</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<label>#IMDb.Translation.IMDbInfo.Label</label>
+				<ondown>99998</ondown>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+			</control>
+			
+			<control>
+				<description>Empty button</description>
+				<type>button</type>
+				<id>0</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<label>-</label>
+				<visible>true</visible>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+			</control>
+			
+			<control>
+				<description>MPEICONFIGURE:9d064213_0b4d_4cee_96a5_405812422b58</description>
+				<type>button</type>
+				<id>99998</id>
+				<label>#MPEI.Translation.Settings.Label</label>
+				<onup>4</onup>
+				<ondown>99999</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<visible>string.equals(#mpei.9d064213_0b4d_4cee_96a5_405812422b58.isinstalled,true)</visible>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+			</control>
+			<control>
+				<description>MPEIUPDATE:9d064213_0b4d_4cee_96a5_405812422b58</description>
+				<type>button</type>
+				<id>99999</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<label>#MPEI.Translation.UpdateAvailable.Label</label>
+				<onup>99998</onup>
+				<ondown>96742</ondown>
+				<visible>string.equals(#mpei.9d064213_0b4d_4cee_96a5_405812422b58.haveupdate,true)</visible>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+			</control>
+			<control>
+				<description>Moving Pictures</description>
+				<type>button</type>
+				<id>96742</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<label>342</label>
+				<hyperlink>96742</hyperlink>
+				<onup>99999</onup>
+				<ondown>2</ondown>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+			</control>
+		</control>
+	</control>
+		
+	<import>common.overlay.xml</import>
+</controls>
+</window>

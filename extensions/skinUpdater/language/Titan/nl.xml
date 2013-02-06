@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Dutch(NL) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 12th October 2011 -->
+<strings>
+
+ <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Skin Update</string>
+  <string Field="UpdateInstall">Updaten en Installeren</string>
+  <string Field="NoUpdatesAvailable">Geen Updates beschikbaar</string>
+  <string Field="DownloadingPatch">Update Downloaden: {0}</string>
+  <string Field="DownloadingProgress">Gedownload {0}KB van {1}KB ({2}%)</string>
+  <string Field="NumPatchesInstalled">Aantal Update bestanden geinstalleerd: {0}</string>
+  <string Field="PatchUpdateComplete">Updaten naar Skin versie: {0} Complete</string>
+  <string Field="UpdateAvailableHeading">Update beschikbaar - Veranderingen Logboek</string>
+  <string Field="mupdateheader">Update Installatieprogramma gedownload naar het bureaublad</string>
+  <string Field="mupdateline1">Handmatige Update nodig - Sluit om te activeren</string>
+  <string Field="mupdateline2">MediaPortal en/of Configuratie</string>
+  <string Field="mupdateline3">en start:  {0}</string>
+  <string Field="mupdateline4">Welke u op het Bureaublad vindt</string>
+  <!-- Skin Settings -->
+  <string Field="SkinSettings">Skin Instellingen</string>
+  <string Field="SkinUpdateNF">Update beschikbaar</string>
+  <string Field="SkinSettingsUpdate">Update</string>
+</strings>

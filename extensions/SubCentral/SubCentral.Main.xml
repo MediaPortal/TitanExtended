@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<control>
+			<type>textbox</type>
+			<id>912</id>
+			<posX>655</posX>
+			<posY>358</posY>
+			<width>1100</width>
+			<height>580</height>
+			<label>#SubCentral.About</label>
+			<font>TitanLight12</font>
+			<onleft>202</onleft>
+			<onright>50</onright>
+			<onup>912</onup>
+			<ondown>912</ondown>
+			<spinWidth>18</spinWidth>
+			<spinHeight>16</spinHeight>
+			<spinPosX>1760</spinPosX>
+			<spinPosY>930</spinPosY>
+			<spinAlign>right</spinAlign>
+			<spinCanFocus>yes</spinCanFocus>
+			<spinColor>FFFFFFFF</spinColor>
+			<visible>Control.IsVisible(101)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>	
+		</control>
+	</controls>
+</window>

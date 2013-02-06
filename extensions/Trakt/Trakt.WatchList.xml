@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87267</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:Trakt #Trakt.Translation.WatchList.Label</define>
+	<controls>
+	
+    <import>Trakt.Common.Background.xml</import>
+    <import>Trakt.xml</import>
+	
+  <control>
+   	<id>0</id>
+    <type>label</type>
+    <posX>144</posX>
+    <posY>38</posY>
+    <width>855</width>
+    <font>TitanLight22</font>
+    <textcolor>ffffff</textcolor>
+    <label>#header.label</label>
+		<align>left</align>
+  </control>
+      
+	<control>
+  	<id>0</id>
+    <type>label</type>
+    <posX>1848</posX>
+    <posY>36</posY>
+    <width>555</width>
+    <font>TitanLight22</font>
+    <textcolor>ffffff</textcolor>
+    <label>#time</label>
+		<align>right</align>
+  </control>
+
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>685</posX>
+		<posY>225</posY>
+		<width>500</width>
+		<label>#Trakt.Translation.WatchList.Label</label>
+		<textcolor>00b7ff</textcolor>
+		<font>TitanLight20</font>
+	</control>
+
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<posX>655</posX>
+		<posY>321</posY>
+		<dimColor>ffffffff</dimColor>
+    <layout>StackLayout(7, Vertical, true)</layout>
+		
+	  	<control Style="SettingsButtonLarge">
+				<type>button</type>
+				<description>Watch List Movies</description>
+				<id>2</id>
+				<label>#Trakt.Translation.WatchListMovies.Label</label>
+				<hyperlink>87270</hyperlink>
+	      <onup>88884</onup>
+			</control>
+  
+			<control Style="SettingsButtonLarge">
+				<description>Watch List Shows</description>
+				<type>button</type>
+				<id>88883</id>
+				<label>#Trakt.Translation.WatchListShows.Label</label>
+				<hyperlink>87268</hyperlink>
+			</control>
+		
+	  	<control Style="SettingsButtonLarge">
+				<description>Watch List Episodes</description>
+				<type>button</type>
+				<id>88884</id>
+				<label>#Trakt.Translation.WatchListEpisodes.Label</label>
+				<hyperlink>87269</hyperlink>
+	      <ondown>2</ondown>
+			</control>
+ </control>
+ 
+		<import>common.overlay.xml</import>
+	</controls>
+</window>

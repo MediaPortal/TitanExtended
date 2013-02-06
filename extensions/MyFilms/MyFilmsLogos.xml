@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="ID0000">
+    <entry name="LogosPath">
+    </entry>
+    <entry name="LogoPresets">Define your path to logo image files</entry>
+    <entry name="Spacing">0</entry>
+  </section>
+  <section name="ID2001">
+    <entry name="ID2001_0">Resolution;contains;1920x;;;;;resolution\1080p.png</entry>
+    <entry name="ID2001_1">Resolution;contains;1280x;;;;;resolution\720p.png</entry>
+    <entry name="ID2001_2">Resolution;contains;960x;;;;;resolution\SD.png</entry>
+    <entry name="ID2001_3">Resolution;contains;x2;;;;;resolution\240.png</entry>
+    <entry name="ID2001_4">Resolution;contains;x3;;;;;resolution\360.png</entry>
+    <entry name="ID2001_5">Resolution;contains;x4;;;;;resolution\480.png</entry>
+    <entry name="ID2001_6">Resolution;contains;x540;;;;;resolution\540.png</entry>  
+    <entry name="ID2001_7">Resolution;contains;x576;;;;;resolution\576.png</entry>  
+    <entry name="ID2001_8">VideoBitrate;greater;1500;;;;;resolution\HD.png</entry>
+    <entry name="ID2001_9">VideoFormat;contains;divx;or;VideoFormat;contains;div3;video\DIVX.png</entry>
+    <entry name="ID2001_10">VideoFormat;contains;xvid;;;;;video\xvid.png</entry>
+    <entry name="ID2001_11">VideoFormat;contains;h264;or;VideoFormat;contains;avc;video\h264.png</entry>
+    <entry name="ID2001_12">VideoFormat;contains;mpeg-2;;;;;mpeg2video.png</entry>
+    <entry name="ID2001_13">AudioChannelCount;contains;0;;;;;audio\0.png</entry>
+    <entry name="ID2001_14">AudioChannelCount;contains;1;;;;;audio\1.png</entry>
+    <entry name="ID2001_15">AudioChannelCount;contains;2;;;;;audio\2.1.png</entry>
+    <entry name="ID2001_16">AudioChannelCount;contains;6;;;;;audio\5.1.png</entry>
+    <entry name="ID2001_17">AudioChannelCount;contains;7;;;;;audio\6.1.png</entry>
+    <entry name="ID2001_18">AudioChannelCount;contains;8;;;;;audio\8.png</entry>
+		<entry name="ID2001_19">AudioFormat;contains;dts;;;;;audio\DTS.png</entry>
+    <entry name="ID2001_20">AudioFormat;contains;dolby digital;or;AudioFormat;contains;ac3;audio\ac-3.png</entry>
+    <entry name="ID2001_21">AudioFormat;contains;a_mpeg;or;AudioFormat;contains;mpa1l3;MPEG AUDIO VERSION 1 LAYER 3.png</entry>
+    <entry name="ID2001_22">AudioFormat;contains;a_aac;;;;;audio\aac.png</entry>
+    <entry name="ID2001_23">AudioFormat;contains;mp3;;;;;audio\mp3.png</entry>
+    <entry name="ID2001_24">AudioFormat;contains;layer 3;;;;;audio\mp3.png</entry>
+    <entry name="ID2001_25">AudioFormat;contains;layer 2;;;;;audio\mp2.png</entry>
+    <entry name="ID2001_26">Aspectratio;contains;2.35;;;;;aspectratio\widescreen.png</entry>
+    <entry name="ID2001_27">Aspectratio;contains;1.78;;;;;aspectratio\1.78.png</entry>
+    <entry name="ID2001_28">Aspectratio;contains;1.85;or;Aspectratio;contains;1.84;aspectratio\1.85.png</entry>
+    <entry name="ID2001_29">Aspectratio;contains;1.33;;;;;aspectratio\1.33.png</entry>
+    <entry name="ID2001_30">Aspectratio;contains;1.66;;;;;aspectratio\1.66.png</entry>
+    <entry name="ID2001_31">Aspectratio;contains;2.37;;;;;aspectratio\2.37.png</entry>
+    <entry name="ID2001_32">Aspectratio;contains;2.40;;;;;aspectratio\2.40.png</entry>
+  </section>
+</profile>

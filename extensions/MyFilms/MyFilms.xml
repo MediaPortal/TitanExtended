@@ -1,0 +1,238 @@
+<window>
+  <id>7986</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:#myfilms.config.pluginname</define>
+  <controls>
+    <!-- MyFilms Skin Version Check -->
+    <settings>
+      <skininterfaceversion>
+        <version>
+          <major>1</major>
+          <minor>0</minor>
+          <build>0</build>
+          <revision>0</revision>
+        </version>
+      </skininterfaceversion>
+    </settings>
+    <!-- DUMMY LABELS -->
+    <control>
+      <type>label</type>
+      <description>Dummy control Visible for Views</description>
+      <id>34</id>
+      <label>
+      </label>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control visible only when you are in a VIEW do this: <visible>control.isvisible(34)</visible> -->
+      <!-- to make a control invisible when you are in a VIEW do this: <visible>!control.isvisible(34)</visible> -->
+      <!-- Note: Dummy control 34 is maintained for backwards compatibility, but skins may use more specific View controls  -->
+    </control>
+    <control>
+      <type>label</type>
+      <description>Dummy control Visible when Fanart found</description>
+      <id>35</id>
+      <label>
+      </label>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only when FANART is found: <visible>control.isvisible(35)</visible> -->
+      <!-- to make a control Invisible only when FANART is found: <visible>!control.isvisible(35)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Film Lists</description>
+      <type>label</type>
+      <id>36</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in Film Lists do this: <visible>control.isvisible(36)</visible> -->
+      <!-- to make a control Invisible in Film Lists (Movies) do this: <visible>!control.isvisible(36)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Views other than Person views(Category, Year, Country, etc.)</description>
+      <type>label</type>
+      <id>37</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in non person VIEWS: <visible>control.isvisible(37)</visible> -->
+      <!-- to make a control Invisible in non person VIEWS: <visible>!control.isvisible(37)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for PERSONS VIEWS</description>
+      <type>label</type>
+      <id>38</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in PERSONS VIEWS (Actors, Writer, etc.): <visible>control.isvisible(38)</visible> -->
+      <!-- to make a control Invisible in PERSONS VIEWS (Actors, Writer, etc.): <visible>!control.isvisible(38)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Groups/Hierarchies like Box Sets</description>
+      <type>label</type>
+      <id>39</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in GROUP HIERARCHY: <visible>control.isvisible(39)</visible> -->
+      <!-- to make a control Invisible in GROUP HIERARCHY: <visible>!control.isvisible(39)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Views Menu</description>
+      <type>label</type>
+      <id>40</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in VIEWS MENU: <visible>control.isvisible(40)</visible> -->
+      <!-- to make a control Invisible in VIEWS MENU: <visible>!control.isvisible(40)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Indexed View Level</description>
+      <type>label</type>
+      <id>41</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in Index View level: <visible>control.isvisible(41)</visible> -->
+      <!-- to make a control Invisible in Index View level: <visible>!control.isvisible(41)</visible> -->
+    </control>
+    <!--            :: MOVIE BACKDROP ::            -->
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>
+    <control>
+      <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+      <type>image</type>
+      <id>11</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#myfilms.fanart</texture>
+			<animation effect="fade" time="300" reversible="false">Hidden</animation>
+			<animation effect="fade" time="300" reversible="false">Visible</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#myfilms.fanart2</texture>
+			<animation effect="fade" time="300">Hidden</animation>
+			<animation effect="fade" time="300" reversible="false">Visible</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <!--            :: HEADER ::            -->
+    <control>
+      <description>Selection display</description>
+      <type>fadelabel</type>
+      <id>12</id>
+      <posX>-2000</posX>
+      <posY>80</posY>
+      <font>font12</font>
+      <width>430</width>
+      <label>#myfilms.view - #myfilms.select</label>
+      <visible>string.contains(#myfilms.view)|string.contains(#myfilms.select)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+    </control>
+    <!--            :: LIST VIEW Dummy ::            -->
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>textboxscrollup</type>
+      <description>Summary (list)</description>
+      <id>1025</id>
+      <posX>-2000</posX>
+      <posY>340</posY>
+      <width>400</width>
+      <height>243</height>
+      <label>#myfilms.db.description.value</label>
+      <seperator>---------------------------------------------------------------------------------------------------------</seperator>
+      <onleft>1026</onleft>
+      <onright>1026</onright>
+      <onup>1026</onup>
+      <ondown>1026</ondown>
+      <visible>facadeview.list+Control.IsVisible(50)</visible>
+    </control>
+    <!-- Global Overlay Filter Info -->
+    <control>
+      <description>Filters group</description>
+      <type>group</type>
+      <posX>1095</posX>
+      <posY>21</posY>
+      <layout>StackLayout(5,Horizontal)</layout>
+      <dimColor>ffffffff</dimColor>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <control>
+        <type>image</type>
+        <description>UnWatched Global Filter Icon</description>
+        <id>0</id>
+        <width>16</width>
+        <keepaspectratio>yes</keepaspectratio>
+        <texture>MyFilms\overlayunwatched.png</texture>
+        <visible>string.contains(#myfilms.globalfilter.unwatched,True)</visible>
+        <animation effect="fade" time="250">visiblechange</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="fade" time="250">WindowOpen</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <description>Trailer Global Filter Icon</description>
+        <id>0</id>
+        <width>16</width>
+        <keepaspectratio>yes</keepaspectratio>
+        <texture>MyFilms\filmstrip.png</texture>
+        <visible>string.contains(#myfilms.globalfilter.trailersonly,True)</visible>
+        <animation effect="fade" time="250">visiblechange</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="fade" time="250">WindowOpen</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <description>Rating Global Filter Icon</description>
+        <id>0</id>
+        <width>18</width>
+        <keepaspectratio>yes</keepaspectratio>
+        <texture>MyFilms\UserRatingStarOn.png</texture>
+        <visible>string.contains(#myfilms.globalfilter.minrating,True)</visible>
+        <animation effect="fade" time="250">visiblechange</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="fade" time="250">WindowOpen</animation>
+      </control>
+    </control>
+    <!--            :: IMPORT ::            -->
+    <import>MyFilms.background.xml</import>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>60</posX>
+      <posY>34</posY>
+      <width>68</width>
+      <height>60</height>
+      <texture>icon_movies.png</texture>
+      <visible>control.isvisible(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <import>common.time.xml</import>
+    <import>MyFilms.hiddenmenu.xml</import>
+    <import>MyFilms.views.xml</import>
+    <import>MyFilms.facade.xml</import>
+    <import>MyFilms.mediainfo.xml</import>
+    <import>common.overlay.xml</import>
+  </controls>
+</window>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87261</id>
+	<defaultcontrol>88882</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:Trakt</define>
+	<controls>
+	
+    <import>Trakt.Common.Background.xml</import>
+    <import>Trakt.xml</import>
+
+  <control>
+   	<id>0</id>
+    <type>label</type>
+    <posX>144</posX>
+    <posY>38</posY>
+    <width>855</width>
+    <font>TitanLight22</font>
+    <textcolor>ffffff</textcolor>
+    <label>#header.label</label>
+		<align>left</align>
+  </control>
+      
+	<control>
+  	<id>0</id>
+    <type>label</type>
+    <posX>1848</posX>
+    <posY>36</posY>
+    <width>555</width>
+    <font>TitanLight22</font>
+    <textcolor>ffffff</textcolor>
+    <label>#time</label>
+		<align>right</align>
+  </control>
+
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>685</posX>
+		<posY>225</posY>
+		<width>500</width>
+		<label>#Trakt.Translation.Recommendations.Label</label>
+		<textcolor>00b7ff</textcolor>
+		<font>TitanLight20</font>
+	</control>
+
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<posX>655</posX>
+		<posY>321</posY>
+    <layout>StackLayout(7, Vertical, true)</layout>
+		
+  <control Style="SettingsButtonLarge">
+			<type>button</type>
+			<description>Recommended Movies</description>
+			<id>88882</id>
+			<label>#Trakt.Translation.RecommendedMovies.Label</label>
+			<hyperlink>87263</hyperlink>
+      <onleft>12</onleft>
+      <onright>88882</onright>
+      <onup>88883</onup>
+		</control>
+		
+  <control Style="SettingsButtonLarge">
+			<description>Recommended Shows</description>
+			<type>button</type>
+			<id>88883</id>
+			<label>#Trakt.Translation.RecommendedShows.Label</label>
+			<hyperlink>87262</hyperlink>
+      <onleft>12</onleft>
+      <onright>88883</onright>
+      <ondown>88882</ondown>
+		</control>
+  </control>
+  
+		<import>common.overlay.xml</import>
+	</controls>
+</window>

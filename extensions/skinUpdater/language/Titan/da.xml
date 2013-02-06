@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Danish (DA) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 11/11/2011 -->
+<strings>
+ 
+ <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Skinopdatering</string>
+  <string Field="UpdateInstall">Opdatér og installér</string>
+  <string Field="NoUpdatesAvailable">Ingen opdatering tilgængelig</string>
+  <string Field="DownloadingPatch">Henter opdatering: {0}</string>
+  <string Field="DownloadingProgress">Hentet {0}KB ud af {1}KB ({2}%)</string>
+  <string Field="NumPatchesInstalled">Antal opdateringer installeret: {0}</string>
+  <string Field="PatchUpdateComplete">Opdatering til skinversion: {0} fuldført</string>
+  <string Field="UpdateAvailableHeading">Tilgængelig opdatering - Ændringer</string>
+  <string Field="mupdateheader">Opdatering hentet til skrivebordet</string>
+  <string Field="mupdateline1">Manual opdatering påkrævet - Tryk OK og luk</string>
+  <string Field="mupdateline2">MediaPortal og/eller Konfiguration</string>
+  <string Field="mupdateline3">og kør:  {0}</string>
+  <string Field="mupdateline4">som kan findes på skrivebordet</string>
+  <!-- Skin Settings --> 
+  <string Field="SkinSettings">Skinindstillinger</string>
+  <string Field="SkinUpdateNF">Tilgængelig opdatering</string>
+  <string Field="SkinSettingsUpdate">Opdatering</string>
+</strings>
