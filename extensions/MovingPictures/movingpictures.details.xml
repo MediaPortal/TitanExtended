@@ -28,8 +28,9 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>
   	<posX>571</posX>
 		<posY>364</posY>
+    <dimColor>ffffffff</dimColor>
 		<layout>StackLayout(7, Vertical, true)</layout>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10005) + !Control.HasFocus(20002)</visible>
+		<visible>[!Control.IsVisible(50)+!Control.IsVisible(51)] + !Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
         
 			<control>
 				<description>Play Button</description>
@@ -73,34 +74,34 @@ This file should contain the details view
 			</control>
 			
 			<control>
-				<description>Subtitle Button</description>
+				<description>Trailer Button</description>
 				<id>10003</id>
 				<type>button</type>
-				<label>Subtitle</label>
+				<label>Trailer</label>
 				<onup>20002</onup>
 				<ondown>10004</ondown>
-				<onleft>10005</onleft>
-				<onright>10005</onright>
-				<hyperlink>84623</hyperlink>
-		   	<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
-				<visible>plugin.isenabled(SubCentral)</visible>
-			</control>
-			
-			<control>
-				<description>Trailer Button</description>
-				<id>10004</id>
-				<type>button</type>
-				<label>Trailer</label>
-				<onup>10003</onup>
-				<ondown>97270</ondown>
 				<onleft>10005</onleft>
 				<onright>10005</onright>
 				<hyperlink>4755</hyperlink>
 				<hyperlinkParameter>site:IMDb Movie Trailers|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
 		   	<textcolor>FF000000</textcolor>
 				<textcolorNoFocus>ffffffff</textcolorNoFocus>
-				<visible>plugin.isenabled(OnlineVideos)</visible>
+				<visible allowhiddenfocus="true">plugin.isenabled(OnlineVideos)</visible>
+			</control>
+			
+			<control>
+				<description>Subtitle Button</description>
+				<id>10004</id>
+				<type>button</type>
+				<label>Subtitle</label>
+				<onup>10003</onup>
+				<ondown>97270</ondown>
+				<onleft>10005</onleft>
+				<onright>10005</onright>
+				<hyperlink>84623</hyperlink>
+		   	<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
+				<visible>plugin.isenabled(SubCentral)</visible>
 			</control>
 			
 			<control>
@@ -123,11 +124,12 @@ This file should contain the details view
   <control>
   	<description>Button group</description>
     <type>group</type>
-    <animation effect="fade" time="250">WindowOpen</animation>
-    <animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
   	<posX>119</posX>
 		<posY>364</posY>
-   	<visible>Control.HasFocus(20002)</visible>
+    <dimColor>ffffffff</dimColor>
+   	<visible>[!Control.IsVisible(50)+!Control.IsVisible(51)] + Control.HasFocus(20002)</visible>
 		<layout>StackLayout(7, Vertical, true)</layout>
   
 			<control>
@@ -135,7 +137,9 @@ This file should contain the details view
 				<type>button</type>
 				<id>2006</id>
 				<label>208</label>
-    		<textcolor>FF000000</textcolor>
+				<textureFocus>myvideos_play_focus.png</textureFocus>
+				<textureNoFocus>myvideos_play_nofocus.png</textureNoFocus>
+				<textcolor>FF000000</textcolor>
 				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			</control>
 
@@ -162,23 +166,27 @@ This file should contain the details view
 			</control>
 			
 			<control>
-				<description>Subtitle Button</description>
-				<id>20003</id>
-				<type>button</type>
-				<label>Subtitle</label>
-		   	<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
-				<visible>plugin.isenabled(SubCentral)</visible>
-			</control>
-			
-			<control>
 				<description>Trailer Button</description>
-				<id>20004</id>
+				<id>20003</id>
 				<type>button</type>
 				<label>Trailer</label>
 		   	<textcolor>FF000000</textcolor>
 				<textcolorNoFocus>ffffffff</textcolorNoFocus>
+				<onup>20002</onup>
+				<ondown>20004</ondown>
 				<visible>plugin.isenabled(OnlineVideos)</visible>
+			</control>
+			
+			<control>
+				<description>Subtitle Button</description>
+				<id>20004</id>
+				<type>button</type>
+				<label>Subtitle</label>
+		   	<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
+				<onup>20003</onup>
+				<ondown>27270</ondown>
+				<visible>plugin.isenabled(SubCentral)</visible>
 			</control>
 			
 			<control>
@@ -188,6 +196,8 @@ This file should contain the details view
         <label>Trakt</label>
 		    <textcolor>FF000000</textcolor>
 				<textcolorNoFocus>ffffffff</textcolorNoFocus>
+				<onup>20004</onup>
+				<ondown>6</ondown>
 				<visible>plugin.isenabled(Trakt)</visible>
       </control>
 </control>
