@@ -109,7 +109,7 @@
 		<shadowColor>FF000000</shadowColor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<label>#Radio.RecordedTV.Time</label>
+		<label>#Radio.RecordedTV.Time #Radio.RecordedTV.Genre</label>
 		<visible>facadeview.list</visible>
 	</control>
 	
@@ -120,7 +120,7 @@
 		<posX>99</posX>
 		<posY>580</posY>
 		<width>780</width>
-		<height>405</height>
+		<height>252</height>
 		<lineSpacing>0.85</lineSpacing>
 		<label>#Radio.RecordedTV.Description</label>
 		<visible>facadeview.list</visible>
@@ -132,14 +132,8 @@
 		<description>genre</description>
 		<type>label</type>
 		<id>17</id>
-		<posX>100</posX>
+		<posX>2500</posX>
 		<posY>940</posY>
-		<label>#Radio.RecordedTV.Genre</label>
-		<font>TitanLight12</font>
-		<textcolor>FF00b7ff</textcolor>
-		<visible>facadeview.list</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
 	<!--						:: THUMBVIEW ::						-->

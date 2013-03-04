@@ -229,7 +229,7 @@
 		<shadowAngle>120</shadowAngle>
 		<shadowDistance>2</shadowDistance>
 		<shadowColor>FF000000</shadowColor>
-		<label>#TV.Upcoming.Time</label>
+		<label>#TV.Upcoming.Time #TV.Upcoming.Genre</label>
 		<visible>Control.HasThumb(500)</visible>
 	</control>
 
@@ -242,7 +242,7 @@
 		<posX>99</posX>
 		<posY>580</posY>
 		<width>780</width>
-		<height>405</height>
+		<height>377</height>
 		<lineSpacing>0.85</lineSpacing>
 		<label>#TV.Upcoming.Description</label>
 	</control>
@@ -251,13 +251,8 @@
 		<description>genre</description>
 		<type>label</type>
 		<id>17</id>
-		<posX>100</posX>
+		<posX>2500</posX>
 		<posY>940</posY>
-		<label>#TV.Upcoming.Genre</label>
-		<font>TitanLight12</font>
-		<textcolor>FF00b7ff</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
 	<control>

@@ -242,7 +242,7 @@
 		<posX>312</posX>
 		<posY>629</posY>
 		<width>600</width>
-		<label>#Radio.View.start - #Radio.View.stop #Radio.View.channel #Radio.Guide.Genre</label>
+		<label>#Radio.View.start - #Radio.View.stop #Radio.View.channel</label>
 		<font>TitanLight14</font>
 		<textcolor>FF00b7ff</textcolor>
     <shadowAngle>120</shadowAngle>
@@ -276,7 +276,7 @@
 		<posX>96</posX>
 		<posY>694</posY>
 		<width>790</width>
-		<height>282</height>
+		<height>252</height>
 		<font>TitanLight12</font>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
 		<label>#Radio.View.description</label>
@@ -285,7 +285,7 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
-	<control>
+<!-- 	<control>
 		<description>genre</description>
 		<type>label</type>
 		<id>17</id>
@@ -296,7 +296,7 @@
 		<textcolor>FF00b7ff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
+	</control> -->
 
 	<control>
 		<description>Progress background</description>

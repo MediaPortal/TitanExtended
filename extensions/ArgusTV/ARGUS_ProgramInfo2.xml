@@ -207,7 +207,7 @@
 		<posX>99</posX>
 		<posY>680</posY>
 		<width>780</width>
-		<height>305</height>
+		<height>282</height>
 		<lineSpacing>0.85</lineSpacing>
 		<label>#TV.RecordedTV.Description</label>
 		<animation effect="fade" time="250">WindowOpen</animation>

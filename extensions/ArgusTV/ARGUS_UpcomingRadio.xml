@@ -242,7 +242,7 @@
 		<posX>99</posX>
 		<posY>580</posY>
 		<width>780</width>
-		<height>405</height>
+		<height>377</height>
     <lineSpacing>0.85</lineSpacing>
 		<label>#Radio.Upcoming.Description</label>
 	</control>
@@ -251,13 +251,8 @@
 		<description>genre</description>
 		<type>label</type>
 		<id>17</id>
-		<posX>100</posX>
+		<posX>2500</posX>
 		<posY>940</posY>
-		<label>#Radio.Upcoming.Genre</label>
-		<font>TitanLight12</font>
-		<textcolor>FF00b7ff</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
 	<control>

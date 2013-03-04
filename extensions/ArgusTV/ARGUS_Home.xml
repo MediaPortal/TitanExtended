@@ -31,30 +31,16 @@
   <control>
     <id>0</id>
     <type>image</type>
-    <posX>74</posX>
-    <posY>32</posY>
-    <width>55</width>
-    <height>66</height>
-    <texture>ARGUS_icon.png</texture>
+    <posX>66</posX>
+    <posY>34</posY>
+    <width>61</width>
+    <height>57</height>
+    <texture>icon_tv.png</texture>
     <animation effect="fade" time="250">WindowOpen</animation>
     <animation effect="fade" time="250">WindowClose</animation>
   </control>
 
 	<import>common.time.xml</import>
-	
-    <control>
-      <description>Current View</description>
-      <type>label</type>
-      <label>ARGUS-TV</label>
-      <id>0</id>
-			<posX>72</posX>
-      <posY>94</posY>
-      <align>left</align>
-      <textcolor>FFFFFFFF</textcolor>
-      <font>TitanLight12</font>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-    </control>
 	
 	<control>
 		<description>group element</description>
@@ -258,7 +244,7 @@
 		<posX>312</posX>
 		<posY>629</posY>
 		<width>600</width>
-		<label>#TV.View.start - #TV.View.stop #TV.View.channel #TV.Guide.Genre</label>
+		<label>#TV.View.start - #TV.View.stop #TV.View.channel</label>
 		<font>TitanLight14</font>
 		<textcolor>FF00b7ff</textcolor>
     <shadowAngle>120</shadowAngle>
@@ -292,7 +278,7 @@
 		<posX>96</posX>
 		<posY>694</posY>
 		<width>790</width>
-		<height>282</height>
+		<height>252</height>
 		<font>TitanLight12</font>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
 		<label>#TV.View.description</label>
@@ -301,7 +287,7 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
-	<control>
+<!-- 	<control>
 		<description>genre</description>
 		<type>label</type>
 		<id>17</id>
@@ -312,7 +298,7 @@
 		<textcolor>FF00b7ff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
+	</control> -->
 
 	<control>
 		<description>Progress background</description>
