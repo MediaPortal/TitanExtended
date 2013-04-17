@@ -12,6 +12,7 @@
     <align>left</align>
     <font>TitanLight12</font>
     <textcolor>000000</textcolor>
+		<visible>Control.IsVisible(102)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -25,7 +26,7 @@
     <width>1137</width>
     <height>419</height>
     <texture>SubCentral_list_bg.png</texture>
-		<visible>!Control.IsVisible(103)</visible>
+		<visible>Control.IsVisible(102)</visible>
 		<animation effect="fade" time="250" delay="0">WindowOpen</animation>
 		<animation effect="fade" time="250" delay="0">WindowClose</animation>
   </control>
@@ -54,8 +55,6 @@
       <font2>font10</font2>
       <font3>font10</font3>
 			<textcolor>ff00b7ff</textcolor>
-			<textcolorNoFocus>FFFFFFFF</textcolorNoFocus>
-      <playedColor>#selectedcolor</playedColor>
       <spaceBetweenItems>0</spaceBetweenItems>
       <textureFocus>SubCentral_list_focus.png</textureFocus>
       <textureHeight>60</textureHeight>
@@ -101,7 +100,7 @@
     <width>922</width>
     <height>58</height>
     <texture>SubCentral_label_bg.png</texture>
-		<visible>!Control.IsVisible(103)</visible>
+		<visible>Control.IsVisible(102)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
   </control>
@@ -116,7 +115,7 @@
 		<label>#SubCentral.Translation.Title.Label</label>
 		<font>TitanLight12</font>
 		<textcolor>ff00b7ff</textcolor>
-		<visible>!Control.IsVisible(103)</visible>
+		<visible>Control.IsVisible(102)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -145,7 +144,7 @@
 		<label>File</label>
 		<font>TitanLight12</font>
 		<textcolor>ff00b7ff</textcolor>
-		<visible>!Control.IsVisible(103)</visible>
+		<visible>Control.IsVisible(102)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -173,7 +172,7 @@
 		<label>#SubCentral.Search.Media.Title</label>
 		<font>font14</font>
 		<textcolor>ff222222</textcolor>
-		<visible>!Control.IsVisible(103)+String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
+		<visible>Control.IsVisible(102)+String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -201,7 +200,7 @@
 		<label>#SubCentral.Search.Media.TitleWithSE</label>
 		<font>TitanLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(103)+String.Equals(#SubCentral.Search.SearchType.Type,TVSHOW)</visible>
+		<visible>Control.IsVisible(102)+String.Equals(#SubCentral.Search.SearchType.Type,TVSHOW)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>

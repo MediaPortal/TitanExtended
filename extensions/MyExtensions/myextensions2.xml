@@ -260,7 +260,7 @@
     <posX>95</posX>
     <posY>750</posY>
     <width>620</width>
-    <height>190</height>
+    <height>200</height>
  		<lineSpacing>0.92</lineSpacing>
     <seperator>---------------------------------------------------</seperator>
     <label>#MPE.Selected.Description</label>
@@ -419,7 +419,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>510</posX>
+		<posX>395</posX>
 		<posY>1015</posY>
 		<label>#selecteditem</label>
 		<visible>Control.HasFocus(50)</visible>
