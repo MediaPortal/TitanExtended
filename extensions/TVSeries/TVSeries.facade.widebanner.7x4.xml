@@ -47,7 +47,7 @@
     <align>left</align>
     <textcolor>FFFFFFFF</textcolor>
     <font>TitanLight12</font>
-	  <visible>control.isvisible(1237)+control.isvisible(1242)</visible>
+	  <visible>control.isvisible(1237)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
   </control>
@@ -64,7 +64,7 @@
     <align>left</align>
     <font>TitanLight12</font>
     <textcolor>000000</textcolor>
-	  <visible>control.isvisible(1237)+control.isvisible(1242)+[facadeview.list|facadeview.largeicons]</visible>
+	  <visible>control.isvisible(1237)+facadeview.list</visible>
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
@@ -174,10 +174,10 @@
         <type>thumbnailpanel</type>
 		<dimColor>90ffffff</dimColor>
         <id>50</id>
-        <posX>138</posX>
-		<posY>342</posY>
-        <width>758</width>
-        <height>700</height>
+        <posX>146</posX>
+		<posY>340</posY>
+        <width>1850</width>
+        <height>625</height>
         <!-- up/down buttons & page # -->     
 		<onleft>2</onleft>
         <onright>50</onright>		  
@@ -188,26 +188,27 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>          
         <suffix>|</suffix>
-        <itemWidthBig>758</itemWidthBig>
-        <itemHeightBig>160</itemHeightBig>
-        <!-- boxes -->
-        <textureWidthBig>758</textureWidthBig>
-        <textureHeightBig>140</textureHeightBig>
-        <!-- banners -->
-        <thumbWidthBig>758</thumbWidthBig>
-        <thumbHeightBig>140</thumbHeightBig>
-        <thumbPosXBig>0</thumbPosXBig>
-        <thumbPosYBig>0</thumbPosYBig>
-		<zoomXPixels>100</zoomXPixels>
-		<zoomYPixels>20</zoomYPixels>
-        <thumbZoom>no</thumbZoom>
+          <!-- margin -->
+          <itemWidthBig>407</itemWidthBig>
+          <itemHeightBig>85</itemHeightBig>
+          <!-- frame texture -->
+          <textureWidthBig>405</textureWidthBig>
+          <textureHeightBig>85</textureHeightBig>
+          <!-- wide banners -->
+          <thumbWidthBig>400</thumbWidthBig>
+          <thumbHeightBig>78</thumbHeightBig>
+          <thumbPosXBig>2</thumbPosXBig>
+          <thumbPosYBig>4</thumbPosYBig>
+          <thumbZoom>no</thumbZoom>
+				<unfocusedAlpha>100</unfocusedAlpha>
         <!-- text (No banner) -->
         <textXOff>0</textXOff>
         <textYOff>0</textYOff>
         <frame>-</frame>
-        <frameFocus>-</frameFocus>
+        <frameFocus>tvseries_widebanner_large_focus.png</frameFocus>
 		<frameNoFocus>-</frameNoFocus>
 		<textureMask></textureMask>
+		<scrollOffset>1</scrollOffset>
         <keepaspectratio>no</keepaspectratio>
         <enableFocusZoom>no</enableFocusZoom>
         <spinPosX>1828</spinPosX>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>165100</id>
+  <defaultcontrol>5000</defaultcontrol>
+  <define>#header.label:#(L(300120)) #(L(5))</define>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+	<import>common.time.settings.xml</import>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background_settings.png</texture>
+	</control>
+
+	<control>
+		<description>panel</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>5</posX>
+		<posY>140</posY>
+		<width>618</width>
+		<height>940</height>
+		<texture>panel_settings_left.png</texture>
+	</control>
+
+	<control>
+		<description>panel</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>546</posX>
+		<posY>140</posY>
+		<width>1372</width>
+		<height>940</height>
+		<texture>panel_settings_main.png</texture>
+  	<animation effect="fade" time="150">WindowOpen</animation>
+  	<animation effect="fade" time="150">WindowClose</animation>
+	</control>
+
+  <control>
+    <id>0</id>
+    <type>image</type>
+    <posX>68</posX>
+    <posY>36</posY>
+    <width>58</width>
+    <height>58</height>
+    <texture>icon_settings.png</texture>
+  </control>
+	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>152</posX>
+		<posY>225</posY>
+		<width>500</width>
+		<label>924</label>
+		<textcolor>00b7ff</textcolor>
+		<font>TitanLight20</font>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>685</posX>
+		<posY>225</posY>
+		<width>800</width>
+		<label>#(iif(eq(#skin.setting.focus,'movingpictures'),'Moving Pictures','TV Series'))</label>
+		<textcolor>00b7ff</textcolor>
+		<font>TitanLight20</font>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<posX>122</posX>
+		<posY>321</posY>
+		<dimColor>ffffffff</dimColor>
+		<layout>StackLayout(7, Vertical, true)</layout>
+			<control Style="SettingsButton">
+				<description>Skin settings</description>
+				<type>button</type>
+				<id>5000</id>
+				<label>Moving Pictures</label>
+				<onright>5101</onright>
+				<onfocus>#(skin.setstring('#skin.setting.focus','movingpictures'))</onfocus>
+			</control>
+			<control Style="SettingsButton">
+				<description>Skin settings</description>
+				<type>button</type>
+				<id>6000</id>
+				<label>TV Series</label>
+				<onright>6101</onright>
+				<onfocus>#(skin.setstring('#skin.setting.focus','tvseries'))</onfocus>
+			</control>
+		</control>
+		
+	<!--            :: Moving Pictures ::           	 -->
+		
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>
+		<dimColor>0xffffffff</dimColor>
+		<visible>string.equals(#skin.setting.focus,movingpictures)</visible>
+		
+		<control Style="SettingsButtonMedium">
+			<description>Detailview layout</description>
+			<type>menubutton</type>
+			<id>5101</id>
+			<posX>655</posX>
+			<posY>366</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose Detail Layout</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>Detail Layout: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.layout.movingpictures.details',#selectedlabel5101)))</onclick>
+			<binding>#skin.layout.movingpictures.details</binding>
+			 <subitems>
+				 <subitem>default</subitem>
+				 <subitem>lite</subitem>
+			 </subitems>
+			 <onleft>5000</onleft>
+			 <onright>5001</onright>
+			 <onup>5103</onup>
+			 <ondown>5102</ondown>
+		</control>
+		
+		<control Style="SettingsButtonMedium">
+			<description>Thumbview layout</description>
+			<type>menubutton</type>
+			<id>5102</id>
+			<posX>655</posX>
+			<posY>431</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose Thumbview Layout</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>Thumbview Layout: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.layout.movingpictures.thumbview',#selectedlabel5102)))</onclick>
+			<binding>#skin.layout.movingpictures.thumbview</binding>
+			<subitems>
+			 <subitem>default</subitem>
+			 <subitem>without info</subitem>
+			 <subitem>XL</subitem>
+			</subitems>
+		 <onleft>5000</onleft>
+		 <onright>5001</onright>
+		 <onup>5101</onup>
+		 <ondown>5103</ondown>
+		</control>
+		
+		<control Style="SettingsButtonMedium">
+			<description>Listview layout</description>
+			<type>menubutton</type>
+			<id>5103</id>
+			<posX>655</posX>
+			<posY>496</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose Listview Layout</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>Listview Layout: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.layout.movingpictures.listview',#selectedlabel5103)))</onclick>
+			<binding>#skin.layout.movingpictures.listview</binding>
+			<subitems>
+			 <subitem>default</subitem>
+			 <subitem>without info</subitem>
+			 <subitem>lowlist</subitem>
+			</subitems>
+			<onleft>5000</onleft>
+			<onright>5001</onright>
+			<onup>5102</onup>
+			<ondown>5101</ondown>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<id>1</id>
+			<posX>1288</posX>
+			<posY>321</posY>
+			<width>500</width>
+			<label>Submenu</label>
+			<textcolor>00b7ff</textcolor>
+			<font>fontB12</font>
+		</control>
+		
+		<control Style="SettingsCheckButtonMedium">
+			<description>Enable latest MovingPictures</description>
+			<type>checkbutton</type>
+			<id>5001</id>
+			<posX>1255</posX>
+			<posY>366</posY>
+			<label>Enable submenu on BasicHome</label>			
+			<selected>#(skin.hassetting('#skin.enable.submenu.MovingPictures'))</selected>
+			<onclick>#(skin.togglesetting('#skin.enable.submenu.MovingPictures'))</onclick>
+			<ondown>5002</ondown>
+			<onleft>5101</onleft>
+			<onright>5101</onright>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+	</control>
+	
+  <control>
+    <description>group element</description>
+    <type>group</type>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
+    <dimColor>0xffffffff</dimColor>
+		<visible>string.equals(#skin.setting.focus,movingpictures) + skin.hassetting(#skin.enable.submenu.MovingPictures)</visible>
+		
+		<control Style="SettingsButtonMedium">
+			<description>MovingPictures Submenu 1</description>
+			<type>menubutton</type>
+			<id>5002</id>
+			<posX>1255</posX>
+			<posY>431</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose submenu entry 1</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>1: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.submenu.movpics1',#selectedlabel5002)))</onclick>
+			<binding>#skin.submenu.movpics1</binding>
+			<subitems>
+				<subitem>#plugin.movingpictures.categories</subitem>
+				<subitem>none</subitem>
+				<subitem>Videos</subitem>
+			</subitems>
+			<onleft>5000</onleft>
+			<onup>5001</onup>
+			<ondown>5003</ondown>
+		</control>
+	
+		<control Style="SettingsButtonMedium">
+			<description>MovingPictures Submenu 2</description>
+			<type>menubutton</type>
+			<id>5003</id>
+			<posX>1255</posX>
+			<posY>496</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose submenu entry 2</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>2: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.submenu.movpics2',#selectedlabel5003)))</onclick>
+			<binding>#skin.submenu.movpics2</binding>
+			<subitems>
+				<subitem>#plugin.movingpictures.categories</subitem>
+				<subitem>none</subitem>
+				<subitem>Videos</subitem>
+			</subitems>
+			<onleft>5000</onleft>
+			<ondown>5004</ondown>
+			<onup>5002</onup>
+		</control>
+	
+	<control Style="SettingsButtonMedium">
+		<description>MovingPictures Submenu 3</description>
+		<type>menubutton</type>
+		<id>5004</id>
+		<posX>1255</posX>
+		<posY>561</posY>
+		<mode>dialoglist</mode>
+		<dialogTitle>Choose submenu entry 3</dialogTitle>
+		<valueTextInButton>yes</valueTextInButton>
+		<valuePrefixText>3: </valuePrefixText>
+		<onclick>#(skin.setstring('#skin.submenu.movpics3',#selectedlabel5004)))</onclick>
+		<binding>#skin.submenu.movpics3</binding>
+		<subitems>
+	   <subitem>#plugin.movingpictures.categories</subitem>
+	   <subitem>none</subitem>
+	   <subitem>Videos</subitem>
+		</subitems>
+		<onleft>5000</onleft>
+		<ondown>5005</ondown>
+		<onup>5003</onup>
+	</control>
+	
+	<control Style="SettingsButtonMedium">
+		<description>MovingPictures Submenu 4</description>
+		<type>menubutton</type>
+		<id>5005</id>
+		<posX>1255</posX>
+		<posY>626</posY>
+		<mode>dialoglist</mode>
+		<dialogTitle>Choose submenu entry 4</dialogTitle>
+		<valueTextInButton>yes</valueTextInButton>
+		<valuePrefixText>4: </valuePrefixText>
+		<onclick>#(skin.setstring('#skin.submenu.movpics4',#selectedlabel5005)))</onclick>
+		<binding>#skin.submenu.movpics4</binding>
+		<subitems>
+	   <subitem>#plugin.movingpictures.categories</subitem>
+	   <subitem>none</subitem>
+	   <subitem>Videos</subitem>
+		</subitems>
+		<onleft>5000</onleft>
+		<ondown>5006</ondown>
+		<onup>5004</onup>
+	</control>
+	
+	<control Style="SettingsButtonMedium">
+		<description>MovingPictures Submenu 5</description>
+		<type>menubutton</type>
+		<id>5006</id>
+		<posX>1255</posX>
+		<posY>691</posY>
+		<mode>dialoglist</mode>
+		<dialogTitle>Choose submenu entry 5</dialogTitle>
+		<valueTextInButton>yes</valueTextInButton>
+		<valuePrefixText>5: </valuePrefixText>
+		<onclick>#(skin.setstring('#skin.submenu.movpics5',#selectedlabel5006)))</onclick>
+		<binding>#skin.submenu.movpics5</binding>
+		<subitems>
+	   <subitem>#plugin.movingpictures.categories</subitem>
+	   <subitem>none</subitem>
+	   <subitem>Videos</subitem>
+		</subitems>
+		<onleft>5000</onleft>
+		<ondown>5001</ondown>
+		<onup>5005</onup>
+	</control>
+	
+	</control>
+		
+		
+  <!--            :: TV Series ::           	 -->
+		
+  <control>
+    <description>group element</description>
+    <type>group</type>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
+    <dimColor>0xffffffff</dimColor>
+		<visible>string.equals(#skin.setting.focus,tvseries)</visible>
+		
+		
+		<control Style="SettingsButtonMedium">
+			<description>Widebanner layouts</description>
+			<type>menubutton</type>
+			<id>6101</id>
+			<posX>655</posX>
+			<posY>366</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose Widebanner Layout</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>Widebanner Layout: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.layout.tvseries.widebanner',#selectedlabel6101)))</onclick>
+			<binding>#skin.layout.tvseries.widebanner</binding>
+			<subitems>
+			 <subitem>default</subitem>
+			 <subitem>4x2</subitem>
+			 <subitem>6x2</subitem>
+			 <subitem>7x4</subitem>
+			</subitems>
+			<onleft>6000</onleft>
+			<onright>6102</onright>
+			<onup>6101</onup>
+			<ondown>6101</ondown>
+		</control>
+	
+		<control>
+			<type>label</type>
+			<id>1</id>
+			<posX>1288</posX>
+			<posY>321</posY>
+			<width>500</width>
+			<label>Submenu</label>
+			<textcolor>00b7ff</textcolor>
+			<font>fontB12</font>
+		</control>
+				
+		<control Style="SettingsCheckButtonMedium">
+			<description>Enable latest MovingPictures</description>
+			<type>checkbutton</type>
+			<id>6102</id>
+			<posX>1255</posX>
+			<posY>366</posY>
+			<label>Enable submenu on BasicHome</label>			
+			<selected>#(skin.hassetting('#skin.enable.submenu.TVSeries'))</selected>
+			<onclick>#(skin.togglesetting('#skin.enable.submenu.TVSeries'))</onclick>
+			<ondown>7001</ondown>
+			<onleft>6101</onleft>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+	</control>	
+	
+  <control>
+    <description>group element</description>
+    <type>group</type>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
+    <dimColor>0xffffffff</dimColor>
+		<visible>string.equals(#skin.setting.focus,tvseries)+skin.hassetting(#skin.enable.submenu.TVSeries)</visible>
+	
+		<control Style="SettingsButtonMedium">
+			<description>TVSeries Submenu 1</description>
+			<type>menubutton</type>
+			<id>7001</id>
+			<posX>1255</posX>
+			<posY>431</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose submenu entry 1</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>1: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.submenu.tvseries1',#selectedlabel7001)))</onclick>
+			<binding>#skin.submenu.tvseries1</binding>
+			<subitems>
+			 <subitem>#plugin.tvseries.categories</subitem>
+			 <subitem>none</subitem>
+			</subitems>
+			<onleft>6000</onleft>
+			<onup>7005</onup>
+			<ondown>7002</ondown>
+		</control>
+	
+		<control Style="SettingsButtonMedium">
+			<description>TVSeries Submenu 2</description>
+			<type>menubutton</type>
+			<id>7002</id>
+			<posX>1255</posX>
+			<posY>496</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose submenu entry 2</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>2: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.submenu.tvseries2',#selectedlabel7002)))</onclick>
+			<binding>#skin.submenu.tvseries2</binding>
+			<subitems>
+			 <subitem>#plugin.tvseries.categories</subitem>
+			 <subitem>none</subitem>
+			</subitems>
+			<onleft>6000</onleft>
+		</control>
+	
+		<control Style="SettingsButtonMedium">
+			<description>TVSeries Submenu 3</description>
+			<type>menubutton</type>
+			<id>7003</id>
+			<posX>1255</posX>
+			<posY>561</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose submenu entry 3</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>3: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.submenu.tvseries3',#selectedlabel7003)))</onclick>
+			<binding>#skin.submenu.tvseries3</binding>
+			<subitems>
+			 <subitem>#plugin.tvseries.categories</subitem>
+			 <subitem>none</subitem>
+			</subitems>
+			<onleft>6000</onleft>
+		</control>
+		
+		<control Style="SettingsButtonMedium">
+			<description>TVSeries Submenu 4</description>
+			<type>menubutton</type>
+			<id>7004</id>
+			<posX>1255</posX>
+			<posY>626</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose submenu entry 4</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>4: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.submenu.tvseries4',#selectedlabel7004)))</onclick>
+			<binding>#skin.submenu.tvseries4</binding>
+			<subitems>
+			 <subitem>#plugin.tvseries.categories</subitem>
+			 <subitem>none</subitem>
+			</subitems>
+			<onleft>6000</onleft>
+			<ondown>7005</ondown>
+		</control>
+		
+		<control Style="SettingsButtonMedium">
+			<description>TVSeries Submenu 5</description>
+			<type>menubutton</type>
+			<id>7005</id>
+			<posX>1255</posX>
+			<posY>691</posY>
+			<mode>dialoglist</mode>
+			<dialogTitle>Choose submenu entry 5</dialogTitle>
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>5: </valuePrefixText>
+			<onclick>#(skin.setstring('#skin.submenu.tvseries5',#selectedlabel7005)))</onclick>
+			<binding>#skin.submenu.tvseries5</binding>
+			<subitems>
+			 <subitem>#plugin.tvseries.categories</subitem>
+			 <subitem>none</subitem>
+			</subitems>
+			<onleft>5000</onleft>
+			<ondown>7001</ondown>
+		</control>
+	</control>
+  </controls>
+</window>

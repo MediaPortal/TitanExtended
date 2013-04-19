@@ -47,7 +47,11 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
-    <import>TVSeries.background.xml</import>
+    <!--            :: BACKGROUND INCLUDES ::            -->
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'default'))">TVSeries.background.widebanner.default.xml</include>	
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'4x2'))">TVSeries.background.widebanner.4x2.xml</include>	
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'6x2'))">TVSeries.background.widebanner.6x2.xml</include>
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'7x4'))">TVSeries.background.widebanner.4x2.xml</include>	
     <control>
       <id>0</id>
       <type>image</type>
@@ -61,11 +65,17 @@
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
     <import>common.time.xml</import>
-    <!--            :: HEADER ::            -->
-    <import>TVSeries.views.xml</import>
+    <!--            :: VIEWS INCLUDES ::            -->
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'default'))">TVSeries.views.widebanner.default.xml</include>	
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'4x2'))">TVSeries.views.widebanner.4x2.xml</include>	
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'6x2'))">TVSeries.views.widebanner.6x2.xml</include>
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'7x4'))">TVSeries.views.widebanner.4x2.xml</include>
     <import>TVSeries.hiddenmenu.xml</import>
     <import>common.overlay.xml</import>
-    <import>TVSeries.facade.xml</import>
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'default'))">TVSeries.facade.widebanner.default.xml</include>	
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'4x2'))">TVSeries.facade.widebanner.4x2.xml</include>	
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'6x2'))">TVSeries.facade.widebanner.6x2.xml</include>
+		<include condition="#(eq(#skin.layout.tvseries.widebanner,'7x4'))">TVSeries.facade.widebanner.7x4.xml</include>
     <!-- ********************** IMPORT PROCESS *************************************** -->
     <control>
       <description>Import Animation</description>
