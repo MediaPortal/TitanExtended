@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+
+		<!--    Submenu / Latest Media Indicator   -->
+
+    <control>
+			<description>Indicator</description>
+			<type>image</type>
+			<id>566</id>
+			<posX>8</posX>
+			<posY>583</posY>
+			<width>1905</width>
+			<height>165</height>
+			<texture>submenu_indicator.png</texture>
+			<visible>!string.equals(#subitem1,) + ![Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) |  Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(551) | Control.HasFocus(552) | Control.HasFocus(553) | Control.HasFocus(554) | Control.HasFocus(555) | Control.HasFocus(651) | Control.HasFocus(652) | Control.HasFocus(653) | Control.HasFocus(654) | Control.HasFocus(655)]</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+    </control>
+
+	  <control>
+	  	<description>Submenu</description>
+	    <type>label</type>
+	    <id>1</id>
+	    <posX>858</posX>
+	    <posY>647</posY>
+	    <align>left</align>
+	    <textcolor>FF000000</textcolor>
+	    <font>fontB12</font>
+		  <label>#Titan.Submenu</label>
+    	<visible>Control.IsVisible(566)</visible>
+			<animation effect="fade" start="0" end="100" time="400" reversible="false">Visible</animation>
+		  <animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+		  <animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+    </control>
+	        
+	  <control>
+	  	<description>Arrow up</description>
+	    <type>image</type>
+	    <id>0</id>
+	    <posX>795</posX>
+	    <posY>652</posY>
+	    <width>40</width>
+	    <height>25</height>
+	    <texture>submenu_arrow_up.png</texture>
+    	<visible>Control.IsVisible(566)</visible>
+			<animation effect="fade" start="0" end="100" time="400" reversible="false">Visible</animation>
+		  <animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+		  <animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+    </control>     
+
+    <control>
+    	<description>GROUP: Mainmenu label</description>
+      <type>group</type>
+      <dimColor>ffffffff</dimColor>
+    	<visible>Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(919199970) | Control.HasFocus(919199880) | Control.HasFocus(919199710)</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+
+	    <control>
+	     	<description>Indicator</description>
+	     	<type>image</type>
+	    	<id>0</id>
+	      <posX>8</posX>
+	      <posY>583</posY>
+	     	<width>1905</width>
+	      <height>165</height>
+	     	<texture>submenu_indicator.png</texture>
+	    </control>
+	
+		  <control>
+		  	<description>Arrow down</description>
+		    <type>image</type>
+		    <id>0</id>
+		    <posX>795</posX>
+		    <posY>652</posY>
+		    <width>40</width>
+		    <height>25</height>
+		    <texture>submenu_arrow_down.png</texture>
+	    </control> 
+
+		  <control>
+		  	<description>Mainmenu</description>
+		    <type>label</type>
+		    <id>1</id>
+		    <posX>858</posX>
+		    <posY>647</posY>
+		    <align>left</align>
+		    <textcolor>FF000000</textcolor>
+		    <font>fontB12</font>
+			  <label>#Titan.Mainmenu</label>
+	    </control>
+
+		</control>
+
+    <control>
+        <description>GROUP: Latest Movies Label</description>
+        <type>group</type>
+        <dimColor>ffffffff</dimColor>
+        <visible>[string.equals(#recentMedia,MovingPictures) | string.equals(#recentMedia,MyFilms)] + [Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(551) | Control.HasFocus(552) | Control.HasFocus(554) | Control.HasFocus(555) | Control.HasFocus(553) | Control.HasFocus(651) | Control.HasFocus(652) | Control.HasFocus(653) | Control.HasFocus(654) | Control.HasFocus(655)]</visible>
+    		<animation effect="fade" start="0" end="100" delay="450" time="400" reversible="false">Visible</animation>
+        <animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+          
+        <control>
+        	<description>Indicator</description>
+        	<type>image</type>
+        	<id>0</id>
+        	<posX>8</posX>
+        	<posY>329</posY>
+        	<width>1905</width>
+        	<height>165</height>
+        	<texture>submenu_indicator.png</texture>
+        </control>
+        
+        <control>
+         	<description>Arrow up</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>795</posX>
+          <posY>400</posY>
+          <width>40</width>
+          <height>25</height>
+          <texture>submenu_arrow_up.png</texture>
+        </control>
+    		
+        <control>
+          <description>Latest Movies</description>
+          <type>label</type>
+          <id>570</id>
+          <posX>858</posX>
+          <posY>394</posY>
+          <textcolor>FF000000</textcolor>
+          <font>fontB12</font>
+          <label>#Titan.LatestMovies</label>
+    		</control>
+    </control>
+
+    <control>
+			<description>GROUP: Latest Episodes Label</description>
+      <type>group</type>
+      <dimColor>ffffffff</dimColor>
+      <visible>string.equals(#recentMedia,TVSeries) + [Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(551) | Control.HasFocus(552) | Control.HasFocus(554) | Control.HasFocus(555) | Control.HasFocus(553) | Control.HasFocus(651) | Control.HasFocus(652) | Control.HasFocus(653) | Control.HasFocus(654) | Control.HasFocus(655)]</visible>
+    	<animation effect="fade" start="0" end="100" delay="450" time="400" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+          
+      <control>
+				<description>Indicator</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>8</posX>
+        <posY>329</posY>
+        <width>1905</width>
+        <height>165</height>
+        <texture>submenu_indicator.png</texture>
+      </control>
+        
+      <control>
+        <description>Arrow up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>795</posX>
+        <posY>400</posY>
+        <width>40</width>
+        <height>25</height>
+        <texture>submenu_arrow_up.png</texture>
+      </control>
+        
+      <control>
+        <description>Latest Episodes</description>
+        <type>label</type>
+        <id>571</id>
+        <posX>858</posX>
+        <posY>394</posY>
+        <textcolor>FF000000</textcolor>
+        <font>fontB12</font>
+        <label>#Titan.LatestEpisodes</label>
+      </control>
+    </control>
+
+    <control>
+      <description>GROUP: Latest Music Label</description>
+      <type>group</type>
+      <dimColor>ffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Music) + string.equals(#latestMediaHandler.music.latest.enabled,true) + [Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(551) | Control.HasFocus(552) | Control.HasFocus(554) | Control.HasFocus(555) | Control.HasFocus(553) | Control.HasFocus(651) | Control.HasFocus(652) | Control.HasFocus(653) | Control.HasFocus(654) | Control.HasFocus(655)]</visible>
+    	<animation effect="fade" start="0" end="100" delay="450" time="400" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+          
+      <control>
+				<description>Indicator</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>8</posX>
+        <posY>329</posY>
+        <width>1905</width>
+        <height>165</height>
+        <texture>submenu_indicator.png</texture>
+      </control>
+        
+	    <control>
+				<description>Arrow up</description>
+	      <type>image</type>
+	      <id>0</id>
+	      <posX>795</posX>
+	      <posY>400</posY>
+	      <width>40</width>
+	      <height>25</height>
+	      <texture>submenu_arrow_up.png</texture>
+	    </control>
+        
+      <control>
+				<description>Latest Episodes</description>
+        <type>label</type>
+        <id>572</id>
+        <posX>858</posX>
+        <posY>394</posY>
+        <textcolor>FF000000</textcolor>
+        <font>fontB12</font>
+        <label>#Titan.LatestMusic</label>
+      </control>
+    </control>
+
+		<control>
+			<description>GROUP: Latest recordings Label</description>
+		  <type>group</type>
+		  <dimColor>ffffffff</dimColor>
+		  <visible>string.equals(#recentMedia,Recordings) + string.equals(#latestMediaHandler.tvrecordings.latest.enabled,true) + [Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(551) | Control.HasFocus(552) | Control.HasFocus(554) | Control.HasFocus(555) | Control.HasFocus(553) | Control.HasFocus(651) | Control.HasFocus(652) | Control.HasFocus(653) | Control.HasFocus(654) | Control.HasFocus(655)]</visible>
+			<animation effect="fade" start="0" end="100" delay="450" time="400" reversible="false">Visible</animation>
+		  <animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+		  <animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+		      
+		  <control>
+		  	<description>Indicator</description>
+		  	<type>image</type>
+		  	<id>0</id>
+		  	<posX>8</posX>
+		  	<posY>329</posY>
+		  	<width>1905</width>
+		  	<height>165</height>
+		  	<texture>submenu_indicator.png</texture>
+		  </control>
+		    
+      <control>
+       	<description>Arrow up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>795</posX>
+        <posY>400</posY>
+        <width>40</width>
+        <height>25</height>
+        <texture>submenu_arrow_up.png</texture>
+      </control>
+		    
+		  <control>
+		  	<description>Latest Episodes</description>
+		    <type>label</type>
+		    <id>575</id>
+		    <posX>858</posX>
+		    <posY>394</posY>
+		    <textcolor>FF000000</textcolor>
+		    <font>fontB12</font>
+		    <label>#Titan.LatestRecordings</label>
+	  	</control>
+		</control>
+		
+		<!--  -->
+		
+		<control>
+			<description>GROUP: Latest Movies Label (bottom)</description>
+		  <type>group</type>
+		  <dimColor>ffffffff</dimColor>
+		  <visible>[string.equals(#recentMedia,MovingPictures) | string.equals(#recentMedia,MyFilms)] + string.equals(#subitem1,) + !Control.HasFocus(221) + !Control.HasFocus(222) + !Control.HasFocus(223) + !Control.HasFocus(919199880)</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+		  
+    <control>
+    	<description>Indicator</description>
+    	<type>image</type>
+    	<id>566</id>
+      <posX>8</posX>
+      <posY>583</posY>
+     	<width>1905</width>
+      <height>165</height>
+      <texture>submenu_indicator.png</texture>
+    </control>
+		
+		  <control>
+		  	<description>Latest Movies</description>
+		    <type>label</type>
+		    <id>570</id>
+		    <posX>858</posX>
+		    <posY>647</posY>
+		    <textcolor>FF000000</textcolor>
+		    <font>fontB12</font>
+		    <label>#Titan.LatestMovies</label>
+	    </control>
+		
+		  <control>
+		  	<description>Arrow up</description>
+		    <type>image</type>
+		    <id>0</id>
+		    <posX>795</posX>
+		    <posY>652</posY>
+		    <width>40</width>
+		    <height>25</height>
+		    <texture>submenu_arrow_up.png</texture>
+   		</control>
+		</control>
+
+		<control>
+			<description>GROUP: Latest Episode Label (bottom)</description>
+		  <type>group</type>
+		  <dimColor>ffffffff</dimColor>
+		  <visible>string.equals(#recentMedia,TVSeries) + string.equals(#subitem1,) + !Control.HasFocus(231) + !Control.HasFocus(232) + !Control.HasFocus(233)</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+		  
+			<control>
+				<description>Indicator</description>
+				<type>image</type>
+				<id>566</id>
+				<posX>8</posX>
+				<posY>583</posY>
+				<width>1905</width>
+				<height>165</height>
+				<texture>submenu_indicator.png</texture>
+			</control>
+		
+		  <control>
+		  	<description>Latest Movies</description>
+		    <type>label</type>
+		    <id>570</id>
+		    <posX>858</posX>
+		    <posY>647</posY>
+		    <textcolor>FF000000</textcolor>
+		    <font>fontB12</font>
+		    <label>#Titan.LatestEpisodes</label>
+	    </control>
+		
+		  <control>
+		  	<description>Arrow up</description>
+		    <type>image</type>
+		    <id>0</id>
+		    <posX>795</posX>
+		    <posY>652</posY>
+		    <width>40</width>
+		    <height>25</height>
+		    <texture>submenu_arrow_up.png</texture>
+   		</control>
+		</control>
+
+		<control>
+			<description>GROUP: Latest Music Label (bottom)</description>
+		  <type>group</type>
+		  <dimColor>ffffffff</dimColor>
+		  <visible>string.equals(#recentMedia,Music)+ string.equals(#subitem1,) + string.equals(#latestMediaHandler.music.latest.enabled,true) + !Control.HasFocus(919199970)</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+		  
+	    <control>
+	    	<description>Indicator</description>
+	    	<type>image</type>
+	    	<id>566</id>
+	      <posX>8</posX>
+	      <posY>583</posY>
+	     	<width>1905</width>
+	      <height>165</height>
+	      <texture>submenu_indicator.png</texture>
+	    </control>
+		
+		  <control>
+		  	<description>Latest Music</description>
+		    <type>label</type>
+		    <id>570</id>
+		    <posX>858</posX>
+		    <posY>647</posY>
+		    <textcolor>FF000000</textcolor>
+		    <font>fontB12</font>
+		    <label>#Titan.LatestMusic</label>
+    	</control>
+		
+		  <control>
+		  	<description>Arrow up</description>
+		    <type>image</type>
+		    <id>0</id>
+		    <posX>795</posX>
+		    <posY>652</posY>
+		    <width>40</width>
+		    <height>25</height>
+		    <texture>submenu_arrow_up.png</texture>
+    	</control>
+		</control>
+
+		<control>
+			<description>GROUP: Latest Recordings Label (bottom)</description>
+			<type>group</type>
+		  <dimColor>ffffffff</dimColor>
+		  <visible>string.equals(#recentMedia,Recordings) + string.equals(#subitem1,) + string.equals(#latestMediaHandler.tvrecordings.latest.enabled,true) + !Control.HasFocus(91919984) + !Control.HasFocus(91919985) + !Control.HasFocus(91919986)</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+		  
+	    <control>
+	    	<description>Indicator</description>
+	    	<type>image</type>
+	    	<id>566</id>
+	      <posX>8</posX>
+	      <posY>583</posY>
+	     	<width>1905</width>
+	      <height>165</height>
+	      <texture>submenu_indicator.png</texture>
+	    </control>
+		
+		  <control>
+		  	<description>Latest Recordings</description>
+		    <type>label</type>
+		    <id>570</id>
+		    <posX>858</posX>
+		    <posY>647</posY>
+		    <textcolor>FF000000</textcolor>
+		    <font>fontB12</font>
+		    <label>#Titan.LatestRecordings</label>
+   		</control>
+		
+		  <control>
+		  	<description>Arrow up</description>
+		    <type>image</type>
+		    <id>0</id>
+		    <posX>795</posX>
+		    <posY>652</posY>
+		    <width>40</width>
+		    <height>25</height>
+		    <texture>submenu_arrow_up.png</texture>
+   		</control>
+		</control>
+		
+		<control>
+			<description>GROUP: Latest Pictures Label (bottom)</description>
+			<type>group</type>
+		  <dimColor>ffffffff</dimColor>
+		  <visible>string.equals(#recentMedia,Pictures) + string.equals(#subitem1,) + !Control.HasFocus(919199710)</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+		  
+	    <control>
+	    	<description>Indicator</description>
+	    	<type>image</type>
+	    	<id>566</id>
+	      <posX>8</posX>
+	      <posY>583</posY>
+	     	<width>1905</width>
+	      <height>165</height>
+	      <texture>submenu_indicator.png</texture>
+	    </control>
+		
+		  <control>
+		  	<description>Latest Recordings</description>
+		    <type>label</type>
+		    <id>570</id>
+		    <posX>858</posX>
+		    <posY>647</posY>
+		    <textcolor>FF000000</textcolor>
+		    <font>fontB12</font>
+		    <label>#Titan.LatestPictures</label>
+   		</control>
+		
+		  <control>
+		  	<description>Arrow up</description>
+		    <type>image</type>
+		    <id>0</id>
+		    <posX>795</posX>
+		    <posY>652</posY>
+		    <width>40</width>
+		    <height>25</height>
+		    <texture>submenu_arrow_up.png</texture>
+   		</control>
+		</control>
+		
+	</controls>
+</window>
