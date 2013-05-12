@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+
+		<control>
+            <animation effect="slide" start="0,200" end="0,0" tween="quadratic" easing="in" time="300" delay="500">Visible</animation>
+            <animation effect="fade" time="450" delay="500">Visible</animation>
+            <animation effect="slide" start="0,0" end="0,400" tween="quadratic" easing="in" time="300">Hidden</animation>
+            <animation effect="fade" time="250" delay="0">Hidden</animation>
+    		<animation effect="fade" start="0" end="100" time="250" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="250" delay="0">WindowClose</animation>
+			<type>facadeview</type>
+			<id>919199840</id>		
+			<control>
+				<description>Movie List</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>919199840</onleft>
+				<onright>919199840</onright>
+				<scrollOffset>1</scrollOffset>
+				<posX>988</posX>
+				<posY>560</posY>
+				<height>180</height>
+				<width>800</width>
+				<font>font12</font>
+				<font2>font12</font2>
+				<shadedColor>6aa5cb</shadedColor>
+				<selectedColor>FFffffff</selectedColor>
+				<textcolor>FFFFFFFF</textcolor>
+				<textcolor2>FFFFFFFF</textcolor2>
+				<textcolor3>FFFFFFFF</textcolor3>
+				<textcolorNoFocus>FF000000</textcolorNoFocus>
+				<textcolorNoFocus2>FF000000</textcolorNoFocus2>
+				<textcolorNoFocus3>FF000000</textcolorNoFocus3>
+				<colordiffuse>ffffffff</colordiffuse>
+				<remoteColor>FF000000</remoteColor>
+				<downloadColor>ff000000</downloadColor>
+				<playedColor>FF000000</playedColor>
+				<textXOff>0</textXOff>
+				<textYOff>0</textYOff>
+				<textXOff2>2780</textXOff2>				
+				<textYOff2>0</textYOff2>
+				<textXOff3>700</textXOff3>				
+				<textYOff3>0</textYOff3>				
+				<textureHeight>37</textureHeight>
+				<textureFocus>-</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<dimColor>ffffffff</dimColor>
+				<spinPosX>-2000</spinPosX>
+				<spinPosY>730</spinPosY>
+                <unfocusedAlpha>255</unfocusedAlpha>
+				<visible allowhiddenfocus="true">string.equals(#recentMedia,Recordings) + ![control.isvisible(601) | control.isvisible(501)] +string.equals(#latestMediaHandler.tvrecordings.latest.enabled,true)</visible>
+			</control>
+		</control>
+
+	</controls>
+</window>
+
