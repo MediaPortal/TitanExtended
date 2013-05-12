@@ -95,7 +95,7 @@
 			<type>image</type>
 			<id>0</id>
 			<posY>791</posY>
-			<posX>128</posX>
+			<posX>116</posX>
 			<width>376</width>
 			<height>1</height>
 			<texture>hiddenmenu_separator.png</texture>
@@ -191,7 +191,7 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
         <ondown>5</ondown>
-        <onup>66614</onup>
+        <onup>66615</onup>
 			</control>
             
       <control>
@@ -326,9 +326,9 @@
       <label>-</label>
       <visible>true</visible>
     </control>
-           
+
     <control>
-      <description>Trakt</description>
+      <description>SubCentral</description>
       <type>button</type>
       <id>66614</id>
 			<width>499</width>
@@ -337,9 +337,28 @@
 			<textYOff>16</textYOff>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
+      <label>287</label>
+      <hyperlink>84623</hyperlink>
+      <onup>66610</onup>
+      <ondown>66615</ondown>
+			<onleft>50</onleft>
+      <onright>50</onright>
+			<visible>plugin.isenabled(SubCentral)</visible>
+    </control>		
+					
+    <control>
+      <description>Trakt</description>
+      <type>button</type>
+      <id>66615</id>
+			<width>499</width>
+			<height>69</height>
+			<textXOff>62</textXOff>
+			<textYOff>16</textYOff>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
       <label>Trakt</label>
       <hyperlink>87258</hyperlink>
-      <onup>66610</onup>
+      <onup>66614</onup>
       <ondown>2</ondown>
 			<onleft>50</onleft>
       <onright>50</onright>
