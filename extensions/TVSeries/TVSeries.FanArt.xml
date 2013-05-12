@@ -7,7 +7,7 @@
   <define>#header.label:#TVSeries.FanArt.PageTitle</define>
   <controls>
 	<!--            :: Backgrounds ::            -->
-    <control>
+  <control>
 		<description>DEFAULT BACKGROUND</description>
 		<type>image</type>
 		<id>0</id>
@@ -17,32 +17,32 @@
 		<height>1080</height>
 		<texture>background.png</texture>
 		<shouldCache>true</shouldCache>
-    </control>
-    <control>
+  </control>
+  <control>
 		<description>preview</description>
 		<id>4560</id>
 		<type>image</type>
-        <posX>0</posX>
-        <posY>0</posY>
-        <width>1920</width>
-        <height>1080</height>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1920</width>
+    <height>1080</height>
 		<texture>#TVSeries.FanArt.SelectedPreview</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-    </control>
-    <control>
-      <description>background listview</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>219</height>
-      <texture>fanart_overlay_top.png</texture>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-    </control>
+  </control>
+  <control>
+    <description>background listview</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1920</width>
+    <height>219</height>
+    <texture>fanart_overlay_top.png</texture>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+  </control>
 	<control>
 		<description>background thumbview</description>
 		<type>image</type>
@@ -85,32 +85,32 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
  
-    <control>
-      <id>0</id>
-      <type>image</type>
-      <posX>66</posX>
-      <posY>34</posY>
-      <width>61</width>
-      <height>57</height>
-      <texture>icon_series.png</texture>
-      <visible>control.isvisible(50)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-    </control>
+  <control>
+    <id>0</id>
+    <type>image</type>
+    <posX>66</posX>
+    <posY>34</posY>
+    <width>61</width>
+    <height>57</height>
+    <texture>icon_series.png</texture>
+    <visible>control.isvisible(50)</visible>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+  </control>
  
-    <control>
+  <control>
 		<description>Status</description>
 		<type>label</type>
 		<id>0</id>
-	  	<posX>96</posX>
-      <posY>998</posY>
-      <align>left</align>
-      <font>TitanLight12</font>
-      <textcolor>000000</textcolor>
+	  <posX>96</posX>
+    <posY>998</posY>
+    <align>left</align>
+    <font>TitanLight12</font>
+    <textcolor>000000</textcolor>
 		<label>#TVSeries.FanArt.DownloadingStatus #TVSeries.FanArt.LoadingStatus</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-    </control>
+  </control>
     
 	<control Style="smallTitle">
 		<description>resolution label</description>
@@ -131,16 +131,16 @@
       <posX>60</posX>
       <posY>97</posY>
       <control>
-        <description>composite control consisting of a list control and a thumbnail panel</description>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>composite control consisting of a list control and a thumbnail panel</description>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
         <type>facadeview</type>
         <id>50</id>
 					<control>
 						<description>Thumbnail Panel</description>
 						<type>thumbnailpanel</type>
-						<dimColor>90ffffff</dimColor>
+						<dimColor>ffffffff</dimColor>
 						<id>50</id>
     				<posX>94</posX>
     				<posY>334</posY>
@@ -180,52 +180,52 @@
 		        <spinPosY>1000</spinPosY>
 		    		<unfocusedAlpha>255</unfocusedAlpha>
 					</control>
-		<control>
-			<description>Filmstrip view</description>
-			<type>filmstrip</type>
-			<dimColor>90ffffff</dimColor>
-			<id>50</id>
-				<scrollOffset>3</scrollOffset>
-				<folderPrefix></folderPrefix>
-				<folderSuffix></folderSuffix>
-				<posX>88</posX>
-				<posY>665</posY>
-				<width>1800</width>
-				<height>340</height>
-				<onup>2</onup>
-				<ondown>2</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<thumbWidth>338</thumbWidth>
-				<thumbHeight>190</thumbHeight>
-				<thumbPosX>0</thumbPosX>
-				<thumbPosY>0</thumbPosY>
-				<itemWidth>353</itemWidth>
-				<itemHeight>190</itemHeight>
-				<textureWidth>338</textureWidth>
-				<textureHeight>190</textureHeight>
-				<textYOff>-2000</textYOff>
-				<imageFolderFocus>-</imageFolderFocus>
-				<frame>-</frame>
-				<frameFocus>-</frameFocus>
-				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="pictures_filmstrip_mask.png"></thumbs>
-				<showFrame>yes</showFrame>
-				<showFolder>no</showFolder>
-				<showBackGround>no</showBackGround>
-				<showInfoImage>no</showInfoImage>
-				<keepaspectratio>no</keepaspectratio>
- 			  <scrollbarBackground>scrollbar_bg_hor.png</scrollbarBackground>
-			  <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
-			  <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
-			  <scrollbarWidth>717</scrollbarWidth>
-				<scrollbarHeight>8</scrollbarHeight>
-			  <scrollbarYOff>293</scrollbarYOff>
-		    <spinPosX>1828</spinPosX>
-		    <spinPosY>1000</spinPosY>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,800" time="200">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,800" time="100">unfocus</thumbAnimation>
-		</control>		
+				<control>
+					<description>Filmstrip view</description>
+					<type>filmstrip</type>
+					<dimColor>ffffffff</dimColor>
+					<id>50</id>
+						<scrollOffset>3</scrollOffset>
+						<folderPrefix></folderPrefix>
+						<folderSuffix></folderSuffix>
+						<posX>88</posX>
+						<posY>665</posY>
+						<width>1800</width>
+						<height>340</height>
+						<onup>2</onup>
+						<ondown>2</ondown>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<thumbWidth>338</thumbWidth>
+						<thumbHeight>190</thumbHeight>
+						<thumbPosX>0</thumbPosX>
+						<thumbPosY>0</thumbPosY>
+						<itemWidth>353</itemWidth>
+						<itemHeight>190</itemHeight>
+						<textureWidth>338</textureWidth>
+						<textureHeight>190</textureHeight>
+						<textYOff>-2000</textYOff>
+						<imageFolderFocus>-</imageFolderFocus>
+						<frame>-</frame>
+						<frameFocus>-</frameFocus>
+						<background>-</background>
+						<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="pictures_filmstrip_mask.png"></thumbs>
+						<showFrame>yes</showFrame>
+						<showFolder>no</showFolder>
+						<showBackGround>no</showBackGround>
+						<showInfoImage>no</showInfoImage>
+						<keepaspectratio>no</keepaspectratio>
+						<scrollbarBackground>scrollbar_bg_hor.png</scrollbarBackground>
+						<scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+						<scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+						<scrollbarWidth>717</scrollbarWidth>
+						<scrollbarHeight>8</scrollbarHeight>
+						<scrollbarYOff>293</scrollbarYOff>
+						<spinPosX>1828</spinPosX>
+						<spinPosY>1000</spinPosY>
+						<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,800" time="200">focus</thumbAnimation>
+						<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,800" time="100">unfocus</thumbAnimation>
+				</control>		
       </control>
     </control>
 	<control>
@@ -346,24 +346,26 @@
 			</control>		
 			<control>
 				<description>Random Fanart</description>
-				<type>togglebutton</type>
+				<type>checkbutton</type>
 				<id>13</id>
 				<label>Random Fanart</label>
 				<width>499</width>
 				<height>69</height>
-				<textXOff>62</textXOff>
-				<textYOff>16</textYOff>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-        <markXOff>50</markXOff>
-        <markYOff>10</markYOff>
+			  <textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+			  <textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
         <textcolor>FFFFFFFF</textcolor>
-        <textcolorNoFocus>ff000000</textcolorNoFocus>
+        <textcolorNoFocus>ff393939</textcolorNoFocus>
+	    	<width>499</width>
+	    	<height>69</height>
+	    	<textXOff>62</textXOff>
+	    	<textYOff>16</textYOff>
 				<onright>50</onright>
         <ondown>2</ondown>
 			</control>		  
-        </control>
-      </control>
+    </control>
+  </control>
 	<import>common.time.xml</import>
   </controls>
 </window>
