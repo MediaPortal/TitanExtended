@@ -451,10 +451,10 @@
 			<height>1074</height>
 			<texture>menu_bg.png</texture>
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
-    		<animation effect="fade" time="0">WindowClose</animation>
-    		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="50">visible</animation>
-    		<animation effect="fade" time="0">hidden</animation>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
 			<description>Menu label</description>
@@ -466,58 +466,137 @@
 			<font>fontB16</font>
 			<textcolor>393939</textcolor>
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
-    		<animation effect="fade" time="0">WindowClose</animation>
-    		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="50">visible</animation>
-    		<animation effect="fade" time="0">hidden</animation>
-    	</control>
-          <control>
-            <type>group</type>
-            <description>group element</description>
- 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
-    		<animation effect="fade" time="0">WindowClose</animation>
-    		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="50">visible</animation>
-    		<animation effect="fade" time="0">hidden</animation>
-            <posX>53</posX>
-            <posY>155</posY>
-            <layout>StackLayout(0, Vertical, true)</layout>	
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
+    </control>
+			<control>
+				<type>group</type>
+				<description>group element</description>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" start="-150,0" time="100">visible</animation>
+				<animation effect="fade" time="50">visible</animation>
+				<animation effect="fade" time="0">hidden</animation>
+				<posX>53</posX>
+				<posY>155</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>	
             
-			<control>
-				<description>Change Layout</description>
-   			    <type>button</type>
-				<id>2</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>499</width>
-				<height>69</height>
-				<textXOff>62</textXOff>
-				<textYOff>16</textYOff>
-				<label>-</label>
-				<onright>50</onright>
-        <ondown>8</ondown>
-        <onup>8</onup>
+				<control>
+					<description>Change Layout</description>
+					<type>button</type>
+					<id>2</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>499</width>
+					<height>69</height>
+					<textXOff>62</textXOff>
+					<textYOff>16</textYOff>
+					<label>-</label>
+					<onright>50</onright>
+					<ondown>8</ondown>
+					<onup>12</onup>
+				</control>
+				<control>
+					<description>Sort</description>
+					<type>sortbutton</type>
+					<id>8</id>
+					<label>-</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>499</width>
+					<height>69</height>
+					<textXOff>62</textXOff>
+					<textYOff>16</textYOff>
+					<offsetSortButtonX>421</offsetSortButtonX>
+					<offsetSortButtonY>27</offsetSortButtonY>
+					<onright>50</onright>
+					<onleft>50</onleft>
+					<ondown>9</ondown>
+					<onup>2</onup>
+				</control>
+				<control>
+          <description>Hide Watched</description>
+          <type>checkbutton</type>
+          <id>9</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+					<textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+					<textcolor>FFFFFFFF</textcolor>
+					<textcolorNoFocus>ff393939</textcolorNoFocus>
+					<width>499</width>
+					<height>69</height>
+					<textXOff>62</textXOff>
+					<textYOff>16</textYOff>
+          <label>#Trakt.Translation.HideWatched.Label</label>
+          <onup>8</onup>
+					<ondown>10</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+        </control>
+				<control>
+          <description>Hide Watchlisted</description>
+          <type>checkbutton</type>
+          <id>10</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+					<textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+					<textcolor>FFFFFFFF</textcolor>
+					<textcolorNoFocus>ff393939</textcolorNoFocus>
+					<width>499</width>
+					<height>69</height>
+					<textXOff>62</textXOff>
+					<textYOff>16</textYOff>
+          <label>#Trakt.Translation.HideWatchlisted.Label</label>
+          <onup>9</onup>
+					<ondown>11</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+        </control>
+				<control>
+          <description>Hide Collected</description>
+          <type>checkbutton</type>
+          <id>11</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+					<textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+					<textcolor>FFFFFFFF</textcolor>
+					<textcolorNoFocus>ff393939</textcolorNoFocus>
+					<width>499</width>
+					<height>69</height>
+					<textXOff>62</textXOff>
+					<textYOff>16</textYOff>
+          <label>#Trakt.Translation.HideCollected.Label</label>
+          <onup>10</onup>
+					<ondown>12</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+         </control>
+				<control>
+          <description>Hide Rated</description>
+          <type>checkbutton</type>
+          <id>12</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+					<textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+					<textcolor>FFFFFFFF</textcolor>
+					<textcolorNoFocus>ff393939</textcolorNoFocus>
+					<width>499</width>
+					<height>69</height>
+					<textXOff>62</textXOff>
+					<textYOff>16</textYOff>
+          <label>#Trakt.Translation.HideRated.Label</label>
+          <onup>11</onup>
+					<ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+        </control>
 			</control>
-      
-			<control>
-			  <description>Sort</description>
-			  <type>sortbutton</type>
-				<id>8</id>
-				<label>-</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>499</width>
-				<height>69</height>
-				<textXOff>62</textXOff>
-				<textYOff>16</textYOff>
-				<offsetSortButtonX>421</offsetSortButtonX>
-				<offsetSortButtonY>27</offsetSortButtonY>
-				<onright>50</onright>
-				<onleft>50</onleft>
-				<ondown>2</ondown>
-        <onup>2</onup>
-		  </control>
-		</control>
     </control>
     
 	<!--            :: INFO LABELS ::            -->
@@ -663,7 +742,7 @@
 		<posX>568</posX>
 		<posY>537</posY>
 		<width>555</width>
-		<height>450</height>
+		<height>412</height>
 		<label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -837,7 +916,7 @@
 		<posX>1040</posX>
 		<posY>592</posY>
 		<width>790</width>
-		<height>335</height>
+		<height>340</height>
 		<label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>

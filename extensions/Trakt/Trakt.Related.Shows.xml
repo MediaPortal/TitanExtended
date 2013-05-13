@@ -717,7 +717,7 @@
 		<posX>568</posX>
 		<posY>538</posY>
 		<width>555</width>
-		<height>450</height>
+		<height>412</height>
 		<label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -891,7 +891,7 @@
 		<posX>1040</posX>
 		<posY>592</posY>
 		<width>790</width>
-		<height>335</height>
+		<height>340</height>
 		<label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>

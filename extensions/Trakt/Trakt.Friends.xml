@@ -307,7 +307,7 @@
 			<posX>735</posX>
 			<posY>501</posY>
 			<width>400</width>
-			<height>480</height>
+			<height>445</height>
 			<label>#Trakt.User.About</label>
 			<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 			<onleft>1026</onleft>
@@ -453,7 +453,7 @@
 		<posX>568</posX>
 		<posY>501</posY>
 		<width>555</width>
-		<height>480</height>
+		<height>445</height>
 		<label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -626,7 +626,7 @@
 		<posX>568</posX>
 		<posY>501</posY>
 		<width>555</width>
-		<height>480</height>
+		<height>445</height>
 		<label>#Trakt.Movie.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>

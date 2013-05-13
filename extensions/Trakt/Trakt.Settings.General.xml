@@ -51,147 +51,67 @@
 		<posX>655</posX>
 		<posY>261</posY>
     <layout>StackLayout(7, Vertical, true)</layout>
-      <control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Download Fanart</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>2</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.DownloadFanart.Label</label>
         <onright>2</onright>
         <onleft>#defaultcontrol.onleft</onleft>
         <onup>8</onup>
       </control>
-      <control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Download FullSize Fanart</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>3</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.DownloadFullSizeFanart.Label</label>
         <onright>3</onright>
         <onleft>#defaultcontrol.onleft</onleft>
       </control>
-      <control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Get Friend Requests on Startup</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>4</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.GetFriendRequestsOnStartup.Label</label>
         <onright>4</onright>
         <onleft>#defaultcontrol.onleft</onleft>
       </control>
-      <control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Create Moving Pictures Categories</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>5</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.CreateMovingPicturesCategories.Label</label>
         <onright>5</onright>
         <onleft>#defaultcontrol.onleft</onleft>
       </control>
-      <control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Create Moving Pictures Filters</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>6</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.CreateMovingPicturesFilters.Label</label>
         <onright>6</onright>
         <onleft>#defaultcontrol.onleft</onleft>
       </control>
-			<control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Create My Films Categories</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>9</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.CreateMyFilmsCategories.Label</label>
         <onright>9</onright>
         <onleft>#defaultcontrol.onleft</onleft>
       </control>
-			<control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Show Rate Dialog On Watched</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>7</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.ShowRateDialogOnWatched.Label</label>
         <onright>7</onright>
         <onleft>#defaultcontrol.onleft</onleft>
       </control>
-			<control>
+      <control Style="SettingsCheckButtonLarge">
         <description>Sync Ratings</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>8</id>
-				<width>1137</width>
-				<height>58</height>
-				<textXOff>33</textXOff>
-				<textYOff>11</textYOff>
-				<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-				<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-				<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-				<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-				<textcolor>ff000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
         <label>#Trakt.Translation.SettingSyncRatingsName.Label</label>
         <onright>8</onright>
         <onleft>#defaultcontrol.onleft</onleft>
@@ -200,4 +120,3 @@
     </control>
   </controls>
 </window>
-<!--Checksum:4f0ddfdac415b324cfb2f9e63043ed2e-->
