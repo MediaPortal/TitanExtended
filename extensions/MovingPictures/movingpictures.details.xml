@@ -389,7 +389,7 @@ This file should contain the details view
 		<id>1025</id>
 		<posX>1020</posX>
 		<posY>635</posY>
-		<height>190</height>
+		<height>205</height>
 		<width>800</width>
 		<label>#MovingPictures.SelectedMovie.summary</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>

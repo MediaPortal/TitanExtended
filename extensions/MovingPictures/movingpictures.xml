@@ -27,7 +27,8 @@ multiple view modes.
   <define>#coverflow.backdrop.used:true</define>
   <controls>
     <!--            :: DUMMY CONTROLS ::             -->
-    <import>movingpictures.dummy.xml</import>
+    <include condition="#(not(eq(#skin.layout.movingpictures.details,'lite')))">movingpictures.dummy.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.details,'lite'))">movingpictures.dummy.lite.xml</include>	
     <!--            :: MOVIE BACKDROP ::            -->
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -76,7 +77,7 @@ multiple view modes.
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
-      <height>219</height>
+      <height>273</height>
       <texture>fanart_overlay_top.png</texture>
       <visible>Control.IsVisible(51)</visible>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -107,7 +108,10 @@ multiple view modes.
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.xml</import>
+		<!--Background-->
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'default'))">movingpictures.background.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'without info'))">movingpictures.background.thumbs.noinfo.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'XL'))">movingpictures.background.thumbs.XL.xml</include>
     <control>
       <id>0</id>
       <type>image</type>
@@ -122,11 +126,24 @@ multiple view modes.
     </control>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
-		<import>movingpictures.views.xml</import>
-    <import>movingpictures.facade.xml</import>
+		<!--Views-->
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'default'))">movingpictures.views.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'without info'))">movingpictures.views.thumbs.noinfo.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'XL'))">movingpictures.views.thumbs.noinfo.xml</include>
+		<!--facade-->
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'default'))">movingpictures.facade.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'without info'))">movingpictures.facade.thumbs.noinfo.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.thumbview,'XL'))">movingpictures.facade.thumbs.XL.xml</include>
+
     <import>movingpictures.mediainfo.xml</import>
-    <import>movingpictures.details.xml</import>
-    <import>movingpictures.mediainfo.details.xml</import>
+		
+		<!--Details-->
+    <include condition="#(not(eq(#skin.layout.movingpictures.details,'lite')))">movingpictures.details.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.details,'lite'))">movingpictures.details.lite.xml</include>
+		<!--MediaInfo Details-->
+    <include condition="#(not(eq(#skin.layout.movingpictures.details,'lite')))">movingpictures.mediainfo.details.xml</include>
+    <include condition="#(eq(#skin.layout.movingpictures.details,'lite'))">movingpictures.mediainfo.details.lite.xml</include>
+		
     <import>common.overlay.xml</import>
     <!-- Fade out the screen when playback starts -->
     <control>
