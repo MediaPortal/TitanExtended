@@ -8,7 +8,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>395</posX>
+		<posX>510</posX>
 		<posY>1015</posY>
 		<label>#MovingPictures.SelectedMovie.title</label>
 		<visible>control.isvisible(50)</visible>
