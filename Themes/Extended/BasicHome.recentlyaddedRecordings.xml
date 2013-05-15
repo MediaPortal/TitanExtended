@@ -9,6 +9,7 @@
 			<animation effect="fade" start="0" end="100" time="250" delay="550">visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">hidden</animation>
 			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
       
 			
 			<control>
@@ -53,7 +54,7 @@
         <posY>380</posY>
     		<width>338</width>
     		<height>192</height>
-    		<texture>recently_nothumb.png</texture>
+    		<texture>#latestMediaHandler.tvrecordings.latest1.thumb</texture>
 				<visible>![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14) | Control.HasFocus(99999)]</visible>
     	</control>
     	
@@ -89,6 +90,7 @@
 			<animation effect="fade" start="0" end="100" time="250" delay="550">visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">hidden</animation>
 			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
         
       <control>
 				<type>fadelabel</type>
@@ -133,6 +135,7 @@
 			<animation effect="fade" start="0" end="100" time="250" delay="550">visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">hidden</animation>
 			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
         
        <control>
 				<type>fadelabel</type>
@@ -178,7 +181,7 @@
 		<width>338</width>
 		<height>192</height>
 		<texture>#latestMediaHandler.tvrecordings.latest1.thumb</texture>
-		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919984) + control.isvisible(111)</visible>
+		<visible>control.hasfocus(91919984)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -192,7 +195,7 @@
 		<width>338</width>
 		<height>192</height>
 		<texture>#latestMediaHandler.tvrecordings.latest2.thumb</texture>
-		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919985)</visible>
+		<visible>control.hasfocus(91919985)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -205,7 +208,7 @@
 		<width>338</width>
 		<height>192</height>
 		<texture>#latestMediaHandler.tvrecordings.latest3.thumb</texture>
-		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919986)</visible>
+		<visible>control.hasfocus(91919986)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>

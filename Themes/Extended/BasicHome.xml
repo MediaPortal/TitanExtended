@@ -147,6 +147,7 @@
 		<animation effect="fade" start="0" end="100" time="250" delay="350">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 		
 	<control>
@@ -161,6 +162,7 @@
 		<animation effect="fade" start="0" end="100" time="250" delay="350">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 		
 <control>
@@ -168,7 +170,8 @@
 	<description>down group</description>
 	<type>group</type>
 	<dimColor>ffffffff</dimColor>
-		<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
 
 	<control>
 		<id>0</id>
@@ -330,7 +333,8 @@
 	<description>down group</description>
 	<type>group</type>
 	<dimColor>ffffffff</dimColor>
-		<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
 
 	<control>
 		<id>0</id>
@@ -492,7 +496,8 @@
 	<description>up group</description>
 	<type>group</type>
 	<dimColor>ffffffff</dimColor>
-		<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
 
 	
 	<control>
@@ -654,7 +659,8 @@
 	<description>up group</description>
 	<type>group</type>
 	<dimColor>ffffffff</dimColor>
-		<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
 
 	
 	<control>
@@ -1357,18 +1363,19 @@
   <include condition="#(eq(#Titan.ShowUpdateInd,'true'))">BasicHome.exitmenu.skinupdate.xml</include>
   <include condition="#(not(eq(#Titan.ShowUpdateInd,'true')))">BasicHome.exitmenu.xml</include>
 	
-    <control>
-      <description>exit menu button</description>
-      <id>0</id>
-      <type>image</type>
-      <posX>937</posX>
-      <posY>897</posY>
-      <width>46</width>
-      <height>50</height>
-      <texture>basichome_button_exit.png</texture>
-			<visible>![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
+  <control>
+    <description>exit menu button</description>
+    <id>0</id>
+    <type>image</type>
+    <posX>937</posX>
+    <posY>897</posY>
+    <width>46</width>
+    <height>50</height>
+    <texture>basichome_button_exit.png</texture>
+		<visible>![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
-    </control>
+		<animation effect="fade" time="250">WindowClose</animation>
+   </control>
 	
     <control>
       <description>ICON</description>
@@ -1393,6 +1400,7 @@
     <height>84</height>
     <texture>BasicHomeSubBG.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
 <!-- RSS -->
@@ -1458,6 +1466,5 @@
 <import>BasicHome.recentlyaddedMusic.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
 <import>BasicHome.recentlyaddedPictures.xml</import>
-<import>BasicHome.recentlyaddedPicturesFacade.xml</import>
 </controls>
 </window>

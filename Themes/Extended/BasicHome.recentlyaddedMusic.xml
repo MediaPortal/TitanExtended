@@ -9,6 +9,7 @@
 			<animation effect="fade" start="0" end="100" time="250" delay="550">visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">hidden</animation>
 			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
 				<control>
 					<description>LATEST MEDIA BACKGROUND</description>
 					<type>image</type>
