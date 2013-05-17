@@ -817,6 +817,38 @@
 	
 </control>
 
+  <control>
+		<description>Indicator</description>
+		<type>image</type>
+		<id>566</id>
+		<posX>949</posX>
+		<posY>553</posY>
+		<width>22</width>
+		<height>36</height>
+		<texture>submenu_indicator.png</texture>
+		<visible>!string.equals(#subitem1,) + string.equals(#recentMedia,) + [control.isvisible(1001)|control.isvisible(1002)]</visible>
+		<animation effect="fade" start="0" end="100" time="250" delay="0">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+  </control>
+	
+  <control>
+		<description>Indicator</description>
+		<type>image</type>
+		<id>566</id>
+		<posX>949</posX>
+		<posY>313</posY>
+		<width>22</width>
+		<height>36</height>
+		<texture>submenu_indicator.png</texture>
+		<visible>!string.equals(#subitem1,) + !string.equals(#recentMedia,) + [control.isvisible(1001)|control.isvisible(1002)]</visible>
+		<animation effect="fade" start="0" end="100" time="250" delay="350">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+  </control>
+
 		<!--		Submenu		-->
 
     <control>
@@ -1418,6 +1450,7 @@
 		<label>#infoservice.feed.titles</label>
 		<visible>plugin.isenabled(InfoService) + !string.contains(#Titan.RSS, false) + !string.equals(#Titan.ShowUpdateInd,true)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
 <!-- Skin Update -->
