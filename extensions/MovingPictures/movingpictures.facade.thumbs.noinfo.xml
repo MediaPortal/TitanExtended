@@ -139,9 +139,9 @@ This file should contain the facade view
 			<control>
 				<description>Movie List</description>
 				<type>listcontrol</type>
-				<id>50</id>
-				<onleft>3</onleft>
-				<onright>3</onright>
+				<id>51</id>
+				<onleft>51</onleft>
+				<onright>51</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>1165</posX>
 				<posY>331</posY>

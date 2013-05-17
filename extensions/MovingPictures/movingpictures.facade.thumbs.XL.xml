@@ -136,29 +136,26 @@ This file should contain the facade view
     <id>51</id>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-      <control>
-      <description>Categories List</description>
-      <type>listcontrol</type>
-      <id>51</id>
-      <onleft>51</onleft>
-      <onright>51</onright>
-			<scrollOffset>1</scrollOffset>
-			<posX>710</posX>
-			<posY>212</posY>
-			<height>800</height>
-			<width>499</width>
-			<textXOff>54</textXOff>
-			<textYOff>16</textYOff>
-			<textureHeight>69</textureHeight>		
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-      <spinPosX>-2000</spinPosX>
-			<dimColor>ffffffff</dimColor>
-      <explicitlyEnableScrollLabel>no</explicitlyEnableScrollLabel>
-      <unfocusedAlpha>255</unfocusedAlpha>
-      <textcolor>FFFFFFFF</textcolor>
-      <textcolorNoFocus>FF3a3a3a</textcolorNoFocus>
-    </control>
+			<control>
+				<description>Movie List</description>
+				<type>listcontrol</type>
+				<id>51</id>
+				<onleft>51</onleft>
+				<onright>51</onright>
+				<scrollOffset>1</scrollOffset>
+				<posX>1165</posX>
+				<posY>331</posY>
+				<height>700</height>
+				<width>698</width>
+				<textXOff>44</textXOff>
+				<textXOff2>650</textXOff2>
+				<textureHeight>54</textureHeight>
+				<textureFocus>listcontrol_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<dimColor>ffffffff</dimColor>
+				<spinPosX>1828</spinPosX>
+				<spinPosY>1000</spinPosY>
+			</control>
   </control>
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
