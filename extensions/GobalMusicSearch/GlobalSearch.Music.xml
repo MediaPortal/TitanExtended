@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>30885</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#usePlayFanart:Yes</define>
+  <define>#useSelectedFanart:Yes</define>
+  <define>#header.label:#GlobalSearch.Translation.MusicSearch.Label</define>
+  <controls> 
+  <import>common.time.xml</import>
+	<import>common.window.music.xml</import>
+  <control>
+		<id>0</id>
+    <type>image</type>
+    <posX>66</posX>
+    <posY>39</posY>
+    <width>60</width>
+		<height>56</height>
+    <texture>icon_music.png</texture>
+    <visible>control.isvisible(50)</visible>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+  </control>
+	<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>10</posX>
+		<posY>252</posY>
+		<width>1903</width>
+		<height>790</height>
+		<texture>panel_list_music.png</texture>
+		<visible>Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	<control>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>103</posX>
+		<posY>349</posY>
+		<width>606</width>
+		<height>605</height>
+		<texture>list_poster_shadow_music.png</texture>
+		<visible>Control.HasThumb(500)+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	<control>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>500</id>
+		<posX>121</posX>
+		<posY>362</posY>
+		<width>556</width>
+		<height>556</height>
+		<texture>#selectedthumb</texture>
+		<visible>Control.IsVisible(50)</visible>
+  	<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+  
+	<!--  MENU  -->
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(50)</visible>
+		<animation effect="slide" start="-60,0" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" time="250" delay="100">WindowClose</animation>
+	</control>
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>-460</buttonX>
+		<buttonY>155</buttonY>
+		<buttonwidth>499</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+			<control>
+				<type>image</type>
+				<id>0</id>
+				<width>1920</width>
+				<height>1080</height>
+				<texture>semi_trans_back_hidden_menu.png</texture>
+				<visible>!Control.HasFocus(50)</visible>
+				<animation effect="fade" time="450">visible</animation>
+				<animation effect="fade" time="400">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<id>0</id>
+				<posY>0</posY>
+				<posX>0</posX>
+				<width>612</width>
+				<height>1074</height>
+				<texture>menu_bg.png</texture>
+				<visible>!Control.HasFocus(50)</visible>
+	    	<animation effect="fade" time="0">WindowClose</animation>
+	    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+	    	<animation effect="fade" time="50">visible</animation>
+	    	<animation effect="fade" time="0">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<id>0</id>
+				<posY>515</posY>
+				<posX>116</posX>
+				<width>369</width>
+				<height>1</height>
+				<texture>hiddenmenu_separator.png</texture>
+				<visible>!Control.HasFocus(50)</visible>
+	    	<animation effect="fade" time="0">WindowClose</animation>
+	    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+	    	<animation effect="fade" time="50">visible</animation>
+	    	<animation effect="fade" time="0">hidden</animation>
+			</control>
+			<control>
+				<description>Menu label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>116</posX>
+				<posY>100</posY>
+				<label>924</label>
+				<font>fontB16</font>
+				<textcolor>393939</textcolor>
+				<visible>!Control.HasFocus(50)</visible>
+	    	<animation effect="fade" time="0">WindowClose</animation>
+	    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+	    	<animation effect="fade" time="50">visible</animation>
+	    	<animation effect="fade" time="0">hidden</animation>
+	    </control>
+			<control>
+				<description>Jump to label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>116</posX>
+				<posY>525</posY>
+				<label>1065</label>
+				<font>fontB12</font>
+				<textcolor>393939</textcolor>
+	 			<visible>!Control.HasFocus(50)</visible>
+	    	<animation effect="fade" time="0">WindowClose</animation>
+	    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+	    	<animation effect="fade" time="50">visible</animation>
+	    	<animation effect="fade" time="0">hidden</animation>
+			</control>
+			<control>
+      	<type>group</type>
+        <description>group element</description>
+ 				<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+        <posX>53</posX>
+        <posY>155</posY>
+        <layout>StackLayout(0, Vertical, true)</layout>	
+		  
+          <control>
+            <id>2</id>
+            <description>Searchphrase to use</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>11</onup>
+            <ondown>7</ondown>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+						<textXOff>62</textXOff>
+						<textYOff>16</textYOff>
+            <label>#GlobalSearch.Translation.SearchPhrase.Label</label>
+          </control>
+          <control>
+						<id>7</id>
+            <description>Last searches</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>2</onup>
+            <ondown>6</ondown>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+						<textXOff>62</textXOff>
+						<textYOff>16</textYOff>
+            <label>#GlobalSearch.Translation.SearchHistory.Label</label>
+          </control>
+          <control>
+            <id>6</id>
+            <description>Search fields (Song, Album, Artist, etc.)</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>7</onup>
+            <ondown>3</ondown>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+						<textXOff>62</textXOff>
+						<textYOff>16</textYOff>
+            <label>#GlobalSearch.Translation.SearchFields.Label</label>
+          </control>
+          <control>
+            <id>3</id>
+            <description>Case sensitivity</description>
+            <type>checkbutton</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>6</onup>
+            <ondown>10</ondown>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+			      <textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+			      <textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+            <textcolor>FFFFFFFF</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>ff393939</textcolorNoFocus>
+	    			<width>499</width>
+	    			<height>69</height>
+	    			<textXOff>62</textXOff>
+	    			<textYOff>16</textYOff>	
+            <label>#GlobalSearch.Translation.CaseSensitive.Label</label>
+          </control>
+          <control>
+            <id>10</id>
+            <description>Searchtype</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>3</onup>
+            <ondown>8</ondown>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+						<textXOff>62</textXOff>
+						<textYOff>16</textYOff>
+            <label>#GlobalSearch.Translation.SearchType.Label</label>
+          </control>
+          <control>
+            <description>Empty button</description>
+            <type>button</type>
+            <id>0</id>
+						<textureFocus>-</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+            <label>-</label>
+            <visible>true</visible>
+         </control>
+         <control>
+						<id>8</id>
+						<description>Jump to MyMusic</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>10</onup>
+            <ondown>9</ondown>
+            <hyperlink>501</hyperlink>
+            <label>2</label>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+						<textXOff>62</textXOff>
+						<textYOff>16</textYOff>			
+          </control>
+          <control>
+            <id>9</id>
+            <description>Jump to PlayingNow</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>8</onup>
+            <ondown>11</ondown>
+            <label>4540</label>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+						<textXOff>62</textXOff>
+						<textYOff>16</textYOff>		
+          </control>
+          <control>
+            <id>11</id>
+            <description>Lyrics</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>9</onup>
+            <ondown>2</ondown>
+            <visible>plugin.isenabled(My Lyrics)</visible>
+            <hyperlink>90478</hyperlink>
+            <label>Lyrics</label>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>499</width>
+						<height>69</height>
+						<textXOff>62</textXOff>
+						<textYOff>16</textYOff>			
+          </control>
+      </control>
+    </control>
+	
+	<!--            :: List Scrolling Popup ::            -->
+    
+	<control>
+  	<description>listscroller bg</description>
+    <type>image</type>
+    <id>1</id>
+    <posX>297</posX>
+    <posY>540</posY>
+    <width>211</width>
+    <height>211</height>
+    <texture>listscroller_bg.png</texture>
+    <visible>string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+    <animation effect="fade" time="250">Visible</animation>
+    <animation effect="fade" time="0">Hidden</animation>
+  </control>
+  <control>
+  	<type>label</type>
+    <id>1</id>
+    <posX>352</posX>
+    <posY>600</posY>
+    <width>96</width>
+    <height>96</height>
+    <font>TitanLight32</font>
+    <textcolor>ff000000</textcolor>
+    <label>#selecteditem.scrolllabel</label>
+    <visible>string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+    <align>center</align>
+    <valign>middle</valign>
+    <animation effect="fade" time="250">Visible</animation>
+    <animation effect="fade" time="0">Hidden</animation>
+  </control>
+
+	<!--            :: Count ::            -->
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+	  <posX>96</posX>
+    <posY>998</posY>
+    <align>left</align>
+    <font>TitanLight12</font>
+    <textcolor>000000</textcolor>
+		<label>#GlobalSearch.Translation.MusicSearch.Label: #itemcount</label>
+	  <visible>control.isvisible(50)</visible>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<!--            :: Listview Lines ::            -->
+
+	<control>
+  	<description>List Lines</description>
+    <type>image</type>
+    <id>1</id>
+		<posX>800</posX>
+		<posY>385</posY>
+    <width>1029</width>
+    <height>506</height>
+    <texture>list_lines_wide.png</texture>
+    <visible>control.isvisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+  </control>
+	<control>
+		<description>group element</description>
+		<type>group</type>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+			<control>
+				<description>composite control consisting of a list control and a thumbnail panel</description>
+				<type>facadeview</type>
+				<id>50</id>
+				<control>
+					<description>listcontrol</description>
+					<type>listcontrol</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>50</onright>
+					<scrollOffset>1</scrollOffset>
+					<posX>745</posX>
+				  <posY>331</posY>
+					<width>1113</width>
+					<height>700</height>
+					<textXOff>50</textXOff>
+					<dimColor>ffffffff</dimColor>
+					<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+	        <spinPosX>1828</spinPosX>
+	        <spinPosY>1000</spinPosY>
+				</control>
+			</control>
+	</control>
+  <import>common.overlay.xml</import>
+  </controls>
+</window>
