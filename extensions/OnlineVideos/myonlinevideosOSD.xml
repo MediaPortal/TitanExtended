@@ -246,7 +246,6 @@
 			<textureFocus>osd_sub_button_focus.png</textureFocus>
 			<textureNoFocus>osd_sub_button_nofocus.png</textureNoFocus>
 			<label>-</label>
-			<font>-</font>
 			<onleft>995</onleft>
 			<onright>221</onright>
 			<onup>218</onup>
@@ -270,7 +269,6 @@
 			<textureFocus>osd_audio_button_focus.png</textureFocus>
 			<textureNoFocus>osd_audio_button_nofocus.png</textureNoFocus>
 			<label>-</label>
-			<font>-</font>
 	  </control>
 	   
 		<control>
@@ -286,7 +284,6 @@
 	    <textureFocus>osd_video_button_focus.png</textureFocus>
 	    <textureNoFocus>osd_video_button_nofocus.png</textureNoFocus>
 	    <label>-</label>
-	    <font>-</font>
 	    <onleft>995</onleft>
 	    <onright>221</onright>
 	    <onup>220</onup>
@@ -348,7 +345,6 @@
 	    <textureFocus>-</textureFocus>
 	    <textureNoFocus>osd_settings_bookmark_focus.png</textureNoFocus>
 	    <label>-</label>
-	    <font>-</font>
 	    <onleft>213</onleft>
 	    <onright>218</onright>
 	    <onup>215</onup>
@@ -597,7 +593,7 @@
       <textureFocus>button_green_focus_165x32.png</textureFocus>
       <textureNoFocus>button_green_nofocus_165x32.png</textureNoFocus>
       <label>294</label>
-      <font>font13</font>
+      <font>font12</font>
       <colordiffuse>ffffffff</colordiffuse>
       <onleft>600</onleft>
       <onright>602</onright>
@@ -616,7 +612,7 @@
       <textureFocus>button_green_focus_165x32.png</textureFocus>
       <textureNoFocus>button_green_nofocus_165x32.png</textureNoFocus>
       <label>296</label>
-      <font>font13</font>
+      <font>font12</font>
       <colordiffuse>ffffffff</colordiffuse>
       <onleft>600</onleft>
       <onright>601</onright>

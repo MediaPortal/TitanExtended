@@ -23,7 +23,7 @@
 		  <posY>20</posY>
 		  <label>#date | #time</label>
 		  <align>right</align>
-		  <font>font13</font>
+		  <font>font12</font>
 		  <textcolor>ffa9d0f7</textcolor>
 		</control>
 		<control>
@@ -60,7 +60,7 @@
 			<posX>177</posX>
 			<posY>125</posY>
 			<label>493</label>
-			<font>font13</font>
+			<font>font12</font>
 			<textcolor>FFB2D4F5</textcolor>
 		<animation effect="fade" time="250">WindowClose</animation><animation effect="fade" time="250">WindowOpen</animation></control> -->
 
@@ -86,7 +86,7 @@
 			<posX>177</posX>
 			<posY>150</posY>
 			<label>686</label>
-			<font>font13</font>
+			<font>font12</font>
 			<textcolor>FFB2D4F5</textcolor>
 		<animation effect="fade" time="250">WindowClose</animation><animation effect="fade" time="250">WindowOpen</animation></control> -->
 		<control>
@@ -166,7 +166,7 @@
 			<width>700</width>
 			<height>440</height>
 			<label>#Actor.Biography</label>
-			<font>font13</font>
+			<font>font12</font>
 			<seperator>: : :</seperator>
 			<shadowColor>-</shadowColor>
 			<textcolor>ffddddddf</textcolor>
