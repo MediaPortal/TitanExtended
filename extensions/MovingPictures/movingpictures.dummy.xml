@@ -58,6 +58,8 @@
       <posY>-2000</posY>
       <onleft>6</onleft>
       <onright>6</onright>
+			<onup>6</onup>
+			<ondown>6</ondown>		
       <label>-</label>
     </control>
 </controls>

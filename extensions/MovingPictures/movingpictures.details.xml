@@ -65,8 +65,8 @@ This file should contain the details view
 				<type>button</type>
 				<id>10002</id>
 				<label>Technical Details</label>
-				<onleft>10002</onleft>
-				<onright>10002</onright>
+				<onleft>10005</onleft>
+				<onright>10005</onright>
 				<onup>10001</onup>
 				<ondown>10003</ondown>
 		   	<textcolor>FF000000</textcolor>
@@ -109,8 +109,8 @@ This file should contain the details view
         <type>button</type>
         <id>97270</id>
         <label>Trakt</label>
-				<onleft>97270</onleft>
-				<onright>97270</onright>
+				<onleft>10005</onleft>
+				<onright>10005</onright>
         <onup>10004</onup>
         <ondown>6</ondown>
 		    <textcolor>FF000000</textcolor>
@@ -129,7 +129,7 @@ This file should contain the details view
   	<posX>119</posX>
 		<posY>364</posY>
     <dimColor>ffffffff</dimColor>
-   	<visible>[!Control.IsVisible(50)+!Control.IsVisible(51)] + Control.HasFocus(20002)</visible>
+   	<visible>[!Control.IsVisible(50)+!Control.IsVisible(51)] + Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
 		<layout>StackLayout(7, Vertical, true)</layout>
   
 			<control>
