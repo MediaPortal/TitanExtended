@@ -303,11 +303,11 @@
 				<textureNoFocus>-</textureNoFocus>
 				<label>#(L(5900))</label>
 				<hyperlink>4755</hyperlink>
-        <hyperlinkParameter>site:IMDb Movie Trailers|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
+        <hyperlinkParameter>site:YouTube|search:#MovingPictures.SelectedMovie.title #MovingPictures.SelectedMovie.year trailer|return:Locked</hyperlinkParameter>
 				<onleft>50</onleft>
         <onright>50</onright>
 				<onup>66610</onup>
-				<ondown>66611</ondown>    
+				<ondown>66611</ondown>
 			</control>	
 
 			<control>
