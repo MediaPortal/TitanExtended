@@ -187,8 +187,6 @@ skin\Titan\Media\Logos\audio\8.png;-;<Episode.AudioChannels>;-;=;-;8;-;AND;-;;-;
 skin\Titan\Media\Logos\audio\RA.png;-;<Episode.AudioFormat>;-;contains;-;REAL;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Titan\Media\Logos\aspectratio\1.85.png;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>=;-;1.5;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Titan\Media\Logos\aspectratio\1.33.png;-;<Episode.VideoAspectRatio>;-;<;-;1.5;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
-skin\Titan\Media\Logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
 ]]></logos>
 	
 	<!-- 
