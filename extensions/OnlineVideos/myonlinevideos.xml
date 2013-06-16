@@ -120,14 +120,14 @@
 		<!--            :: INFO LABELS ::            -->
 
 		<control>
-			<id>400</id>
+			<id>0</id>
 			<type>image</type>
 			<posX>121</posX>
 			<posY>363</posY>
 			<width>556</width>
 			<height>313</height>
 			<texture>OnlineVideos\thumbbg.png</texture>
-			<visible>facadeview.list+!control.isvisible(51)+control.hasthumb(400)+!string.equals(#selecteditem,..)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+			<visible>[facadeview.list+!control.isvisible(51)+control.hasthumb(400)+!string.equals(#selecteditem,..)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]] | [string.equals(#OnlineVideos.state,categories)+!string.equals(#selecteditem,..)]</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -157,7 +157,7 @@
 			<align>center</align>
 			<keepaspectratio>yes</keepaspectratio>
 			<texture>OnlineVideos\Icons\#OnlineVideos.selectedSite.png</texture>
-			<visible>facadeview.list+!string.equals(#OnlineVideos.state,groups) + !string.equals(#OnlineVideos.state,sites) + !string.equals(#OnlineVideos.state,videos)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+			<visible>facadeview.list+!string.equals(#OnlineVideos.state,groups) + !string.equals(#OnlineVideos.state,sites) + !string.equals(#OnlineVideos.state,videos)+!string.equals(#selecteditem,..)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
