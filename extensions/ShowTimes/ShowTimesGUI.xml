@@ -4,6 +4,7 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:#currentmodule</define>
+  <define>#header.image:hover_showtimes.png</define>
   <define>#useSelectedFanart:Yes</define>
   <controls>
      <!--            :: DUMMY ::            -->
@@ -206,11 +207,13 @@
     <id>45</id>
 		<posX>72</posX>
     <posY>94</posY>
-		<width>240</width>
+		<width>376</width>
     <align>left</align>
     <font>TitanLight12</font>
     <textcolor>ffffff</textcolor>
     <label>#showtimes_nextupdate</label>
+    <animation effect="Fade" time="250">WlindowOpen</animation>
+    <animation effect="Fade" time="250">WindowClose</animation>
   </control>
 	
   </controls>

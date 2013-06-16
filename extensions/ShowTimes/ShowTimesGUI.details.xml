@@ -83,9 +83,26 @@
 				<onleft>40</onleft>
 				<onright>40</onright>
 				<onup>41</onup>
+				<ondown>97258</ondown>
+		    <textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			</control>
+			
+			<control>
+				<description>Add to Trakt Movie Watch List</description>
+				<type>button</type>
+				<id>97258</id>
+				<label>#Trakt.Translation.AddToWatchList.Label</label>
+  			<font>TitanLight12</font>
+        <textXOff>32</textXOff>
+        <textYOff>12</textYOff>
+				<onleft>97258</onleft>
+				<onright>97258</onright>
+				<onup>40</onup>
 				<ondown>42</ondown>
 		    <textcolor>FF000000</textcolor>
 				<textcolorNoFocus>ffffffff</textcolorNoFocus>
+				<visible>plugin.isenabled(Trakt)</visible>				
 			</control>
 			
 			<control>
@@ -98,7 +115,7 @@
         <textYOff>12</textYOff>
 				<onleft>42</onleft>
 				<onright>42</onright>
-				<onup>40</onup>
+				<onup>97258</onup>
 				<ondown>43</ondown>
 		    <textcolor>FF000000</textcolor>
 				<textcolorNoFocus>ffffffff</textcolorNoFocus>
