@@ -139,17 +139,13 @@
 		
 		<control>
 			<description>group by schedule</description>		
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>12</id>
 			<label>group by schedule</label>
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>			
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
 			<ondown>2</ondown>
 		</control>
 

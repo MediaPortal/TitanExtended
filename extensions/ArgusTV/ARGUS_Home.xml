@@ -32,10 +32,10 @@
     <id>0</id>
     <type>image</type>
     <posX>66</posX>
-    <posY>34</posY>
-    <width>61</width>
-    <height>57</height>
-    <texture>icon_tv.png</texture>
+    <posY>32</posY>
+    <width>55</width>
+    <height>66</height>
+    <texture>ARGUS_icon.png</texture>
     <animation effect="fade" time="250">WindowOpen</animation>
     <animation effect="fade" time="250">WindowClose</animation>
   </control>
@@ -53,17 +53,13 @@
 	
 		<control>
 			<description>TV On/Off button</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>6</id>
 			<label>707</label>
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
       <onup>7</onup>
       <ondown>2</ondown>
       <onleft>99</onleft>

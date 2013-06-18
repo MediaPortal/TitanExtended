@@ -60,10 +60,10 @@
     <id>0</id>
     <type>image</type>
     <posX>66</posX>
-    <posY>34</posY>
-    <width>61</width>
-    <height>57</height>
-    <texture>icon_tv.png</texture>
+    <posY>32</posY>
+    <width>55</width>
+    <height>66</height>
+    <texture>ARGUS_icon.png</texture>
     <animation effect="fade" time="250">WindowOpen</animation>
     <animation effect="fade" time="250">WindowClose</animation>
   </control>
@@ -401,7 +401,7 @@
 		
 		<control>
 			<description>monday</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>3</id>
 			<width>100</width>
 			<textXOff>15</textXOff>
@@ -409,11 +409,7 @@
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>11</onleft>
 			<onup>16</onup>
 			<ondown>11</ondown>
@@ -422,7 +418,7 @@
 		
 		<control>
 			<description>tuesday</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>4</id>
 			<width>100</width>
 			<textXOff>15</textXOff>
@@ -430,11 +426,7 @@
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>3</onleft>
 			<onup>17</onup>
 			<ondown>11</ondown>
@@ -443,7 +435,7 @@
 		
 		<control>
 			<description>wednesday</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>5</id>
 			<width>100</width>
 			<textXOff>15</textXOff>
@@ -451,11 +443,7 @@
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>4</onleft>
 			<onup>18</onup>
 			<ondown>11</ondown>
@@ -464,7 +452,7 @@
 		
 		<control>
 			<description>thursday</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>6</id>
 			<width>100</width>
 			<textXOff>15</textXOff>
@@ -472,11 +460,7 @@
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>5</onleft>
 			<onup></onup>
 			<ondown>11</ondown>
@@ -485,7 +469,7 @@
 		
 		<control>
 			<description>friday</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>7</id>
 			<width>100</width>
 			<textXOff>15</textXOff>
@@ -493,11 +477,7 @@
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>6</onleft>
 			<onup></onup>
 			<ondown>11</ondown>
@@ -506,7 +486,7 @@
 		
 		<control>
 			<description>saturday</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>8</id>
 			<width>100</width>
 			<textXOff>15</textXOff>
@@ -514,11 +494,7 @@
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>7</onleft>
 			<onup></onup>
 			<ondown>11</ondown>
@@ -527,7 +503,7 @@
 		
 		<control>
 			<description>sunday</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>9</id>
 			<width>100</width>
 			<textXOff>15</textXOff>
@@ -535,11 +511,7 @@
 			<textalign>left</textalign>
 			<font>TitanLight12</font>
     	<textcolor>FF000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
-      <textureFocus>button_tv_on_focus.png</textureFocus>
-      <textureNoFocus>button_tv_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>button_tv_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>button_tv_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>8</onleft>
 			<onup></onup>
 			<ondown>11</ondown>
