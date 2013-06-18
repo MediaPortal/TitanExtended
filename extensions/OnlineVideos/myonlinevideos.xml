@@ -431,7 +431,6 @@
 		<import>myonlinevideos.hiddenmenu.xml</import>
 		<import>myonlinevideos.details.xml</import>
 		<import>myonlinevideos.details.imdb.xml</import>
-		<import>myonlinevideos.details.ITMovieTrailers.xml</import>
 		<import>myonlinevideos.details.youtube.xml</import>
 		<import>myonlinevideos.facade.xml</import>  
 		<import>common.overlay.xml</import>
