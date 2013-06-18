@@ -55,6 +55,10 @@
 					<width>1113</width>
 					<height>700</height>
 					<textXOff>50</textXOff>
+					<PinIconHeight>50</PinIconHeight>
+					<PinIconWidth>50</PinIconWidth>
+					<PinIconXOff>1030</PinIconXOff>
+					<PinIconYOff>4</PinIconYOff>
 					<dimColor>ffffffff</dimColor>
 					<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
 					<textureNoFocus>-</textureNoFocus>
