@@ -66,12 +66,26 @@
 			<PinIconHeight>24</PinIconHeight>
 			<IconXOff>50</IconXOff>
 			<textXOff>60</textXOff>
-			<onleft>502</onleft>
+			<onleft>508</onleft>
+			<onright>508</onright>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
 
 
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>121</posX>
+			<posY>363</posY>
+			<width>556</width>
+			<height>313</height>
+			<texture>OnlineVideos\thumbbg.png</texture>
+			<visible>control.hasthumb(500)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
 		<control>
 			<id>500</id>
 			<type>image</type>
@@ -161,12 +175,12 @@
 		<control>
 			<type>actiongroup</type>
 			<description>action menu</description>
-			<defaultcontrol>2</defaultcontrol>
+			<defaultcontrol>508</defaultcontrol>
 			<onexit>50</onexit>
 			<dimColor>00ffffff</dimColor>
-			<buttonX>0</buttonX>
-			<buttonY>0</buttonY>
-			<buttonwidth>521</buttonwidth>
+			<buttonX>-460</buttonX>
+			<buttonY>155</buttonY>
+			<buttonwidth>499</buttonwidth>
 			<buttonheight>1080</buttonheight>
 
 			<control>
@@ -182,11 +196,10 @@
 
 			<control>
 				<type>group</type>
-				<animation effect="fade" time="250">WindowOpen</animation>
-				<animation effect="fade" time="0">WindowClose</animation>
-				<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-				<animation effect="fade" time="250">visible</animation>
-				<animation effect="fade" time="0">hidden</animation>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
 				<control>
 					<type>image</type>
 					<id>0</id>
@@ -310,7 +323,7 @@
 						<height>69</height>
 						<textXOff>62</textXOff>
 						<textYOff>16</textYOff>  
-						<ondown>502</ondown>
+						<ondown>503</ondown>
 						<visible allowhiddenfocus="true">!Control.HasFocus(50)</visible>
 					</control>         
 				</control> 
