@@ -20,9 +20,9 @@
 		<defaultcontrol>3</defaultcontrol>
 		<onexit>50</onexit>
 		<dimColor>00ffffff</dimColor>
-		<buttonX>0</buttonX>
-		<buttonY>0</buttonY>
-		<buttonwidth>521</buttonwidth>
+		<buttonX>-460</buttonX>
+		<buttonY>155</buttonY>
+		<buttonwidth>499</buttonwidth>
 		<buttonheight>1080</buttonheight>
 		
 		<control>
@@ -135,7 +135,6 @@
       <posX>53</posX>
       <posY>155</posY>
       <layout>StackLayout(0, Vertical, true)</layout>		
-                
       <control>
         <description>View-As</description>
         <type>button</type>
@@ -143,7 +142,7 @@
         <label>#OnlineVideos.Translation.LayoutList.Label</label>          
         <onleft>50</onleft>
         <onright>50</onright>
-        <onup>13</onup>
+        <onup>15</onup>
         <ondown>8</ondown>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -152,7 +151,6 @@
 				<textXOff>62</textXOff>
 				<textYOff>16</textYOff>
       </control>
-         
       <control>
         <description>Empty button</description>
         <type>button</type>
@@ -164,7 +162,6 @@
         <label>-</label>
         <visible>true</visible>
       </control>
-
       <control>
         <type>button</type>
         <description>Update button</description>
@@ -181,7 +178,6 @@
 				<textXOff>62</textXOff>
 				<textYOff>16</textYOff>
       </control>
-
        <control>
         <description>select category</description>
         <type>selectbutton</type>
@@ -203,7 +199,6 @@
         <textcolor>FFFFFFFF</textcolor>
   			<texturebg>hiddenmenu_item_selected.png</texturebg>
       </control>
-                
       <control>
         <type>selectbutton</type>
         <description>Max Results</description>
@@ -225,7 +220,6 @@
         <textcolor>FFFFFFFF</textcolor>
   			<texturebg>hiddenmenu_item_selected.png</texturebg>
       </control>
-                
       <control>
         <type>selectbutton</type>
         <description>Order By</description>
@@ -247,7 +241,6 @@
         <textcolor>FFFFFFFF</textcolor>
   			<texturebg>hiddenmenu_item_selected.png</texturebg>
       </control>
-                
       <control>
         <type>selectbutton</type>
         <description>TimeFrame button</description>
@@ -269,7 +262,6 @@
         <textcolor>FFFFFFFF</textcolor>
   			<texturebg>hiddenmenu_item_selected.png</texturebg>
       </control>
-                
       <control>
         <description>Empty button</description>
         <type>button</type>
@@ -281,7 +273,6 @@
         <label>-</label>
         <visible>true</visible>
       </control>  
-                
       <control>
         <type>button</type>
         <description>Search</description>
@@ -289,7 +280,7 @@
         <onleft>50</onleft>
         <onright>50</onright>
         <onup>7</onup>
-        <ondown>11</ondown>
+        <ondown>12</ondown>
         <label>#OnlineVideos.Translation.Search.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -297,32 +288,14 @@
 				<height>69</height>
 				<textXOff>62</textXOff>
 				<textYOff>16</textYOff>
-      </control>
-                
-      <control>
-        <type>button</type>
-        <description>Favorites</description>
-        <id>11</id>
-        <onleft>50</onleft>
-        <onright>50</onright>
-        <onup>10</onup>
-        <ondown>12</ondown>
-        <label>#OnlineVideos.Translation.Favourites.Label</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>499</width>
-				<height>69</height>
-				<textXOff>62</textXOff>
-				<textYOff>16</textYOff>
-      </control>
-                
+      </control>               
       <control>
         <type>button</type>
         <description>Do Age Check</description>
         <id>12</id>
         <onleft>50</onleft>
         <onright>50</onright>
-        <onup>11</onup>
+        <onup>10</onup>
         <ondown>13</ondown>
         <label>#OnlineVideos.Translation.EnterPin.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -332,7 +305,6 @@
 				<textXOff>62</textXOff>
 				<textYOff>16</textYOff>
       </control> 
-                       
       <control>
         <type>button</type>
         <description>Update Sites</description>
@@ -340,7 +312,7 @@
         <onleft>50</onleft>
         <onright>50</onright>
         <onup>12</onup>
-        <ondown>2</ondown>
+        <ondown>14</ondown>
         <label>#OnlineVideos.Translation.ManageSites.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -349,6 +321,38 @@
 				<textXOff>62</textXOff>
 				<textYOff>16</textYOff>
         <hyperlink>4757</hyperlink>
+      </control>
+      <control>
+        <description>MPEICONFIGURE:269bd257_7ce5_450a_b786_1c2834c81849</description>
+        <type>button</type>
+        <id>14</id>
+        <onright>50</onright>
+        <onup>13</onup>
+        <ondown>15</ondown>
+        <label>5</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+        <visible>string.equals(#mpei.269bd257_7ce5_450a_b786_1c2834c81849.isinstalled, true)</visible>
+      </control>
+      <control>
+        <description>MPEIUPDATE:269bd257_7ce5_450a_b786_1c2834c81849</description>
+        <type>button</type>
+        <id>15</id>
+        <onright>50</onright>
+        <onup>14</onup>
+        <ondown>2</ondown>
+        <label>#MPEI.Translation.UpdateAvailable.Label</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>69</height>
+				<textXOff>62</textXOff>
+				<textYOff>16</textYOff>
+        <visible>string.equals(#mpei.269bd257_7ce5_450a_b786_1c2834c81849.haveupdate, true)</visible>
       </control>
     </control>      
 </control>
