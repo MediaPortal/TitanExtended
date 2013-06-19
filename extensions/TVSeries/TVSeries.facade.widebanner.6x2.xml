@@ -96,7 +96,7 @@
     <font>TitanLight12</font>
     <textcolor>000000</textcolor>
     <label>#TVSeries.Translation.Seasons.Label: #itemcount</label>
-	  <visible>control.isvisible(1238)+control.isvisible(1242)</visible>
+		<visible>![facadeview.filmstrip | facadeview.coverflow] + control.isvisible(1238)+control.isvisible(1242)</visible>
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
 	</control>

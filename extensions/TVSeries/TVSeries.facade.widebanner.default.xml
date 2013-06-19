@@ -40,14 +40,14 @@
   <control>
 		<description>Moviecount</description>
 		<type>label</type>
-    <label>#(L(97))#TVSeries.SimpleCurrentView</label>
-    <id>0</id>
+		<label>#(L(97))#TVSeries.SimpleCurrentView</label>
+		<id>0</id>
 		<posX>72</posX>
-    <posY>94</posY>
-    <align>left</align>
-    <textcolor>FFFFFFFF</textcolor>
-    <font>TitanLight12</font>
-	  <visible>control.isvisible(1237)</visible>
+		<posY>94</posY>
+		<align>left</align>
+		<textcolor>FFFFFFFF</textcolor>
+		<font>TitanLight12</font>
+		<visible>control.isvisible(1237)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
   </control>
@@ -59,14 +59,14 @@
     <type>label</type>
     <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
     <id>0</id>
-	  <posX>96</posX>
+		<posX>96</posX>
     <posY>998</posY>
     <align>left</align>
     <font>TitanLight12</font>
     <textcolor>000000</textcolor>
-	  <visible>control.isvisible(1237)+[facadeview.list|facadeview.largeicons]</visible>
-	  <animation effect="fade" time="250">WindowOpen</animation>
-	  <animation effect="fade" time="250">WindowClose</animation>
+		<visible>control.isvisible(1237)+[facadeview.list|facadeview.largeicons]</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
   </control>
     
 	<!--            :: Current View Season ::            -->
@@ -81,24 +81,23 @@
     <align>left</align>
     <textcolor>FFFFFFFF</textcolor>
     <font>TitanLight12</font>
-	  <visible>control.isvisible(1238)+control.isvisible(1242)</visible>
+		<visible>control.isvisible(1238)+control.isvisible(1242)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
   </control>
-	
 	<control>
 		<type>label</type>
 		<description>season count</description>
 		<id>640</id>
-	  <posX>96</posX>
+		<posX>96</posX>
     <posY>998</posY>
     <align>left</align>
     <font>TitanLight12</font>
     <textcolor>000000</textcolor>
     <label>#TVSeries.Translation.Seasons.Label: #itemcount</label>
-	  <visible>control.isvisible(1238)+control.isvisible(1242)</visible>
-	  <animation effect="fade" time="250">WindowOpen</animation>
-	  <animation effect="fade" time="250">WindowClose</animation>
+		<visible>![facadeview.filmstrip | facadeview.coverflow] + control.isvisible(1238)+control.isvisible(1242)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 	<!--            :: Current View Episodes ::            -->
