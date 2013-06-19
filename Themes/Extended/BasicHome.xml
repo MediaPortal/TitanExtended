@@ -172,33 +172,6 @@
 	<dimColor>ffffffff</dimColor>
 	<animation effect="fade" time="250">WindowOpen</animation>
 	<animation effect="fade" time="250">WindowClose</animation>
-
-	<control>
-		<id>0</id>
-		<posX>-329</posX>
-		<posY>607</posY>
-		<height>271</height>
-		<width>371</width>
-		<type>image</type>
-		<texture>#topitem3.png</texture>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
-		<visible>!string.equals(#mainmenu,901) + [string.equals(#mainmenu,801) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(606)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">Visible</animation>
-	</control>
-	
-	<control>
-		<id>0</id>
-		<posX>-325</posX>
-		<posY>820</posY>
-		<type>label</type>
-		<width>371</width>
-		<label>#toplabel3</label>
-		<font>TitanLight20</font>
-		<align>center</align>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
-		<visible>!string.equals(#mainmenu,901) + [string.equals(#mainmenu,801) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(606)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">Visible</animation>
-	</control>
 	
 	<control>
 		<id>0</id>
@@ -335,33 +308,6 @@
 	<dimColor>ffffffff</dimColor>
 	<animation effect="fade" time="250">WindowOpen</animation>
 	<animation effect="fade" time="250">WindowClose</animation>
-
-	<control>
-		<id>0</id>
-		<posX>-329</posX>
-		<posY>607</posY>
-		<height>271</height>
-		<width>371</width>
-		<type>image</type>
-		<texture>#topitem3.png</texture>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
-		<visible>!string.equals(#mainmenu,902) + [string.equals(#mainmenu,802) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(506)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">Visible</animation>
-	</control>
-	
-	<control>
-		<id>0</id>
-		<posX>-325</posX>
-		<posY>820</posY>
-		<type>label</type>
-		<width>371</width>
-		<label>#toplabel3</label>
-		<font>TitanLight20</font>
-		<align>center</align>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
-		<visible>!string.equals(#mainmenu,902) + [string.equals(#mainmenu,802) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(506)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">Visible</animation>
-	</control>
 	
 	<control>
 		<id>0</id>
@@ -625,33 +571,6 @@
 		<animation effect="slide" start="-371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">visible</animation>
 	</control>
 	
-	<control>
-		<id>0</id>
-		<posX>1897</posX>
-		<posY>607</posY>
-		<height>271</height>
-		<width>371</width>
-		<type>image</type>
-		<texture>#bottomitem3.png</texture>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
-		<visible>!string.equals(#mainmenu,801) + [string.equals(#mainmenu,901) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(606)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="-371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">visible</animation>
-	</control>
-	
-	<control>
-		<id>0</id>
-		<posX>1893</posX>
-		<posY>820</posY>
-		<type>label</type>
-		<width>371</width>
-		<label>#bottomlabel3</label>
-		<font>TitanLight20</font>
-		<align>center</align>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
-		<visible>!string.equals(#mainmenu,801) + [string.equals(#mainmenu,901) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(606)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="-371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">visible</animation>
-	</control>
-	
 </control>
 
 <control>
@@ -784,33 +703,6 @@
 		<label>#bottomlabel2</label>
 		<font>TitanLight20</font>
 		<align>center</align>
-		<visible>!string.equals(#mainmenu,802) + [string.equals(#mainmenu,902) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(506)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="-371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">visible</animation>
-	</control>
-	
-	<control>
-		<id>0</id>
-		<posX>1897</posX>
-		<posY>607</posY>
-		<height>271</height>
-		<width>371</width>
-		<type>image</type>
-		<texture>#bottomitem3.png</texture>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
-		<visible>!string.equals(#mainmenu,802) + [string.equals(#mainmenu,902) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(506)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
-		<animation effect="slide" start="-371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">visible</animation>
-	</control>
-	
-	<control>
-		<id>0</id>
-		<posX>1893</posX>
-		<posY>820</posY>
-		<type>label</type>
-		<width>371</width>
-		<label>#bottomlabel3</label>
-		<font>TitanLight20</font>
-		<align>center</align>
-		<animation effect="fade" start="250" end="0" time="0" reversible="false">Visible</animation>
 		<visible>!string.equals(#mainmenu,802) + [string.equals(#mainmenu,902) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(506)] + ![Control.HasFocus(12) | Control.HasFocus(13) | Control.HasFocus(14)]</visible>
 		<animation effect="slide" start="-371,0" end="0,0" time="250" acceleration="-0.1" reversible="false">visible</animation>
 	</control>
