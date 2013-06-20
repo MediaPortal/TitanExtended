@@ -234,6 +234,118 @@
               <ZipFileName>Installer{CopyFile}\{16d84439-9106-4c8f-8441-7810f903db49}-parental_lock.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\media\parental_lock.png</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\-10.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{10bd257f-ad5b-484f-a845-d5653d64c2a5}--10.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\-10.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\-12.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{3e7e5c38-7820-4dfb-999d-32d982a42d8a}--12.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\-12.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\-16.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{8fa5f313-a743-4009-b386-ba0451d769f0}--16.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\-16.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\-18.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ca48c37e-1ebf-41c4-917f-400ae6ac17c9}--18.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\-18.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\M.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{3cdefc15-6d9e-4aa2-85d8-c63e90737da9}-M.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\M.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\MA.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{610b49a2-f620-4526-aef0-725d9080226b}-MA.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\MA.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\MA15+.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2ffe7e7e-fcfd-4c03-9bec-f6d00282468d}-MA15+.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\MA15+.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\NR.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{740e004d-b54d-483e-af5e-7ebf69ba48bd}-NR.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\NR.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\R13.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{777e890d-91de-49a9-86c7-91447e20ba5a}-R13.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\R13.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\R15+.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e09b8bdf-edbf-4f54-adcd-eee7ed779c1b}-R15+.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\R15+.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\R15.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{cc1594aa-0056-4f55-92e1-214d4d37fc14}-R15.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\R15.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\R16.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{88d6c93f-bb5d-4507-bfed-8cb0d4a4d40b}-R16.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\R16.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\R18+.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0d84db2f-b88b-4c05-88f2-e3e25f0e7ec0}-R18+.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\R18+.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\R18.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5a1b099a-10d5-49a7-bf61-33b62189f6b4}-R18.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\R18.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\U.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a926db1b-e818-463b-947e-0cf12d88eff9}-U.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\U.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\MovingPictures\media\certification\X.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{114ce849-75b2-4e1e-a56a-d7750e35652b}-X.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\media\certification\X.png</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -5452,308 +5564,308 @@
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_Active.hiddenmenu.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{6130d64e-d809-4448-80e2-71b726958407}-ARGUS_Active.hiddenmenu.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{177f0aa4-dd9d-439a-b0f0-5f347c17a246}-ARGUS_Active.hiddenmenu.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_Active.hiddenmenu.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_Active.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d87448a3-0a0c-4e08-991a-aafc7883ff5e}-ARGUS_Active.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{f4876a17-cd73-4529-b9e2-48f129930f73}-ARGUS_Active.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_Active.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_ChannelManagment.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c8ef6734-3f09-48c2-afce-19e5b95207cb}-ARGUS_ChannelManagment.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{eabe8f36-f743-4fc1-8467-582e38685133}-ARGUS_ChannelManagment.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_ChannelManagment.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_ClientSettings.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{ff144298-b420-40dd-bf3c-9f887c9feecd}-ARGUS_ClientSettings.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{ded5e74a-53a5-4fb9-9e12-d471374eed3d}-ARGUS_ClientSettings.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_ClientSettings.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_Home.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4fa370f2-5b2d-4f9a-9a11-6c75b69606b8}-ARGUS_Home.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{dd179b77-334c-47f0-a4fa-d4649d33ae0c}-ARGUS_Home.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_Home.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_ManualSchedule.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{08a9ef65-ad35-4174-94bf-1ef3228f4416}-ARGUS_ManualSchedule.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{4d5df4ea-2475-4984-a677-555c00cc1ea0}-ARGUS_ManualSchedule.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_ManualSchedule.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_ProgramInfo2.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{8219c69b-0937-47be-82bc-9b196a6359f8}-ARGUS_ProgramInfo2.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{ab6809a7-87de-423f-9c97-e97c498ca320}-ARGUS_ProgramInfo2.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_ProgramInfo2.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuide.11rows.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{79f5bc59-7a08-49ad-80f7-12f0bfdfa021}-ARGUS_RadioGuide.11rows.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{cc8768f5-83ec-4e3b-906e-71ddc2973bd1}-ARGUS_RadioGuide.11rows.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuide.11rows.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuide.7rows.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{bbcefa09-c892-45e0-8d70-d5d036ca36e9}-ARGUS_RadioGuide.7rows.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{fa37aef2-fc03-4d4a-b2f2-d9df1d128f44}-ARGUS_RadioGuide.7rows.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuide.7rows.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuide.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{250a8a1d-00d8-4a06-8086-2c50b3b630a8}-ARGUS_RadioGuide.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{892277c4-b4a3-461a-a390-8d93ccca642c}-ARGUS_RadioGuide.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuide.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuideSearch2.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c311e519-4de2-4005-8e9f-b039aaa33882}-ARGUS_RadioGuideSearch2.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{451a94d1-f72d-47fa-a8aa-7448c9265f75}-ARGUS_RadioGuideSearch2.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuideSearch2.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioHome.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d4736789-9476-47d1-af5f-b9271a588f00}-ARGUS_RadioHome.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{fddcc5e4-661c-43f3-adc7-e4291493f970}-ARGUS_RadioHome.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RadioHome.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedRadio2.hiddenmenu.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{98ffabf1-9eac-4121-89c4-a8f729095997}-ARGUS_RecordedRadio2.hiddenmenu.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{334a208d-359d-4ab7-a44a-1d23e5205ca5}-ARGUS_RecordedRadio2.hiddenmenu.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RecordedRadio2.hiddenmenu.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedRadio2.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c8e359dc-db8c-40d7-b1d5-81220b068863}-ARGUS_RecordedRadio2.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{9190c9e0-9fea-4cab-9b35-bc8942482da3}-ARGUS_RecordedRadio2.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RecordedRadio2.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedTv2.hiddenmenu.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a246baeb-da2d-464d-a8cd-44a208c61f2f}-ARGUS_RecordedTv2.hiddenmenu.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{e8819baa-dd0e-4510-88f0-3f130450be24}-ARGUS_RecordedTv2.hiddenmenu.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RecordedTv2.hiddenmenu.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedTv2.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{f00c93fa-0a02-4b1d-967b-d95a67766ee1}-ARGUS_RecordedTv2.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{8b6d592b-440d-47f0-b130-856d2936d8d7}-ARGUS_RecordedTv2.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_RecordedTv2.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_ServerSettings.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{74ffee94-fd76-4347-9c58-0c5515536230}-ARGUS_ServerSettings.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{58f9586f-b841-4ff0-a492-3ce92bdf7fe9}-ARGUS_ServerSettings.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_ServerSettings.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_TuningDetails.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{f2d66001-e4a6-4f93-84d1-62ab9dcd89f0}-ARGUS_TuningDetails.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{0843eab8-403e-4024-a02a-db508685ff43}-ARGUS_TuningDetails.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_TuningDetails.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuide.11rows.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{fdddd9b1-a8ab-4898-91a9-530baa10a419}-ARGUS_TvGuide.11rows.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{8fcb7fb4-36b1-4f85-a1b3-28dd26d0f18c}-ARGUS_TvGuide.11rows.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_TvGuide.11rows.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuide.7rows.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{7adf77be-5757-479f-befb-8d6750aed0e7}-ARGUS_TvGuide.7rows.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{185154d4-8148-48ed-b337-ce200e359863}-ARGUS_TvGuide.7rows.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_TvGuide.7rows.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuide.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{491b8f23-5c78-40c9-9629-0f200f21ecbd}-ARGUS_TvGuide.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{74774c6b-c2a3-4e69-b584-8586f4f7865c}-ARGUS_TvGuide.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_TvGuide.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuideSearch2.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{7e7ce881-a228-4a7d-be6d-dc68b10e7313}-ARGUS_TvGuideSearch2.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{687714c2-d171-4b94-9ddf-e689672f5df0}-ARGUS_TvGuideSearch2.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_TvGuideSearch2.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_Upcoming.hiddenmenu.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{02994a01-d057-462e-863c-c3ffc7f6667a}-ARGUS_Upcoming.hiddenmenu.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{869eea42-8489-45b4-88dc-5f0edf253641}-ARGUS_Upcoming.hiddenmenu.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_Upcoming.hiddenmenu.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_UpcomingRadio.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{248ed1ba-52f5-45ba-a440-a54c576d6628}-ARGUS_UpcomingRadio.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{c1d96a0f-42b9-4700-95e7-3b943214cd70}-ARGUS_UpcomingRadio.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_UpcomingRadio.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\ARGUS_UpcomingTv.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2678c3b0-6831-4568-9f1a-690c243fe383}-ARGUS_UpcomingTv.xml</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{bb1e90d6-f732-47b6-9434-87239c0c82ee}-ARGUS_UpcomingTv.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\ARGUS_UpcomingTv.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_Alert.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4c704652-b130-4f6c-b80e-cd220792b122}-ARGUS_Alert.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{11b9d7e6-057d-4a7c-984c-9f16e41057f8}-ARGUS_Alert.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_Alert.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_AlertCancelled.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d1606ee4-1077-4e18-87fb-391e178ec7ac}-ARGUS_AlertCancelled.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{3f216573-b72b-4a84-bb3b-15d6ac7c58a2}-ARGUS_AlertCancelled.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_AlertCancelled.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_AlertSeries.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{983d3567-780f-402d-958c-9177900fa4ca}-ARGUS_AlertSeries.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{5f56e661-636f-435d-8de9-438cce79ac19}-ARGUS_AlertSeries.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_AlertSeries.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_AlertSeriesCancelled.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{426e8b51-872d-4257-ad83-9a0c70188a4f}-ARGUS_AlertSeriesCancelled.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{ce996a38-8cd0-4c9a-8b3d-8cc60033f1d0}-ARGUS_AlertSeriesCancelled.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_AlertSeriesCancelled.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_icon.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{868e32c6-ed38-4958-99c9-3f9b6ba5a2e4}-ARGUS_icon.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{936e65d4-bcda-4234-af37-2f2a497df844}-ARGUS_icon.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_icon.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_Recording.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a31fc21f-04ee-40ab-b981-b9f5d8cea576}-ARGUS_Recording.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{2b8199d6-5ca1-48d5-8fbb-b71ec18ff6da}-ARGUS_Recording.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_Recording.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingCancelled.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{b120d882-e537-44cf-ab4d-c9e6e52b2d6b}-ARGUS_RecordingCancelled.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{16a25457-e5c5-4452-a9b6-3ce9293b563b}-ARGUS_RecordingCancelled.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingCancelled.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingCancelledHistory.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4def5c39-87a5-4301-821c-f8b33257f085}-ARGUS_RecordingCancelledHistory.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{63bfdb79-592b-4215-b4c8-33547668aef1}-ARGUS_RecordingCancelledHistory.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingCancelledHistory.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingInConflict.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{b6fbf3ad-c853-4b07-9f7e-539c0cfb9a4e}-ARGUS_RecordingInConflict.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{6c0135e1-7955-4987-b98f-007a1a56f567}-ARGUS_RecordingInConflict.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingInConflict.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeries.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{90c0a6f5-ba9b-4cae-bce8-54a81b22e7db}-ARGUS_RecordingSeries.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{a6d58006-657f-411a-b97d-b50de041ab00}-ARGUS_RecordingSeries.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeries.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesCancelled.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{0cb2be38-8c04-4305-a500-f478df9edf6b}-ARGUS_RecordingSeriesCancelled.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{abfa4738-5866-4d6d-b863-2fefd2166211}-ARGUS_RecordingSeriesCancelled.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesCancelled.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesCancelledHistory.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d2fb3877-c899-46b5-883f-c9a5427541dd}-ARGUS_RecordingSeriesCancelledHistory.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{27e57305-e5bc-4c18-b09c-9041213dd407}-ARGUS_RecordingSeriesCancelledHistory.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesCancelledHistory.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesInConflict.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2227ff7d-fd6d-47e2-aa73-37fd1fac2560}-ARGUS_RecordingSeriesInConflict.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{137de561-25ef-43f8-bdbe-1bcdba956f6c}-ARGUS_RecordingSeriesInConflict.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesInConflict.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesWithWarning.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{67d3cb75-1b41-4ba4-aba0-ac371fbede3e}-ARGUS_RecordingSeriesWithWarning.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{7529843b-2b00-492b-a1df-1b52cda94d8a}-ARGUS_RecordingSeriesWithWarning.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesWithWarning.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingWithWarning.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{92811b72-9b6b-45b9-b0d9-0227949cf7a6}-ARGUS_RecordingWithWarning.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{1f7331d4-8264-4b2f-8891-b63dbe4b3962}-ARGUS_RecordingWithWarning.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingWithWarning.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_Suggestion.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{b71d80b0-45d8-420a-a55b-fc861b351be0}-ARGUS_Suggestion.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{827fbe3c-fcb7-4e19-91a3-fd311f314cbb}-ARGUS_Suggestion.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_Suggestion.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_SuggestionCancelled.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{36c1a676-a0cd-48aa-be83-688f401d19ef}-ARGUS_SuggestionCancelled.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{66468ab0-ebda-4d35-9a83-0e7b25c98f2e}-ARGUS_SuggestionCancelled.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_SuggestionCancelled.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_SuggestionSeries.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4993672d-e1be-4d4c-a95d-e90064ec6a57}-ARGUS_SuggestionSeries.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{40edcaf6-e5ed-4e73-9839-68cbfdff1549}-ARGUS_SuggestionSeries.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_SuggestionSeries.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_SuggestionSeriesCancelled.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{e4617366-c4a3-491a-bfac-c9d539d628dc}-ARGUS_SuggestionSeriesCancelled.png</ZipFileName>
+              <ZipFileName>Installer{CopyFile}\{4330dc8e-9c00-427f-b7eb-c10426778ea3}-ARGUS_SuggestionSeriesCancelled.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\ARGUS_SuggestionSeriesCancelled.png</DestinationFilename>
             </FileItem>
           </Items>
@@ -5930,9 +6042,9 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <Id />
         <MinVersion>
           <Major>1</Major>
-          <Minor>3</Minor>
+          <Minor>4</Minor>
           <Build>0</Build>
-          <Revision>1</Revision>
+          <Revision>0</Revision>
         </MinVersion>
         <MaxVersion>
           <Major>1</Major>
@@ -5941,7 +6053,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
           <Revision>0</Revision>
         </MaxVersion>
         <WarnOnly>true</WarnOnly>
-        <Message>requires Skin version 1.3.0.1 to 1.4.0.0.</Message>
+        <Message>requires Skin version 1.4.0.0 to 1.4.0.0.</Message>
         <Name>Skin</Name>
       </DependencyItem>
       <DependencyItem>
@@ -5971,8 +6083,8 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <CompatibleVersion>
           <Items>
             <CompatibleVersionItem>
-              <MinRequiredVersion>1.1.6.27644</MinRequiredVersion>
-              <DesignedForVersion>1.2.200.0</DesignedForVersion>
+              <MinRequiredVersion>1.3.100.0</MinRequiredVersion>
+              <DesignedForVersion>1.3.100.0</DesignedForVersion>
             </CompatibleVersionItem>
           </Items>
         </CompatibleVersion>
@@ -5984,8 +6096,8 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <CompatibleVersion>
           <Items>
             <CompatibleVersionItem>
-              <MinRequiredVersion>1.1.6.27644</MinRequiredVersion>
-              <DesignedForVersion>1.2.200.0</DesignedForVersion>
+              <MinRequiredVersion>1.3.100.0</MinRequiredVersion>
+              <DesignedForVersion>1.3.100.0</DesignedForVersion>
             </CompatibleVersionItem>
           </Items>
         </CompatibleVersion>
@@ -6006,13 +6118,13 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Major>1</Major>
       <Minor>4</Minor>
       <Build>0</Build>
-      <Revision>302</Revision>
+      <Revision>312</Revision>
     </Version>
     <ExtensionDescription />
     <VersionDescription />
     <DevelopmentStatus>Stable</DevelopmentStatus>
-    <OnlineLocation>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtended.mpe1</OnlineLocation>
-    <ReleaseDate>2013-06-18T09:34:51</ReleaseDate>
+    <OnlineLocation>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtended14.mpe1</OnlineLocation>
+    <ReleaseDate>2013-06-19T09:34:51</ReleaseDate>
     <Tags />
     <Location>.\TitanExtended14.mpe1</Location>
     <Params>
@@ -6272,6 +6384,118 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>..\extensions\MovingPictures\media\parental_lock.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{16d84439-9106-4c8f-8441-7810f903db49}-parental_lock.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\media\parental_lock.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\-10.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{10bd257f-ad5b-484f-a845-d5653d64c2a5}--10.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\-10.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\-12.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3e7e5c38-7820-4dfb-999d-32d982a42d8a}--12.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\-12.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\-16.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{8fa5f313-a743-4009-b386-ba0451d769f0}--16.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\-16.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\-18.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ca48c37e-1ebf-41c4-917f-400ae6ac17c9}--18.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\-18.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\M.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3cdefc15-6d9e-4aa2-85d8-c63e90737da9}-M.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\M.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\MA.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{610b49a2-f620-4526-aef0-725d9080226b}-MA.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\MA.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\MA15+.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2ffe7e7e-fcfd-4c03-9bec-f6d00282468d}-MA15+.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\MA15+.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\NR.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{740e004d-b54d-483e-af5e-7ebf69ba48bd}-NR.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\NR.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\R13.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{777e890d-91de-49a9-86c7-91447e20ba5a}-R13.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\R13.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\R15+.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e09b8bdf-edbf-4f54-adcd-eee7ed779c1b}-R15+.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\R15+.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\R15.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{cc1594aa-0056-4f55-92e1-214d4d37fc14}-R15.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\R15.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\R16.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{88d6c93f-bb5d-4507-bfed-8cb0d4a4d40b}-R16.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\R16.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\R18+.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0d84db2f-b88b-4c05-88f2-e3e25f0e7ec0}-R18+.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\R18+.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\R18.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5a1b099a-10d5-49a7-bf61-33b62189f6b4}-R18.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\R18.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\U.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a926db1b-e818-463b-947e-0cf12d88eff9}-U.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\U.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\MovingPictures\media\certification\X.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{114ce849-75b2-4e1e-a56a-d7750e35652b}-X.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\media\certification\X.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />
@@ -11352,308 +11576,308 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_Active.hiddenmenu.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{6130d64e-d809-4448-80e2-71b726958407}-ARGUS_Active.hiddenmenu.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{177f0aa4-dd9d-439a-b0f0-5f347c17a246}-ARGUS_Active.hiddenmenu.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_Active.hiddenmenu.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_Active.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d87448a3-0a0c-4e08-991a-aafc7883ff5e}-ARGUS_Active.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{f4876a17-cd73-4529-b9e2-48f129930f73}-ARGUS_Active.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_Active.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_ChannelManagment.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c8ef6734-3f09-48c2-afce-19e5b95207cb}-ARGUS_ChannelManagment.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{eabe8f36-f743-4fc1-8467-582e38685133}-ARGUS_ChannelManagment.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_ChannelManagment.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_ClientSettings.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{ff144298-b420-40dd-bf3c-9f887c9feecd}-ARGUS_ClientSettings.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{ded5e74a-53a5-4fb9-9e12-d471374eed3d}-ARGUS_ClientSettings.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_ClientSettings.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_Home.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4fa370f2-5b2d-4f9a-9a11-6c75b69606b8}-ARGUS_Home.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{dd179b77-334c-47f0-a4fa-d4649d33ae0c}-ARGUS_Home.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_Home.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_ManualSchedule.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{08a9ef65-ad35-4174-94bf-1ef3228f4416}-ARGUS_ManualSchedule.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{4d5df4ea-2475-4984-a677-555c00cc1ea0}-ARGUS_ManualSchedule.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_ManualSchedule.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_ProgramInfo2.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{8219c69b-0937-47be-82bc-9b196a6359f8}-ARGUS_ProgramInfo2.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{ab6809a7-87de-423f-9c97-e97c498ca320}-ARGUS_ProgramInfo2.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_ProgramInfo2.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuide.11rows.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{79f5bc59-7a08-49ad-80f7-12f0bfdfa021}-ARGUS_RadioGuide.11rows.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{cc8768f5-83ec-4e3b-906e-71ddc2973bd1}-ARGUS_RadioGuide.11rows.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuide.11rows.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuide.7rows.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{bbcefa09-c892-45e0-8d70-d5d036ca36e9}-ARGUS_RadioGuide.7rows.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{fa37aef2-fc03-4d4a-b2f2-d9df1d128f44}-ARGUS_RadioGuide.7rows.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuide.7rows.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuide.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{250a8a1d-00d8-4a06-8086-2c50b3b630a8}-ARGUS_RadioGuide.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{892277c4-b4a3-461a-a390-8d93ccca642c}-ARGUS_RadioGuide.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuide.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioGuideSearch2.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c311e519-4de2-4005-8e9f-b039aaa33882}-ARGUS_RadioGuideSearch2.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{451a94d1-f72d-47fa-a8aa-7448c9265f75}-ARGUS_RadioGuideSearch2.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RadioGuideSearch2.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RadioHome.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d4736789-9476-47d1-af5f-b9271a588f00}-ARGUS_RadioHome.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{fddcc5e4-661c-43f3-adc7-e4291493f970}-ARGUS_RadioHome.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RadioHome.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedRadio2.hiddenmenu.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{98ffabf1-9eac-4121-89c4-a8f729095997}-ARGUS_RecordedRadio2.hiddenmenu.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{334a208d-359d-4ab7-a44a-1d23e5205ca5}-ARGUS_RecordedRadio2.hiddenmenu.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RecordedRadio2.hiddenmenu.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedRadio2.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c8e359dc-db8c-40d7-b1d5-81220b068863}-ARGUS_RecordedRadio2.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{9190c9e0-9fea-4cab-9b35-bc8942482da3}-ARGUS_RecordedRadio2.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RecordedRadio2.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedTv2.hiddenmenu.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a246baeb-da2d-464d-a8cd-44a208c61f2f}-ARGUS_RecordedTv2.hiddenmenu.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{e8819baa-dd0e-4510-88f0-3f130450be24}-ARGUS_RecordedTv2.hiddenmenu.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RecordedTv2.hiddenmenu.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_RecordedTv2.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{f00c93fa-0a02-4b1d-967b-d95a67766ee1}-ARGUS_RecordedTv2.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{8b6d592b-440d-47f0-b130-856d2936d8d7}-ARGUS_RecordedTv2.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_RecordedTv2.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_ServerSettings.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{74ffee94-fd76-4347-9c58-0c5515536230}-ARGUS_ServerSettings.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{58f9586f-b841-4ff0-a492-3ce92bdf7fe9}-ARGUS_ServerSettings.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_ServerSettings.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_TuningDetails.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{f2d66001-e4a6-4f93-84d1-62ab9dcd89f0}-ARGUS_TuningDetails.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{0843eab8-403e-4024-a02a-db508685ff43}-ARGUS_TuningDetails.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_TuningDetails.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuide.11rows.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{fdddd9b1-a8ab-4898-91a9-530baa10a419}-ARGUS_TvGuide.11rows.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{8fcb7fb4-36b1-4f85-a1b3-28dd26d0f18c}-ARGUS_TvGuide.11rows.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_TvGuide.11rows.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuide.7rows.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{7adf77be-5757-479f-befb-8d6750aed0e7}-ARGUS_TvGuide.7rows.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{185154d4-8148-48ed-b337-ce200e359863}-ARGUS_TvGuide.7rows.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_TvGuide.7rows.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuide.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{491b8f23-5c78-40c9-9629-0f200f21ecbd}-ARGUS_TvGuide.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{74774c6b-c2a3-4e69-b584-8586f4f7865c}-ARGUS_TvGuide.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_TvGuide.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_TvGuideSearch2.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{7e7ce881-a228-4a7d-be6d-dc68b10e7313}-ARGUS_TvGuideSearch2.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{687714c2-d171-4b94-9ddf-e689672f5df0}-ARGUS_TvGuideSearch2.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_TvGuideSearch2.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_Upcoming.hiddenmenu.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{02994a01-d057-462e-863c-c3ffc7f6667a}-ARGUS_Upcoming.hiddenmenu.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{869eea42-8489-45b4-88dc-5f0edf253641}-ARGUS_Upcoming.hiddenmenu.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_Upcoming.hiddenmenu.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_UpcomingRadio.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{248ed1ba-52f5-45ba-a440-a54c576d6628}-ARGUS_UpcomingRadio.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{c1d96a0f-42b9-4700-95e7-3b943214cd70}-ARGUS_UpcomingRadio.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_UpcomingRadio.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\ARGUS_UpcomingTv.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2678c3b0-6831-4568-9f1a-690c243fe383}-ARGUS_UpcomingTv.xml</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{bb1e90d6-f732-47b6-9434-87239c0c82ee}-ARGUS_UpcomingTv.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\ARGUS_UpcomingTv.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_Alert.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4c704652-b130-4f6c-b80e-cd220792b122}-ARGUS_Alert.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{11b9d7e6-057d-4a7c-984c-9f16e41057f8}-ARGUS_Alert.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_Alert.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_AlertCancelled.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d1606ee4-1077-4e18-87fb-391e178ec7ac}-ARGUS_AlertCancelled.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{3f216573-b72b-4a84-bb3b-15d6ac7c58a2}-ARGUS_AlertCancelled.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_AlertCancelled.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_AlertSeries.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{983d3567-780f-402d-958c-9177900fa4ca}-ARGUS_AlertSeries.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{5f56e661-636f-435d-8de9-438cce79ac19}-ARGUS_AlertSeries.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_AlertSeries.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_AlertSeriesCancelled.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{426e8b51-872d-4257-ad83-9a0c70188a4f}-ARGUS_AlertSeriesCancelled.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{ce996a38-8cd0-4c9a-8b3d-8cc60033f1d0}-ARGUS_AlertSeriesCancelled.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_AlertSeriesCancelled.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_icon.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{868e32c6-ed38-4958-99c9-3f9b6ba5a2e4}-ARGUS_icon.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{936e65d4-bcda-4234-af37-2f2a497df844}-ARGUS_icon.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_icon.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_Recording.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a31fc21f-04ee-40ab-b981-b9f5d8cea576}-ARGUS_Recording.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{2b8199d6-5ca1-48d5-8fbb-b71ec18ff6da}-ARGUS_Recording.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_Recording.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingCancelled.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{b120d882-e537-44cf-ab4d-c9e6e52b2d6b}-ARGUS_RecordingCancelled.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{16a25457-e5c5-4452-a9b6-3ce9293b563b}-ARGUS_RecordingCancelled.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingCancelled.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingCancelledHistory.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4def5c39-87a5-4301-821c-f8b33257f085}-ARGUS_RecordingCancelledHistory.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{63bfdb79-592b-4215-b4c8-33547668aef1}-ARGUS_RecordingCancelledHistory.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingCancelledHistory.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingInConflict.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{b6fbf3ad-c853-4b07-9f7e-539c0cfb9a4e}-ARGUS_RecordingInConflict.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{6c0135e1-7955-4987-b98f-007a1a56f567}-ARGUS_RecordingInConflict.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingInConflict.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeries.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{90c0a6f5-ba9b-4cae-bce8-54a81b22e7db}-ARGUS_RecordingSeries.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{a6d58006-657f-411a-b97d-b50de041ab00}-ARGUS_RecordingSeries.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeries.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesCancelled.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{0cb2be38-8c04-4305-a500-f478df9edf6b}-ARGUS_RecordingSeriesCancelled.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{abfa4738-5866-4d6d-b863-2fefd2166211}-ARGUS_RecordingSeriesCancelled.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesCancelled.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesCancelledHistory.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d2fb3877-c899-46b5-883f-c9a5427541dd}-ARGUS_RecordingSeriesCancelledHistory.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{27e57305-e5bc-4c18-b09c-9041213dd407}-ARGUS_RecordingSeriesCancelledHistory.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesCancelledHistory.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesInConflict.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2227ff7d-fd6d-47e2-aa73-37fd1fac2560}-ARGUS_RecordingSeriesInConflict.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{137de561-25ef-43f8-bdbe-1bcdba956f6c}-ARGUS_RecordingSeriesInConflict.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesInConflict.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingSeriesWithWarning.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{67d3cb75-1b41-4ba4-aba0-ac371fbede3e}-ARGUS_RecordingSeriesWithWarning.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{7529843b-2b00-492b-a1df-1b52cda94d8a}-ARGUS_RecordingSeriesWithWarning.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingSeriesWithWarning.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_RecordingWithWarning.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{92811b72-9b6b-45b9-b0d9-0227949cf7a6}-ARGUS_RecordingWithWarning.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{1f7331d4-8264-4b2f-8891-b63dbe4b3962}-ARGUS_RecordingWithWarning.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_RecordingWithWarning.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_Suggestion.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{b71d80b0-45d8-420a-a55b-fc861b351be0}-ARGUS_Suggestion.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{827fbe3c-fcb7-4e19-91a3-fd311f314cbb}-ARGUS_Suggestion.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_Suggestion.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_SuggestionCancelled.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{36c1a676-a0cd-48aa-be83-688f401d19ef}-ARGUS_SuggestionCancelled.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{66468ab0-ebda-4d35-9a83-0e7b25c98f2e}-ARGUS_SuggestionCancelled.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_SuggestionCancelled.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_SuggestionSeries.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4993672d-e1be-4d4c-a95d-e90064ec6a57}-ARGUS_SuggestionSeries.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{40edcaf6-e5ed-4e73-9839-68cbfdff1549}-ARGUS_SuggestionSeries.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_SuggestionSeries.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\ArgusTV\Media\ARGUS_SuggestionSeriesCancelled.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{e4617366-c4a3-491a-bfac-c9d539d628dc}-ARGUS_SuggestionSeriesCancelled.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{4330dc8e-9c00-427f-b7eb-c10426778ea3}-ARGUS_SuggestionSeriesCancelled.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\ARGUS_SuggestionSeriesCancelled.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
@@ -11708,16 +11932,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName />
-        <ZipFileName>Installer{CopyFile}\{1a09ce05-484d-4984-9aa5-f98c3630239d}-</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
-        <Folder>..\extensions\ArgusTV</Folder>
-        <Group>ArgusTV</Group>
-        <Recursive>true</Recursive>
-      </FolderGroup>
-      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName />
         <ZipFileName>Installer{CopyFile}\{aa169bea-bdcd-4eb3-8d5e-f3cb71bd8265}-</ZipFileName>
         <DestinationFilename>%Skin%\Titan\</DestinationFilename>
         <Folder>..\extensions\MovingPictures</Folder>
@@ -11764,9 +11978,19 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <Group>GobalMusicSearch</Group>
         <Recursive>true</Recursive>
       </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{b921daec-556f-400a-8c1b-70cc9abae2ab}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\extensions\ArgusTV</Folder>
+        <Group>ArgusTV</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
     </FolderGroups>
     <ProjectFilename>Titan Extended.xmp2</ProjectFilename>
-    <UpdatePath1>.\TitanExtendedUpdate.xml</UpdatePath1>
+    <UpdatePath1>.\TitanExtendedUpdate1.xml</UpdatePath1>
     <UpdatePath2 />
     <UpdatePath3 />
   </ProjectSettings>
