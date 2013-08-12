@@ -12,7 +12,7 @@
     <height>65</height>
     <texture>Logos\resolution\#MovingPictures.LocalMedia.videoresolution.png</texture>
     <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10005)</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
   </control>
@@ -27,7 +27,7 @@
     <height>65</height>
     <texture>Logos\video\#MovingPictures.LocalMedia.videocodec.png</texture>
     <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10005)</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
   </control>
@@ -42,7 +42,7 @@
     <height>65</height>
     <texture>Logos\audio\#MovingPictures.LocalMedia.audiocodec.png</texture>
     <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10005)</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
   </control>
@@ -57,7 +57,7 @@
     <height>65</height>
     <texture>Logos\audio\#MovingPictures.LocalMedia.audiochannels.png</texture>
     <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10005)</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
   </control>
@@ -72,7 +72,7 @@
     <height>65</height>
     <texture>Logos\aspectratio\#MovingPictures.LocalMedia.videoaspectratio.png</texture>
     <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10005)</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
   </control>
