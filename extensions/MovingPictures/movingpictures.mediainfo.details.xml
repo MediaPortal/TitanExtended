@@ -33,7 +33,7 @@
   	<description>Audio codec</description>
     <type>image</type>
     <id>0</id>
-		<posX>1278</posX>
+		<posX>1283</posX>
 		<posY>862</posY>
     <width>92</width>
     <height>60</height>
@@ -47,7 +47,7 @@
   	<description>Audio channels</description>
     <type>image</type>
     <id>0</id>
-		<posX>1358</posX>
+		<posX>1363</posX>
 		<posY>862</posY>
     <width>92</width>
     <height>60</height>
@@ -61,7 +61,7 @@
   	<description>Aspect ratio</description>
     <type>image</type>
     <id>0</id>
-		<posX>1438</posX>
+		<posX>1433</posX>
 		<posY>862</posY>
     <width>92</width>
     <height>60</height>
@@ -75,7 +75,7 @@
   	<description>Subtitle</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1528</posX>
+		<posX>1523</posX>
 		<posY>872</posY>
 		<width>39</width>
 		<height>40</height>
