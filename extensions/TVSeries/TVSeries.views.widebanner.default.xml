@@ -109,7 +109,7 @@
 		<posX>510</posX>
 		<posY>1015</posY>
 		<label>#TVSeries.Series.Pretty_Name: #TVSeries.Season.SeasonLabel</label>
-		<visible>[facadeview.list | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(1238)</visible>
+		<visible>[facadeview.list | facadeview.largeicons] + Control.IsVisible(1238)</visible>
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
@@ -121,7 +121,7 @@
 		<description>Description (grouplist)</description>
 		<id>0</id>
 		<posX>568</posX>
-		<posY>590</posY>
+		<posY>552</posY>
 		<width>555</width>
 		<height>275</height>
 		<label>#TVSeries.Description</label>
@@ -263,7 +263,7 @@
 		<description>Summary (list)</description>
 		<id>1025</id>
 		<posX>568</posX>
-		<posY>590</posY>
+		<posY>552</posY>
 		<width>555</width>
 		<height>340</height>
 		<label>#TVSeries.Description</label>
@@ -343,10 +343,10 @@
 		<type>image</type>
 		<description>Logos</description>
 		<id>66</id>
-		<posX>660</posX>
-		<posY>886</posY>
-    <width>470</width>
-    <height>65</height>
+		<posX>664</posX>
+		<posY>889</posY>
+    <width>550</width>
+    <height>61</height>
 		<texture>#TVSeries.Logos</texture>
 		<keepaspectratio>yes</keepaspectratio>
     <spaceBetweenItems>0</spaceBetweenItems>
@@ -354,6 +354,22 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
 	</control>	
+	
+	<control>
+		<description>certification logo</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>588</posX>
+		<posY>891</posY>
+		<width>55</width>
+		<height>55</height>
+    <keepaspectratio>yes</keepaspectratio>
+    <centered>yes</centered>
+		<texture>#TVSeries.Series.InfoPanelLine12Value</texture>
+		<visible>facadeview.list+Control.IsVisible(1239)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
 
   <control Style="smallTitle">
 		<type>fadelabel</type>
@@ -436,7 +452,7 @@
 		<label>#TVSeries.Translation.Season.Label</label>
 		<id>0</id>
 		<posX>565</posX>
-		<posY>456</posY>
+		<posY>451</posY>
 		<visible>facadeview.list+Control.IsVisible(1239)</visible>
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
@@ -448,7 +464,7 @@
 		<label>#TVSeries.Episode.SeasonLabel</label>
 		<id>0</id>
 		<posX>798</posX>
-		<posY>456</posY>
+		<posY>451</posY>
 		<visible>facadeview.list+Control.IsVisible(1239)</visible>
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
@@ -460,7 +476,7 @@
 		<label>#TVSeries.Translation.Episode.Label</label>
 		<id>0</id>
 		<posX>565</posX>
-		<posY>496</posY>
+		<posY>483</posY>
 		<visible>facadeview.list+Control.IsVisible(1239)</visible>
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
@@ -472,7 +488,7 @@
 		<label>#selectedindex (#itemcount)</label>
 		<id>0</id>
 		<posX>798</posX>
-		<posY>496</posY>
+		<posY>483</posY>
 		<visible>facadeview.list+Control.IsVisible(1239)</visible>
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
