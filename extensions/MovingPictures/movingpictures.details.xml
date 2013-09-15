@@ -43,6 +43,8 @@ This file should contain the details view
 				<ondown>10001</ondown>
 		    <textureFocus>myvideos_play_focus.png</textureFocus>
 		    <textureNoFocus>myvideos_play_nofocus.png</textureNoFocus>
+				<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus> 
 			</control>
 
 			<control>
@@ -54,6 +56,8 @@ This file should contain the details view
 				<onright>10005</onright>
 				<onup>6</onup>
 				<ondown>10002</ondown>
+				<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			</control>
 	
 			<control>
@@ -65,6 +69,8 @@ This file should contain the details view
 				<onright>10005</onright>
 				<onup>10001</onup>
 				<ondown>10003</ondown>
+				<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			</control>
 			
 			<control>
@@ -78,6 +84,8 @@ This file should contain the details view
 				<onright>10005</onright>
 				<hyperlink>4755</hyperlink>
 				<hyperlinkParameter>site:YouTube|search:#MovingPictures.SelectedMovie.title #MovingPictures.SelectedMovie.year trailer|return:Locked</hyperlinkParameter>
+				<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 				<visible>plugin.isenabled(OnlineVideos)</visible>
 			</control>
 			
@@ -91,6 +99,8 @@ This file should contain the details view
 				<onleft>10005</onleft>
 				<onright>10005</onright>
 				<hyperlink>84623</hyperlink>
+				<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 				<visible>plugin.isenabled(SubCentral)</visible>
 			</control>
 			
@@ -103,6 +113,8 @@ This file should contain the details view
 				<onright>10005</onright>
         <onup>10004</onup>
         <ondown>6</ondown>
+				<textcolor>FF000000</textcolor>
+				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 				<visible>plugin.isenabled(Trakt)</visible>
       </control>
 	</control>
