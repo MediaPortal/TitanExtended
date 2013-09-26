@@ -111,7 +111,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>510</posX>
+		<posX>395</posX>
 		<posY>1015</posY>
 		<label>#Trakt.Show.Title</label>
 		<visible>control.isvisible(50)</visible>
@@ -381,7 +381,7 @@
 				  <unfocusedAlpha>FF</unfocusedAlpha>
 				  <folderPrefix></folderPrefix>
 				  <folderSuffix></folderSuffix>
-				  <font1>font12</font1>
+				  <font1>font13</font1>
 				  <font2>font11</font2>
 				  <label1>#title</label1>
 				  <label2>#genre</label2>
@@ -717,7 +717,7 @@
 		<posX>568</posX>
 		<posY>538</posY>
 		<width>555</width>
-		<height>412</height>
+		<height>450</height>
 		<label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -891,7 +891,7 @@
 		<posX>1040</posX>
 		<posY>592</posY>
 		<width>790</width>
-		<height>340</height>
+		<height>335</height>
 		<label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>

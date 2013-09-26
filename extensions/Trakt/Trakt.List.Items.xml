@@ -110,7 +110,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>510</posX>
+		<posX>395</posX>
 		<posY>1015</posY>
 		<label>#Trakt.Movie.Title</label>
     <visible>!string.equals(#Trakt.Movie.Title,)+string.equals(#Trakt.List.ItemType,movie)</visible>
@@ -122,7 +122,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>510</posX>
+		<posX>395</posX>
 		<posY>1015</posY>
     <label>#Trakt.Show.Title</label>
     <visible>!string.equals(#Trakt.Show.Title,)+!string.equals(#Trakt.List.ItemType,movie)</visible>
@@ -207,40 +207,22 @@
     <animation effect="fade" time="0">Hidden</animation>
   </control>  
 
-	<!--            :: Current View ::            -->
-	
-    <control>
-      <description>Moviecount</description>
-      <type>label</type>
-      <label>#(L(97))#Trakt.List.Name - #Trakt.List.Username</label>
-      <id>0</id>
-			<posX>72</posX>
-      <posY>94</posY>
-      <align>left</align>
-      <textcolor>FFFFFFFF</textcolor>
-      <font>TitanLight12</font>
-			<visible>facadeview.list + control.isvisible(50)</visible>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-    </control>
-	
 	<!--            :: Count ::            -->
 	
-    <control>
-      <description>Moviecount</description>
-      <type>label</type>
-      <label>#(L(507)): #itemcount</label>
-      <id>0</id>
-	  	<posX>96</posX>
-      <posY>998</posY>
-      <align>left</align>
-      <font>TitanLight12</font>
-      <textcolor>000000</textcolor>
-			<visible>facadeview.list + control.isvisible(50)</visible>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-    </control>
-	
+	<control>
+		<description>Item Count Label</description>
+    <type>fadelabel</type>
+    <label>#Trakt.List.Username  /  #Trakt.List.Name: #itemcount</label>
+		<id>0</id>
+	  <posX>96</posX>
+    <posY>998</posY>
+    <align>left</align>
+    <font>TitanLight12</font>
+    <textcolor>000000</textcolor>
+    <visible>Control.IsVisible(50) + !string.equals(#selecteditem,)</visible>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+   </control>
 	
 	<!--            :: Listview Lines ::            -->
 
@@ -410,7 +392,7 @@
 				  <unfocusedAlpha>FF</unfocusedAlpha>
 				  <folderPrefix></folderPrefix>
 				  <folderSuffix></folderSuffix>
-				  <font1>font12</font1>
+				  <font1>font13</font1>
 				  <font2>font11</font2>
 				  <label1>#title</label1>
 				  <label2>#genre</label2>
@@ -806,7 +788,7 @@
 		<posX>568</posX>
 		<posY>501</posY>
 		<width>555</width>
-		<height>445</height>
+		<height>480</height>
     <label>#Trakt.Movie.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -826,7 +808,7 @@
 		<posX>568</posX>
 		<posY>501</posY>
 		<width>555</width>
-		<height>445</height>
+		<height>480</height>
     <label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -846,7 +828,7 @@
 		<posX>568</posX>
 		<posY>501</posY>
 		<width>555</width>
-		<height>445</height>
+		<height>480</height>
     <label>#Trakt.Episode.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -1178,7 +1160,7 @@
 		<posX>1040</posX>
 		<posY>592</posY>
 		<width>790</width>
-		<height>340</height>
+		<height>335</height>
     <label>#Trakt.Movie.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -1198,7 +1180,7 @@
 		<posX>1040</posX>
 		<posY>592</posY>
 		<width>790</width>
-		<height>340</height>
+		<height>335</height>
     <label>#Trakt.Show.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -1218,7 +1200,7 @@
 		<posX>1040</posX>
 		<posY>592</posY>
 		<width>790</width>
-		<height>340</height>
+		<height>335</height>
     <label>#Trakt.Episode.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>

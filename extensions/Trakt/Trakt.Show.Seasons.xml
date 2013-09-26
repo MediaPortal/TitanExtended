@@ -105,7 +105,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>510</posX>
+		<posX>395</posX>
 		<posY>1015</posY>
 		<label>#Trakt.Show.Title</label>
 		<visible>control.isvisible(50)</visible>
@@ -156,6 +156,19 @@
 	</control>
     
     <import>common.time.xml</import>
+    <control>
+      <description>Current View</description>
+      <type>label</type>
+      <label>Trakt</label>
+      <id>0</id>
+  	  <posX>144</posX>
+      <posY>94</posY>
+      <align>left</align>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>TitanLight12</font>
+  		<animation effect="fade" time="250">WindowOpen</animation>
+  		<animation effect="fade" time="250">WindowClose</animation>
+    </control>
 
 	<!--            :: List Scrolling Popup ::            -->
     
@@ -375,7 +388,7 @@
 				  <unfocusedAlpha>FF</unfocusedAlpha>
 				  <folderPrefix></folderPrefix>
 				  <folderSuffix></folderSuffix>
-				  <font1>font12</font1>
+				  <font1>font13</font1>
 				  <font2>font11</font2>
 				  <label1>#title</label1>
 				  <label2>#genre</label2>

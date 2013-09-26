@@ -5,6 +5,7 @@
 	<allowoverlay>no</allowoverlay>
 	<define>#Fanart.1:#Trakt.Calendar.Fanart.1</define>
 	<define>#Fanart.2:#Trakt.Calendar.Fanart.2</define>
+	<define>#header.hover:background.png</define>
 	<define>#header.label:Trakt #Trakt.Translation.Calendar.Label</define>		
 	<controls>
     
@@ -16,7 +17,7 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>background.png</texture>
+      <texture>#header.hover</texture>
       <shouldCache>true</shouldCache>
     </control>
  
@@ -29,7 +30,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-        <posY>0</posY>
+    <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
 		<texture>fanart_overlay.png</texture>	
@@ -37,18 +38,18 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
- 	<control>
-		<description>background listview</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>10</posX>
-		<posY>252</posY>
-		<width>1903</width>
-		<height>790</height>
-		<texture>panel_list.png</texture>	
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>  	
+		<control>
+			<description>Panel</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>10</posX>
+			<posY>145</posY>
+			<width>1903</width>
+			<height>897</height>
+			<texture>panel_trakt_profile.png</texture>   
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>	
 
      <control>
 		<id>0</id>
@@ -68,7 +69,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>510</posX>
+		<posX>395</posX>
 		<posY>1015</posY>
 		<label>#Trakt.Show.Title</label>
 		<visible>facadeview.list+control.isvisible(50)</visible>
@@ -81,7 +82,7 @@
 		<type>image</type>
 		<id>67</id>
 		<posX>123</posX>
-		<posY>360</posY>
+		<posY>256</posY>
 		<width>379</width>
 		<height>213</height>
 		<texture>#selectedthumb</texture>		
@@ -95,7 +96,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>105</posX>
-		<posY>347</posY>
+		<posY>243</posY>
 		<width>429</width>
 		<height>263</height>
 		<texture>tvseries_thumb_shadow.png</texture>
@@ -139,54 +140,36 @@
         <animation effect="fade" time="0">Hidden</animation>
     </control>  
 	
-	<!--            :: Current View ::            -->
-	
-    <control>
-      <description>Moviecount</description>
-      <type>label</type>
-      <label>#(L(97)) #(iif(eq(#Trakt.Calendar.Type,'MyShows'),'#Trakt.Translation.CalendarMyShows.Label','#Trakt.Translation.CalendarPremieres.Label'))</label>
-      <id>0</id>
-			<posX>72</posX>
-      <posY>94</posY>
-      <align>left</align>
-      <textcolor>FFFFFFFF</textcolor>
-      <font>TitanLight12</font>
-			<visible>facadeview.list + control.isvisible(50)</visible>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-    </control>
-	
 	<!--            :: Count ::            -->
 	
     <control>
       <description>Moviecount</description>
       <type>label</type>
-      <label>#(L(507)): #itemcount</label>
+      <label>#Trakt.Translation.Calendar.Label: #itemcount  /  #(iif(eq(#Trakt.Calendar.Type,'MyShows'),'#Trakt.Translation.CalendarMyShows.Label','#Trakt.Translation.CalendarPremieres.Label'))</label>
       <id>0</id>
-	  	<posX>96</posX>
-      <posY>998</posY>
+			<posX>144</posX>
+      <posY>94</posY>
       <align>left</align>
+      <textcolor>FFFFFFFF</textcolor>
       <font>TitanLight12</font>
-      <textcolor>000000</textcolor>
-			<visible>facadeview.list + control.isvisible(50)</visible>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
+	  <visible>facadeview.list + control.isvisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
     </control>
 
 	<!--            :: Listview Lines ::            -->
-
     <control>
-        <description>List Lines</description>
-        <type>image</type>
-        <id>1</id>
-		<posX>1222</posX>
-		<posY>385</posY>
-        <width>607</width>
-        <height>506</height>
-        <texture>list_lines.png</texture>
-        <visible>facadeview.list</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+    	<description>List Lines</description>
+      <type>image</type>
+      <id>1</id>
+			<posX>1196</posX>
+			<posY>273</posY>
+      <width>633</width>
+      <height>618</height>
+      <texture>list_lines_trakt.png</texture>
+      <visible>facadeview.list + control.isvisible(50)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
     </control>
 	
 	<control>
@@ -201,21 +184,23 @@
 			<onleft>2</onleft>
 			<onright>2</onright>
 			<scrollOffset>1</scrollOffset>
-			<posX>1165</posX>
-			<posY>331</posY>
-			<height>700</height>
-			<width>698</width>
+      <posX>1094</posX>
+      <posY>219</posY>
+			<height>800</height>
+			<width>780</width>
 			<textXOff>44</textXOff>
-			<textXOff2>650</textXOff2>
+			<textXOff2>620</textXOff2>
+      <textXOff3>54</textXOff3>
 			<textcolor>FF85CFFF</textcolor>
 			<textcolor2>FF85CFFF</textcolor2>
-			<textcolor3>FFFFFFFF</textcolor3>		
+			<textcolor3>FFFFFFFF</textcolor3>
 			<textureHeight>54</textureHeight>
-			<textureFocus>listcontrol_item_selected.png</textureFocus>
+      <font2>TitanLight12</font2>
+			<textureFocus>listcontrol_item_selected_trakt.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
 			<dimColor>ffffffff</dimColor>
-            <spinPosX>1828</spinPosX>
-            <spinPosY>1000</spinPosY>
+      <spinPosX>1828</spinPosX>
+      <spinPosY>1000</spinPosY>
 		</control>
      </control>
         
@@ -229,20 +214,9 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Titan.HiddenMenu, false)</visible>
+		<visible>Control.HasFocus(50) + !string.contains(#Titan.HiddenMenu, false)</visible>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-	</control>
-    
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>858</posX>
-		<posY>0</posY>
-		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Titan.HiddenMenu, false)</visible>
-		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 	</control>	
 	
 	<control>
@@ -349,7 +323,7 @@
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.Episode.Label</label>
 			<posX>565</posX>
-			<posY>338</posY>
+			<posY>277</posY>
 			<visible>!string.equals(#Trakt.Episode.Season,)+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -361,7 +335,8 @@
 			<type>label</type>
 			<label>#Trakt.Episode.Seasonx#Trakt.Episode.Number</label>
 			<posX>768</posX>
-			<posY>338</posY>
+			<posY>277</posY>
+      <width>300</width>
 			<visible>!string.equals(#Trakt.Episode.Season,)+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -373,7 +348,7 @@
 			<type>label</type>
 			<label>#Trakt.Translation.Title.Label</label>
 			<posX>565</posX>
-			<posY>376</posY>
+			<posY>315</posY>
 			<visible>!string.equals(#Trakt.Episode.Title,)+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -385,7 +360,8 @@
 			<type>label</type>
 			<label>#Trakt.Episode.Title</label>
 			<posX>768</posX>
-			<posY>376</posY>
+			<posY>315</posY>
+      <width>300</width>
 			<visible>!string.equals(#Trakt.Episode.Title,)+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -397,7 +373,7 @@
 			<label>#Trakt.Translation.Network.Label</label>
 			<id>0</id>
 			<posX>565</posX>
-			<posY>416</posY>
+			<posY>353</posY>
 			<visible>!string.equals(#Trakt.Show.Network,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -409,7 +385,8 @@
 			<type>fadelabel</type>
 			<label>#Trakt.Show.Network | #Trakt.Show.AirDay | #Trakt.Show.AirTime</label>
 			<posX>768</posX>
-			<posY>416</posY>
+			<posY>353</posY>
+      <width>300</width>
 			<visible>!string.equals(#Trakt.Show.Network,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -421,7 +398,7 @@
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.Certification.Label</label>
 			<posX>565</posX>
-			<posY>456</posY>
+			<posY>391</posY>
 			<visible>!string.equals(#Trakt.Show.Certification,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -433,7 +410,8 @@
 			<type>label</type>
 			<label>#Trakt.Show.Certification</label>
 			<posX>768</posX>
-			<posY>456</posY>
+			<posY>391</posY>
+      <width>300</width>
 			<visible>!string.equals(#Trakt.Show.Certification,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -444,8 +422,8 @@
 		<type>textboxscrollup</type>
 		<id>0</id>
 		<posX>568</posX>
-		<posY>501</posY>
-		<width>555</width>
+		<posY>481</posY>
+		<width>525</width>
 		<height>480</height>
 		<label>#Trakt.Episode.Overview</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>

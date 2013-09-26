@@ -108,7 +108,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>510</posX>
+		<posX>395</posX>
 		<posY>1015</posY>
 		<label>#Trakt.Shout.CurrentItem</label>
 		<visible>control.isvisible(50)</visible>

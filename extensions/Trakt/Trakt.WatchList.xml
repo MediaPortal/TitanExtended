@@ -1,37 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 	<id>87267</id>
-	<defaultcontrol>2</defaultcontrol>
+	<defaultcontrol>88882</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<define>#header.label:Trakt #Trakt.Translation.WatchList.Label</define>
+	<define>#header.label:Trakt</define>
 	<controls>
 	
     <import>Trakt.Common.Background.xml</import>
     <import>Trakt.xml</import>
 	
-  <control>
-   	<id>0</id>
-    <type>label</type>
-    <posX>144</posX>
-    <posY>38</posY>
-    <width>855</width>
-    <font>TitanLight22</font>
-    <textcolor>ffffff</textcolor>
-    <label>#header.label</label>
-		<align>left</align>
-  </control>
-      
-	<control>
-  	<id>0</id>
-    <type>label</type>
-    <posX>1848</posX>
-    <posY>36</posY>
-    <width>555</width>
-    <font>TitanLight22</font>
-    <textcolor>ffffff</textcolor>
-    <label>#time</label>
-		<align>right</align>
-  </control>
+		<import>common.time.xml</import>
 
 	<control>
 		<type>label</type>
@@ -43,7 +21,6 @@
 		<textcolor>00b7ff</textcolor>
 		<font>TitanLight20</font>
 	</control>
-
 	<control>
 		<description>buttons</description>
 		<type>group</type>
@@ -55,7 +32,7 @@
 	  	<control Style="SettingsButtonLarge">
 				<type>button</type>
 				<description>Watch List Movies</description>
-				<id>2</id>
+				<id>88882</id>
 				<label>#Trakt.Translation.WatchListMovies.Label</label>
 				<hyperlink>87270</hyperlink>
 	      <onup>88884</onup>
