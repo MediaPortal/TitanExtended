@@ -1016,6 +1016,258 @@
               <ZipFileName>Installer{CopyFile}\{58983730-6dae-402d-930d-eabc378a2b05}-star95.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\TVSeries\star95.png</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\1080p.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c36f350d-e6ed-4b56-84e7-b6e5c9825eb7}-1080p.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\1080p.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\2.0.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{314d8b22-bf5d-4d9a-8658-f04e135f666f}-2.0.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\2.0.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\480.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{20adde23-71a0-4697-aa9a-bc3e27a5e689}-480.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\480.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\5.1.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{681c44e1-9e54-4618-9cc8-b0aa1b4562cc}-5.1.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\5.1.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\540.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0dde94fa-14e7-4e1d-9dbf-40129fa7601e}-540.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\540.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\720p.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2da40f5f-0164-4ba7-b6f9-20ec163befd3}-720p.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\720p.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\8.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{3255fa94-a8f4-442e-94fe-a2ab12de39f9}-8.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\8.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\aac.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ab123790-be84-49ef-8958-b322e25e3778}-aac.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\aac.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\ac-3.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f9ce22ef-749c-472c-92c9-e75c4583d29f}-ac-3.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\ac-3.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\divx.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0307a856-1bb4-49e4-8a6e-34f5d697559c}-divx.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\divx.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\dts.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d56adbe3-5c5b-40cc-a17a-2c0b72bb287f}-dts.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\dts.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\dtshd_hra.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0b024839-04bb-4321-87f2-1b805cb6e641}-dtshd_hra.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\dtshd_hra.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\dtshd_ma.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{9292395e-338a-4841-a9b1-ab2569cf8569}-dtshd_ma.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\dtshd_ma.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\flac.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2e85c4dc-9e1f-4cf6-a79b-19854b735b07}-flac.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\flac.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\fullscreen.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d1f73030-5452-44b1-9cd9-6d8384d65c43}-fullscreen.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\fullscreen.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\h264.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{cca0d66e-ef7f-454e-93e0-4cd48cdcd340}-h264.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\h264.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\mp3.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5777ec02-5a21-4404-9c6f-92f8c32a3b42}-mp3.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\mp3.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\mpeg2.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a5d62a50-7f91-4dd7-b911-9aff1333e010}-mpeg2.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\mpeg2.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\nosubtitles.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b2944d22-c9b3-47a4-80c8-c557d29fe669}-nosubtitles.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\nosubtitles.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\RA.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e0f52e27-26a9-4055-874b-4f2eed3bac92}-RA.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\RA.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\real.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{702f03c8-9133-498d-b664-cb5b56a1d7d6}-real.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\real.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\subtitles.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5975d636-c224-4771-ae96-baf00f131f6d}-subtitles.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\subtitles.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\truehd.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{255fd254-1d55-4d62-b090-da0d87b9b903}-truehd.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\truehd.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\vc-1.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{42d7f14b-b06a-45cf-b221-fb83c3840c77}-vc-1.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\vc-1.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\vorbis.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{99cdc17e-93bf-4cfe-96bc-dac0bea4608b}-vorbis.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\vorbis.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\vp6f.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4afc567e-5cbf-42c5-a887-43e2d5ab7c63}-vp6f.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\vp6f.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\widescreen.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0962adf4-536a-4b11-b831-2d80feed9ef2}-widescreen.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\widescreen.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\wma.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{99e6d326-ce17-42e7-bfd6-ffb17fa88fba}-wma.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\wma.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\wmv.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{416a509b-94a9-48e7-95e7-9eeb6f3d2622}-wmv.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\wmv.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\xvid.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e6c5b99f-d877-490b-bdc2-05ede9eeb602}-xvid.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\xvid.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\certification\TV-14.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{100b3e7e-e464-43ec-9d84-08fce3e64cd5}-TV-14.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\certification\TV-14.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\certification\TV-G.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{66aa8cdb-bc4b-470a-a3c5-2e1bf5199cc1}-TV-G.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\certification\TV-G.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\certification\TV-MA.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{793b9285-c38d-464d-a2fa-ddb49ac21cc1}-TV-MA.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\certification\TV-MA.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\certification\TV-Y.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{43df6516-9d0a-4153-b124-355160d17f10}-TV-Y.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\certification\TV-Y.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\certification\TV-Y7.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fd5cb581-7961-4acd-8129-3d08ca9cea5b}-TV-Y7.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\certification\TV-Y7.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\TVSeries\Media\certification\TV-PG.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{59291b26-8564-4c34-91e8-82e19de1c43a}-TV-PG.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\certification\TV-PG.png</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -3857,13 +4109,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\Trakt\Trakt.Friends.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{976d83ff-872f-497a-9d12-ce9acfa6be8f}-Trakt.Friends.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Trakt.Friends.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\extensions\Trakt\Trakt.List.Items.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{2ab16fa1-e8b4-44cd-85dc-e738a521dd72}-Trakt.List.Items.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Trakt.List.Items.xml</DestinationFilename>
@@ -4343,6 +4588,181 @@
               <LocalFileName>..\extensions\Trakt\Media\traktWatchListLibrary.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{2ed6c6bf-e725-46e4-b99b-53b612c0d95e}-traktWatchListLibrary.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\traktWatchListLibrary.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Common.Episodes.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{25ad23d7-7ead-4f6d-a17f-ca4318c5e9cf}-Trakt.Common.Episodes.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Common.Episodes.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Common.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5ad246d6-c8f4-4c96-9450-a818aa3dc547}-Trakt.Common.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Common.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Common.People.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0bf90504-0170-4016-be12-19c8a50e3fcf}-Trakt.Common.People.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Common.People.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Common.Shows.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{560452b1-b75c-4ce4-be35-186905b18761}-Trakt.Common.Shows.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Common.Shows.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Common.Users.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{be135ab4-aa94-4861-aa27-8f76634908ad}-Trakt.Common.Users.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Common.Users.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Network.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{dfa7acbf-1438-4655-a3bd-a855c8d55541}-Trakt.Network.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Network.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.RecentAdded.Episodes.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{10a92a82-8771-4eff-9ad2-dcf51c022419}-Trakt.RecentAdded.Episodes.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.RecentAdded.Episodes.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.RecentAdded.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6f8c2702-a2b3-46f7-aba6-a91267bd9263}-Trakt.RecentAdded.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.RecentAdded.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.RecentShouts.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d368ca61-23e8-4725-bdcb-d4651257cf0d}-Trakt.RecentShouts.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.RecentShouts.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.RecentWatched.Episodes.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{1cb917d0-ed28-464a-9392-4ad8e927e5df}-Trakt.RecentWatched.Episodes.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.RecentWatched.Episodes.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.RecentWatched.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{cad32624-8e20-4009-ad33-5525edd3058d}-Trakt.RecentWatched.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.RecentWatched.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Search.Episodes.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{8fa444fd-16cc-4731-a6ec-027c68858314}-Trakt.Search.Episodes.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Search.Episodes.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Search.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{31083ef1-b532-49f4-94a8-e1c35ac98fe6}-Trakt.Search.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Search.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Search.People.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d78c201a-9e2b-4df5-8012-723d9ee69089}-Trakt.Search.People.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Search.People.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Search.Shows.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c1ca1039-df16-488d-8d8f-aa568821ce6f}-Trakt.Search.Shows.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Search.Shows.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Search.Users.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{8f52b43a-846c-4128-a0e4-cbecbd7a0b09}-Trakt.Search.Users.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Search.Users.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.Search.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{543b658e-9f78-4bad-b852-3485bd329354}-Trakt.Search.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.Search.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Trakt.UserProfile.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5d819fc8-15bc-4ced-b477-2f8fae0904dc}-Trakt.UserProfile.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Trakt.UserProfile.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Media\listcontrol_item_selected_trakt.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{baa18d1b-4c23-4712-bddc-657d07a7aa20}-listcontrol_item_selected_trakt.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\listcontrol_item_selected_trakt.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Media\list_lines_trakt.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{65ae4a32-e512-4303-973d-825cc632e7c4}-list_lines_trakt.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\list_lines_trakt.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Media\panel_trakt.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0352d1a4-7779-4606-8b3b-f03912e17130}-panel_trakt.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\panel_trakt.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Media\panel_trakt_profile.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{97deb619-9753-41a5-af05-98ad284a53e8}-panel_trakt_profile.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\panel_trakt_profile.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Media\traktCollectionIcon.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{aeb7ce9c-8760-4dfa-841f-5d4df57eee06}-traktCollectionIcon.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\traktCollectionIcon.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Media\traktVIP.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{973ff19e-539f-46a7-b894-b946d70edf99}-traktVIP.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\traktVIP.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\Trakt\Media\traktWatchedIcon.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a4efd296-d6ed-4e27-a205-42551bae4405}-traktWatchedIcon.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\traktWatchedIcon.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
@@ -4859,6 +5279,20 @@
               <LocalFileName>..\Media\BasicHomeImages\movies\Prince of Persia.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{44440b65-9ffe-4a3b-814e-b00592c55ac0}-Prince of Persia.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\BasicHomeImages\movies\Prince of Persia.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\Media\Backgrounds\blue.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{274085de-934c-41d8-8ba1-008ce6c56a16}-blue.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\Backgrounds\blue.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\Media\Backgrounds\default.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{1c290135-438d-467f-a73e-851ac488ea53}-default.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\Backgrounds\default.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
@@ -5527,6 +5961,27 @@
               <ZipFileName>Installer{CopyFile}\{773acdbc-b3e4-49a3-9d00-6abc3a316ff4}-weather_default.jpg</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Themes\Extended\Media\BasicHomeBackgroundImages\weather_default.jpg</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\Themes\Extended\Media\BasicHomeImages\Videos.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f525d7f9-efaf-4764-9031-8644b4c474a5}-Videos.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Extended\Media\BasicHomeImages\Videos.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\Themes\Extended\BasicHome.recentlyaddedMusicVideos.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{affabcf0-6272-4493-a4d5-81cb4e9057d8}-BasicHome.recentlyaddedMusicVideos.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Extended\BasicHome.recentlyaddedMusicVideos.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\Themes\Extended\BasicHome.Trakt.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{60b6dc67-42d8-474c-a38d-2753b7447aa9}-BasicHome.Trakt.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Extended\BasicHome.Trakt.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -6116,15 +6571,15 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <UpdateUrl>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtendedUpdate.xml</UpdateUrl>
     <Version>
       <Major>1</Major>
-      <Minor>4</Minor>
+      <Minor>5</Minor>
       <Build>0</Build>
-      <Revision>312</Revision>
+      <Revision>327</Revision>
     </Version>
     <ExtensionDescription />
     <VersionDescription />
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtended14.mpe1</OnlineLocation>
-    <ReleaseDate>2013-06-19T09:34:51</ReleaseDate>
+    <ReleaseDate>2013-09-30T09:34:51</ReleaseDate>
     <Tags />
     <Location>.\TitanExtended14.mpe1</Location>
     <Params>
@@ -7147,6 +7602,258 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>..\extensions\TVSeries\Media\TVSeries\star95.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{58983730-6dae-402d-930d-eabc378a2b05}-star95.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\TVSeries\star95.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\1080p.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c36f350d-e6ed-4b56-84e7-b6e5c9825eb7}-1080p.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\1080p.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\2.0.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{314d8b22-bf5d-4d9a-8658-f04e135f666f}-2.0.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\2.0.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\480.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{20adde23-71a0-4697-aa9a-bc3e27a5e689}-480.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\480.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\5.1.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{681c44e1-9e54-4618-9cc8-b0aa1b4562cc}-5.1.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\5.1.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\540.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0dde94fa-14e7-4e1d-9dbf-40129fa7601e}-540.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\540.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\720p.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2da40f5f-0164-4ba7-b6f9-20ec163befd3}-720p.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\720p.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\8.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3255fa94-a8f4-442e-94fe-a2ab12de39f9}-8.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\8.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\aac.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ab123790-be84-49ef-8958-b322e25e3778}-aac.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\aac.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\ac-3.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f9ce22ef-749c-472c-92c9-e75c4583d29f}-ac-3.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\ac-3.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\divx.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0307a856-1bb4-49e4-8a6e-34f5d697559c}-divx.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\divx.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\dts.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d56adbe3-5c5b-40cc-a17a-2c0b72bb287f}-dts.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\dts.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\dtshd_hra.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0b024839-04bb-4321-87f2-1b805cb6e641}-dtshd_hra.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\dtshd_hra.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\dtshd_ma.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{9292395e-338a-4841-a9b1-ab2569cf8569}-dtshd_ma.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\dtshd_ma.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\flac.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2e85c4dc-9e1f-4cf6-a79b-19854b735b07}-flac.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\flac.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\fullscreen.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d1f73030-5452-44b1-9cd9-6d8384d65c43}-fullscreen.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\fullscreen.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\h264.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{cca0d66e-ef7f-454e-93e0-4cd48cdcd340}-h264.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\h264.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\mp3.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5777ec02-5a21-4404-9c6f-92f8c32a3b42}-mp3.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\mp3.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\mpeg2.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a5d62a50-7f91-4dd7-b911-9aff1333e010}-mpeg2.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\mpeg2.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\nosubtitles.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b2944d22-c9b3-47a4-80c8-c557d29fe669}-nosubtitles.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\nosubtitles.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\RA.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e0f52e27-26a9-4055-874b-4f2eed3bac92}-RA.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\RA.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\real.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{702f03c8-9133-498d-b664-cb5b56a1d7d6}-real.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\real.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\subtitles.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5975d636-c224-4771-ae96-baf00f131f6d}-subtitles.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\subtitles.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\truehd.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{255fd254-1d55-4d62-b090-da0d87b9b903}-truehd.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\truehd.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\vc-1.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{42d7f14b-b06a-45cf-b221-fb83c3840c77}-vc-1.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\vc-1.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\vorbis.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{99cdc17e-93bf-4cfe-96bc-dac0bea4608b}-vorbis.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\vorbis.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\vp6f.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4afc567e-5cbf-42c5-a887-43e2d5ab7c63}-vp6f.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\vp6f.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\widescreen.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0962adf4-536a-4b11-b831-2d80feed9ef2}-widescreen.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\widescreen.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\wma.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{99e6d326-ce17-42e7-bfd6-ffb17fa88fba}-wma.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\wma.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\wmv.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{416a509b-94a9-48e7-95e7-9eeb6f3d2622}-wmv.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\wmv.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\TVSeries\Logos\xvid.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e6c5b99f-d877-490b-bdc2-05ede9eeb602}-xvid.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\TVSeries\Logos\xvid.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\certification\TV-14.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{100b3e7e-e464-43ec-9d84-08fce3e64cd5}-TV-14.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\certification\TV-14.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\certification\TV-G.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{66aa8cdb-bc4b-470a-a3c5-2e1bf5199cc1}-TV-G.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\certification\TV-G.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\certification\TV-MA.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{793b9285-c38d-464d-a2fa-ddb49ac21cc1}-TV-MA.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\certification\TV-MA.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\certification\TV-Y.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{43df6516-9d0a-4153-b124-355160d17f10}-TV-Y.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\certification\TV-Y.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\certification\TV-Y7.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fd5cb581-7961-4acd-8129-3d08ca9cea5b}-TV-Y7.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\certification\TV-Y7.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\TVSeries\Media\certification\TV-PG.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{59291b26-8564-4c34-91e8-82e19de1c43a}-TV-PG.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\certification\TV-PG.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -9944,13 +10651,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\Trakt\Trakt.Friends.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{976d83ff-872f-497a-9d12-ce9acfa6be8f}-Trakt.Friends.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Trakt.Friends.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\extensions\Trakt\Trakt.List.Items.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{2ab16fa1-e8b4-44cd-85dc-e738a521dd72}-Trakt.List.Items.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Trakt.List.Items.xml</DestinationFilename>
@@ -10433,6 +11133,181 @@ Click Next to continue or Cancel to exit Setup.</Value>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Common.Episodes.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{25ad23d7-7ead-4f6d-a17f-ca4318c5e9cf}-Trakt.Common.Episodes.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Common.Episodes.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Common.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5ad246d6-c8f4-4c96-9450-a818aa3dc547}-Trakt.Common.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Common.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Common.People.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0bf90504-0170-4016-be12-19c8a50e3fcf}-Trakt.Common.People.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Common.People.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Common.Shows.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{560452b1-b75c-4ce4-be35-186905b18761}-Trakt.Common.Shows.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Common.Shows.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Common.Users.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{be135ab4-aa94-4861-aa27-8f76634908ad}-Trakt.Common.Users.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Common.Users.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Network.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{dfa7acbf-1438-4655-a3bd-a855c8d55541}-Trakt.Network.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Network.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.RecentAdded.Episodes.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{10a92a82-8771-4eff-9ad2-dcf51c022419}-Trakt.RecentAdded.Episodes.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.RecentAdded.Episodes.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.RecentAdded.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6f8c2702-a2b3-46f7-aba6-a91267bd9263}-Trakt.RecentAdded.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.RecentAdded.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.RecentShouts.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d368ca61-23e8-4725-bdcb-d4651257cf0d}-Trakt.RecentShouts.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.RecentShouts.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.RecentWatched.Episodes.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{1cb917d0-ed28-464a-9392-4ad8e927e5df}-Trakt.RecentWatched.Episodes.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.RecentWatched.Episodes.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.RecentWatched.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{cad32624-8e20-4009-ad33-5525edd3058d}-Trakt.RecentWatched.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.RecentWatched.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Search.Episodes.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{8fa444fd-16cc-4731-a6ec-027c68858314}-Trakt.Search.Episodes.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Search.Episodes.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Search.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{31083ef1-b532-49f4-94a8-e1c35ac98fe6}-Trakt.Search.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Search.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Search.People.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d78c201a-9e2b-4df5-8012-723d9ee69089}-Trakt.Search.People.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Search.People.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Search.Shows.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c1ca1039-df16-488d-8d8f-aa568821ce6f}-Trakt.Search.Shows.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Search.Shows.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Search.Users.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{8f52b43a-846c-4128-a0e4-cbecbd7a0b09}-Trakt.Search.Users.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Search.Users.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.Search.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{543b658e-9f78-4bad-b852-3485bd329354}-Trakt.Search.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.Search.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Trakt.UserProfile.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5d819fc8-15bc-4ced-b477-2f8fae0904dc}-Trakt.UserProfile.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Trakt.UserProfile.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Media\listcontrol_item_selected_trakt.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{baa18d1b-4c23-4712-bddc-657d07a7aa20}-listcontrol_item_selected_trakt.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\listcontrol_item_selected_trakt.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Media\list_lines_trakt.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{65ae4a32-e512-4303-973d-825cc632e7c4}-list_lines_trakt.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\list_lines_trakt.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Media\panel_trakt.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0352d1a4-7779-4606-8b3b-f03912e17130}-panel_trakt.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\panel_trakt.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Media\panel_trakt_profile.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{97deb619-9753-41a5-af05-98ad284a53e8}-panel_trakt_profile.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\panel_trakt_profile.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Media\traktCollectionIcon.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{aeb7ce9c-8760-4dfa-841f-5d4df57eee06}-traktCollectionIcon.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\traktCollectionIcon.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Media\traktVIP.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{973ff19e-539f-46a7-b894-b946d70edf99}-traktVIP.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\traktVIP.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\Trakt\Media\traktWatchedIcon.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a4efd296-d6ed-4e27-a205-42551bae4405}-traktWatchedIcon.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\traktWatchedIcon.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\extensions\IMDb+\IMDb+.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{950b9371-a1d8-433a-a026-14900cfdb5f2}-IMDb+.xml</ZipFileName>
@@ -10899,6 +11774,20 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>..\Media\BasicHomeImages\movies\Prince of Persia.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{44440b65-9ffe-4a3b-814e-b00592c55ac0}-Prince of Persia.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\BasicHomeImages\movies\Prince of Persia.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\Media\Backgrounds\blue.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{274085de-934c-41d8-8ba1-008ce6c56a16}-blue.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\Backgrounds\blue.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\Media\Backgrounds\default.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{1c290135-438d-467f-a73e-851ac488ea53}-default.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\Backgrounds\default.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -11558,6 +12447,27 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <ZipFileName>Installer{CopyFile}\{773acdbc-b3e4-49a3-9d00-6abc3a316ff4}-weather_default.jpg</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Themes\Extended\Media\BasicHomeBackgroundImages\weather_default.jpg</DestinationFilename>
       </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\Themes\Extended\Media\BasicHomeImages\Videos.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f525d7f9-efaf-4764-9031-8644b4c474a5}-Videos.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Extended\Media\BasicHomeImages\Videos.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\Themes\Extended\BasicHome.recentlyaddedMusicVideos.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{affabcf0-6272-4493-a4d5-81cb4e9057d8}-BasicHome.recentlyaddedMusicVideos.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Extended\BasicHome.recentlyaddedMusicVideos.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\Themes\Extended\BasicHome.Trakt.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{60b6dc67-42d8-474c-a38d-2753b7447aa9}-BasicHome.Trakt.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Extended\BasicHome.Trakt.xml</DestinationFilename>
+      </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
@@ -11990,7 +12900,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
       </FolderGroup>
     </FolderGroups>
     <ProjectFilename>Titan Extended.xmp2</ProjectFilename>
-    <UpdatePath1>.\TitanExtendedUpdate1.xml</UpdatePath1>
+    <UpdatePath1>.\TitanExtendedUpdate.xml</UpdatePath1>
     <UpdatePath2 />
     <UpdatePath3 />
   </ProjectSettings>
