@@ -22,6 +22,7 @@
       <posX>566</posX>
       <posY>252</posY>
       <font>font14</font>
+			<width>490</width>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
     </control>

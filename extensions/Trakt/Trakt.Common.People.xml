@@ -1,19 +1,44 @@
 <window>
   <controls>
-    <control>
-      <description>Avatar</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>121</posX>
-      <posY>256</posY>
-      <height>380</height>
-      <width>380</width>
-      <keepaspectratio>yes</keepaspectratio>
-      <zoom>yes</zoom>
-      <texture>#selectedthumb</texture>
+		<control>
+			<description>Poster shadow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>105</posX>
+			<posY>243</posY>
+			<width>429</width>
+			<height>613</height>
+			<texture>list_poster_shadow.png</texture>
+			<visible>facadeview.list+Control.IsVisible(50)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
-    </control>
+		</control>
+		<control>
+			<description>Default Cover Art</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>123</posX>
+			<posY>256</posY>
+			<width>379</width>
+			<height>563</height>
+			<texture>defaultVideoBig.png</texture>
+			<visible>facadeview.list + Control.IsVisible(50) + !Control.HasThumb(60)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>Cover Art</description>
+			<type>image</type>
+			<id>60</id>
+			<posX>123</posX>
+			<posY>256</posY>
+			<width>379</width>
+			<height>563</height>
+			<texture>#selectedthumb</texture>
+			<visible>facadeview.list+Control.IsVisible(50)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
     <control Style="InfoLabel">
       <description>Name</description>
       <type>label</type>
@@ -22,6 +47,7 @@
       <posX>566</posX>
       <posY>252</posY>
       <font>font14</font>
+			<width>490</width>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
     </control>
@@ -35,19 +61,19 @@
       <posY>308</posY>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
-      <visible>!string.equals(#Trakt.User.FullName,N/A)</visible>
+      <visible>!string.equals(#Trakt.Person.Birthplace,)</visible>
     </control>
     <control Style="InfoValueSmall">
       <description>Birthplace value</description>
       <type>fadelabel</type>
       <label>#Trakt.Person.Birthplace</label>
       <id>0</id>
-      <width>250</width>
-      <posX>838</posX>
+			<width>280</width>
+      <posX>798</posX>
       <posY>308</posY>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
-      <visible>!string.equals(#Trakt.User.FullName,N/A)</visible>
+      <visible>!string.equals(#Trakt.Person.Birthplace,)</visible>
     </control>
     <control Style="InfoLabel">
       <description>Birthday label</description>
@@ -59,33 +85,32 @@
       <posY>346</posY>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
-      <visible>!string.equals(#Trakt.User.Gender,N/A)</visible>
+      <visible>!string.equals(#Trakt.Person.Birthday,)</visible>
     </control>
     <control Style="InfoValueSmall">
       <description>Birthday value</description>
       <type>fadelabel</type>
       <label>#Trakt.Person.Birthday</label>
       <id>0</id>
-      <width>250</width>
-      <posX>838</posX>
+			<width>280</width>
+      <posX>798</posX>
       <posY>346</posY>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
-      <visible>!string.equals(#Trakt.User.Gender,N/A)</visible>
+      <visible>!string.equals(#Trakt.Person.Birthday,)</visible>
     </control>
     <control>
       <description>User About</description>
       <type>textboxscrollup</type>
       <id>0</id>
 		  <posX>568</posX>
-		  <posY>578</posY>
+		  <posY>397</posY>
 		  <width>525</width>
 		  <height>480</height>
 		  <lineSpacing>0.92</lineSpacing>
       <label>#Trakt.Person.Biography</label>
       <animation effect="fade" time="250" delay="0">WindowClose</animation>
       <animation effect="fade" time="250" delay="0">WindowOpen</animation>
-      <visible>!string.equals(#Trakt.User.About,)+!string.equals(#Trakt.User.About,N/A)</visible>
     </control>
   </controls>
 </window>
