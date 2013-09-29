@@ -16,7 +16,7 @@
 			<!-- Control what GUI windows the dashboard should be displayed on -->
 			<!-- Seperate multiple window id's with pipe '|' seperator -->
 			<!-- e.g. <windows>35|87258</windows> for BasicHome.xml and Trakt.xml -->
-			<windows>35|87258</windows>
+			<windows>87258</windows>
 			<!-- Facade Type e.g. Filmstrip, LargeIcons, SmallIcons, List -->
 			<!-- set facade to None if not using a facade -->
 			<facadetype>List</facadetype>
@@ -26,7 +26,7 @@
 			<!-- Number of properties to push to skin for Activity Stream -->
 			<!-- Use this to set skin properties independant of the facade or selected item -->
 			<!-- if not using properties, then set to 0 -->
-			<propertiesmaxitems>6</propertiesmaxitems>
+			<propertiesmaxitems>0</propertiesmaxitems>
 		</activities>
 		<trending>
 			<facadetype>Filmstrip</facadetype>
@@ -50,8 +50,8 @@
 				<windows>35</windows>
 			</movies>
 		</trending>
-    <!-- User Statistics e.g. No of Episodes collected/watched -->
-    <statistics>true</statistics>
+        <!-- User Statistics e.g. No of Episodes collected/watched -->
+        <statistics>false</statistics>
 	</dashboard>
 	
 	<!-- Position of 'library/seen/watchlist' icons in facade thumbs -->

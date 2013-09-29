@@ -1391,5 +1391,7 @@
 <import>BasicHome.recentlyaddedMusic.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
 <import>BasicHome.recentlyaddedPictures.xml</import>
+<import>BasicHome.Trakt.xml</import>
+<import>BasicHome.recentlyaddedMusicVideos.xml</import>
 </controls>
 </window>
