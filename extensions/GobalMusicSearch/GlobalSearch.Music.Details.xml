@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>30886</id>
-  <defaultcontrol>11</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
-  <define>#usePlayFanart:Yes</define>
-  <define>#useRandomMusicScraperFanart:Yes</define>
-  <define>#header.label:#GlobalSearch.Translation.MusicSearch.Label</define>
-  <controls>
+<id>30886</id>
+<defaultcontrol>11</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#usePlayFanart:Yes</define>
+<define>#useRandomMusicScraperFanart:Yes</define>
+<define>#header.hover:#(iif(#skin.background.useHover, 'hover_my music.png', 'background.png'))</define>			
+<define>#header.label:#GlobalSearch.Translation.MusicSearch.Label</define>
+<controls>
   
-  <import>common.time.xml</import>
 	<import>common.window.music.xml</import>
+	
   <control>
 		<id>0</id>
     <type>image</type>
@@ -21,6 +22,9 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+
+  <import>common.time.xml</import>
+	
   <control>
     <id>1</id>
     <description>Info Panel</description>
@@ -33,6 +37,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control>
 		<description>Button group</description>
 		<type>group</type>
@@ -107,6 +112,7 @@
 				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			</control>
 	</control>
+	
 	<control>
 		<id>0</id>
     <description>default thumb</description>
@@ -120,6 +126,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control>
     <id>7</id>
     <description>album art image</description>
@@ -132,6 +139,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="smallTitle">
     <id>3</id>
     <description>track</description>
@@ -144,6 +152,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>26</id>
     <description>album label</description>
@@ -154,6 +163,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="InfoValueWide">
     <id>2</id>
     <description>album</description>
@@ -164,6 +174,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>25</id>
     <description>Duration label</description>
@@ -174,6 +185,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="InfoValueWide">
     <id>1</id>
     <description>Artist</description>
@@ -184,6 +196,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>28</id>
     <description>genre label</description>
@@ -194,6 +207,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="InfoValueWide">
     <id>4</id>
     <description>genre</description>
@@ -204,6 +218,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>29</id>
     <description>year label</description>
@@ -214,6 +229,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="InfoValueWide">
     <id>5</id>
     <description>year</description>
@@ -224,6 +240,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>35</id>
     <description>play count label</description>
@@ -234,6 +251,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="InfoValueWide">
     <id>8</id>
     <description>play count</description>
@@ -244,6 +262,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>37</id>
     <description>last played label</description>
@@ -254,6 +273,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="InfoValueWide">
     <id>10</id>
     <description>last played</description>
@@ -264,6 +284,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>30</id>
     <description>Filename label</description>
@@ -274,6 +295,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control Style="InfoValueWide">
     <id>6</id>
     <description>filename</description>
@@ -284,6 +306,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
 	<control Style="InfoLabelDetails">
     <id>31</id>
     <description>rating label</description>
@@ -294,6 +317,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control>
     <id>0</id>
     <description>rating</description>
@@ -314,6 +338,7 @@
 	  <animation effect="fade" time="250">WindowOpen</animation>
 	  <animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
   <control>
     <id>9</id>
     <type>fadelabel</type>
@@ -445,6 +470,7 @@
 						<textXOff>62</textXOff>
 						<textYOff>16</textYOff>			
           </control>
+					
           <control>
             <id>1002</id>
             <description>Now playing</description>
@@ -462,6 +488,7 @@
 						<textXOff>62</textXOff>
 						<textYOff>16</textYOff>		
           </control>
+					
           <control>
             <id>1003</id>
             <description>Current Playlist</description>
@@ -479,6 +506,7 @@
 						<textXOff>62</textXOff>
 						<textYOff>16</textYOff>			
           </control>
+					
           <control>
             <id>1004</id>
             <description>My Playlists</description>
@@ -495,6 +523,7 @@
 						<textXOff>62</textXOff>
 						<textYOff>16</textYOff>		
           </control>
+					
           <control>
             <description>Empty button</description>
             <type>button</type>
@@ -506,6 +535,7 @@
             <label>-</label>
             <visible>true</visible>
          </control>
+				 
           <control>
             <description>Jump to MyMusic</description>
             <id>1005</id>
@@ -523,6 +553,7 @@
 						<textXOff>62</textXOff>
 						<textYOff>16</textYOff>			
           </control>
+					
           <control>
             <description>Lyrics</description>
             <id>1006</id>
@@ -543,5 +574,6 @@
           </control>
         </control>
       </control>
+			
   </controls>
 </window>

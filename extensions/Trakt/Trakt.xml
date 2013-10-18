@@ -6,6 +6,7 @@
 	<define>#header.label:Trakt</define>
 	<define>#activityOnLeft:9</define>
 	<controls>
+	
     <import>Trakt.Common.Background.xml</import>
 
     <control>
@@ -19,7 +20,9 @@
 		 <animation effect="fade" time="250">WindowOpen</animation>
 		 <animation effect="fade" time="250">WindowClose</animation>
     </control>
+		
     <import>common.time.xml</import>
+		
 	<control>
 		<description>panel</description>
 		<type>image</type>

@@ -1,32 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>874001</id>
-  <defaultcontrol>50</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
-	<define>#header.hover:background.png</define>
-	<define>#header.label:#Trakt.Translation.Search.Label</define>
-  <controls>
-    <control>
-      <id>1</id>
-      <description>Background Image</description>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>#header.hover</texture>
-    </control>
-  	<control>
-  		<description>background listview</description>
-  		<type>image</type>
-  		<id>0</id>
-  		<posX>0</posX>
-      <posY>0</posY>
-  		<width>1920</width>
-  		<height>1080</height>
-  		<texture>fanart_overlay.png</texture>	
-  		<animation effect="fade" time="250">WindowClose</animation>
-  	</control>
+<id>874001</id>
+<defaultcontrol>50</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<define>#header.label:#Trakt.Translation.Search.Label</define>
+<define>#header.hover:#(iif(#skin.background.useHover, 'hover_trakt.png', 'background.png'))</define>			
+<controls>
+	
+	<control>
+		<description>BACKGROUND</description>
+		<id>0</id>
+		<type>image</type>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1920</width>
+    <height>1080</height>
+		<texture>#header.hover</texture>
+    <shouldCache>true</shouldCache>		
+	</control>
+
+	<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+    <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>fanart_overlay.png</texture>
+		<visible>skin.hassetting(#skin.background.useHover)</visible>		
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
 
 	<control>
 		<description>panel</description>
