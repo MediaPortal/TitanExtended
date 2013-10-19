@@ -69,20 +69,18 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>10</posX>
-		<posY>250</posY>
-		<width>1893</width>
-		<height>795</height>
-		<texture>panel_settings.png</texture>
+		<posY>145</posY>
+		<width>1903</width>
+		<height>897</height>
+		<texture>panel_trakt.png</texture>
 	</control>
 
 	<control>
-		<description>button group</description>
+		<description>buttons</description>
 		<type>group</type>
 		<posX>122</posX>
-		<posY>350</posY>
-		<layout>StackLayout(7, Vertical, true)</layout>		
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<posY>246</posY>
+		<layout>StackLayout(7, Vertical, true)</layout>
 			
 		<control Style="SettingsButton">
 			<id>2</id>
@@ -105,13 +103,11 @@
 		<control>
 			<description>group element</description>
 			<type>group</type>
-			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 			<control>
 				<description>button group</description>
 				<type>group</type>
 				<posX>650</posX>
-				<posY>350</posY>
+				<posY>246</posY>
 				<layout>StackLayout(7, Vertical, true)</layout>
 				
 				<control Style="SettingsButtonLarge">
