@@ -153,6 +153,8 @@
 				<height>69</height>
 				<textXOff>62</textXOff>
 				<textYOff>16</textYOff>
+				<offsetSortButtonX>421</offsetSortButtonX>
+				<offsetSortButtonY>27</offsetSortButtonY>				
 				<onright>50</onright>
 				<onup>7</onup>
 				<ondown>3</ondown>
@@ -274,24 +276,24 @@
 	</control>
 
 	<import>common.facade.radiotime.xml</import>
-		
+
+	<!--            :: LISTVIEW ::            -->
+	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Poster glow</description>
+		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>160</posX>
-		<posY>390</posY>
-		<width>485</width>
-		<height>486</height>
-		<texture>list_music_glow.png</texture>
-		<visible>[facadeview.list+Control.IsVisible(50)]</visible>
+		<posX>213</posX>
+		<posY>443</posY>
+		<width>382</width>
+		<height>381</height>
+		<texture>list_poster_shadow_music.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 		
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>0</id>
 		<type>image</type>
 		<posX>225</posX>
@@ -299,12 +301,25 @@
 		<width>350</width>
 		<height>350</height>
 		<visible>facadeview.list+!control.hasthumb(51)</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+		<texture>defaultAudioBig.png</texture>
+ 		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
-		
+
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>225</posX>
+		<posY>450</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>folderBackMusic.png</texture>
+		<visible>[facadeview.list+!control.hasthumb(51)+string.contains(#selecteditem, ..)]</visible>
+  	<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>51</id>
@@ -313,14 +328,13 @@
 		<width>350</width>
 		<height>350</height>
 		<texture>-</texture>
+		<keepaspectratio>yes</keepaspectratio>		
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
-		<keepaspectratio>yes</keepaspectratio>
+  	<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>		
 	</control>
 
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 		<description>subtext</description>
 		<type>fadelabel</type>
 		<label>#RadioTime.Selected.Subtext</label>
@@ -332,12 +346,11 @@
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!string.equals(#selecteditem,..)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>		
 	</control>
 
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 		<description>format</description>
 		<type>fadelabel</type>
 		<label>#RadioTime.Selected.Format</label>
@@ -349,6 +362,8 @@
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!string.equals(#selecteditem,..)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>		
 	</control>
 	
 	<control>
@@ -371,8 +386,8 @@
 		<subitem>starwhite.png</subitem>
 		</subitems>
 		<visible>facadeview.list+!string.equals(#RadioTime.Selected.Reliability,0)+Control.HasFocus(50)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 	<import>common.overlay.xml</import>

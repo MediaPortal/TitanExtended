@@ -10,6 +10,7 @@
 	<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+        <dimColor>ffffffff</dimColor>
 
 	<control>
 		<description>background</description>
@@ -64,8 +65,8 @@
 		<textYOff3>6</textYOff3>
 		<IconXOff>-90</IconXOff>
 		<IconYOff>10</IconYOff>
-		<PinIconWidth>-</PinIconWidth>
-		<PinIconHeight>-</PinIconHeight>
+		<PinIconWidth>45</PinIconWidth>
+		<PinIconHeight>46</PinIconHeight>
 		<spinPosY>980</spinPosY>
 		<spinPosX>405</spinPosX>
 		<spinColor>FFFFFFFF</spinColor>
@@ -79,10 +80,11 @@
 		<font>font12</font>
 		<font2>font12</font2>
 		<font3>fontB14</font3>
-		<textcolor>FF85cffe</textcolor>
-		<textcolor2>FF85cffe</textcolor2>
+		<textcolor>FFFFFFFF</textcolor>
+		<textcolor2>FFFFFFFF</textcolor2>
 		<textcolor3>FFFFFFFF</textcolor3>
-		<remoteColor>FFFFFFFF</remoteColor><!-- used for selected channel -->
+		<remoteColor>ffa0d0ff</remoteColor><!-- used for selected channel -->
+    <playedColor>FF85cffe</playedColor>
 		<unfocusedAlpha>255</unfocusedAlpha>
 		<onleft>36</onleft>
 		<onright>34</onright>
@@ -123,10 +125,11 @@
 		<font>font11</font>
 		<font2>font11</font2>
 		<font3>fontB14</font3>
-		<textcolor>FF85cffe</textcolor>
-		<textcolor2>FF85cffe</textcolor2>
+		<textcolor>FFFFFFFF</textcolor>
+		<textcolor2>FFFFFFFF</textcolor2>
 		<textcolor3>FFFFFFFF</textcolor3>
-		<remoteColor>FFFFFFFF</remoteColor><!-- used for selected channel -->
+		<remoteColor>ffa0d0ff</remoteColor><!-- used for selected channel -->
+    <playedColor>FF85cffe</playedColor>	
 		<unfocusedAlpha>255</unfocusedAlpha>
 		<onleft>36</onleft>
 		<onright>34</onright>
