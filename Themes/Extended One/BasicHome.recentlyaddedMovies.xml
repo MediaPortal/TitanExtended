@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+		<control>
+			<description>LATEST MEDIA BACKGROUND (TILE 1)</description>
+			<type>image</type>
+			<id>100</id>
+			<posX>55</posX>
+			<posY>309</posY>
+			<width>1859</width>
+			<height>329</height>
+			<texture>basichome_latestmedia_bg_r.png</texture>
+			<animation effect="fade" time="350" delay="1000" reversible="false">visible</animation>
+			<animation effect="slide" start="-650" end="0" time="350" delay="1000" reversible="false">Visible</animation>
+	    <animation effect="fade" time="250">WindowOpen</animation>
+	    <animation effect="fade" time="250">WindowClose</animation>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(2)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+		</control>
+    <control>
+      <description>GROUP: RecentlyAdded Movie (TILE 1)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(2)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="450" reversible="false" delay="1200">Visible</animation>
+    	<animation effect="fade" time="250">WindowOpen</animation>
+    	<animation effect="fade" time="250">WindowClose</animation>
+			<control>
+				<description>Header label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>385</posY>
+				<width>585</width>
+				<label>#(L(4558))</label>
+				<font>TitanLight20</font>
+				<textcolor>FFFFFFFF</textcolor>
+				</control>        
+			<control>
+				<description>Movie 1 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>454</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest1.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1849</posX>
+				<posY>454</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest1.year</label>
+			</control>
+			<control>
+				<description>Movie 1 thumb/fanart</description>
+				<type>image</type>
+				<id>1021</id>
+				<posX>708</posX>
+				<posY>381</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest1.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 2 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>490</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest2.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1849</posX>
+				<posY>490</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest2.year</label>
+			</control> 
+			<control>
+				<description>Movie 2 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>853</posX>
+				<posY>381</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest2.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 3 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>528</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest3.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1849</posX>
+				<posY>528</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest3.year</label>
+				</control>
+			<control>
+				<description>Movie 3 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>998</posX>
+				<posY>381</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest3.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+    </control>
+		<control>
+			<description>LATEST MEDIA BACKGROUND (TILE 3)</description>
+			<type>image</type>
+			<id>300</id>
+			<posX>8</posX>
+			<posY>309</posY>
+			<width>1859</width>
+			<height>329</height>
+			<texture>basichome_latestmedia_bg.png</texture>
+			<animation effect="fade" time="350" delay="1000" reversible="false">visible</animation>
+			<animation effect="slide" start="650" end="0" time="350" delay="1000" reversible="false">Visible</animation>
+	    <animation effect="fade" time="250">WindowOpen</animation>
+	    <animation effect="fade" time="250">WindowClose</animation>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(6)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+		</control>
+    <control>
+      <description>GROUP: RecentlyAdded Movie (TILE 3)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(6)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="450" reversible="false" delay="1200">Visible</animation>
+    	<animation effect="fade" time="250">WindowOpen</animation>
+    	<animation effect="fade" time="250">WindowClose</animation>
+			<control>
+				<description>Header label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>385</posY>
+				<width>585</width>
+				<label>#(L(4558))</label>
+				<font>TitanLight20</font>
+				<textcolor>FFFFFFFF</textcolor>
+				</control>        
+			<control>
+				<description>Movie 1 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>454</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest1.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1215</posX>
+				<posY>454</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest1.year</label>
+			</control>
+			<control>
+				<description>Movie 1 thumb/fanart</description>
+				<type>image</type>
+				<id>1021</id>
+				<posX>81</posX>
+				<posY>381</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest1.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 2 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>490</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest2.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1215</posX>
+				<posY>490</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest2.year</label>
+			</control> 
+			<control>
+				<description>Movie 2 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>226</posX>
+				<posY>381</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest2.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 3 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>528</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest3.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1215</posX>
+				<posY>528</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest3.year</label>
+				</control>
+			<control>
+				<description>Movie 3 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>381</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest3.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+    </control>
+		<control>
+			<description>LATEST MEDIA BACKGROUND (TILE 4)</description>
+			<type>image</type>
+			<id>400</id>
+			<posX>55</posX>
+			<posY>569</posY>
+			<width>1859</width>
+			<height>329</height>
+			<texture>basichome_latestmedia_bg_r.png</texture>
+			<animation effect="fade" time="350" delay="1000" reversible="false">visible</animation>
+			<animation effect="slide" start="-650" end="0" time="350" delay="1000" reversible="false">Visible</animation>
+	    <animation effect="fade" time="250">WindowOpen</animation>
+	    <animation effect="fade" time="250">WindowClose</animation>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(3)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+		</control>
+    <control>
+      <description>GROUP: RecentlyAdded Movie (TILE 4)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(3)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="450" reversible="false" delay="1200">Visible</animation>
+    	<animation effect="fade" time="250">WindowOpen</animation>
+    	<animation effect="fade" time="250">WindowClose</animation>
+			<control>
+				<description>Header label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>645</posY>
+				<width>585</width>
+				<label>#(L(4558))</label>
+				<font>TitanLight20</font>
+				<textcolor>FFFFFFFF</textcolor>
+				</control>        
+			<control>
+				<description>Movie 1 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>714</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest1.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1849</posX>
+				<posY>714</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest1.year</label>
+			</control>
+			<control>
+				<description>Movie 1 thumb/fanart</description>
+				<type>image</type>
+				<id>1021</id>
+				<posX>708</posX>
+				<posY>641</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest1.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 2 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>750</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest2.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1849</posX>
+				<posY>750</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest2.year</label>
+			</control> 
+			<control>
+				<description>Movie 2 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>853</posX>
+				<posY>641</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest2.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 3 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1178</posX>
+				<posY>788</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest3.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1849</posX>
+				<posY>788</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest3.year</label>
+				</control>
+			<control>
+				<description>Movie 3 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>998</posX>
+				<posY>641</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest3.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+    </control>
+		<control>
+			<description>LATEST MEDIA BACKGROUND (TILE 6)</description>
+			<type>image</type>
+			<id>600</id>
+			<posX>8</posX>
+			<posY>569</posY>
+			<width>1859</width>
+			<height>329</height>
+			<texture>basichome_latestmedia_bg.png</texture>
+			<animation effect="fade" time="350" delay="1000" reversible="false">visible</animation>
+			<animation effect="slide" start="650" end="0" time="350" delay="1000" reversible="false">Visible</animation>
+	    <animation effect="fade" time="250">WindowOpen</animation>
+	    <animation effect="fade" time="250">WindowClose</animation>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(7)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+		</control>
+    <control>
+      <description>GROUP: RecentlyAdded Movie (TILE 6)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MovingPictures)+control.HasFocus(7)+string.equals(#latestMediaHandler.movingpicture.latest.enabled,true)</visible>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="450" reversible="false" delay="1200">Visible</animation>
+    	<animation effect="fade" time="250">WindowOpen</animation>
+    	<animation effect="fade" time="250">WindowClose</animation>
+			<control>
+				<description>Header label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>645</posY>
+				<width>585</width>
+				<label>#(L(4558))</label>
+				<font>TitanLight20</font>
+				<textcolor>FFFFFFFF</textcolor>
+				</control>        
+			<control>
+				<description>Movie 1 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>714</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest1.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1215</posX>
+				<posY>714</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest1.year</label>
+			</control>
+			<control>
+				<description>Movie 1 thumb/fanart</description>
+				<type>image</type>
+				<id>1021</id>
+				<posX>81</posX>
+				<posY>641</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest1.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 2 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>750</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest2.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1215</posX>
+				<posY>750</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest2.year</label>
+			</control> 
+			<control>
+				<description>Movie 2 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>226</posX>
+				<posY>641</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest2.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+			<control>
+				<description>Movie 3 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>544</posX>
+				<posY>788</posY>
+				<width>600</width>
+				<label>#latestMediaHandler.movingpicture.latest3.title</label>
+				<font>font12</font>
+				<textcolor>000000</textcolor>
+				<scrollStartDelaySec>10</scrollStartDelaySec>
+			</control>
+			<control>
+				<description>Genre/Runtime label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1215</posX>
+				<posY>788</posY>
+				<width>200</width>
+				<textcolor>ff000000</textcolor>
+				<font>font12</font>
+				<align>right</align>
+				<label>#latestMediaHandler.movingpicture.latest3.year</label>
+				</control>
+			<control>
+				<description>Movie 3 thumb/fanart</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>641</posY>
+				<width>134</width>
+				<height>191</height>
+				<texture>#latestMediaHandler.movingpicture.latest3.thumb</texture>
+				<shouldCache>true</shouldCache>
+			</control>
+    </control>
+  </controls>
+</window>
