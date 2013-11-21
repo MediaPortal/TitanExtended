@@ -293,7 +293,7 @@
 			<onright>5</onright>
 			<onleft>7</onleft>
 			<onup>2</onup>
-			<ondown>14</ondown>  
+			<ondown>12</ondown>  
 			<animation effect="zoom" start="100,100" end="102,102" time="200">focus</animation>
 			<animation effect="zoom" start="102,102" end="100,100" time="200">unfocus</animation>
 			<animation effect="zoom" start="1,1" end="100,100" time="200">visiblechange</animation>
@@ -321,7 +321,7 @@
 			<onright>7</onright>
 			<onleft>3</onleft>
 			<onup>4</onup>
-			<ondown>13</ondown>
+			<ondown>12</ondown>
 			<textalign>center</textalign>        
 			<animation effect="zoom" start="100,100" end="102,102" time="200">focus</animation>
 			<animation effect="zoom" start="102,102" end="100,100" time="200">unfocus</animation>
