@@ -618,7 +618,7 @@
       <type>button</type>
       <id>10009</id>
 			<posX>1528</posX>
-			<posY>748</posY>
+			<posY>738</posY>
       <width>500</width>
       <height>40</height>
       <textureFocus>-</textureFocus>
@@ -643,7 +643,7 @@
       <type>button</type>
       <id>10010</id>
 			<posX>1528</posX>
-			<posY>788</posY>
+			<posY>778</posY>
       <width>500</width>
       <height>40</height>
       <textureFocus>-</textureFocus>
@@ -866,24 +866,9 @@
     <width>30</width>
     <height>149</height>
     <texture>basichome_nextpage_right.png</texture>
-    <visible>Control.HasFocus(6) | Control.HasFocus(7)</visible>
+    <visible>!string.equals(#mainlabel6,) + [Control.HasFocus(6) | Control.HasFocus(7)]</visible>
 		<animation effect="slide" start="60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="0">visible</animation>
 		<animation effect="slide" start="0,0" end="60,0" tween="quadratic" easing="in" time="250" delay="0">hidden</animation>
-    <animation effect="fade" time="250">WindowOpen</animation>
-    <animation effect="fade" time="250">WindowClose</animation>
-  </control>
-  <control>
-    <description>second menu indicator</description>
-    <id>0</id>
-    <type>image</type>
-    <posX>0</posX>
-    <posY>529</posY>
-    <width>30</width>
-    <height>149</height>
-    <texture>basichome_nextpage_left.png</texture>
-    <visible>[Control.HasFocus(600) | Control.HasFocus(400)] + control.isvisible(999)</visible>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="0">visible</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="0">hidden</animation>
     <animation effect="fade" time="250">WindowOpen</animation>
     <animation effect="fade" time="250">WindowClose</animation>
   </control>
