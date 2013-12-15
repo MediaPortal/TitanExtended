@@ -360,3 +360,6 @@
 		  <textureFocus>tv_green_border.png</textureFocus>
 		  <visible>player.hasvideo</visible>
 	</control>
+	
+</controls>
+</window>
