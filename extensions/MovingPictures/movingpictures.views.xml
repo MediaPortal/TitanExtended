@@ -245,19 +245,14 @@
     
 	<!--            :: THUMBVIEW ::            -->
 	
-	<control>
+	<control Style="detailsTitle">
 		<description>Movie Title value</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>1040</posX>
+		<posX>118</posX>
 		<posY>332</posY>
-		<width>700</width>
+		<width>555</width>
 		<label>#MovingPictures.SelectedMovie.title</label>
-		<font>fontB16</font>
-    <textcolor>FF00b7ff</textcolor>
-    <shadowAngle>120</shadowAngle>
-    <shadowDistance>2</shadowDistance>
-    <shadowColor>FF000000</shadowColor>
 		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
     <animation effect="fade" time="250">WindowOpen</animation>
     <animation effect="fade" time="250">WindowClose</animation>
@@ -267,7 +262,7 @@
 		<description>Release Date Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1038</posX>
+		<posX>118</posX>
 		<posY>445</posY>
 		<label>#(string.rtrim(L(172),' :'))</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -275,11 +270,11 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
-	<control Style="InfoValueWide">
+	<control Style="InfoValueSmall">
 		<description>Release Date Value</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1270</posX>
+		<posX>350</posX>
 		<posY>445</posY>
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -291,7 +286,7 @@
 		<description>Runtime Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1038</posX>
+		<posX>118</posX>
 		<posY>481</posY>
 		<label>#(string.rtrim(L(299),' :'))</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -299,11 +294,11 @@
 		<animation effect="fade" time="250">WindowClose</animation>
     </control>
 	
-	<control Style="InfoValueWide">
+	<control Style="InfoValueSmall">
 		<description>Runtime Value</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1270</posX>
+		<posX>350</posX>
 		<posY>481</posY>
 		<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -315,7 +310,7 @@
 		<description>Genre Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1038</posX>
+		<posX>118</posX>
 		<posY>516</posY>
 		<label>#MovingPictures.Translation.Genre.Label</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -323,11 +318,11 @@
 		<animation effect="fade" time="250">WindowClose</animation>
     </control>
 	
-	<control Style="InfoValueWide">
+	<control Style="InfoValueSmall">
 		<description>Genre Value</description>
 		<type>fadelabel</type>
 		<id>0</id>
-		<posX>1270</posX>
+		<posX>350</posX>
 		<posY>516</posY>
 		<label>#MovingPictures.SelectedMovie.genres</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -339,7 +334,7 @@
 		<description>Director Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1038</posX>
+		<posX>118</posX>
 		<posY>554</posY>
 		<label>#MovingPictures.Translation.Director.Label</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -347,11 +342,11 @@
 		<animation effect="fade" time="250">WindowClose</animation>
     </control>
 	
-	<control Style="InfoValueWide">
+	<control Style="InfoValueSmall">
 		<description>Director Value</description>
 		<type>fadelabel</type>
 		<id>0</id>
-		<posX>1270</posX>
+		<posX>350</posX>
 		<posY>554</posY>
 		<label>#MovingPictures.SelectedMovie.directors</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -363,7 +358,7 @@
 		<description>Cast Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1038</posX>
+		<posX>118</posX>
 		<posY>592</posY>
 		<label>#MovingPictures.Translation.Actors.Label</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -371,11 +366,11 @@
 		<animation effect="fade" time="250">WindowClose</animation>
     </control>
 	
-	<control Style="InfoValueWide">
+	<control Style="InfoValueSmall">
 		<description>Cast Value</description>
 		<type>fadelabel</type>
 		<id>0</id>
-		<posX>1270</posX>
+		<posX>350</posX>
 		<posY>592</posY>
 		<label>#MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -383,13 +378,13 @@
 		<animation effect="fade" time="250">WindowClose</animation>
     </control>
 	
-	<control>
+	<control Style="textBox">
 		<description>Summary (list)</description>
 		<type>textboxscrollup</type>
 		<id>1025</id>
-		<posX>1040</posX>
+		<posX>118</posX>
 		<posY>635</posY>
-		<width>790</width>
+		<width>555</width>
 		<height>205</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
@@ -407,7 +402,7 @@
 		<description>Logo frame</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1041</posX>
+		<posX>119</posX>
 		<posY>876</posY>
 		<width>550</width>
 		<height>73</height>
@@ -421,7 +416,7 @@
 		<description>certification logo</description>
 		<type>image</type>
 		<id>101</id>
-    <posX>1060</posX>
+    <posX>137</posX>
     <posY>887</posY>
     <width>50</width>
     <height>50</height>
@@ -437,15 +432,51 @@
     <description>Unwatched Icon</description>
     <type>image</type>
     <id>0</id>
-    <posX>1754</posX>
-    <posY>320</posY>
-    <width>92</width>
-    <height>92</height>
-    <texture>unwatched_flag_big.png</texture>
+    <posX>512</posX>
+    <posY>390</posY>
+    <width>51</width>
+    <height>51</height>
+    <texture>unwatched_flag.png</texture>
     <visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + !Control.IsVisible(9)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
   </control>
+	
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>113</posX>
+		<posY>399</posY>
+		<width>315</width>
+		<height>29</height>
+		<textureWidth>32</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblack.png</subitem>
+		<subitem>starblue.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>10</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Rating Value</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>446</posX>
+		<posY>398</posY>
+		<label>#MovingPictures.SelectedMovie.score.localized</label>
+		<font>fontB12</font>
+		<textcolor>FF00b7ff</textcolor>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + string.equals(#hideinfo, False)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>				
+	</control>
 	
 	<!--            :: FILMSTRIP ::            -->
 	
@@ -532,42 +563,6 @@
 		<font>fontB12</font>
 		<textcolor>FF00b7ff</textcolor>
 		<visible>facadeview.list + Control.IsVisible(50)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>				
-	</control>
-	
-	<control>
-		<type>imagelist</type>
-		<id>101</id>
-		<posX>1035</posX>
-		<posY>399</posY>
-		<width>315</width>
-		<height>29</height>
-		<textureWidth>32</textureWidth>
-		<textureHeight>27</textureHeight>
-		<subitems>
-		<subitem>starblack.png</subitem>
-		<subitem>starblue.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>10</imagesToDraw>
-		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
-		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Rating Value</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>1368</posX>
-		<posY>394</posY>
-		<label>#MovingPictures.SelectedMovie.score.localized</label>
-		<font>fontB12</font>
-		<textcolor>FF00b7ff</textcolor>
-		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + string.equals(#hideinfo, False)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>				
 	</control>

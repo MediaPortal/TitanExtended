@@ -234,31 +234,31 @@ This file should contain the facade view
 				<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" center="0,880" time="100">unfocus</thumbAnimation>
 		</control>
 
-			<control>
-				<description>Thumbnail Panel</description>
-				<type>thumbnailpanel</type>
-				<id>50</id>
-				<posX>102</posX>
+		<control>
+			<description>Thumbnail Panel</description>
+			<type>thumbnailpanel</type>
+			<id>50</id>
+				<posX>754</posX>
 				<posY>342</posY>
-				<width>870</width>
+				<width>1140</width>
 				<height>700</height>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>3</onleft>
 				<onright>3</onright>
-				<itemWidth>138</itemWidth>
-				<itemHeight>196</itemHeight>
-				<textureWidth>138</textureWidth>
-				<textureHeight>196</textureHeight>
-				<thumbWidth>128</thumbWidth>
-				<thumbHeight>186</thumbHeight>
-				<thumbPosX>6</thumbPosX>
+				<itemWidth>150</itemWidth>
+				<itemHeight>202</itemHeight>
+				<textureWidth>150</textureWidth>
+				<textureHeight>202</textureHeight>
+				<thumbWidth>140</thumbWidth>
+				<thumbHeight>192</thumbHeight>
+				<thumbPosX>4</thumbPosX>
 				<thumbPosY>5</thumbPosY>
-				<itemWidthBig>217</itemWidthBig>
+				<itemWidthBig>214</itemWidthBig>
 				<itemHeightBig>304</itemHeightBig>
-				<thumbWidthBig>205</thumbWidthBig>
+				<thumbWidthBig>204</thumbWidthBig>
 				<thumbHeightBig>294</thumbHeightBig>
-				<textureWidthBig>217</textureWidthBig>
+				<textureWidthBig>216</textureWidthBig>
 				<textureHeightBig>304</textureHeightBig>
 				<thumbPosXBig>6</thumbPosXBig>
 				<thumbPosYBig>5</thumbPosYBig>
@@ -272,12 +272,11 @@ This file should contain the facade view
 				<frameFocus>video_thumb_focus.png</frameFocus>
 				<textureMask></textureMask>
 				<shadowAngle>90</shadowAngle>
-    		<shadowDistance>50</shadowDistance>
+				<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
 				<spinPosX>1828</spinPosX>
 				<spinPosY>1000</spinPosY>
 				<unfocusedAlpha>100</unfocusedAlpha>
-				<dimColor>ffffffff</dimColor>
 			</control>
 
 			<control>

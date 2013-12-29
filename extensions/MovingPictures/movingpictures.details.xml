@@ -32,7 +32,7 @@ This file should contain the details view
 		<layout>StackLayout(7, Vertical, true)</layout>
 		<visible>[!Control.IsVisible(50)+!Control.IsVisible(51)] + !Control.HasFocus(10005)</visible>
         
-			<control>
+			<control Style="detailsButton">
 				<description>Play Button</description>
 				<type>button</type>
 				<id>6</id>
@@ -43,11 +43,9 @@ This file should contain the details view
 				<ondown>10001</ondown>
 		    <textureFocus>myvideos_play_focus.png</textureFocus>
 		    <textureNoFocus>myvideos_play_nofocus.png</textureNoFocus>
-				<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus> 
 			</control>
 
-			<control>
+			<control Style="detailsButton">
 				<description>Plot</description>
 				<type>button</type>
 				<id>10001</id>
@@ -56,11 +54,9 @@ This file should contain the details view
 				<onright>10005</onright>
 				<onup>6</onup>
 				<ondown>10002</ondown>
-				<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			</control>
 	
-			<control>
+			<control Style="detailsButton">
 				<description>Technical Details</description>
 				<type>button</type>
 				<id>10002</id>
@@ -68,43 +64,35 @@ This file should contain the details view
 				<onleft>10005</onleft>
 				<onright>10005</onright>
 				<onup>10001</onup>
-				<ondown>10003</ondown>
-				<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
+				<ondown>11899</ondown>
 			</control>
 			
-			<control>
+			<control Style="detailsButton">
 				<description>Trailer Button</description>
-				<id>10003</id>
+				<id>11899</id>
 				<type>button</type>
-				<label>Trailer</label>
+				<label>#Trailers.Translation.Trailers.Label</label>
 				<onup>10002</onup>
 				<ondown>10004</ondown>
 				<onleft>10005</onleft>
 				<onright>10005</onright>
-				<hyperlink>4755</hyperlink>
-				<hyperlinkParameter>site:YouTube|search:#MovingPictures.SelectedMovie.title #MovingPictures.SelectedMovie.year trailer|return:Locked</hyperlinkParameter>
-				<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
-				<visible>plugin.isenabled(OnlineVideos)</visible>
+				<visible>plugin.isenabled(Trailers)</visible>
 			</control>
 			
-			<control>
+			<control Style="detailsButton">
 				<description>Subtitle Button</description>
 				<id>10004</id>
 				<type>button</type>
 				<label>Subtitle</label>
-				<onup>10003</onup>
+				<onup>11899</onup>
 				<ondown>97270</ondown>
 				<onleft>10005</onleft>
 				<onright>10005</onright>
 				<hyperlink>84623</hyperlink>
-				<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 				<visible>plugin.isenabled(SubCentral)</visible>
 			</control>
 			
-			<control>
+			<control Style="detailsButton">
         <description>Trakt Button</description>
         <type>button</type>
         <id>97270</id>
@@ -113,8 +101,6 @@ This file should contain the details view
 				<onright>10005</onright>
         <onup>10004</onup>
         <ondown>6</ondown>
-				<textcolor>FF000000</textcolor>
-				<textcolorNoFocus>ffffffff</textcolorNoFocus>
 				<visible>plugin.isenabled(Trakt)</visible>
       </control>
 	</control>
@@ -164,18 +150,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>
   </control>
 	
-	<control>
+	<control Style="detailsTitle">
 		<description>Movie Title</description>
 		<type>fadelabel</type>
 		<id>0</id>
 		<posX>1020</posX>
 		<posY>352</posY>
-		<width>800</width>
-		<font>fontB20</font>
-    <textcolor>FF00b7ff</textcolor>
-    <shadowAngle>120</shadowAngle>
-    <shadowDistance>2</shadowDistance>
-    <shadowColor>FF000000</shadowColor>
 		<label>#MovingPictures.SelectedMovie.title</label>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10005)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -546,7 +526,7 @@ This file should contain the details view
 		<id>1</id>
 		<posX>1020</posX>
 	  <posY>558</posY>
-		<label>#Titan.DateAdded</label>
+		<label>#MovingPictures.Translation.ReleaseDate.Label</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -557,7 +537,7 @@ This file should contain the details view
 		<id>1</id>
 		<posX>1273</posX>
 		<posY>558</posY>
-		<label>#MovingPictures.SelectedMovie.date_added</label>
+		<label>#MovingPictures.SelectedMovie.release_date.localized.short</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -568,7 +548,7 @@ This file should contain the details view
 		<id>1</id>
 		<posX>1020</posX>
 	  <posY>590</posY>
-		<label>#Titan.MediaType</label>
+		<label>#MovingPictures.Translation.DateAdded.Label</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -579,18 +559,18 @@ This file should contain the details view
 		<id>1</id>
 		<posX>1273</posX>
 		<posY>590</posY>
-		<label>#MovingPictures.LocalMedia.videoformat</label>
+		<label>#MovingPictures.SelectedMovie.date_added.localized.short</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
- 
+		
 	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>1020</posX>
 	  <posY>622</posY>
-		<label>#Titan.WatchedCount</label>
+		<label>#Titan.MediaType</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -601,6 +581,54 @@ This file should contain the details view
 		<id>1</id>
 		<posX>1273</posX>
 		<posY>622</posY>
+		<label>#MovingPictures.LocalMedia.videoformat</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+ 
+	<control Style="InfoLabelDetails">
+		<type>label</type>
+		<id>1</id>
+		<posX>1020</posX>
+	  <posY>654</posY>
+		<label>Plot Keywords</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>textboxscrollup</type>
+		<id>1</id>
+		<posX>1273</posX>
+		<posY>652</posY>
+		<width>550</width>
+		<height>70</height>
+		<scrollStartDelaySec>999999</scrollStartDelaySec>
+		<lineSpacing>0.92</lineSpacing>
+		<label>#MovingPictures.SelectedMovie.plotkeywords</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+ 
+	<control Style="InfoLabelDetails">
+		<type>label</type>
+		<id>1</id>
+		<posX>1020</posX>
+	  <posY>718</posY>
+		<label>#Titan.WatchedCount</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>1273</posX>
+		<posY>718</posY>
 		<label>#MovingPictures.UserMovieSettings.watched</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -618,14 +646,13 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
 		
-	<control>
+	<control Style="InfoValueDetails">
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>840</posX>
 		<posY>845</posY>
 	  <width>770</width>
     <font>TitanLight14</font>
-    <textcolor>FFffffff</textcolor>
 		<label>#MovingPictures.SelectedMovie.details_url</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -643,14 +670,13 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
 		
-	<control>
+	<control Style="InfoValueDetails">
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>840</posX>
 		<posY>877</posY>
 	  <width>970</width>
     <font>TitanLight12</font>
-    <textcolor>FFffffff</textcolor>
 		<label>#MovingPictures.LocalMedia.fullpath</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>

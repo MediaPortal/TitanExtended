@@ -90,8 +90,8 @@
   	<description>Video resolution</description>
     <type>image</type>
     <id>0</id>
-    <posX>1132</posX>
-    <posY>884</posY>
+    <posX>209</posX>
+    <posY>880</posY>
     <width>92</width>
     <height>60</height>
     <texture>Logos\resolution\#MovingPictures.LocalMedia.videoresolution.png</texture>
@@ -104,8 +104,8 @@
   	<description>Video codec</description>
     <type>image</type>
     <id>0</id>
-    <posX>1212</posX>
-    <posY>884</posY>
+    <posX>289</posX>
+    <posY>880</posY>
     <width>92</width>
     <height>60</height>
     <texture>Logos\video\#MovingPictures.LocalMedia.videocodec.png</texture>
@@ -118,8 +118,8 @@
   	<description>Audio codec</description>
     <type>image</type>
     <id>0</id>
-   	<posX>1297</posX>
-    <posY>884</posY>
+   	<posX>376</posX>
+    <posY>880</posY>
     <width>92</width>
     <height>60</height>
     <texture>Logos\audio\#MovingPictures.LocalMedia.audiocodec.png</texture>
@@ -132,8 +132,8 @@
   	<description>Audio channels</description>
     <type>image</type>
     <id>0</id>
-   	<posX>1377</posX>
-    <posY>884</posY>
+   	<posX>456</posX>
+    <posY>880</posY>
     <width>92</width>
     <height>60</height>
     <texture>Logos\audio\#MovingPictures.LocalMedia.audiochannels.png</texture>
@@ -146,8 +146,8 @@
   	<description>Aspect ratio</description>
     <type>image</type>
     <id>0</id>
-   	<posX>1447</posX>
-    <posY>884</posY>
+   	<posX>526</posX>
+    <posY>880</posY>
     <width>92</width>
     <height>60</height>
     <texture>Logos\aspectratio\#MovingPictures.LocalMedia.videoaspectratio.png</texture>
@@ -160,7 +160,7 @@
   	<description>Subtitle</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1537</posX>
+		<posX>616</posX>
 		<posY>894</posY>
 		<width>39</width>
 		<height>40</height>

@@ -81,8 +81,8 @@
 		<height>40</height>
 		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10005)</visible>
-	  <animation effect="fade" time="250">WindowOpen</animation>
-	  <animation effect="fade" time="250">WindowClose</animation>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	</controls>
 </window>
