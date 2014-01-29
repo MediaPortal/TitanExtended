@@ -4,6 +4,7 @@
 	<defaultcontrol>88882</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:Trakt</define>
+    <rememberLastFocusedControl>yes</rememberLastFocusedControl>
 	<controls>
   <import>Trakt.Common.Background.xml</import>
   <import>Trakt.xml</import>

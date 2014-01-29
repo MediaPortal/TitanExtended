@@ -5,6 +5,7 @@
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:Trakt</define>
 	<define>#activityOnLeft:9</define>
+    <rememberLastFocusedControl>yes</rememberLastFocusedControl>
 	<controls>
 	
     <import>Trakt.Common.Background.xml</import>

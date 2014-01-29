@@ -110,36 +110,7 @@
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
-		<!--            :: List Scrolling Popup ::            -->
-    <control>
-      <description>listscroller bg</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>210</posX>
-      <posY>542</posY>
-      <width>211</width>
-      <height>211</height>
-      <texture>listscroller_bg.png</texture>
-      <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
-      <animation effect="fade" time="250">Visible</animation>
-      <animation effect="fade" time="0">Hidden</animation>
-    </control>
-    <control>
-      <type>label</type>
-      <id>1</id>
-      <posX>265</posX>
-      <posY>602</posY>
-      <width>96</width>
-      <height>96</height>
-      <font>TitanLight32</font>
-      <textcolor>ff000000</textcolor>
-      <label>#selecteditem.scrolllabel</label>
-      <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
-      <align>center</align>
-      <valign>middle</valign>
-      <animation effect="fade" time="250">Visible</animation>
-      <animation effect="fade" time="0">Hidden</animation>
-    </control>  
+		
 		<!--            :: Count ::            -->
     <control>
       <description>Moviecount</description>
@@ -462,7 +433,7 @@
 				</control>
 			</control>
 		</control>
-	  <import>Trakt.Common.Shows.xml</import>
+	  <import>Trakt.Common.Shows.xml</import>      
 		<import>common.overlay.xml</import>
 	</controls>
 </window>

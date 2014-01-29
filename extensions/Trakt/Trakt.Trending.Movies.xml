@@ -110,36 +110,7 @@
   	<animation effect="fade" time="250">WindowOpen</animation>
   	<animation effect="fade" time="250">WindowClose</animation>
   </control>
-	<!--            :: List Scrolling Popup ::            -->
-  <control>
-    <description>listscroller bg</description>
-    <type>image</type>
-    <id>1</id>
-    <posX>210</posX>
-    <posY>542</posY>
-    <width>211</width>
-    <height>211</height>
-    <texture>listscroller_bg.png</texture>
-    <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
-    <animation effect="fade" time="250">Visible</animation>
-    <animation effect="fade" time="0">Hidden</animation>
-  </control>
-  <control>
-    <type>label</type>
-    <id>1</id>
-    <posX>265</posX>
-    <posY>602</posY>
-    <width>96</width>
-    <height>96</height>
-    <font>TitanLight32</font>
-    <textcolor>ff000000</textcolor>
-    <label>#selecteditem.scrolllabel</label>
-    <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
-    <align>center</align>
-    <valign>middle</valign>
-    <animation effect="fade" time="250">Visible</animation>
-    <animation effect="fade" time="0">Hidden</animation>
-  </control>
+	
 	<!--            :: Count ::            -->
   <control>
     <description>Moviecount</description>
@@ -457,9 +428,73 @@
 				<offsetSortButtonY>27</offsetSortButtonY>
 				<onright>50</onright>
 				<onleft>50</onleft>
-				<ondown>2</ondown>
+				<ondown>9</ondown>
         <onup>2</onup>
 		  </control>
+      <control>
+				<description>Hide Watched</description>
+        <type>checkbutton</type>
+        <id>9</id>
+        <width>499</width>
+        <height>69</height>
+        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>#Trakt.Translation.HideWatched.Label</label>
+        <onup>8</onup>
+        <ondown>10</ondown>
+        <onright>50</onright>
+				<onleft>50</onleft>
+        <textXOff>62</textXOff>
+        <textYOff>16</textYOff>
+      </control>
+      <control>
+        <description>Hide Watchlisted</description>
+        <type>checkbutton</type>
+        <id>10</id>
+        <width>499</width>
+        <height>69</height>
+        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>#Trakt.Translation.HideWatchlisted.Label</label>
+        <onup>9</onup>
+        <ondown>11</ondown>
+        <onright>50</onright>
+				<onleft>50</onleft>
+        <textXOff>62</textXOff>
+        <textYOff>16</textYOff>
+      </control>
+      <control>
+        <description>Hide Collected</description>
+        <type>checkbutton</type>
+        <id>11</id>
+        <width>499</width>
+        <height>69</height>
+        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>#Trakt.Translation.HideCollected.Label</label>
+        <onup>10</onup>
+        <ondown>12</ondown>
+        <onright>50</onright>
+				<onleft>50</onleft>
+        <textXOff>62</textXOff>
+        <textYOff>16</textYOff>
+      </control>
+      <control>
+        <description>Hide Rated</description>
+        <type>checkbutton</type>
+        <id>12</id>
+        <width>499</width>
+        <height>69</height>
+        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>#Trakt.Translation.HideRated.Label</label>
+        <onup>11</onup>
+        <ondown>2</ondown>
+        <onright>50</onright>
+				<onleft>50</onleft>
+        <textXOff>62</textXOff>
+        <textYOff>16</textYOff>
+      </control>      
 		</control>
   </control>
 	<import>Trakt.Common.Movies.xml</import>
