@@ -6977,8 +6977,8 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <CompatibleVersion>
           <Items>
             <CompatibleVersionItem>
-              <MinRequiredVersion>1.3.100.0</MinRequiredVersion>
-              <DesignedForVersion>1.5.100.0</DesignedForVersion>
+              <MinRequiredVersion>1.6.100.0</MinRequiredVersion>
+              <DesignedForVersion>1.6.100.0</DesignedForVersion>
             </CompatibleVersionItem>
           </Items>
         </CompatibleVersion>
@@ -6997,39 +6997,30 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <UpdateUrl>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtendedUpdate.xml</UpdateUrl>
     <Version>
       <Major>1</Major>
-      <Minor>6</Minor>
+      <Minor>7</Minor>
       <Build>0</Build>
-      <Revision>341</Revision>
+      <Revision>344</Revision>
     </Version>
-    <ExtensionDescription>Titan Extended adds support for a variety of community plugins to the Titan skin.
-It also includes an updater plugin which will allow you to automatically receive and install updates to Titan and Titan Extended.
-
+    <ExtensionDescription>Titan Extended adds support for a variety of community plugins to the Titan skin.
+It also includes an updater plugin which will allow you to automatically receive and install updates to Titan and Titan Extended.
+
 The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</ExtensionDescription>
-    <VersionDescription>Changelog V1.6.0.341
+    <VersionDescription>Changelog V1.6.0.344
 
-added new "Extended One" theme
-* This theme use the default BasicHome layout and is configurable within the editor
-
-added option to use hover image in plugins instead of the static background
-
-[MovingPictures] 
-* rework default thumbview layout to show thumbs on the right and details on the left
-* added release date and plot keywords in details view
-* added support for Trailers plugin
-* fixed rating dialog
-* fixed pin dialog
-* fixed wrong label in details view
-
-added RadioTime support
-added UpdateControl support
-added WorldWeatherLite support
-fixed ArgusTv RadioGuide 
-fixed overlapping in ArgusTV TV/Radio Recordings listview
-added ArgusTV Logo in Argus radio header
-compiled dll against .NET4 for MP 1.6 compatibility</VersionDescription>
+updated BasicHome Editor to support MP 1.7
+
+Trakt updates (thx ltfearme!)
+* Fixed visibility of labels when entering Trakt User Profile.
+* Fixed visibility of labels when entering Trakt Network.
+* Fixed Scrolling popup for Trakt facades
+* Fixed label for the 'Hide Spoilers' checkbutton in Trakt Shouts / Recent Shouts.
+* Added 'Hide Watchlisted' button to Trakt Calendar.
+* Added Filtering buttons in Trakt Trending GUIs (Watched, Watchlisted, Collected and Rated).
+* Replaced 4TR from Trakt Settings-&gt;Plugins with Argus TV options.
+* Remember last focused controls in Trakt, improves navigation.</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtended14.mpe1</OnlineLocation>
-    <ReleaseDate>2014-01-01T09:34:51</ReleaseDate>
+    <ReleaseDate>2014-02-18T09:34:51</ReleaseDate>
     <Tags />
     <Location>.\TitanExtended14.mpe1</Location>
     <Params>
