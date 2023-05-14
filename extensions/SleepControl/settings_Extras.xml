@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>97654</id>
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background_settings.png</texture>
+    </control>
+    
+    <control>
+      <description>panel</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>5</posX>
+      <posY>140</posY>
+      <width>618</width>
+      <height>940</height>
+      <texture>panel_settings_left.png</texture>
+    </control>
+    
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>152</posX>
+      <posY>225</posY>
+      <width>500</width>
+      <label>Extras</label>
+      <textcolor>00b7ff</textcolor>
+      <font>TitanLight20</font>
+    </control>
+    
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>122</posX>
+      <posY>321</posY>
+      <dimColor>ffffffff</dimColor>
+      <layout>StackLayout(7, Vertical, true)</layout>
+      <control Style="SettingsButton">
+        <description>Sleep Control</description>
+        <type>button</type>
+        <id>9991</id>
+        <label>Sleep Control</label>
+        <onup>99910</onup>
+        <hyperlink>7969</hyperlink>
+        <visible>plugin.isenabled(Sleep Control)</visible>
+      </control>
+      
+      <control Style="SettingsButton">
+        <description>Volume Control</description>
+        <type>button</type>
+        <id>9992</id>
+        <label>Volume Control</label>
+        <hyperlink></hyperlink>
+        <visible>plugin.isenabled(Volume Control)</visible>
+      </control>
+      
+      <control Style="SettingsButton">
+        <description>MiniDisplay</description>
+        <type>button</type>
+        <id>9993</id>
+        <label>9100</label>
+        <hyperlink>9000</hyperlink>
+        <visible>plugin.isenabled(MiniDisplay)</visible>
+      </control>
+      
+    </control>
+  </controls>
+</window>

@@ -3,8 +3,206 @@
   <Version>2.0</Version>
   <Groups>
     <Items>
-      <GroupItem Name="MovingPictures">
+      <GroupItem Name="Extension">
         <ParentGroup />
+        <DisplayName>Extensions</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for Mediaportal Extensions</Description>
+        <Files>
+          <Items />
+        </Files>
+      </GroupItem>
+      <GroupItem Name="Browser">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>Browser</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for Browser plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Browser\Media\basichome_button_browser.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4a1064dd-6125-423d-b60b-460a64cee3e2}-basichome_button_browser.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_browser.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="BrowseTheWeb">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>BrowseTheWeb</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for BrowseTheWeb plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\BrowseTheWeb\browsetheweb.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{1e5d07ca-d1cd-4a73-bbd7-5f1004940cef}-browsetheweb.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\browsetheweb.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\BrowseTheWeb\browsethewebbook.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d5abdb65-23b5-4241-998f-c9790dcbfba0}-browsethewebbook.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\browsethewebbook.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\BrowseTheWeb\Media\basichome_button_browsetheweb.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ca08928c-3978-4537-8305-866d4f41b488}-basichome_button_browsetheweb.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_browsetheweb.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\BrowseTheWeb\Media\hover_BrowseTheWeb.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{60f3224b-247a-4f22-9e15-e33d5c1d1fd2}-hover_BrowseTheWeb.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_BrowseTheWeb.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\BrowseTheWeb\Media\icon_btw.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5e059744-86d0-4361-a4d4-1fcedb28762b}-icon_btw.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\icon_btw.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="CPG">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>CPG</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for CPG plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\CPG\Media\basichome_button_cpg.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{889c3a2e-4171-4415-a95f-0e4084713924}-basichome_button_cpg.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_cpg.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="Games">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>Games</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for Games plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Games\Media\basichome_button_games.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a66b5110-e1a0-4b86-9c3f-b7f9c4962a62}-basichome_button_games.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_games.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="GobalMusicSearch">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>GobalMusicSearch</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for GobalMusicSearch plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.Details.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{34abeb06-496f-4d39-a209-65b1e8948868}-GlobalSearch.Music.Details.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.Details.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0027c635-5808-4e8e-b28d-0f4c41bdfb4a}-GlobalSearch.Music.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\GobalMusicSearch\Media\hover_search music.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{50e8c9c7-82ae-4d23-8fce-e1a98aa098c2}-hover_search music.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_search music.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\GobalMusicSearch\Media\basichome_button_search music.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{728c70f5-2c73-4aa8-8b28-b6f88de73392}-basichome_button_search music.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_search music.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="IMDb+">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>IMDb+</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for IMDb+ plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\IMDb+\IMDb+.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c8856a2f-15aa-488a-ad30-b6bef647013c}-IMDb+.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\IMDb+.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\IMDb+\Media\basichome_button_imdb+.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b67641a3-ade9-4ab0-9be9-8fa734f04677}-basichome_button_imdb+.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_imdb+.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\IMDb+\Media\hover_imdb+.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{7a1904c0-2c1f-4e9a-bcb4-18a1a930bf0d}-hover_imdb+.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_imdb+.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="InfoService">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>InfoService</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for InfoService plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\InfoService\Media\basichome_button_infoservice.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{8b2bc568-8ef4-4124-9894-819364c6a21e}-basichome_button_infoservice.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_infoservice.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\InfoService\Media\hover_infoservice.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{7c09b0a6-6461-4278-beb3-953cb0b4be28}-hover_infoservice.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_infoservice.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="MovingPictures">
+        <ParentGroup>Extension</ParentGroup>
         <DisplayName>MovingPictures</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Skin files for MovingPictures plugin</Description>
@@ -27,32 +225,94 @@
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="TVSeries">
-        <ParentGroup />
-        <DisplayName>TVSeries</DisplayName>
+      <GroupItem Name="MPSteam">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>MPSteam</DisplayName>
         <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for TVSeries plugin</Description>
+        <Description>Skin files for MPSteam plugin</Description>
         <Files>
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\TVSeries\Media\basichome_button_series.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{790bfadb-938d-4a3a-9574-aca3d0bbfaae}-basichome_button_series.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_series.png</DestinationFilename>
+              <LocalFileName>..\Extensions\MPSteam\Media\Basichome_Button_MPSteam.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e25622ae-6379-483f-8a1a-650ff5f4feac}-Basichome_Button_MPSteam.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\Basichome_Button_MPSteam.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="MyEmulator">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>MyEmulator</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for MyEmulator plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\MyEmulator\Media\basichome_button_myemulator.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{70cb3da6-6790-4c8b-9a33-2e68dfc89703}-basichome_button_myemulator.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_myemulator.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="MyExtensions">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>MyExtensions</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for MyExtensions plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\MyExtensions\myextensions2.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f51e35ac-62a2-4dec-91c9-38f41eb2511d}-myextensions2.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\myextensions2.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\TVSeries\Media\hover_my tv series.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{bed2507f-f814-4d3a-91e8-ab7b39501ff3}-hover_my tv series.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_my tv series.png</DestinationFilename>
+              <LocalFileName>..\Extensions\MyExtensions\myextensions2info.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{988ba4bc-0d7e-4a2f-95c9-a48771afb500}-myextensions2info.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\myextensions2info.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\MyExtensions\myextensions2settings.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a6eaec10-021e-4e3d-b432-7213ed5e5105}-myextensions2settings.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\myextensions2settings.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\MyExtensions\myextensions2slideshow.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{38c1e2d0-0165-4c8e-b8ad-12b028df45f5}-myextensions2slideshow.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\myextensions2slideshow.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\MyExtensions\Media\basichome_button_extensions.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{455720dc-eea9-4e31-9bb7-90b198018fe2}-basichome_button_extensions.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_extensions.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\MyExtensions\Media\hover_extensions.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{85270f02-372d-4e27-87b0-8dfc1b689842}-hover_extensions.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_extensions.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
       </GroupItem>
       <GroupItem Name="MyFilms">
-        <ParentGroup />
+        <ParentGroup>Extension</ParentGroup>
         <DisplayName>MyFilms</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Skin files for MyFilms plugin</Description>
@@ -250,8 +510,25 @@
           </Items>
         </Files>
       </GroupItem>
+      <GroupItem Name="MyLyrics">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>MyLyrics</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for MyLyrics plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\MyLyrics\MyLyrics.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2b15f782-1a27-4ae3-9b96-23a0b73b6125}-MyLyrics.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\MyLyrics.xml</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
       <GroupItem Name="OnlineVideos">
-        <ParentGroup />
+        <ParentGroup>Extension</ParentGroup>
         <DisplayName>OnlineVideos</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Skin files for OnlineVideos plugin</Description>
@@ -3067,139 +3344,331 @@
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="MyExtensions">
-        <ParentGroup />
-        <DisplayName>MyExtensions</DisplayName>
+      <GroupItem Name="Pandora">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>Pandora</DisplayName>
         <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for MyExtensions plugin</Description>
+        <Description>Skin files for Pandora plugin</Description>
         <Files>
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\MyExtensions\myextensions2.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{f51e35ac-62a2-4dec-91c9-38f41eb2511d}-myextensions2.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\myextensions2.xml</DestinationFilename>
+              <LocalFileName>..\Extensions\Pandora\PandoraMusicBox.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{55dadedb-ef04-488f-8ddc-e020251b004c}-PandoraMusicBox.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\PandoraMusicBox.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\MyExtensions\myextensions2info.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{988ba4bc-0d7e-4a2f-95c9-a48771afb500}-myextensions2info.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\myextensions2info.xml</DestinationFilename>
+              <LocalFileName>..\Extensions\Pandora\Media\basichome_button_pandora.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5ced058a-4a26-4361-a5d0-352e2ce11c2f}-basichome_button_pandora.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_pandora.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\MyExtensions\myextensions2settings.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a6eaec10-021e-4e3d-b432-7213ed5e5105}-myextensions2settings.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\myextensions2settings.xml</DestinationFilename>
+              <LocalFileName>..\Extensions\Pandora\Media\pandoraoverlay.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b09d30f4-4776-4ef5-a4b4-bf206c1b8487}-pandoraoverlay.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandoraoverlay.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\MyExtensions\myextensions2slideshow.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{38c1e2d0-0165-4c8e-b8ad-12b028df45f5}-myextensions2slideshow.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\myextensions2slideshow.xml</DestinationFilename>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_logo.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{778e36b0-98c3-46d8-85dc-dc1e14b226c8}-pandora_logo.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_logo.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\MyExtensions\Media\basichome_button_extensions.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{455720dc-eea9-4e31-9bb7-90b198018fe2}-basichome_button_extensions.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_extensions.png</DestinationFilename>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_progress.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{db72e6ca-64a0-4dee-a9c4-091e9e994584}-pandora_progress.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_progress.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\MyExtensions\Media\hover_extensions.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{85270f02-372d-4e27-87b0-8dfc1b689842}-hover_extensions.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_extensions.png</DestinationFilename>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_progress_tray.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b5dd52c8-2c4f-4b1e-b426-aecaeba32dc3}-pandora_progress_tray.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_progress_tray.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_rating_Hate.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{901e4ed7-f052-4c4b-951d-fe2a52c0fa7f}-pandora_rating_Hate.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_rating_Hate.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_rating_Love.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2229d1b9-b792-494e-9ceb-b5672ca1d736}-pandora_rating_Love.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_rating_Love.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_rating_TemporarilyBanned.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6976e337-06cd-4731-ac44-f74ce6298a0b}-pandora_rating_TemporarilyBanned.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_rating_TemporarilyBanned.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_tile.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fbf0ce32-701e-4c05-b284-7e309196b12f}-pandora_tile.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_tile.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Pandora\Media\pandora_tile_focus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0a88767b-12b7-4db5-84f7-79c02434a2a9}-pandora_tile_focus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\pandora_tile_focus.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="InfoService">
-        <ParentGroup />
-        <DisplayName>InfoService</DisplayName>
+      <GroupItem Name="PlayDisc">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>PlayDisc</DisplayName>
         <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for InfoService plugin</Description>
+        <Description>Skin files for PlayDisc plugin</Description>
         <Files>
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\InfoService\Media\basichome_button_infoservice.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{8b2bc568-8ef4-4124-9894-819364c6a21e}-basichome_button_infoservice.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_infoservice.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\InfoService\Media\hover_infoservice.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{7c09b0a6-6461-4278-beb3-953cb0b4be28}-hover_infoservice.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_infoservice.png</DestinationFilename>
+              <LocalFileName>..\Extensions\PlayDisc\Media\basichome_button_playdisc.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a536ebd7-df42-4a67-9908-e6425bf581cb}-basichome_button_playdisc.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_playdisc.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="Trakt">
-        <ParentGroup />
-        <DisplayName>Trakt</DisplayName>
+      <GroupItem Name="PowerControl">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>PowerControl</DisplayName>
         <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for Trakt plugin</Description>
+        <Description>Skin files for PowerControl plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\common.window.background.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b8b1cad0-fd62-4f58-9029-27f45694a990}-common.window.background.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\common.window.background.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\PowerControl.Menu.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e10263ed-f426-4f47-bc7d-c3ef8152d55c}-PowerControl.Menu.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\PowerControl.Menu.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\PowerControl.NetworkDevice.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{83cb8b54-a952-4ede-950e-2432807b83a2}-PowerControl.NetworkDevice.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\PowerControl.NetworkDevice.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\PowerControl.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d72db33e-6456-48f9-bacf-14a91fb8e195}-PowerControl.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\PowerControl.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_hibernate_focus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f5b66858-2755-4e91-aa0b-46a915a39940}-button_hibernate_focus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_hibernate_focus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_hibernate_nofocus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ab80aa80-a104-45d9-b70a-5c8b7e38d481}-button_hibernate_nofocus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_hibernate_nofocus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_restart_focus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6b905f18-623c-4a5a-9825-29abef3b1260}-button_restart_focus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_restart_focus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_restart_nofocus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{893580d9-509e-4883-a422-4a52d98f27c7}-button_restart_nofocus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_restart_nofocus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_shutdown_focus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{3c223ce4-ae2e-40cb-8ba7-5170f2841383}-button_shutdown_focus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_shutdown_focus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_shutdown_nofocus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{672e088f-206e-4671-91a7-25a8e3ec4f95}-button_shutdown_nofocus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_shutdown_nofocus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_standby_focus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4fce1074-cca4-4203-90bc-5af0ae4b838b}-button_standby_focus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_standby_focus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_standby_nofocus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0f4666d3-219c-4e3d-893e-06e9efcb0691}-button_standby_nofocus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_standby_nofocus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_wakeup_focus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f0b6a82c-1a56-4257-b301-a70e01e1d903}-button_wakeup_focus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_wakeup_focus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\button_wakeup_nofocus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{56623ff7-6975-48b6-95d2-a13756b6638d}-button_wakeup_nofocus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\button_wakeup_nofocus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_client.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c3fcbe09-cd5b-48ff-aa05-f317cac439a7}-powercontrol_client.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_client.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_gamecontroller.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{af22daf1-787a-49c3-a1f7-fffeae551d67}-powercontrol_gamecontroller.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_gamecontroller.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_greenflag.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c8d26405-a6b5-4b9f-838b-7bc667c859d5}-powercontrol_greenflag.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_greenflag.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_other.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d01db895-5a46-445b-924e-e2c5e5a54a3d}-powercontrol_other.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_other.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_redflag.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{bd459bcb-04a7-4852-acec-de394765ea7d}-powercontrol_redflag.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_redflag.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_router.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{3eeb4b51-1228-4a42-bbb8-82ba576ea848}-powercontrol_router.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_router.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_server.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f848e69e-7d7f-4d14-8446-39c0fb1de6a4}-powercontrol_server.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_server.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_storage.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{939945cb-e319-43be-ad91-aaab361fdf95}-powercontrol_storage.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\powercontrol_storage.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="RadioTime">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>RadioTime</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for RadioTime plugin</Description>
         <Files>
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\Trakt\Media\basichome_button_trakt.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{70887c29-e40d-41a0-be07-e6b572705ee4}-basichome_button_trakt.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_trakt.png</DestinationFilename>
+              <LocalFileName>..\extensions\RadioTime\Media\hover_radiotime.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2a5dfa1f-642c-4bba-8b71-d2baade106e6}-hover_radiotime.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_radiotime.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\Trakt\Media\hover_trakt.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{0c1a7777-2f06-4fad-accb-6a9d30dbf7ae}-hover_trakt.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_trakt.png</DestinationFilename>
+              <LocalFileName>..\extensions\RadioTime\Media\basichome_button_radiotime.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5ee1497a-648f-44d1-a16f-4aeaf1ea96af}-basichome_button_radiotime.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_radiotime.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="IMDb+">
-        <ParentGroup />
-        <DisplayName>IMDb+</DisplayName>
+      <GroupItem Name="Shoutcast">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>Shoutcast</DisplayName>
         <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for IMDb+ plugin</Description>
+        <Description>Skin files for Shoutcast plugin</Description>
         <Files>
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\IMDb+\IMDb+.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c8856a2f-15aa-488a-ad30-b6bef647013c}-IMDb+.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\IMDb+.xml</DestinationFilename>
+              <LocalFileName>..\Extensions\Shoutcast\shout.hiddenmenu.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0dc1b691-7638-4df4-a99f-8bf3c3c0df97}-shout.hiddenmenu.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\shout.hiddenmenu.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\IMDb+\Media\basichome_button_imdb+.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{b67641a3-ade9-4ab0-9be9-8fa734f04677}-basichome_button_imdb+.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_imdb+.png</DestinationFilename>
+              <LocalFileName>..\Extensions\Shoutcast\ShoutcastDirectoryListView.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d0274aeb-0c0d-4cfb-989a-3e3c1fd93b30}-ShoutcastDirectoryListView.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\ShoutcastDirectoryListView.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\Extensions\IMDb+\Media\hover_imdb+.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{7a1904c0-2c1f-4e9a-bcb4-18a1a930bf0d}-hover_imdb+.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_imdb+.png</DestinationFilename>
+              <LocalFileName>..\Extensions\Shoutcast\Media\hover_shoutcast.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0a74b431-8860-42b3-a934-f958c285e3fd}-hover_shoutcast.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_shoutcast.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
       </GroupItem>
       <GroupItem Name="ShowTimes">
-        <ParentGroup />
+        <ParentGroup>Extension</ParentGroup>
         <DisplayName>ShowTimes</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Skin files for ShowTimes plugin</Description>
@@ -3222,8 +3691,53 @@
           </Items>
         </Files>
       </GroupItem>
+      <GroupItem Name="SleepControl">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>SleepControl</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for SleepControl plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\SleepControl\settings.menu.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b8e13c38-eafe-4238-af76-4cecc932c1af}-settings.menu.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\settings.menu.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\SleepControl\settings.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{163db511-f2ed-421e-a8f4-c9aaa10bc209}-settings.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\settings.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\SleepControl\settings_Extras.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2d6cdd4c-a2bc-4111-b777-7db87e1215b2}-settings_Extras.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\settings_Extras.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\SleepControl\SleepControl.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e7e6f813-67c7-4fe5-be89-5a72f52d37bb}-SleepControl.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\SleepControl.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\SleepControl\Media\basichome_button_sleepcontrol.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{9f7de7a0-b039-43ce-9ca4-4e603d6e6542}-basichome_button_sleepcontrol.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_sleepcontrol.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
       <GroupItem Name="SubCentral">
-        <ParentGroup />
+        <ParentGroup>Extension</ParentGroup>
         <DisplayName>SubCentral</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Skin files for SubCentral plugin</Description>
@@ -3344,102 +3858,56 @@
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="Themes">
-        <DisplayName>Themes</DisplayName>
+      <GroupItem Name="Trakt">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>Trakt</DisplayName>
         <DefaulChecked>true</DefaulChecked>
-        <Description>Themes</Description>
-        <Files>
-          <Items />
-        </Files>
-      </GroupItem>
-      <GroupItem Name="GobalMusicSearch">
-        <ParentGroup />
-        <DisplayName>GobalMusicSearch</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for GobalMusicSearch plugin</Description>
+        <Description>Skin files for Trakt plugin</Description>
         <Files>
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.Details.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{34abeb06-496f-4d39-a209-65b1e8948868}-GlobalSearch.Music.Details.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.Details.xml</DestinationFilename>
+              <LocalFileName>..\extensions\Trakt\Media\basichome_button_trakt.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{70887c29-e40d-41a0-be07-e6b572705ee4}-basichome_button_trakt.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_trakt.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{0027c635-5808-4e8e-b28d-0f4c41bdfb4a}-GlobalSearch.Music.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\GobalMusicSearch\Media\hover_search music.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{50e8c9c7-82ae-4d23-8fce-e1a98aa098c2}-hover_search music.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_search music.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\GobalMusicSearch\Media\basichome_button_search music.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{728c70f5-2c73-4aa8-8b28-b6f88de73392}-basichome_button_search music.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_search music.png</DestinationFilename>
+              <LocalFileName>..\extensions\Trakt\Media\hover_trakt.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0c1a7777-2f06-4fad-accb-6a9d30dbf7ae}-hover_trakt.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_trakt.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="RadioTime">
-        <ParentGroup />
-        <DisplayName>RadioTime</DisplayName>
+      <GroupItem Name="TVSeries">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>TVSeries</DisplayName>
         <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for RadioTime plugin</Description>
+        <Description>Skin files for TVSeries plugin</Description>
         <Files>
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\RadioTime\Media\hover_radiotime.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2a5dfa1f-642c-4bba-8b71-d2baade106e6}-hover_radiotime.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_radiotime.png</DestinationFilename>
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\TVSeries\Media\basichome_button_series.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{790bfadb-938d-4a3a-9574-aca3d0bbfaae}-basichome_button_series.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_series.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\RadioTime\Media\basichome_button_radiotime.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{5ee1497a-648f-44d1-a16f-4aeaf1ea96af}-basichome_button_radiotime.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_radiotime.png</DestinationFilename>
-            </FileItem>
-          </Items>
-        </Files>
-      </GroupItem>
-      <GroupItem Name="WorldWeatherLite">
-        <ParentGroup />
-        <DisplayName>WorldWeatherLite</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
-        <Description>Skin files for WorldWeatherLite plugin</Description>
-        <Files>
-          <Items>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\WorldWeatherLite\Media\hover_worldweatherlite.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4fec992b-58fb-4811-80af-fabf8aac185d}-hover_worldweatherlite.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\hover_worldweatherlite.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>..\extensions\WorldWeatherLite\Media\basichome_button_worldweatherlite.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d71a316d-49e9-4c98-99bd-131dd0f94a5c}-basichome_button_worldweatherlite.png</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Media\basichome_button_worldweatherlite.png</DestinationFilename>
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\TVSeries\Media\hover_my tv series.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{bed2507f-f814-4d3a-91e8-ab7b39501ff3}-hover_my tv series.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_my tv series.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
       </GroupItem>
       <GroupItem Name="UpdateControl">
-        <ParentGroup />
+        <ParentGroup>Extension</ParentGroup>
         <DisplayName>UpdateControl</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Skin files for UpdateControl plugin</Description>
@@ -3463,7 +3931,7 @@
         </Files>
       </GroupItem>
       <GroupItem Name="WorldWeather">
-        <ParentGroup />
+        <ParentGroup>Extension</ParentGroup>
         <DisplayName>WorldWeather</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Skin files for WorldWeather plugin</Description>
@@ -3482,6 +3950,283 @@
               <LocalFileName>..\Extensions\WorldWeather\Media\hover_worldweather.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{d0cc67d4-9a22-4056-9cf7-30e07b2c23b4}-hover_worldweather.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\hover_worldweather.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="WorldWeatherLite">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>WorldWeatherLite</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for WorldWeatherLite plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\WorldWeatherLite\Media\hover_worldweatherlite.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4fec992b-58fb-4811-80af-fabf8aac185d}-hover_worldweatherlite.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\hover_worldweatherlite.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>..\extensions\WorldWeatherLite\Media\basichome_button_worldweatherlite.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d71a316d-49e9-4c98-99bd-131dd0f94a5c}-basichome_button_worldweatherlite.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_worldweatherlite.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="Youtube">
+        <ParentGroup>Extension</ParentGroup>
+        <DisplayName>Youtube</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Skin files for Youtube plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Youtube\Media\basichome_button_youtube.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b64854fc-2153-44af-8042-2915e162b957}-basichome_button_youtube.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Media\basichome_button_youtube.png</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="Themes">
+        <ParentGroup />
+        <DisplayName>Themes</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Titan Themes</Description>
+        <Files>
+          <Items />
+        </Files>
+      </GroupItem>
+      <GroupItem Name="Christmas">
+        <ParentGroup>Themes</ParentGroup>
+        <DisplayName>Christmas</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Christmas Theme</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\theme.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{29743061-52b4-4a00-9596-89a9578bb577}-theme.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\theme.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\background.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{502f75b5-7c6b-406d-ab6f-58bd1be2b111}-background.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\background.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\background_dimmed.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b2cfa668-ec55-4a6d-947b-87df5a8b5917}-background_dimmed.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\background_dimmed.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\BasicHomeLatestBG.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b18d0428-84b2-40e8-bcb2-c9837b477018}-BasicHomeLatestBG.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\BasicHomeLatestBG.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\BasicHomeSubBG.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{8a6f97fa-5c3e-4d5b-bac4-dd4eef4adda1}-BasicHomeSubBG.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\BasicHomeSubBG.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_dummy.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e1058282-56f1-4087-9f7c-dc4f624f74da}-basichome_button_dummy.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_dummy.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_extensions.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{37e9adc0-c827-48cd-a73f-8671438cdfdb}-basichome_button_extensions.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_extensions.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_focus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{77b9dfb6-fdc8-447c-94a1-7b9d7cb3b116}-basichome_button_focus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_focus.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_infoservice.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{9fdc1ed7-dd3d-432b-b4ac-25bb4f373413}-basichome_button_infoservice.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_infoservice.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_movies.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{9587627b-8a48-4bb9-bd03-57756dc00afd}-basichome_button_movies.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_movies.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_music.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{dccc3e63-9d53-46e2-8617-020a4ce60984}-basichome_button_music.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_music.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_onlinevideos.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{bb27b428-0465-481f-8683-824544441f04}-basichome_button_onlinevideos.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_onlinevideos.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_pictures.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6b831349-1eec-44fd-80df-954f21e8fb5d}-basichome_button_pictures.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_pictures.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_plugins.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b3f2f335-4630-4a5e-b41f-fd163ba29e84}-basichome_button_plugins.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_plugins.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_radio.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{619e1624-8c09-4dd3-b894-9b925fc3f6b5}-basichome_button_radio.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_radio.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_radiotime.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e90e60c0-5f38-458a-b250-63eda0f7e16d}-basichome_button_radiotime.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_radiotime.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_series.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c681ee86-6cb7-4da9-9749-e975a014adc1}-basichome_button_series.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_series.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_settings.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d485f986-cbf5-4181-98cc-3717813bc932}-basichome_button_settings.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_settings.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_trakt.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{be18c4b7-24ce-4c5d-982a-1ba0810fabb7}-basichome_button_trakt.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_trakt.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_button_tv.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6a67fd97-674c-4c23-bb60-16cd39019b5d}-basichome_button_tv.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_tv.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_exit_menu_bg.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e4b5f0ed-ece9-4fcd-bc9a-762e64681f41}-basichome_exit_menu_bg.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_exit_menu_bg.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_latestmedia_bg.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fbecb011-e178-4231-bd9a-d436b26977fb}-basichome_latestmedia_bg.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_latestmedia_bg.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_latestmedia_bgL.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2d2518a8-e83e-4a1e-9fff-2867bd5df47a}-basichome_latestmedia_bgL.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_latestmedia_bgL.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_nextpage_down.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f18b9840-c7f0-4029-bad3-f23f8323538e}-basichome_nextpage_down.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_nextpage_down.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_nextpage_left.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{cfaa7c53-b5cb-4a63-bd53-4177b879dafe}-basichome_nextpage_left.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_nextpage_left.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_nextpage_right.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2aebbc1b-8fdb-45da-b468-ead43cd3637b}-basichome_nextpage_right.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_nextpage_right.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_submenu_bg.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{3ec5885a-78a1-4326-a3ad-a5ed043971d0}-basichome_submenu_bg.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_submenu_bg.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\basichome_submenu_bg_r.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{922836cf-bc8d-4540-b0f7-1628951df0e6}-basichome_submenu_bg_r.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_submenu_bg_r.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\icon_home.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4e231767-39d7-4b65-95c6-3a11f636d888}-icon_home.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\icon_home.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\preview.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d0a3e7a5-5df2-4a1f-8549-693c520506c2}-preview.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\preview.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Themes\Christmas\Media\splashscreen.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5998d11c-3926-42cb-a54a-16c0d4ad6158}-splashscreen.png</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\splashscreen.png</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
@@ -3524,6 +4269,70 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <PanelName>Welcome Screen</PanelName>
         <WizardButtonsEnum>NextCancel</WizardButtonsEnum>
       </SectionItem>
+      <SectionItem Guid="fb00836d-2ce3-4919-ab00-6f874ec5c64f" Name="Tree View Selector" ConditionGroup="">
+        <Params>
+          <Items>
+            <SectionParam Name="Header Title">
+              <Value />
+              <ValueType>String</ValueType>
+              <Description>Header title</Description>
+            </SectionParam>
+            <SectionParam Name="Header description">
+              <Value />
+              <ValueType>String</ValueType>
+              <Description>Description of section, shown in under section title</Description>
+            </SectionParam>
+            <SectionParam Name="Header image">
+              <Value />
+              <ValueType>File</ValueType>
+              <Description>Image in upper right part</Description>
+            </SectionParam>
+            <SectionParam Name="Description ">
+              <Value />
+              <ValueType>String</ValueType>
+              <Description>Description of this operation</Description>
+            </SectionParam>
+          </Items>
+        </Params>
+        <Actions>
+          <Items />
+        </Actions>
+        <IncludedGroups>
+          <string>Extension</string>
+          <string>Browser</string>
+          <string>BrowseTheWeb</string>
+          <string>CPG</string>
+          <string>Games</string>
+          <string>GobalMusicSearch</string>
+          <string>IMDb+</string>
+          <string>InfoService</string>
+          <string>MovingPictures</string>
+          <string>MPSteam</string>
+          <string>MyEmulator</string>
+          <string>MyExtensions</string>
+          <string>MyFilms</string>
+          <string>MyLyrics</string>
+          <string>OnlineVideos</string>
+          <string>Pandora</string>
+          <string>PlayDisc</string>
+          <string>PowerControl</string>
+          <string>RadioTime</string>
+          <string>Shoutcast</string>
+          <string>ShowTimes</string>
+          <string>SleepControl</string>
+          <string>SubCentral</string>
+          <string>Trakt</string>
+          <string>TVSeries</string>
+          <string>UpdateControl</string>
+          <string>WorldWeather</string>
+          <string>WorldWeatherLite</string>
+          <string>Youtube</string>
+          <string>Themes</string>
+          <string>Christmas</string>
+        </IncludedGroups>
+        <PanelName>Tree View Selector</PanelName>
+        <WizardButtonsEnum>BackNextCancel</WizardButtonsEnum>
+      </SectionItem>
       <SectionItem Guid="5ec90293-97d3-4260-ba8c-73e1e2dfdd67" Name="Install Section" ConditionGroup="">
         <Params>
           <Items>
@@ -3549,34 +4358,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
             <ActionItem Name="InstallFiles" ActionType="InstallFiles" ConditionGroup="">
               <Params>
                 <Items />
-              </Params>
-              <ExecuteLocation>AfterPanelShow</ExecuteLocation>
-            </ActionItem>
-            <ActionItem Name="CreateShortCut" ActionType="CreateShortCut" ConditionGroup="">
-              <Params>
-                <Items>
-                  <SectionParam Name="ShortCut location">
-                    <Value>%Desktop%\TitanEditor.lnk</Value>
-                    <ValueType>Template</ValueType>
-                    <Description>Location of shortcut</Description>
-                  </SectionParam>
-                  <SectionParam Name="ShortCut target">
-                    <Value>%Base%\TitanEdit.exe</Value>
-                    <ValueType>Template</ValueType>
-                    <Description>Target of short cut</Description>
-                  </SectionParam>
-                  <SectionParam Name="Description">
-                    <Value>Titan BasicHome Editor</Value>
-                    <ValueType>String</ValueType>
-                    <Description>Description tooltip text </Description>
-                  </SectionParam>
-                  <SectionParam Name="Icon of the shortcut">
-                    <Value />
-                    <ValueType>Template</ValueType>
-                    <Description>Icon of the shortcut, 
- if is empty the icon of the target will be used</Description>
-                  </SectionParam>
-                </Items>
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
             </ActionItem>
@@ -3675,38 +4456,37 @@ Click Next to continue or Cancel to exit Setup.</Value>
   <GeneralInfo>
     <Name>Titan Extended</Name>
     <Id>d2c4076c-f3d0-4d84-9a74-83fbbd15c940</Id>
-    <Author>Team Titan, ajs</Author>
-    <HomePage>http://forum.team-mediaportal.com/forums/titan-skin.644</HomePage>
-    <ForumPage>http://forum.team-mediaportal.com/forums/titan-skin.644</ForumPage>
-    <UpdateUrl>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtendedUpdate.xml</UpdateUrl>
+    <Author>Team Titan, ncoH, Joostzilla, ajs</Author>
+    <HomePage>https://github.com/MediaPortal/TitanExtended</HomePage>
+    <ForumPage>https://forum.team-mediaportal.com/forums/titan-skin-feedback.644/</ForumPage>
+    <UpdateUrl>https://www.team-mediaportal.com/index.php?option=com_mtree&amp;task=att_download&amp;link_id=252&amp;cf_id=52</UpdateUrl>
     <Version>
       <Major>5</Major>
       <Minor>0</Minor>
       <Build>0</Build>
-      <Revision>92</Revision>
+      <Revision>97</Revision>
     </Version>
     <ExtensionDescription>Titan Extended adds support for a variety of community plugins to the Titan skin.
 
-
-
-
-
 The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</ExtensionDescription>
-    <VersionDescription>Removed all plugins that have support for the Titan skin, added Basic home screen buttons.</VersionDescription>
+    <VersionDescription>Removed all plugins that have support for the Titan skin. 
+Added Basic home screen buttons.
+Added more Plugins support.
+Added Christmas theme</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
-    <OnlineLocation>http://install.team-mediaportal.com/MP1/skinUpdates/titan/TitanExtended-5.0.0.92.mpe1</OnlineLocation>
-    <ReleaseDate>2023-05-09T16:44:52.3052665+03:00</ReleaseDate>
-    <Tags>titan, skin, </Tags>
+    <OnlineLocation>https://www.team-mediaportal.com/index.php?option=com_mtree&amp;task=att_download&amp;link_id=252&amp;cf_id=24</OnlineLocation>
+    <ReleaseDate>2023-05-14T15:37:22.7752065+03:00</ReleaseDate>
+    <Tags>titan, skin, widescreen</Tags>
     <Location>..\builds\Titan Extended-[Version].mpe1</Location>
     <Params>
       <Items>
         <SectionParam Name="Icon">
-          <Value />
+          <Value>Titan Extended.png</Value>
           <ValueType>File</ValueType>
           <Description>The icon file of the package (jpg,png,bmp)</Description>
         </SectionParam>
         <SectionParam Name="Online Icon">
-          <Value />
+          <Value>https://github.com/MediaPortal/TitanExtended/raw/master/MPEI/Titan%20Extended.png</Value>
           <ValueType>String</ValueType>
           <Description>The icon file of the package stored online (jpg,png,bmp)</Description>
         </SectionParam>
@@ -3718,7 +4498,7 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
  If it has .dll extension it's started like MP plugin configuration.</Description>
         </SectionParam>
         <SectionParam Name="Online Screenshots">
-          <Value />
+          <Value>https://www.team-mediaportal.com/media/com_mtree/images/listings/o/1799.jpg</Value>
           <ValueType>String</ValueType>
           <Description>Online stored screenshot urls separated by ; </Description>
         </SectionParam>
@@ -3732,6 +4512,125 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
   </GeneralInfo>
   <UniqueFileList>
     <Items>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\Browser\Media\basichome_button_browser.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4a1064dd-6125-423d-b60b-460a64cee3e2}-basichome_button_browser.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_browser.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\BrowseTheWeb\browsetheweb.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{1e5d07ca-d1cd-4a73-bbd7-5f1004940cef}-browsetheweb.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\browsetheweb.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\BrowseTheWeb\browsethewebbook.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d5abdb65-23b5-4241-998f-c9790dcbfba0}-browsethewebbook.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\browsethewebbook.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\BrowseTheWeb\Media\basichome_button_browsetheweb.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ca08928c-3978-4537-8305-866d4f41b488}-basichome_button_browsetheweb.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_browsetheweb.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\BrowseTheWeb\Media\hover_BrowseTheWeb.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{60f3224b-247a-4f22-9e15-e33d5c1d1fd2}-hover_BrowseTheWeb.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_BrowseTheWeb.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\BrowseTheWeb\Media\icon_btw.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5e059744-86d0-4361-a4d4-1fcedb28762b}-icon_btw.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\icon_btw.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\CPG\Media\basichome_button_cpg.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{889c3a2e-4171-4415-a95f-0e4084713924}-basichome_button_cpg.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_cpg.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\Games\Media\basichome_button_games.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a66b5110-e1a0-4b86-9c3f-b7f9c4962a62}-basichome_button_games.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_games.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.Details.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{34abeb06-496f-4d39-a209-65b1e8948868}-GlobalSearch.Music.Details.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.Details.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0027c635-5808-4e8e-b28d-0f4c41bdfb4a}-GlobalSearch.Music.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\GobalMusicSearch\Media\hover_search music.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{50e8c9c7-82ae-4d23-8fce-e1a98aa098c2}-hover_search music.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_search music.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\GobalMusicSearch\Media\basichome_button_search music.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{728c70f5-2c73-4aa8-8b28-b6f88de73392}-basichome_button_search music.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_search music.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\IMDb+\IMDb+.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c8856a2f-15aa-488a-ad30-b6bef647013c}-IMDb+.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\IMDb+.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\IMDb+\Media\basichome_button_imdb+.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b67641a3-ade9-4ab0-9be9-8fa734f04677}-basichome_button_imdb+.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_imdb+.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\IMDb+\Media\hover_imdb+.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{7a1904c0-2c1f-4e9a-bcb4-18a1a930bf0d}-hover_imdb+.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_imdb+.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\InfoService\Media\basichome_button_infoservice.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{8b2bc568-8ef4-4124-9894-819364c6a21e}-basichome_button_infoservice.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_infoservice.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\InfoService\Media\hover_infoservice.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{7c09b0a6-6461-4278-beb3-953cb0b4be28}-hover_infoservice.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_infoservice.png</DestinationFilename>
+      </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
@@ -3749,16 +4648,58 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\TVSeries\Media\basichome_button_series.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{790bfadb-938d-4a3a-9574-aca3d0bbfaae}-basichome_button_series.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_series.png</DestinationFilename>
+        <LocalFileName>..\Extensions\MPSteam\Media\Basichome_Button_MPSteam.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e25622ae-6379-483f-8a1a-650ff5f4feac}-Basichome_Button_MPSteam.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\Basichome_Button_MPSteam.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\TVSeries\Media\hover_my tv series.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{bed2507f-f814-4d3a-91e8-ab7b39501ff3}-hover_my tv series.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_my tv series.png</DestinationFilename>
+        <LocalFileName>..\Extensions\MyEmulator\Media\basichome_button_myemulator.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{70cb3da6-6790-4c8b-9a33-2e68dfc89703}-basichome_button_myemulator.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_myemulator.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\MyExtensions\myextensions2.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f51e35ac-62a2-4dec-91c9-38f41eb2511d}-myextensions2.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\myextensions2.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\MyExtensions\myextensions2info.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{988ba4bc-0d7e-4a2f-95c9-a48771afb500}-myextensions2info.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\myextensions2info.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\MyExtensions\myextensions2settings.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a6eaec10-021e-4e3d-b432-7213ed5e5105}-myextensions2settings.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\myextensions2settings.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\MyExtensions\myextensions2slideshow.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{38c1e2d0-0165-4c8e-b8ad-12b028df45f5}-myextensions2slideshow.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\myextensions2slideshow.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\MyExtensions\Media\basichome_button_extensions.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{455720dc-eea9-4e31-9bb7-90b198018fe2}-basichome_button_extensions.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_extensions.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\MyExtensions\Media\hover_extensions.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{85270f02-372d-4e27-87b0-8dfc1b689842}-hover_extensions.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_extensions.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -3948,6 +4889,13 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
         <LocalFileName>..\Extensions\MyFilms\Media\MyFilms\overlaywatched.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{90b3472f-52dc-4324-b192-61174cbe8776}-overlaywatched.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\MyFilms\overlaywatched.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\MyLyrics\MyLyrics.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2b15f782-1a27-4ae3-9b96-23a0b73b6125}-MyLyrics.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\MyLyrics.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -6759,93 +7707,275 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\MyExtensions\myextensions2.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{f51e35ac-62a2-4dec-91c9-38f41eb2511d}-myextensions2.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\myextensions2.xml</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\PandoraMusicBox.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{55dadedb-ef04-488f-8ddc-e020251b004c}-PandoraMusicBox.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\PandoraMusicBox.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\MyExtensions\myextensions2info.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{988ba4bc-0d7e-4a2f-95c9-a48771afb500}-myextensions2info.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\myextensions2info.xml</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\Media\basichome_button_pandora.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5ced058a-4a26-4361-a5d0-352e2ce11c2f}-basichome_button_pandora.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_pandora.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\MyExtensions\myextensions2settings.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a6eaec10-021e-4e3d-b432-7213ed5e5105}-myextensions2settings.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\myextensions2settings.xml</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\Media\pandoraoverlay.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b09d30f4-4776-4ef5-a4b4-bf206c1b8487}-pandoraoverlay.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandoraoverlay.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\MyExtensions\myextensions2slideshow.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{38c1e2d0-0165-4c8e-b8ad-12b028df45f5}-myextensions2slideshow.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\myextensions2slideshow.xml</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_logo.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{778e36b0-98c3-46d8-85dc-dc1e14b226c8}-pandora_logo.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_logo.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\MyExtensions\Media\basichome_button_extensions.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{455720dc-eea9-4e31-9bb7-90b198018fe2}-basichome_button_extensions.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_extensions.png</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_progress.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{db72e6ca-64a0-4dee-a9c4-091e9e994584}-pandora_progress.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_progress.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\MyExtensions\Media\hover_extensions.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{85270f02-372d-4e27-87b0-8dfc1b689842}-hover_extensions.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_extensions.png</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_progress_tray.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b5dd52c8-2c4f-4b1e-b426-aecaeba32dc3}-pandora_progress_tray.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_progress_tray.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\InfoService\Media\basichome_button_infoservice.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{8b2bc568-8ef4-4124-9894-819364c6a21e}-basichome_button_infoservice.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_infoservice.png</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_rating_Hate.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{901e4ed7-f052-4c4b-951d-fe2a52c0fa7f}-pandora_rating_Hate.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_rating_Hate.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\InfoService\Media\hover_infoservice.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{7c09b0a6-6461-4278-beb3-953cb0b4be28}-hover_infoservice.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_infoservice.png</DestinationFilename>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_rating_Love.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2229d1b9-b792-494e-9ceb-b5672ca1d736}-pandora_rating_Love.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_rating_Love.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_rating_TemporarilyBanned.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6976e337-06cd-4731-ac44-f74ce6298a0b}-pandora_rating_TemporarilyBanned.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_rating_TemporarilyBanned.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_tile.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fbf0ce32-701e-4c05-b284-7e309196b12f}-pandora_tile.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_tile.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\Pandora\Media\pandora_tile_focus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0a88767b-12b7-4db5-84f7-79c02434a2a9}-pandora_tile_focus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\pandora_tile_focus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PlayDisc\Media\basichome_button_playdisc.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a536ebd7-df42-4a67-9908-e6425bf581cb}-basichome_button_playdisc.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_playdisc.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\common.window.background.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b8b1cad0-fd62-4f58-9029-27f45694a990}-common.window.background.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\common.window.background.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\PowerControl.Menu.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e10263ed-f426-4f47-bc7d-c3ef8152d55c}-PowerControl.Menu.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\PowerControl.Menu.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\PowerControl.NetworkDevice.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{83cb8b54-a952-4ede-950e-2432807b83a2}-PowerControl.NetworkDevice.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\PowerControl.NetworkDevice.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\PowerControl.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d72db33e-6456-48f9-bacf-14a91fb8e195}-PowerControl.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\PowerControl.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_hibernate_focus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f5b66858-2755-4e91-aa0b-46a915a39940}-button_hibernate_focus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_hibernate_focus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_hibernate_nofocus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ab80aa80-a104-45d9-b70a-5c8b7e38d481}-button_hibernate_nofocus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_hibernate_nofocus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_restart_focus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6b905f18-623c-4a5a-9825-29abef3b1260}-button_restart_focus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_restart_focus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_restart_nofocus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{893580d9-509e-4883-a422-4a52d98f27c7}-button_restart_nofocus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_restart_nofocus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_shutdown_focus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3c223ce4-ae2e-40cb-8ba7-5170f2841383}-button_shutdown_focus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_shutdown_focus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_shutdown_nofocus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{672e088f-206e-4671-91a7-25a8e3ec4f95}-button_shutdown_nofocus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_shutdown_nofocus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_standby_focus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4fce1074-cca4-4203-90bc-5af0ae4b838b}-button_standby_focus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_standby_focus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_standby_nofocus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0f4666d3-219c-4e3d-893e-06e9efcb0691}-button_standby_nofocus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_standby_nofocus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_wakeup_focus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f0b6a82c-1a56-4257-b301-a70e01e1d903}-button_wakeup_focus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_wakeup_focus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\button_wakeup_nofocus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{56623ff7-6975-48b6-95d2-a13756b6638d}-button_wakeup_nofocus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\button_wakeup_nofocus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_client.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c3fcbe09-cd5b-48ff-aa05-f317cac439a7}-powercontrol_client.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_client.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_gamecontroller.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{af22daf1-787a-49c3-a1f7-fffeae551d67}-powercontrol_gamecontroller.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_gamecontroller.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_greenflag.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c8d26405-a6b5-4b9f-838b-7bc667c859d5}-powercontrol_greenflag.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_greenflag.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_other.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d01db895-5a46-445b-924e-e2c5e5a54a3d}-powercontrol_other.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_other.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_redflag.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{bd459bcb-04a7-4852-acec-de394765ea7d}-powercontrol_redflag.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_redflag.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_router.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3eeb4b51-1228-4a42-bbb8-82ba576ea848}-powercontrol_router.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_router.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_server.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f848e69e-7d7f-4d14-8446-39c0fb1de6a4}-powercontrol_server.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_server.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\PowerControl\Media\powercontrol_storage.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{939945cb-e319-43be-ad91-aaab361fdf95}-powercontrol_storage.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\powercontrol_storage.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\Trakt\Media\basichome_button_trakt.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{70887c29-e40d-41a0-be07-e6b572705ee4}-basichome_button_trakt.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_trakt.png</DestinationFilename>
+        <LocalFileName>..\extensions\RadioTime\Media\hover_radiotime.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2a5dfa1f-642c-4bba-8b71-d2baade106e6}-hover_radiotime.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_radiotime.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\Trakt\Media\hover_trakt.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{0c1a7777-2f06-4fad-accb-6a9d30dbf7ae}-hover_trakt.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_trakt.png</DestinationFilename>
+        <LocalFileName>..\extensions\RadioTime\Media\basichome_button_radiotime.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5ee1497a-648f-44d1-a16f-4aeaf1ea96af}-basichome_button_radiotime.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_radiotime.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\IMDb+\IMDb+.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c8856a2f-15aa-488a-ad30-b6bef647013c}-IMDb+.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\IMDb+.xml</DestinationFilename>
+        <LocalFileName>..\Extensions\Shoutcast\shout.hiddenmenu.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0dc1b691-7638-4df4-a99f-8bf3c3c0df97}-shout.hiddenmenu.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\shout.hiddenmenu.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\IMDb+\Media\basichome_button_imdb+.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{b67641a3-ade9-4ab0-9be9-8fa734f04677}-basichome_button_imdb+.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_imdb+.png</DestinationFilename>
+        <LocalFileName>..\Extensions\Shoutcast\ShoutcastDirectoryListView.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d0274aeb-0c0d-4cfb-989a-3e3c1fd93b30}-ShoutcastDirectoryListView.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\ShoutcastDirectoryListView.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\Extensions\IMDb+\Media\hover_imdb+.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{7a1904c0-2c1f-4e9a-bcb4-18a1a930bf0d}-hover_imdb+.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_imdb+.png</DestinationFilename>
+        <LocalFileName>..\Extensions\Shoutcast\Media\hover_shoutcast.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0a74b431-8860-42b3-a934-f958c285e3fd}-hover_shoutcast.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_shoutcast.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -6860,6 +7990,41 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
         <LocalFileName>..\Extensions\ShowTimes\Media\hover_showtimes.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{64a1b3ae-6163-4908-8156-8de236828780}-hover_showtimes.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\hover_showtimes.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\SleepControl\settings.menu.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b8e13c38-eafe-4238-af76-4cecc932c1af}-settings.menu.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\settings.menu.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\SleepControl\settings.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{163db511-f2ed-421e-a8f4-c9aaa10bc209}-settings.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\settings.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\SleepControl\settings_Extras.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2d6cdd4c-a2bc-4111-b777-7db87e1215b2}-settings_Extras.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\settings_Extras.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\SleepControl\SleepControl.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e7e6f813-67c7-4fe5-be89-5a72f52d37bb}-SleepControl.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\SleepControl.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\SleepControl\Media\basichome_button_sleepcontrol.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{9f7de7a0-b039-43ce-9ca4-4e603d6e6542}-basichome_button_sleepcontrol.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_sleepcontrol.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -6976,58 +8141,30 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.Details.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{34abeb06-496f-4d39-a209-65b1e8948868}-GlobalSearch.Music.Details.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.Details.xml</DestinationFilename>
+        <LocalFileName>..\extensions\Trakt\Media\basichome_button_trakt.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{70887c29-e40d-41a0-be07-e6b572705ee4}-basichome_button_trakt.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_trakt.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\GobalMusicSearch\GlobalSearch.Music.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{0027c635-5808-4e8e-b28d-0f4c41bdfb4a}-GlobalSearch.Music.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\GlobalSearch.Music.xml</DestinationFilename>
+        <LocalFileName>..\extensions\Trakt\Media\hover_trakt.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0c1a7777-2f06-4fad-accb-6a9d30dbf7ae}-hover_trakt.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_trakt.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\GobalMusicSearch\Media\hover_search music.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{50e8c9c7-82ae-4d23-8fce-e1a98aa098c2}-hover_search music.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_search music.png</DestinationFilename>
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\TVSeries\Media\basichome_button_series.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{790bfadb-938d-4a3a-9574-aca3d0bbfaae}-basichome_button_series.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_series.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\GobalMusicSearch\Media\basichome_button_search music.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{728c70f5-2c73-4aa8-8b28-b6f88de73392}-basichome_button_search music.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_search music.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\RadioTime\Media\hover_radiotime.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2a5dfa1f-642c-4bba-8b71-d2baade106e6}-hover_radiotime.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_radiotime.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\RadioTime\Media\basichome_button_radiotime.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{5ee1497a-648f-44d1-a16f-4aeaf1ea96af}-basichome_button_radiotime.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_radiotime.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\WorldWeatherLite\Media\hover_worldweatherlite.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4fec992b-58fb-4811-80af-fabf8aac185d}-hover_worldweatherlite.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\hover_worldweatherlite.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>..\extensions\WorldWeatherLite\Media\basichome_button_worldweatherlite.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d71a316d-49e9-4c98-99bd-131dd0f94a5c}-basichome_button_worldweatherlite.png</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Media\basichome_button_worldweatherlite.png</DestinationFilename>
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\TVSeries\Media\hover_my tv series.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{bed2507f-f814-4d3a-91e8-ab7b39501ff3}-hover_my tv series.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_my tv series.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -7057,6 +8194,251 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
         <ZipFileName>Installer{CopyFile}\{d0cc67d4-9a22-4056-9cf7-30e07b2c23b4}-hover_worldweather.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\hover_worldweather.png</DestinationFilename>
       </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\WorldWeatherLite\Media\hover_worldweatherlite.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4fec992b-58fb-4811-80af-fabf8aac185d}-hover_worldweatherlite.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\hover_worldweatherlite.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>..\extensions\WorldWeatherLite\Media\basichome_button_worldweatherlite.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d71a316d-49e9-4c98-99bd-131dd0f94a5c}-basichome_button_worldweatherlite.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_worldweatherlite.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\Youtube\Media\basichome_button_youtube.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b64854fc-2153-44af-8042-2915e162b957}-basichome_button_youtube.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Media\basichome_button_youtube.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\theme.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{29743061-52b4-4a00-9596-89a9578bb577}-theme.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\theme.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\background.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{502f75b5-7c6b-406d-ab6f-58bd1be2b111}-background.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\background.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\background_dimmed.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b2cfa668-ec55-4a6d-947b-87df5a8b5917}-background_dimmed.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\background_dimmed.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\BasicHomeLatestBG.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b18d0428-84b2-40e8-bcb2-c9837b477018}-BasicHomeLatestBG.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\BasicHomeLatestBG.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\BasicHomeSubBG.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{8a6f97fa-5c3e-4d5b-bac4-dd4eef4adda1}-BasicHomeSubBG.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\BasicHomeSubBG.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_dummy.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e1058282-56f1-4087-9f7c-dc4f624f74da}-basichome_button_dummy.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_dummy.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_extensions.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{37e9adc0-c827-48cd-a73f-8671438cdfdb}-basichome_button_extensions.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_extensions.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_focus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{77b9dfb6-fdc8-447c-94a1-7b9d7cb3b116}-basichome_button_focus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_focus.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_infoservice.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{9fdc1ed7-dd3d-432b-b4ac-25bb4f373413}-basichome_button_infoservice.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_infoservice.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_movies.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{9587627b-8a48-4bb9-bd03-57756dc00afd}-basichome_button_movies.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_movies.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_music.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{dccc3e63-9d53-46e2-8617-020a4ce60984}-basichome_button_music.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_music.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_onlinevideos.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{bb27b428-0465-481f-8683-824544441f04}-basichome_button_onlinevideos.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_onlinevideos.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_pictures.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6b831349-1eec-44fd-80df-954f21e8fb5d}-basichome_button_pictures.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_pictures.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_plugins.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b3f2f335-4630-4a5e-b41f-fd163ba29e84}-basichome_button_plugins.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_plugins.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_radio.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{619e1624-8c09-4dd3-b894-9b925fc3f6b5}-basichome_button_radio.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_radio.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_radiotime.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e90e60c0-5f38-458a-b250-63eda0f7e16d}-basichome_button_radiotime.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_radiotime.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_series.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c681ee86-6cb7-4da9-9749-e975a014adc1}-basichome_button_series.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_series.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_settings.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d485f986-cbf5-4181-98cc-3717813bc932}-basichome_button_settings.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_settings.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_trakt.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{be18c4b7-24ce-4c5d-982a-1ba0810fabb7}-basichome_button_trakt.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_trakt.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_button_tv.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6a67fd97-674c-4c23-bb60-16cd39019b5d}-basichome_button_tv.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_button_tv.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_exit_menu_bg.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e4b5f0ed-ece9-4fcd-bc9a-762e64681f41}-basichome_exit_menu_bg.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_exit_menu_bg.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_latestmedia_bg.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fbecb011-e178-4231-bd9a-d436b26977fb}-basichome_latestmedia_bg.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_latestmedia_bg.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_latestmedia_bgL.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2d2518a8-e83e-4a1e-9fff-2867bd5df47a}-basichome_latestmedia_bgL.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_latestmedia_bgL.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_nextpage_down.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f18b9840-c7f0-4029-bad3-f23f8323538e}-basichome_nextpage_down.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_nextpage_down.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_nextpage_left.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{cfaa7c53-b5cb-4a63-bd53-4177b879dafe}-basichome_nextpage_left.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_nextpage_left.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_nextpage_right.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2aebbc1b-8fdb-45da-b468-ead43cd3637b}-basichome_nextpage_right.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_nextpage_right.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_submenu_bg.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3ec5885a-78a1-4326-a3ad-a5ed043971d0}-basichome_submenu_bg.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_submenu_bg.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\basichome_submenu_bg_r.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{922836cf-bc8d-4540-b0f7-1628951df0e6}-basichome_submenu_bg_r.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\basichome_submenu_bg_r.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\icon_home.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4e231767-39d7-4b65-95c6-3a11f636d888}-icon_home.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\icon_home.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\preview.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d0a3e7a5-5df2-4a1f-8549-693c520506c2}-preview.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\preview.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Themes\Christmas\Media\splashscreen.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5998d11c-3926-42cb-a54a-16c0d4ad6158}-splashscreen.png</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\Media\splashscreen.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>Titan Extended.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5e927474-17af-4d36-9029-e933fd4661ed}-Titan Extended.png</ZipFileName>
+        <DestinationFilename />
+      </FileItem>
     </Items>
   </UniqueFileList>
   <ProjectSettings>
@@ -7079,16 +8461,6 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
         <DestinationFilename>%Skin%\Titan\</DestinationFilename>
         <Folder>..\extensions\SubCentral</Folder>
         <Group>SubCentral</Group>
-        <Recursive>true</Recursive>
-      </FolderGroup>
-      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName />
-        <ZipFileName>Installer{CopyFile}\{0fb37842-0f37-4874-8c95-711a4f7eab8e}-</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Themes</DestinationFilename>
-        <Folder>..\Themes</Folder>
-        <Group>Themes</Group>
         <Recursive>true</Recursive>
       </FolderGroup>
       <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
@@ -7229,6 +8601,146 @@ The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</Ex
         <DestinationFilename>%Skin%\Titan\</DestinationFilename>
         <Folder>..\Extensions\WorldWeather</Folder>
         <Group>WorldWeather</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{715758df-09c4-47b0-a442-cf86ab202716}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\Christmas\</DestinationFilename>
+        <Folder>..\Themes\Christmas</Folder>
+        <Group>Christmas</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{c561750c-85fc-419f-8309-67f4119b592b}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan</DestinationFilename>
+        <Folder>..\Extensions\Browser\</Folder>
+        <Group>Browser</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{e8bf0ea7-bf3b-4d33-b2d8-f5df5e1aad5b}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\BrowseTheWeb\</Folder>
+        <Group>BrowseTheWeb</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{2249a838-a9d3-4733-911b-9cc8f6a5eeb9}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\CPG\</Folder>
+        <Group>CPG</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{fcc7c55c-2b19-434f-9e88-01d4409f76a4}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\Games\</Folder>
+        <Group>Games</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{976f8cd3-5437-4b96-807b-df62f29d09b8}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\MPSteam\</Folder>
+        <Group>MPSteam</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{460b9990-5954-40ae-b7ea-2ef7e8de6544}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\MyEmulator\</Folder>
+        <Group>MyEmulator</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{61f2e293-f8d4-4652-9bb3-e375b9423301}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\MyLyrics\</Folder>
+        <Group>MyLyrics</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{926c1ebc-58c6-4e05-9dd6-0149d1ee89b4}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\Pandora\</Folder>
+        <Group>Pandora</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{4a394227-273e-4472-bc04-145d3371ace3}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\PlayDisc\</Folder>
+        <Group>PlayDisc</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{8db0888a-6e36-406f-88e6-96ed69b99611}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\PowerControl\</Folder>
+        <Group>PowerControl</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{889ec470-82b0-4654-8630-3d03753f2c09}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\Shoutcast\</Folder>
+        <Group>Shoutcast</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{71090132-7a43-49b7-8314-d3fdb989ce7a}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\SleepControl\</Folder>
+        <Group>SleepControl</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{677a9b49-64ee-44c9-ae1a-a701e5261837}-</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\</DestinationFilename>
+        <Folder>..\Extensions\Youtube\</Folder>
+        <Group>Youtube</Group>
         <Recursive>true</Recursive>
       </FolderGroup>
     </FolderGroups>

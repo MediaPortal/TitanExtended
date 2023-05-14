@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+	<id>54537689</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>control.isvisible(13371337)</allowoverlay>
+	<disabletopbar>true</disabletopbar>
+	<define>#header.label:</define>
+	<define>#header.background:hover_BrowseTheWeb.png</define>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<controls>
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>980</posY>
+      <width>1920</width>
+      <height>100</height>
+      <texture>tvguide_button_selected_middle.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>  
+    <control>
+      <description>Status label</description>
+      <id>9</id>
+      <type>label</type>
+      <posX>30</posX>
+      <posY>1005</posY>
+      <width>1686</width>
+      <font>fontB16</font>
+      <textcolor>000000</textcolor>
+      <label>#(L(126)) | #btWeb.status</label>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Link id label</description>
+      <type>fadelabel</type>
+      <id>9</id>
+      <posX>1875</posX>
+      <posY>1005</posY>
+      <width>960</width>
+      <label>#btWeb.linkid</label>
+      <font>fontB16</font>
+      <textcolor>000000</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <align>right</align>	
+    </control>
+	</controls>
+</window>

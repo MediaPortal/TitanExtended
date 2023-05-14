@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>90478</id>
+	<defaultcontrol>20</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+    <define>#header.label:#currentmodule</define>
+    <define>#useRandomMusicFanart:Yes</define>
+    <define>#usePlayFanart:Yes</define>  
+    <controls>
+      <import>common.default.background.xml</import>
+      <import>common.music.play.fanart.xml</import>
+
+      <control>
+        <description>overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1920</width>
+        <height>1080</height>
+		<colordiffuse>A0ffffff</colordiffuse>
+        <texture>black.png</texture>
+      </control>
+
+      <control>
+        <id>0</id>
+        <type>image</type>
+			  <posX>10</posX>
+			  <posY>644</posY>
+			  <width>1903</width>
+			  <height>398</height>
+			  <texture>panel_now_playing.png</texture>
+    		<animation effect="fade" time="250">WindowOpen</animation>
+    		<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+				
+      <control Style="smallTitle">
+    		<description>Selected item Label</description>
+    		<type>fadelabel</type>
+    		<id>0</id>
+    		<posX>510</posX>
+    		<posY>1015</posY>
+    		<label>#currentmodule</label>
+    		<animation effect="fade" time="250">WindowOpen</animation>
+    		<animation effect="fade" time="250">WindowClose</animation>
+    	</control>
+    
+    	<control>
+    		<type>label</type>
+    		<id>1</id>
+    		<description>Clock</description>
+    		<posX>1820</posX>
+    		<posY>998</posY>
+    		<width>144</width>
+    		<font>TitanLight12</font>
+    		<align>right</align>
+    		<label>#time</label>
+    		<textcolor>ff000000</textcolor>
+    		<animation effect="fade" time="250">WindowOpen</animation>
+    		<animation effect="fade" time="250">WindowClose</animation>
+    	</control>
+			  
+      <control>
+        <id>0</id>
+        <description>shadow</description>
+        <type>image</type>
+        <posX>68</posX>
+        <posY>704</posY>
+        <width>284</width>
+        <height>284</height>
+        <texture>music_now_playing_shadow.png</texture>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+  			<animation effect="Fade" time="500">VisibleChange</animation>
+      </control>
+  
+      <control>
+        <id>0</id>
+        <type>image</type>
+        <visible>!control.hasthumb(112)</visible>
+        <posX>87</posX>
+        <posY>717</posY>
+        <width>234</width>
+        <height>234</height>
+        <texture>DefaultAudioBig.png</texture>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="Fade" time="1000" delay="250">VisibleChange</animation>
+      </control>
+  
+      <control>
+        <id>112</id>
+        <description>album art image</description>
+        <type>image</type>
+        <posX>87</posX>
+        <posY>717</posY>
+        <width>234</width>
+        <height>234</height>
+        <texture>#Play.Current.Thumb</texture>
+  			<keepaspectratio>yes</keepaspectratio>
+  			<centered>yes</centered>	
+  			<zoom>yes</zoom>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+  			<animation effect="Fade" time="500">VisibleChange</animation>
+      </control>
+  					
+      <control>
+        <id>0</id>
+        <description>title label</description>
+        <type>fadelabel</type>
+        <posX>372</posX>
+        <posY>714</posY>
+  			<width>1470</width>
+        <font>fontB20</font>
+        <textcolor>FF00b7ff</textcolor>
+        <label>#Play.Current.Title</label>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  			
+      <control>
+        <id>0</id>
+        <description>artist label</description>
+        <type>fadelabel</type>
+        <posX>372</posX>
+        <posY>779</posY>
+  			<width>1470</width>
+        <font>TitanLight14</font>
+        <textcolor>ff00b7ff</textcolor>
+        <label>#Play.Current.Artist - #Play.Current.Album</label>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  		 		
+      <control>
+        <id>0</id>
+        <description>up next label</description>
+        <type>fadelabel</type>
+        <visible>!string.equals(#Play.Next.Title,"")</visible>
+        <posX>372</posX>
+        <posY>855</posY>
+  			<width>1470</width>
+        <font>TitanLight14</font>
+        <textcolor>ff6b6b6b</textcolor>
+        <label>#(L(209)): #Play.Next.Artist - #Play.Next.Title</label>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  	
+      <control>
+        <id>141</id>
+        <description>Rating</description>
+        <type>imagelist</type>
+        <posX>-2000</posX>
+        <posY>845</posY>
+  			<width>185</width>
+  			<height>29</height>
+  			<textureWidth>28</textureWidth>
+  			<textureHeight>27</textureHeight>
+        <percentage>#Play.Current.Rating</percentage>
+        <imagesToDraw>5</imagesToDraw>
+        <orientation>HORIZONTAL</orientation>
+        <align>LEFT</align>
+  			<subitems>
+  			 <subitem>starblue.png</subitem>
+  		   <subitem>starwhite.png</subitem>
+  			</subitems>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  		
+      <control>
+        <id>117</id>
+        <description>Progress background</description>
+        <type>image</type>
+        <visible>player.hasmedia</visible>
+  			<posX>457</posX>
+  			<posY>926</posY>
+  			<width>1137</width>
+  			<height>18</height>
+  			<texture>osd_progress_bg_music.png</texture>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  		
+      <control>
+        <id>118</id>
+        <description>progress bar</description>
+        <type>progress</type>
+        <posX>-2000</posX>
+      </control>
+  		
+      <control>
+        <id>0</id>
+        <description>progress bar</description>
+        <type>progress</type>
+        <visible>player.hasmedia</visible>
+  			<posX>447</posX>
+  			<posY>928</posY>
+  			<width>1151</width>
+  			<height>15</height>
+  			<label>#percentage</label>
+  			<texturebg>-</texturebg>
+  			<lefttexture>osd_progress_left.png</lefttexture>
+  			<midtexture>osd_progress_mid.png</midtexture>
+  			<righttexture>osd_progress_right.png</righttexture>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  		
+      <control>
+        <id>0</id>
+        <description>track duration label</description>
+        <type>label</type>
+        <visible>player.hasmedia</visible>
+        <posX>374</posX>
+  			<posY>918</posY>
+  			<label>#currentplaytime</label>
+  			<align>left</align>
+  			<font>font11</font>
+        <textcolor>FF00b7ff</textcolor>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  		
+      <control>
+        <id>0</id>
+        <description>track duration label</description>
+        <type>fadelabel</type>
+        <visible>player.hasmedia</visible>
+        <posX>1672</posX>
+  			<posY>918</posY>
+  			<label>#currentremaining</label>
+  			<align>right</align>
+  			<font>font11</font>
+        <textcolor>FF00b7ff</textcolor>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+  		
+      <control>
+        <description>group element</description>
+        <type>group</type>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+
+  		
+          <control>
+            <id>77</id>
+            <description>unknown rating1</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>610</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack1</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>starbad.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>78</id>
+            <description>unknown rating2</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>580</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack2</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>starbad.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>79</id>
+            <description>unknown rating3</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>628</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack3</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>starblue.png</subitem>
+              <subitem>starblue.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>80</id>
+            <description>existent rating1</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>532</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack1</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>stargood.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>81</id>
+            <description>existent rating2</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>580</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack2</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>stargood.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>82</id>
+            <description>existent rating3</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>628</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack3</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>stargood.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>83</id>
+            <description>known rating1</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>532</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack1</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>starbetter.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>84</id>
+            <description>known rating2</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>580</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack2</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>starbetter.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>85</id>
+            <description>known rating3</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>628</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack3</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+            <subitem>greystar.png</subitem>
+              <subitem>starbetter.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>87</id>
+            <description>famous rating1</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>532</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack1</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>starbest.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>88</id>
+            <description>famous rating2</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>580</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack2</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>starbest.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+  		
+          <control>
+            <id>89</id>
+            <description>famous rating3</description>
+            <type>imagelist</type>
+            <visible>no</visible>
+            <posX>-2595</posX>
+            <posY>628</posY>
+            <width>130</width>
+            <height>32</height>
+            <textureHeight>24</textureHeight>
+            <textureWidth>24</textureWidth>
+            <percentage>#Lastfm.Rating.AlbumTrack3</percentage>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+              <subitem>greystar.png</subitem>
+              <subitem>starbest.png</subitem>
+            </subitems>
+      		  <animation effect="fade" time="250">WindowOpen</animation>
+      		  <animation effect="fade" time="250">WindowClose</animation>
+          </control>
+        </control>
+  		
+        <control>
+          <id>1337</id>
+          <type>imagelist</type>
+          <visible>Control.HasFocus(5101)</visible>
+          <posX>-2700</posX>
+          <posY>425</posY>
+          <width>120</width>
+          <height>24</height>
+          <textureHeight>19</textureHeight>
+          <textureWidth>23</textureWidth>
+          <percentage>#Play.Current.Rating</percentage>
+          <orientation>HORIZONTAL</orientation>
+          <align>LEFT</align>
+          <subitems>
+            <subitem>starblue.png</subitem>
+            <subitem>starwhite.png</subitem>
+           </subitems>
+      		<animation effect="fade" time="250">WindowOpen</animation>
+      		<animation effect="fade" time="250">WindowClose</animation>
+        </control>
+          
+       <!--<control>
+        <id>0</id>
+        <type>image</type>
+  			<posX>10</posX>
+  			<posY>218</posY>
+  			<width>1903</width>
+  			<height>497</height>
+  			<texture>panel_now_playing_info.png</texture>
+  			<visible>string.equals(#skin.mymusic.info,ArtistInfo) | string.equals(#skin.mymusic.info,AlbumInfo)</visible>
+  			<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+  			<animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+      	<animation effect="fade" time="250">WindowClose</animation>
+      </control>
+    
+  <import>MyMusicPlayingNow.albuminfo.xml</import>
+  <import>MyMusicPlayingNow.artistinfo.xml</import>
+  <import>MyMusicPlayingNow.tags.xml</import>-->
+  
+  		<control>
+        <type>fadelabel</type>
+        <description>best album tracks label</description>
+        <id>29</id>
+        <posX>-2000</posX>
+        <posY>517</posY>
+        <width>497</width>
+        <label>33030</label>
+      </control>
+          
+  		<control>
+        <type>fadelabel</type>
+        <description>best tag tracks label</description>
+        <id>28</id>
+        <posX>-2000</posX>
+        <posY>517</posY>
+        <width>497</width>
+        <label>Top tracks for tag</label>
+      </control>
+
+	    <control>
+          <type>textbox</type>
+          <description>The Lyric area</description>
+          <id>20</id>
+          <posX>450</posX>
+          <posY>120</posY>
+          <width>1120</width>
+          <height>490</height>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <image>icon-music.png</image>
+          <seperator>----------------------------------------------------------------------------------------------</seperator>
+          <text></text>
+		  <font>fontB14</font>
+          <dimColor>ffffffff</dimColor>
+          <spinPosX>1484</spinPosX>
+          <spinPosY>580</spinPosY>
+		  <spinColor>FFFFFFFF</spinColor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>textboxscrollup</type>
+          <description>The Lyric area</description>
+          <id>1020</id>
+         <posX>450</posX>
+          <posY>120</posY>
+          <width>1120</width>
+          <height>450</height>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <image>icon-music.png</image>
+          <seperator>----------------------------------------------------------------------------------------------</seperator>
+          <text></text>
+		  <font>fontB14</font>
+          <dimColor>ffffffff</dimColor>
+          <spinPosX>1484</spinPosX>
+          <spinPosY>580</spinPosY>
+		  <spinColor>FFFFFFFF</spinColor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>LrcPick status</description>
+          <id>1011</id>
+          <posX>650</posX>
+          <posY>46</posY>
+          <label></label>
+		  <font>fontB16</font>
+          <textcolor>ffdddddd</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>Status</description>
+          <id>11</id>
+          <posX>650</posX>
+          <posY>25</posY>
+          <label>No media playing</label>
+          <font>fontB16</font>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+          <textcolor>FFffffff</textcolor>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 0</description>
+          <id>400</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>120</posY>
+          <colordiffuse>80ffffff</colordiffuse>
+          <label>line 0</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+          <disabledcolor>ffffffff</disabledcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 0</description>
+          <id>500</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>120</posY>
+          <label>line 0</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>ffffffff</disabledcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 1</description>
+          <id>401</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>160</posY>
+          <label>line 1</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 1</description>
+          <id>501</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>160</posY>
+          <label>line 1</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 2</description>
+          <id>402</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>200</posY>
+          <label>line 2</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 2</description>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+          <id>502</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>200</posY>
+          <label>line 2</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 3</description>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+          <id>403</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>240</posY>
+          <label>line 3</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 3</description>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+          <id>503</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>240</posY>
+          <label>line 3</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 4</description>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+          <id>404</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>280</posY>
+          <label>line 4</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 4</description>
+          <id>504</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>280</posY>
+          <label>line 4</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 5</description>
+          <id>405</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>320</posY>
+          <label>line 5</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 5</description>
+          <id>505</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>320</posY>
+          <label>line 5</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 6</description>
+          <id>406</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>360</posY>
+          <label>line 6</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 6</description>
+          <id>506</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>360</posY>
+          <label>line 6</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 7</description>
+          <id>407</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>400</posY>
+          <label>line 7</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 7</description>
+          <id>507</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>400</posY>
+          <label>line 7</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 8</description>
+          <id>408</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>440</posY>
+          <label>line 8</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 8</description>
+          <id>508</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>440</posY>
+          <label>line 8</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 9</description>
+          <id>409</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>480</posY>
+          <label>line 9</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 9</description>
+          <id>509</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>480</posY>
+          <label>line 9</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 10</description>
+          <id>410</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>520</posY>
+          <label>line 10</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 10</description>
+          <id>510</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>520</posY>
+          <label>line 10</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 11</description>
+          <id>411</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>560</posY>
+          <label>line 11</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 11</description>
+          <id>511</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>560</posY>
+          <label>line 11</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 12</description>
+          <id>412</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>600</posY>
+          <label>line 12</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 12</description>
+          <id>512</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>600</posY>
+          <label>line 12</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 0</description>
+          <id>300</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>120</posY>
+          <colordiffuse>80ffffff</colordiffuse>
+          <label>line 0</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+          <disabledcolor>ffffffff</disabledcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 0</description>
+          <id>200</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>120</posY>
+          <label>line 0</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>ffffffff</disabledcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 1</description>
+          <id>301</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>160</posY>
+          <label>line 1</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 1</description>
+          <id>201</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>160</posY>
+          <label>line 1</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 2</description>
+          <id>302</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>200</posY>
+          <label>line 2</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 2</description>
+          <id>202</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>200</posY>
+          <label>line 2</label>
+          <font>fontB14</font>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+          <textcolor>ffffffff</textcolor>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 3</description>
+          <id>303</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>240</posY>
+          <label>line 3</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 3</description>
+          <id>203</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>240</posY>
+          <label>line 3</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 4</description>
+          <id>304</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>300</posY>
+          <label>line 4</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 4</description>
+          <id>204</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>300</posY>
+          <label>line 4</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 5</description>
+          <id>305</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>320</posY>
+          <label>line 5</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 5</description>
+          <id>205</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>320</posY>
+          <label>line 5</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 6</description>
+          <id>306</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>360</posY>
+          <label>line 6</label>
+          <font>fontB14</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 6</description>
+          <id>206</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>360</posY>
+          <label>line 6</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 7</description>
+          <id>307</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>400</posY>
+          <font>fontB14</font>
+          <label>line 7</label>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 7</description>
+          <id>207</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>400</posY>
+          <font>fontB14</font>
+          <label>line 7</label>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 8</description>
+          <id>308</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>440</posY>
+          <font>fontB14</font>
+          <label>line 8</label>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 8</description>
+          <id>208</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>440</posY>
+          <font>fontB14</font>
+          <label>line 8</label>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 9</description>
+          <id>309</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>480</posY>
+          <font>fontB14</font>
+          <label>line 9</label>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 9</description>
+          <id>209</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>480</posY>
+          <font>fontB14</font>
+          <label>line 9</label>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 10</description>
+          <id>310</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>520</posY>
+          <font>fontB14</font>
+          <label>line 10</label>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 10</description>
+          <id>210</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>520</posY>
+          <font>fontB14</font>
+          <label>line 10</label>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 11</description>
+          <id>311</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>560</posY>
+          <font>fontB14</font>
+          <label>line 11</label>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 11</description>
+          <id>211</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>560</posY>
+          <font>fontB14</font>
+          <label>line 11</label>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 12</description>
+          <id>312</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>600</posY>
+          <font>fontB14</font>
+          <label>line 12</label>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>line 12</description>
+          <id>212</id>
+          <width>1060</width>
+          <posX>450</posX>
+          <posY>600</posY>
+          <label>line 12</label>
+          <font>fontB14</font>
+          <textcolor>ffffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 0</description>
+          <id>600</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>124</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 1</description>
+          <id>601</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>164</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 2</description>
+          <id>602</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>204</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 3</description>
+          <id>603</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>244</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 4</description>
+          <id>604</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>284</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 5</description>
+          <id>605</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>324</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 6</description>
+          <id>606</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>364</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 7</description>
+          <id>607</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>404</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 8</description>
+          <id>608</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>444</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 9</description>
+          <id>609</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>484</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 10</description>
+          <id>610</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>524</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 11</description>
+          <id>611</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>564</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <type>label</type>
+          <description>time 12</description>
+          <id>612</id>
+          <width>110</width>
+          <posX>300</posX>
+          <posY>604</posY>
+          <label>(xx:xx:xx)</label>
+          <font>font10</font>
+          <textcolor>90ffffff</textcolor>
+		  <shadowColor>FF000000</shadowColor><shadowDistance>4</shadowDistance>
+        </control>
+        <control>
+          <description>video window</description>
+          <type>videowindow</type>
+          <id>99</id>
+          <posX>1</posX>
+          <posY>1</posY>
+          <visible>no</visible>
+        </control>
+	  
+    </controls>
+</window>

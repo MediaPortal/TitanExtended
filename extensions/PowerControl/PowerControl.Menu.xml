@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+		<description>panel</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>5</posX>
+		<posY>140</posY>
+		<width>618</width>
+		<height>940</height>
+		<texture>panel_settings_left.png</texture>
+	</control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <layout>StackLayout</layout>
+      <posX>70</posX>
+      <posY>215</posY>
+      <control>
+        <description>Action</description>
+        <type>button</type>
+        <id>2</id>
+        <onup>5</onup>
+        <ondown>3</ondown>
+        <width>490</width>
+        <animation effect="fade" time="300">WindowOpen</animation>
+        <animation effect="fade" time="300">WindowClose</animation>
+      </control>
+      <control>
+        <description>Network Browser</description>
+        <type>button</type>
+        <id>3</id>
+        <onup>2</onup>
+        <ondown>4</ondown>
+        <width>490</width>
+        <animation effect="fade" time="300">WindowOpen</animation>
+        <animation effect="fade" time="300">WindowClose</animation>
+      </control>
+      <control>
+        <description>Action Scheduler</description>
+        <type>togglebutton</type>
+        <id>4</id>
+        <onup>3</onup>
+        <ondown>5</ondown>
+        <width>490</width>
+        <animation effect="fade" time="300">WindowOpen</animation>
+        <animation effect="fade" time="300">WindowClose</animation>
+      </control>
+      <control>
+        <description>Alive Check Scheduler</description>
+        <type>togglebutton</type>
+        <id>5</id>
+        <onup>4</onup>
+        <ondown>2</ondown>
+        <width>490</width>
+        <animation effect="fade" time="300">WindowOpen</animation>
+        <animation effect="fade" time="300">WindowClose</animation>
+      </control>
+    </control>
+  </controls>
+</window>
+<!--Checksum:17729a521ec08f6c31743d9a1d680068-->
