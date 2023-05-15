@@ -4464,7 +4464,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Major>5</Major>
       <Minor>0</Minor>
       <Build>0</Build>
-      <Revision>97</Revision>
+      <Revision>98</Revision>
     </Version>
     <ExtensionDescription>Titan Extended adds support for a variety of community plugins to the Titan skin.
 
@@ -4475,7 +4475,7 @@ Added more Plugins support.
 Added Christmas theme</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://www.team-mediaportal.com/index.php?option=com_mtree&amp;task=att_download&amp;link_id=252&amp;cf_id=24</OnlineLocation>
-    <ReleaseDate>2023-05-14T15:37:22.7752065+03:00</ReleaseDate>
+    <ReleaseDate>2023-05-15T21:22:55.1732718+03:00</ReleaseDate>
     <Tags>titan, skin, widescreen</Tags>
     <Location>..\builds\Titan Extended-[Version].mpe1</Location>
     <Params>
