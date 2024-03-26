@@ -54,7 +54,7 @@ jobs:
 
       - name: Build MPE1
         run: |
-          "..\MPE\MPEMaker\MPEMaker.exe" Titan Extended.xmp2 /B /UpdateXML
+          "..\MPE\MPEMaker\MPEMaker.exe" "Titan Extended.xmp2" /B /UpdateXML
         working-directory: ${{ github.workspace }}\MPEI
         shell: cmd
  
