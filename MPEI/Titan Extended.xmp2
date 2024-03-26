@@ -4678,11 +4678,13 @@ Click Next to continue or Cancel to exit Setup.</Value>
           <string>Extension</string>
           <string>Browser</string>
           <string>BrowseTheWeb</string>
+          <string>ClickfinderProgramGuide</string>
           <string>CPG</string>
           <string>Games</string>
           <string>GobalMusicSearch</string>
           <string>IMDb+</string>
           <string>InfoService</string>
+          <string>LastFmRadio</string>
           <string>MovingPictures</string>
           <string>MPSteam</string>
           <string>MyEmulator</string>
@@ -4694,6 +4696,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
           <string>PlayDisc</string>
           <string>PowerControl</string>
           <string>RadioTime</string>
+          <string>Rockstar</string>
           <string>Shoutcast</string>
           <string>ShowTimes</string>
           <string>SleepControl</string>
@@ -4701,11 +4704,14 @@ Click Next to continue or Cancel to exit Setup.</Value>
           <string>Trakt</string>
           <string>TVSeries</string>
           <string>UpdateControl</string>
+          <string>Weather</string>
+          <string>Wikipedia</string>
           <string>WorldWeather</string>
           <string>WorldWeatherLite</string>
           <string>Youtube</string>
           <string>Themes</string>
           <string>Christmas</string>
+          <string>DWHD Basic Home</string>
         </IncludedGroups>
         <PanelName>Tree View Selector</PanelName>
         <WizardButtonsEnum>BackNextCancel</WizardButtonsEnum>
