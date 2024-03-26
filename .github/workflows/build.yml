@@ -26,12 +26,24 @@ jobs:
     steps:
       - name: Git Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Git Checkout / MPE / XPath / Tools
         uses: actions/checkout@v4
         with:
           repository: andrewjswan/MPE
           path: MPE
+
+      - name: MP folder for MPEMaker
+        run: |
+          mkdir "C:\Team MediaPortal"
+        shell: cmd
+
+      - name: Link to MPEMaker
+        run: |
+          mklink /J "C:\Team MediaPortal\MediaPortal" "${{ github.workspace }}\MPE\MPEMaker"
+        shell: cmd
 
       - name: Update Known Extensions
         run: |
@@ -45,6 +57,12 @@ jobs:
         working-directory: ${{ github.workspace }}\builds
         shell: cmd
 
+      - name: Build MPE1
+        run: |
+          Create_Installer.bat
+        working-directory: ${{ github.workspace }}\scripts
+        shell: cmd
+ 
       - name: Get Version
         id: version
         run: |
@@ -52,12 +70,6 @@ jobs:
         working-directory: ${{ github.workspace }}\MPEI
         shell: cmd
 
-      - name: Build MPE1
-        run: |
-          "..\MPE\MPEMaker\MPEMaker.exe" "Titan Extended.xmp2" /B /UpdateXML
-        working-directory: ${{ github.workspace }}\MPEI
-        shell: cmd
- 
       - name: Upload Artifact / MPE1
         uses: actions/upload-artifact@v4
         with:

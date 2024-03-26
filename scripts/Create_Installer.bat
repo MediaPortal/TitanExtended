@@ -3,14 +3,24 @@
 Title Creating MediaPortal Titan Extended Installer
 ECHO Creating MediaPortal Titan Extended Installer
 
+if "%programfiles(x86)%XXX"=="XXX" goto 32BIT
+    :: 64-bit
+    set PROGS=%programfiles(x86)%
+    goto CONT
+:32BIT
+    set PROGS=%ProgramFiles%
+:CONT
+
+IF NOT EXIST "%PROGS%\Team MediaPortal\MediaPortal\" SET PROGS=C:
+
 :: Get version from DLL
-FOR /F "tokens=*" %%a IN ('git rev-list HEAD --count') DO SET version=%%a 
+FOR /F "tokens=*" %%a IN ('git rev-list HEAD --count') DO SET version=%%a
 
 :: Trim version
-SET version=%version:~0,-1%
+SET version=%version: =%
 
 :: Set version
-SET version=5.0.0.%version%
+SET version=5.0.1.%version%
 
 :: Build MPE1
-"Tools\MPEMaker.exe" "..\MPEI\Titan Extended.xmp2" /B /V=%version% /UpdateXML
+"%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" "..\MPEI\Titan Extended.xmp2" /B /V=%version% /UpdateXML
