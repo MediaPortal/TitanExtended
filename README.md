@@ -1,5 +1,4 @@
 # Titan Extended
-=============
 
 [![MP AnyCPU](https://img.shields.io/badge/MP-AnyCPU-blue?logo=windows&logoColor=white)](https://github.com/MediaPortal/TitanExtended/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/MediaPortal/TitanExtended/build.yml?logo=github)](https://github.com/MediaPortal/TitanExtended/actions)
