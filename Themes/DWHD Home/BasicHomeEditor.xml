@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+    <!--     *******************************************************************************************  -->
+    <!--     **************************    BACKGROUNDS, EDITOR BUTTON ETC.  ****************************  -->
+    <!--     *******************************************************************************************  -->
+     <control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background_settings.png</texture>
+		<visible>skin.hassetting(#skin.basichome.editor)</visible>
+	</control>
+	<control>
+		<description>panel</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>80</posX>
+		<posY>140</posY>
+		<width>1700</width>
+		<height>940</height>
+		<texture>panel_settings_main.png</texture>
+  	<animation effect="fade" time="150">WindowOpen</animation>
+  	<animation effect="fade" time="150">WindowClose</animation>
+  	<visible>skin.hassetting(#skin.basichome.editor)</visible>
+  </control>
+     <control>
+        <description>BasicHome Editor</description>
+        <type>checkbutton</type>
+        <id>10000</id>
+        <posX>750</posX>
+        <posY>100</posY>
+        <width>400</width>
+        <label>BasicHome Editor</label>
+        <selected>#(skin.hassetting('#skin.basichome.editor'))</selected>
+        <onclick>#(skin.togglesetting('#skin.basichome.editor'))</onclick>
+        <onfocus>#(skin.setstring('#editor.main.pos','0'))</onfocus>
+        <onup>17</onup>
+        <onleft>10000</onleft>
+        <onright>10000</onright>
+        <ondown>#(iif(eq(#skin.basichome.editor,'True'),'770101','10'))</ondown>
+        <!--visible>skin.hassetting(#skin.basichome.editor)</visible-->
+        
+        
+      </control>
+      <control>
+        <description>group element</description>
+        <type>group</type>
+        
+        <visible>skin.hassetting(#skin.basichome.editor)</visible>
+        
+        
+        
+      
+    
+    <!--     *******************************************************************************************  -->
+    <!--     **************************  Main Menu Editor Hidden Buttons  ******************************  -->
+    <!--     *******************************************************************************************  -->
+
+    <control Style="SettingsButtonMedium">
+      <type>button</type>
+      <id>770001</id>
+      <posX>-999</posX>
+      <posY>-999</posY>
+      <label>-</label>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onfocus>
+         #(skin.setfocus(cint(#currentmoduleid),switch(
+ eq(1,1),770002)))
+      </onfocus>
+      
+    </control>
+
+    <control Style="SettingsButtonMedium">
+      <type>menubutton</type>
+      <id>770002</id>
+      <posX>-999</posX>
+      <posY>-999</posY>
+      <mode>dialoglist</mode>
+      <dialogTitle>#list.dialog</dialogTitle>
+      <dialogShowNumbers>no</dialogShowNumbers>
+      <valueTextInButton>yes</valueTextInButton>
+      <valuePrefixText></valuePrefixText>
+      <binding>#editor.main.bind</binding>
+      <subitems>
+        <subitem>#list.ALL</subitem>
+      </subitems>
+      <onfocus>
+        #(skin.setstring('#editor.main.bind',string.format('#{0}',string.ltrim(#editor.main,'#0123456789'))))
+      </onfocus>
+      <onclick>
+        #(skin.setstring(iif(neq(string.ltrim(#selectedlabel770002,'#'),#selectedlabel770002),'#editor.main','#editor.errorcheck'),#selectedlabel770002))
+        #(skin.setstring(#editor.main.at,#editor.main))
+        #(skin.setfocus(cint(#currentmoduleid),cint(#editor.main.return)))
+      </onclick>
+      
+    </control>
+
+    <!--     *******************************************************************************************  -->
+    <!--     *****************************  Main Menu Editor Buttons  **********************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <type>label</type>
+      <posX>195</posX>
+      <posY>286</posY>
+      <width>445</width>
+      <align>center</align>
+      <label>BasicHome #(L(974))</label>
+      <font>font13</font>
+      <textcolor>skyblue</textcolor>
+      <visible>skin.hassetting(#skin.basichome.editor)</visible>
+    </control>
+
+    <control Style="SettingsButtonMedium">
+      <description>buttons</description>
+      <type>group</type>
+      <posX>200</posX>
+      <posY>330</posY>
+      <dimColor>FFA0A0A0</dimColor>
+      <layout>StackLayout(0, Vertical, true)</layout>
+      <visible>skin.hassetting(#skin.basichome.editor)</visible>
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770101</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'1'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.1,'#0123456789.'),string.ltrim(#editor.button.1,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.1))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.1))
+          #(skin.setstring('#editor.main.at','#editor.button.1'))
+          #(skin.setstring('#editor.main.pos','1'))
+          #(skin.setstring('#editor.sub.1',#editor.button.1.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.1.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.1.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.1.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.1.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.1.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.1.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.1.8))
+          #(skin.setstring('#editor.main.return',770101))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>10000</onup>
+        <ondown>770102</ondown>
+        <onleft>770101</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770102</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'2'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.2,'#0123456789.'),string.ltrim(#editor.button.2,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.2))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.2))
+          #(skin.setstring('#editor.main.at','#editor.button.2'))
+          #(skin.setstring('#editor.main.pos','2'))
+          #(skin.setstring('#editor.sub.1',#editor.button.2.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.2.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.2.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.2.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.2.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.2.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.2.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.2.8))
+          #(skin.setstring('#editor.main.return',770102))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770101</onup>
+        <ondown>770103</ondown>
+        <onleft>770102</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770103</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'3'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.3,'#0123456789.'),string.ltrim(#editor.button.3,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.3))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.3))
+          #(skin.setstring('#editor.main.at','#editor.button.3'))
+          #(skin.setstring('#editor.main.pos','3'))
+          #(skin.setstring('#editor.sub.1',#editor.button.3.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.3.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.3.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.3.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.3.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.3.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.3.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.3.8))
+          #(skin.setstring('#editor.main.return',770103))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770102</onup>
+        <ondown>770104</ondown>
+        <onleft>770103</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770104</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'4'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.4,'#0123456789.'),string.ltrim(#editor.button.4,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.4))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.4))
+          #(skin.setstring('#editor.main.at','#editor.button.4'))
+          #(skin.setstring('#editor.main.pos','4'))
+          #(skin.setstring('#editor.sub.1',#editor.button.4.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.4.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.4.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.4.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.4.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.4.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.4.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.4.8))
+          #(skin.setstring('#editor.main.return',770104))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770103</onup>
+        <ondown>770105</ondown>
+        <onleft>770104</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770105</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'5'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.5,'#0123456789.'),string.ltrim(#editor.button.5,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.5))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.5))
+          #(skin.setstring('#editor.main.at','#editor.button.5'))
+          #(skin.setstring('#editor.main.pos','5'))
+          #(skin.setstring('#editor.sub.1',#editor.button.5.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.5.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.5.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.5.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.5.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.5.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.5.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.5.8))
+          #(skin.setstring('#editor.main.return',770105))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770104</onup>
+        <ondown>770106</ondown>
+        <onleft>770105</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770106</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'6'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.6,'#0123456789.'),string.ltrim(#editor.button.6,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.6))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.6))
+          #(skin.setstring('#editor.main.at','#editor.button.6'))
+          #(skin.setstring('#editor.main.pos','6'))
+          #(skin.setstring('#editor.sub.1',#editor.button.6.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.6.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.6.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.6.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.6.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.6.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.6.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.6.8))
+          #(skin.setstring('#editor.main.return',770106))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770105</onup>
+        <ondown>770107</ondown>
+        <onleft>770106</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770107</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'7'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.7,'#0123456789.'),string.ltrim(#editor.button.7,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.7))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.7))
+          #(skin.setstring('#editor.main.at','#editor.button.7'))
+          #(skin.setstring('#editor.main.pos','7'))
+          #(skin.setstring('#editor.sub.1',#editor.button.7.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.7.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.7.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.7.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.7.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.7.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.7.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.7.8))
+          #(skin.setstring('#editor.main.return',770107))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770106</onup>
+        <ondown>770108</ondown>
+        <onleft>770107</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770108</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'8'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.8,'#0123456789.'),string.ltrim(#editor.button.8,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.8))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.8))
+          #(skin.setstring('#editor.main.at','#editor.button.8'))
+          #(skin.setstring('#editor.main.pos','8'))
+          #(skin.setstring('#editor.sub.1',#editor.button.8.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.8.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.8.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.8.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.8.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.8.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.8.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.8.8))
+          #(skin.setstring('#editor.main.return',770108))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770107</onup>
+        <ondown>770109</ondown>
+        <onleft>770108</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770109</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'9'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.9,'#0123456789.'),string.ltrim(#editor.button.9,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.9))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.9))
+          #(skin.setstring('#editor.main.at','#editor.button.9'))
+          #(skin.setstring('#editor.main.pos','9'))
+          #(skin.setstring('#editor.sub.1',#editor.button.9.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.9.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.9.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.9.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.9.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.9.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.9.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.9.8))
+          #(skin.setstring('#editor.main.return',770109))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770108</onup>
+        <ondown>770110</ondown>
+        <onleft>770109</onleft>
+        <onright>771101</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>770110</id>
+        <textureNoFocus>#(iif(eq(#editor.main.pos,'10'),'settings_button_medium_focus.png','settings_button_medium_nofocus.png'))</textureNoFocus>
+        <textureFocus>#(iif(eq(string.ltrim(#editor.button.10,'#0123456789.'),string.ltrim(#editor.button.10,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <width>430</width>
+        <label>#(string.format('{0}',#editor.button.10))</label>
+        <onfocus>
+          #(skin.setstring('#editor.main',#editor.button.10))
+          #(skin.setstring('#editor.main.at','#editor.button.10'))
+          #(skin.setstring('#editor.main.pos','10'))
+          #(skin.setstring('#editor.sub.1',#editor.button.10.1))
+          #(skin.setstring('#editor.sub.2',#editor.button.10.2))
+          #(skin.setstring('#editor.sub.3',#editor.button.10.3))
+          #(skin.setstring('#editor.sub.4',#editor.button.10.4))
+          #(skin.setstring('#editor.sub.5',#editor.button.10.5))
+          #(skin.setstring('#editor.sub.6',#editor.button.10.6))
+          #(skin.setstring('#editor.sub.7',#editor.button.10.7))
+          #(skin.setstring('#editor.sub.8',#editor.button.10.8))
+          #(skin.setstring('#editor.main.return',770110))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),770001))
+        </onclick>
+        <action>7</action>
+        <onup>770109</onup>
+        <ondown>770101</ondown>
+        <onleft>770110</onleft>
+        <onright>771101</onright>
+        <visible>[skin.hastheme(Titan BasicHome Edtitor)|skin.hastheme(Horizon Up)]</visible>
+      </control>
+    </control>
+        
+    <control>
+        <description>preview</description>
+        <type>image</type>
+        <id>61149</id>
+        <posX>1300</posX>
+        <posY>430</posY>
+        <height>242</height>
+        <width>372</width>
+        <texture mask="picturecase_mask.png">#(string.format('{0}.hover',#editor.main))</texture>
+        <visible>!skin.hastheme(Smart One)+[control.hasfocus(770101)|control.hasfocus(770102)|control.hasfocus(770103)|control.hasfocus(770104)|control.hasfocus(770105)|control.hasfocus(770106)|control.hasfocus(770107)|control.hasfocus(770108)|control.hasfocus(770109)|control.hasfocus(770110)]</visible>
+      </control>
+      
+      <control>
+        <description>preview focus</description>
+        <type>image</type>
+        <id>1</id>
+        <posX>1285</posX>
+        <posY>415</posY>
+        <height>272</height>
+        <width>402</width>
+        <texture>preview_focus.png</texture>
+        <visible>!skin.hastheme(Smart One)+control.hasthumb(61149)+[control.hasfocus(770101)|control.hasfocus(770102)|control.hasfocus(770103)|control.hasfocus(770104)|control.hasfocus(770105)|control.hasfocus(770106)|control.hasfocus(770107)|control.hasfocus(770108)|control.hasfocus(770109)|control.hasfocus(770110)]</visible>
+      </control>
+
+    <!--     *******************************************************************************************  -->
+    <!--     **************************  Sub Menu Editor Hidden Buttons  *******************************  -->
+    <!--     *******************************************************************************************  -->
+
+    <control Style="SettingsButtonMedium">
+      <type>button</type>
+      <id>771001</id>
+      <posX>-999</posX>
+      <posY>-999</posY>
+      <label>-</label>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onfocus>
+         #(skin.setfocus(cint(#currentmoduleid),switch(
+ eq(1,1),771002)))
+      </onfocus>
+    </control>
+
+    <control Style="SettingsButtonMedium">
+      <type>menubutton</type>
+      <id>771002</id>
+      <posX>-999</posX>
+      <posY>-999</posY>
+      <mode>dialoglist</mode>
+      <dialogTitle>#list.dialog</dialogTitle>
+      <dialogShowNumbers>no</dialogShowNumbers>
+      <valueTextInButton>yes</valueTextInButton>
+      <valuePrefixText></valuePrefixText>
+      <binding>#editor.sub.bind</binding>
+      <subitems>
+        <subitem>#list.ALL</subitem>
+      </subitems>
+      <onfocus>
+        #(skin.setstring('#editor.sub.bind',string.format('#{0}',string.ltrim(#editor.sub,'#0123456789'))))
+      </onfocus>
+      <onclick>
+        #(skin.setstring(iif(neq(string.ltrim(#selectedlabel771002,'#'),#selectedlabel771002),'#editor.sub','#editor.errorcheck'),#selectedlabel771002))
+        #(skin.setstring(#editor.sub.at,#editor.sub))
+        #(skin.setfocus(cint(#currentmoduleid),cint(#editor.sub.return)))
+      </onclick>
+    </control>
+
+    <!--     *******************************************************************************************  -->
+    <!--     *****************************  Sub Menu Editor Buttons  ***********************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <type>label</type>
+      <posX>740</posX>
+      <posY>286</posY>
+      <width>430</width>
+      <align>center</align>
+      <label>#(L(924)) - #(string.format('#{0}',string.ltrim(#editor.main,'#0123456789')))</label>
+      <textcolor>skyblue</textcolor>
+      <font>font13</font>
+      <visible>skin.hassetting(#skin.basichome.editor)</visible>
+    </control>
+
+    <control Style="SettingsButtonMedium">
+      <description>buttons</description>
+      <type>group</type>
+      <posX>740</posX>
+      <posY>330</posY>
+      <dimColor>FFA0A0A0</dimColor>
+      <layout>StackLayout(0, Vertical, true)</layout>
+      <visible>skin.hassetting(#skin.basichome.editor)</visible>
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771101</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.1,'#0123456789.'),string.ltrim(#editor.sub.1,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.1))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.1',#editor.main.pos),#editor.sub.1))
+          #(skin.setstring('#editor.sub',#editor.sub.1))
+          #(skin.setstring('#editor.sub.at','#editor.sub.1'))
+          #(skin.setstring('#editor.sub.return',771101))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771108</onup>
+        <ondown>771102</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771102</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.2,'#0123456789.'),string.ltrim(#editor.sub.2,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.2))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.2',#editor.main.pos),#editor.sub.2))
+          #(skin.setstring('#editor.sub',#editor.sub.2))
+          #(skin.setstring('#editor.sub.at','#editor.sub.2'))
+          #(skin.setstring('#editor.sub.return',771102))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771101</onup>
+        <ondown>771103</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771103</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.3,'#0123456789.'),string.ltrim(#editor.sub.3,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.3))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.3',#editor.main.pos),#editor.sub.3))
+          #(skin.setstring('#editor.sub',#editor.sub.3))
+          #(skin.setstring('#editor.sub.at','#editor.sub.3'))
+          #(skin.setstring('#editor.sub.return',771103))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771102</onup>
+        <ondown>771104</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771104</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.4,'#0123456789.'),string.ltrim(#editor.sub.4,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.4))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.4',#editor.main.pos),#editor.sub.4))
+          #(skin.setstring('#editor.sub',#editor.sub.4))
+          #(skin.setstring('#editor.sub.at','#editor.sub.4'))
+          #(skin.setstring('#editor.sub.return',771104))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771103</onup>
+        <ondown>771105</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        
+      </control>
+
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771105</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.5,'#0123456789.'),string.ltrim(#editor.sub.5,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.5))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.5',#editor.main.pos),#editor.sub.5))
+          #(skin.setstring('#editor.sub',#editor.sub.5))
+          #(skin.setstring('#editor.sub.at','#editor.sub.5'))
+          #(skin.setstring('#editor.sub.return',771105))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771104</onup>
+        <ondown>771106</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        
+      </control>
+      
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771106</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.6,'#0123456789.'),string.ltrim(#editor.sub.6,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.6))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.6',#editor.main.pos),#editor.sub.6))
+          #(skin.setstring('#editor.sub',#editor.sub.6))
+          #(skin.setstring('#editor.sub.at','#editor.sub.6'))
+          #(skin.setstring('#editor.sub.return',771106))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771105</onup>
+        <ondown>771107</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        
+      </control>
+      
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771107</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.7,'#0123456789.'),string.ltrim(#editor.sub.7,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.7))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.7',#editor.main.pos),#editor.sub.7))
+          #(skin.setstring('#editor.sub',#editor.sub.7))
+          #(skin.setstring('#editor.sub.at','#editor.sub.7'))
+          #(skin.setstring('#editor.sub.return',771107))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771106</onup>
+        <ondown>771108</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        
+      </control>
+      
+      <control Style="SettingsButtonMedium">
+        <type>button</type>
+        <id>771108</id>
+        <width>430</width>
+        <!--textalign>center</textalign-->
+        <!--textvalign>middle</textvalign-->
+        <textureFocus>#(iif(eq(string.ltrim(#editor.sub.8,'#0123456789.'),string.ltrim(#editor.sub.8,'#')),'settings_button_medium_focus.png','settings_button_medium_focus.png'))</textureFocus>
+        <label>#(string.format('{0}',#editor.sub.8))</label>
+        <onfocus>
+          #(skin.setstring(string.format('#editor.button.{0}.8',#editor.main.pos),#editor.sub.8))
+          #(skin.setstring('#editor.sub',#editor.sub.8))
+          #(skin.setstring('#editor.sub.at','#editor.sub.8'))
+          #(skin.setstring('#editor.sub.return',771108))
+          #(skin.setstring('#skin.previewframe','No'))
+        </onfocus>
+        <onclick>
+          #(skin.setfocus(cint(#currentmoduleid),771001))
+        </onclick>
+        <action>7</action>
+        <onup>771107</onup>
+        <ondown>771101</ondown>
+        <onleft>#(cint(#editor.main.return))</onleft>
+        <onright>555</onright>
+        <visible>!skin.hastheme(Titan BasicHome Edtitor)</visible>
+      </control>
+    </control>
+    
+    
+      
+      
+    
+    <!--     *******************************************************************************************  -->
+    <!--     *****************************  Theme Mode Editor Buttons  *********************************  -->
+    <!--     *******************************************************************************************  -->
+    
+    <control>
+      <type>label</type>
+      <posX>1250</posX>
+      <posY>286</posY>
+      <width>450</width>
+      <align>center</align>
+      <label>Layout</label>
+      <textcolor>skyblue</textcolor>
+      <font>font13</font>
+      <visible>skin.hassetting(#skin.basichome.editor)</visible>
+    </control>
+    
+        <control Style="SettingsButtonMedium">
+          <type>menubutton</type>
+          <id>555</id>
+          <posX>1261</posX>
+          <posY>330</posY>
+          <width>450</width>
+          <!--textalign>center</textalign-->
+          <!--textvalign>middle</textvalign-->
+          <mode>dialoglist</mode>
+          <dialogTitle>BasicHome Mode</dialogTitle>
+          <dialogShowNumbers>no</dialogShowNumbers>
+          <valueTextInButton>yes</valueTextInButton>
+          <valuePrefixText></valuePrefixText>
+          <onfocus>#(skin.setstring('#skin.previewframe','Yes'))</onfocus>
+          <onclick>#(skin.setstring('#editor.mode',#selectedlabel555))</onclick>
+          <hyperlink>35</hyperlink>
+          <binding>#editor.mode</binding>
+          <subitems>
+    <subitem>Carousel</subitem>
+    <subitem>Horizontal 2 Rows</subitem>
+    <subitem>Text Only</subitem>
+        </subitems>
+        <onleft>771101</onleft>
+        <onright>555</onright>
+        <onup>555</onup>
+        <ondown>555</ondown>
+        <visible>skin.hastheme(Titan BasicHome Edtitor)</visible>
+      </control>
+    </control>
+    
+    
+    
+    
+      
+      
+      
+      
+    
+    
+    
+  </controls>
+</window>

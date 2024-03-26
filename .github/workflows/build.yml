@@ -1,0 +1,194 @@
+name: Build / Titan Extended
+
+on:
+  push:
+    # On Push to Master branch
+    branches: 
+      - master
+    # Ignore all Tags / Release
+    tags-ignore:
+      - '**'
+    paths:
+      - '**.xmp2'
+
+  workflow_call:
+    outputs:
+      version:
+        description: "MPE1 Version"
+        value: ${{ jobs.build.outputs.version }}
+
+jobs:
+  build:
+    name: Titan Extended / Build
+    runs-on: windows-2019
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v4
+
+      - name: Git Checkout / MPE / XPath / Tools
+        uses: actions/checkout@v4
+        with:
+          repository: andrewjswan/MPE
+          path: MPE
+
+      - name: Update Known Extensions
+        run: |
+          MPEUpdater.exe
+        working-directory: ${{ github.workspace }}\MPE\MPEMaker
+        shell: cmd
+
+      - name: Clear Build folder
+        run: |
+          del /F /Q *.*
+        working-directory: ${{ github.workspace }}\builds
+        shell: cmd
+
+      - name: Get Version
+        id: version
+        run: |
+          FOR /F "tokens=*" %%i IN ('call ..\MPE\XPath\xpath.cmd "Titan Extended.xmp2" "//PackageClass/GeneralInfo/Version" ^| ..\MPE\Tools\sed "s/ /./g"') DO (ECHO version=%%i >> %GITHUB_OUTPUT%)
+        working-directory: ${{ github.workspace }}\MPEI
+        shell: cmd
+
+      - name: Build MPE1
+        run: |
+          "..\MPE\MPEMaker\MPEMaker.exe" Titan Extended.xmp2 /B /UpdateXML
+        working-directory: ${{ github.workspace }}\MPEI
+        shell: cmd
+ 
+      - name: Upload Artifact / MPE1
+        uses: actions/upload-artifact@v4
+        with:
+          name: Titan Extended - MPE1
+          path: |
+            ${{ github.workspace }}\builds\Titan Extended-*.mpe1
+          if-no-files-found: error
+
+      - name: Upload Artifact / MPE XML
+        uses: actions/upload-artifact@v4
+        with:
+          name: Titan Extended - XML
+          path: |
+            ${{ github.workspace }}\update\TitanExtendedUpdate.xml
+          if-no-files-found: error
+
+      - name: Get Release Version Description
+        run: |
+          call ..\MPE\XPath\xpath.cmd "Titan Extended.xmp2" "//PackageClass/GeneralInfo/VersionDescription" last > description.txt
+        working-directory: ${{ github.workspace }}\MPEI
+        shell: cmd
+
+      - name: Add Badges to Release Version Description
+        run: |
+          ECHO. >> description.txt
+          ECHO [![Downloads](https://img.shields.io/github/downloads/MediaPortal/TitanExtended/v${{steps.version.outputs.version}}/total)](https://github.com/MediaPortal/TitanExtended/releases/tag/v${{steps.version.outputs.version}}) [![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md) >> description.txt
+        working-directory: ${{ github.workspace }}\MPEI
+        shell: cmd
+
+      - name: Clean Release Version Description
+        run: |
+          ..\MPE\Tools\sed.exe -i "s/ \//\//g" description.txt
+        working-directory: ${{ github.workspace }}\MPEI
+        shell: cmd
+
+      - name: Upload Artifact / Version Description
+        uses: actions/upload-artifact@v4
+        with:
+          name: Titan Extended - Version Description
+          path: |
+            ${{ github.workspace }}\MPEI\description.txt
+          retention-days: ${{ inputs.retention-build || 90 }}
+          if-no-files-found: error
+
+  xml:
+    name: Titan Extended / XML
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    permissions:
+      contents: write
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: Titan Extended - XML
+          path: ${{ github.workspace }}/update/
+
+      - name: Update / MPE1 XML
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Titan Extended ${{needs.build.outputs.version}} / Release'
+          add: '${{ github.workspace }}/update/TitanExtendedUpdate.xml'
+
+      - name: Delete XML Artifact
+        uses: geekyeggo/delete-artifact@v5
+        with:
+            name: Titan Extended - XML
+            failOnError: false
+
+  release:
+    name: Titan Extended / Release
+    runs-on: ubuntu-latest
+    needs:
+      - build
+      - xml
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: Titan Extended - MPE1
+          path: release-files
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: Titan Extended - Version Description
+          path: release-description
+
+      - name: Check Artifacts
+        run: |
+          ls -l
+        working-directory: release-files
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Titan Extended v${{needs.build.outputs.version}}
+          tag_name: v${{needs.build.outputs.version}}
+          body_path: release-description/description.txt
+          generate_release_notes: true
+          files: |
+            release-files/*.mpe1
+
+      - name: Delete MPE1 Artifact
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: Titan Extended - MPE1
+          failOnError: false
+
+      - name: Delete Version Description Artifact
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: Titan Extended - Version Description
+          failOnError: false
+
+  ci-status:
+    name: Release Status
+    runs-on: ubuntu-latest
+    needs:
+      - release
+    if: always()
+    steps:
+      - name: Success
+        if: ${{ !(contains(needs.*.result, 'failure')) }}
+        run: exit 0
+      - name: Failure
+        if: ${{ contains(needs.*.result, 'failure') }}
+        run: exit 1

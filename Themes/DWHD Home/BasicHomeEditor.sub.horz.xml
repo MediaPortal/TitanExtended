@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+
+<!--
+
+ID format AA-B-C-DD [group/subgroup/layer/item] eg: 990105 = group 99 / subgroup 0 / layer 1 / item 05
+
+-->
+
+  <define property="true" evaluateNow="true">#image.posx:820</define>
+  <define property="true" evaluateNow="true">#image.posy:636</define>
+  <define property="true" evaluateNow="true">#image.width:265</define>
+  <define property="true" evaluateNow="true">#image.height:186</define>
+  <define property="true" evaluateNow="true">#label.posx:843</define>
+  <define property="true" evaluateNow="true">#label.posy:793</define>
+  <define property="true" evaluateNow="true">#label.width:222</define>
+  <define>#label.font:font10</define>
+
+  <define property="true" evaluateNow="true">#scroll.delay:20</define>
+  <define property="true" evaluateNow="true">#scroll.wrap:·</define>
+
+  <controls>
+
+<!-- Availability checker -->
+
+    <control>
+      <type>group</type>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <layout>StackLayout(0, Vertical, true)</layout>
+      <control>
+        <id>820000</id>
+        <type>button</type>
+        <label>-</label>
+        <textureFocus>-</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onfocus>
+          #(skin.setstring('#editor.sub.return',820101))
+          #(skin.setfocus(cint(#currentmoduleid),820001))
+        </onfocus>
+      </control>
+      <control>
+        <id>820001</id>
+        <type>button</type>
+        <label>-</label>
+        <textureFocus>-</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onfocus>
+          #(skin.setfocus(cint(#currentmoduleid),cint(#editor.sub.center)))
+        </onfocus>
+        <visible>control.isvisible(920900)</visible>
+      </control>
+      <control>
+        <id>820002</id>
+        <type>button</type>
+        <label>-</label>
+        <textureFocus>-</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onfocus>
+          #(skin.setfocus(cint(#currentmoduleid),cint(#editor.main.return)))
+        </onfocus>
+        <visible>!control.isvisible(920900)</visible>
+      </control>
+    </control>
+
+<!-- Mouse Focus -->
+
+    <control>
+      <id>820010</id>
+      <type>button</type>
+      <posX>270</posX>
+      <posY>595</posY>
+      <width>1390</width>
+      <height>205</height>
+      <label>-</label>
+      <textureFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureFocus>
+      <textureNoFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureNoFocus>
+      <onfocus>
+        #(skin.setstring('#editor.sub.return',820201))
+        #(skin.setfocus(cint(#currentmoduleid),cint(#editor.sub.center)))
+      </onfocus>
+      <visible>!string.contains(#editor.inuse,sub)+control.isvisible(920900)</visible>
+    </control>
+
+<!-- Input control -->
+
+    <control>
+      <description>Key control</description>
+      <type>button</type>
+      <id>820101</id>
+      <posX>-999</posX>
+      <posY>-999</posY>
+      <label>#editor.sub.use.4</label>
+      <textXOff>2000</textXOff>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onleft>#editor.sub.backward</onleft>
+      <onright>#editor.sub.forward</onright>
+      <onup>#(string.format('{0}.latestmedia',#editor.sub.use.4))</onup>
+      <ondown>#editor.main.return</ondown>
+      <hyperlink>#(string.format('{0}.hyperlink',#editor.sub.use.4))</hyperlink>
+      <hyperlinkParameter>#(string.format('{0}.parameter',#editor.sub.use.4))</hyperlinkParameter>
+      <action>#(string.format('{0}.action',#editor.sub.use.4))</action>
+      <onfocus>
+        #(skin.setstring('#editor.inuse','sub'))
+        #(skin.setstring('#editor.sub.return',820101))
+        #(skin.setstring(#(string.format('{0}.latestmedia',#editor.sub.use.4))))
+      </onfocus>
+      <visible allowhiddenfocus="true">string.contains(#editor.inuse,sub)</visible>
+    </control>
+
+    <control>
+      <description>Mouse control - Click Center</description>
+      <type>button</type>
+      <id>820201</id>
+      <posX>820</posX>
+      <posY>595</posY>
+      <width>290</width>
+      <height>205</height>
+      <label>#editor.sub.use.4</label>
+      <textXOff>2000</textXOff>
+      <textureFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureFocus>
+      <textureNoFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureNoFocus>
+      <onleft>820211</onleft>
+      <onright>820212</onright>
+      <onup>#editor.sub.backward</onup>
+      <ondown>#editor.sub.forward</ondown>
+      <hyperlink>#(string.format('{0}.hyperlink',#editor.sub.use.4))</hyperlink>
+      <hyperlinkParameter>#(string.format('{0}.parameter',#editor.sub.use.4))</hyperlinkParameter>
+      <action>#(string.format('{0}.action',#editor.sub.use.4))</action>
+      <onfocus>
+        #(skin.setstring('#editor.inuse','sub'))
+        #(skin.setstring('#editor.sub.return',820201))
+        #(skin.setstring(#(string.format('{0}.latestmedia',#editor.sub.use.4))))
+      </onfocus>
+      <visible allowhiddenfocus="true">string.contains(#editor.inuse,sub)</visible>
+    </control>
+
+    <control>
+      <description>Mouse control - Click Backward</description>
+      <type>button</type>
+      <id>820202</id>
+      <posX>270</posX>
+      <posY>595</posY>
+      <width>550</width>
+      <height>205</height>
+      <label>-</label>
+      <textureFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureFocus>
+      <textureNoFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureNoFocus>
+      <onleft>820211</onleft>
+      <onright>820212</onright>
+      <onup>#editor.sub.backward</onup>
+      <ondown>#editor.sub.forward</ondown>
+      <onclick>
+        #(skin.setstring('#editor.sub.return',820201))
+        #(skin.setfocus(cint(#currentmoduleid),cint(#editor.sub.backward)))
+      </onclick>
+      <visible>string.contains(#editor.inuse,sub)</visible>
+    </control>
+
+    <control>
+      <description>Mouse control - Click Forward</description>
+      <type>button</type>
+      <id>820203</id>
+      <posX>1110</posX>
+      <posY>595</posY>
+      <width>550</width>
+      <height>205</height>
+      <label>-</label>
+      <textureFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureFocus>
+      <textureNoFocus>#(iif(eq(#editor.debug.mouse,'1'),'settingsUICalibration.png','-'))</textureNoFocus>
+      <onleft>820211</onleft>
+      <onright>820212</onright>
+      <onup>#editor.sub.backward</onup>
+      <ondown>#editor.sub.forward</ondown>
+      <onclick>
+        #(skin.setstring('#editor.sub.return',820201))
+        #(skin.setfocus(cint(#currentmoduleid),cint(#editor.sub.forward)))
+      </onclick>
+      <visible>string.contains(#editor.inuse,sub)</visible>
+    </control>
+
+    <control>
+      <description>Move backward and return to key control</description>
+      <type>button</type>
+      <id>820211</id>
+      <posX>-999</posX>
+      <posY>-999</posY>
+      <label>-</label>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onfocus>
+        #(skin.setstring('#editor.sub.return',820101))
+        #(skin.setfocus(cint(#currentmoduleid),cint(#editor.sub.backward)))
+      </onfocus>
+    </control>
+
+    <control>
+      <description>Move forward and return to key control</description>
+      <type>button</type>
+      <id>820212</id>
+      <posX>-999</posX>
+      <posY>-999</posY>
+      <label>-</label>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onfocus>
+        #(skin.setstring('#editor.sub.return',820101))
+        #(skin.setfocus(cint(#currentmoduleid),cint(#editor.sub.forward)))
+      </onfocus>
+    </control>
+
+<!-- Render button images and labels -->
+
+    <control>
+      <type>group</type>
+      <dimColor>FFFFFFFF</dimColor>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <animation effect="slide" start="-1500" end="0" time="800" acceleration="-0.6" reversible="false">windowopen</animation>
+      <visible>string.contains(#editor.inuse,sub)</visible>
+      
+
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture mask="basichome_button_mask.png">#(string.format('{0}.hover',#editor.sub.use.1))</texture>
+        <animation effect="slide" start="-810,0" end="-810,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture>basichome_label_overlay.png</texture>
+        <colordiffuse>ccffffff</colordiffuse>
+        <animation effect="slide" start="-810,0" end="-810,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <posX>#label.posx</posX>
+        <posY>#label.posy</posY>
+        <width>#label.width</width>
+        <align>center</align>
+        <font>#label.font</font>
+        <wrapString> #scroll.wrap </wrapString>
+        <scrollStartDelaySec>#scroll.delay</scrollStartDelaySec>
+        <label>#(string.format('{0}.name',#editor.sub.use.1))</label>
+        <animation effect="slide" start="-810,0" end="-810,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture mask="basichome_button_mask.png">#(string.format('{0}.hover',#editor.sub.use.2))</texture>
+        <animation effect="slide" start="-540,0" end="-540,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture>basichome_label_overlay.png</texture>
+        <colordiffuse>ccffffff</colordiffuse>
+        <animation effect="slide" start="-540,0" end="-540,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <posX>#label.posx</posX>
+        <posY>#label.posy</posY>
+        <width>#label.width</width>
+        <align>center</align>
+        <font>#label.font</font>
+        <wrapString> #scroll.wrap </wrapString>
+        <scrollStartDelaySec>#scroll.delay</scrollStartDelaySec>
+        <label>#(string.format('{0}.name',#editor.sub.use.2))</label>
+        <animation effect="slide" start="-540,0" end="-540,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture mask="basichome_button_mask.png">#(string.format('{0}.hover',#editor.sub.use.3))</texture>
+        <animation effect="slide" start="-270,0" end="-270,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture>basichome_label_overlay.png</texture>
+        <colordiffuse>ccffffff</colordiffuse>
+        <animation effect="slide" start="-270,0" end="-270,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <posX>#label.posx</posX>
+        <posY>#label.posy</posY>
+        <width>#label.width</width>
+        <align>center</align>
+        <font>#label.font</font>
+        <wrapString> #scroll.wrap </wrapString>
+        <scrollStartDelaySec>#scroll.delay</scrollStartDelaySec>
+        <label>#(string.format('{0}.name',#editor.sub.use.3))</label>
+        <animation effect="slide" start="-270,0" end="-270,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture mask="basichome_button_mask.png">#(string.format('{0}.hover',#editor.sub.use.4))</texture>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <posX>#label.posx</posX>
+        <posY>#label.posy</posY>
+        <width>#label.width</width>
+        <align>center</align>
+        <font>#label.font</font>
+        <wrapString> #scroll.wrap </wrapString>
+        <scrollStartDelaySec>#scroll.delay</scrollStartDelaySec>
+        <label>#(string.format('{0}.name',#editor.sub.use.4))</label>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture mask="basichome_button_mask.png">#(string.format('{0}.hover',#editor.sub.use.5))</texture>
+        <animation effect="slide" start="270,0" end="270,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture>basichome_label_overlay.png</texture>
+        <colordiffuse>ccffffff</colordiffuse>
+        <animation effect="slide" start="270,0" end="270,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <posX>#label.posx</posX>
+        <posY>#label.posy</posY>
+        <width>#label.width</width>
+        <align>center</align>
+        <font>#label.font</font>
+        <wrapString> #scroll.wrap </wrapString>
+        <scrollStartDelaySec>#scroll.delay</scrollStartDelaySec>
+        <label>#(string.format('{0}.name',#editor.sub.use.5))</label>
+        <animation effect="slide" start="270,0" end="270,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture mask="basichome_button_mask.png">#(string.format('{0}.hover',#editor.sub.use.6))</texture>
+        <animation effect="slide" start="540,0" end="540,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture>basichome_label_overlay.png</texture>
+        <colordiffuse>ccffffff</colordiffuse>
+        <animation effect="slide" start="540,0" end="540,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <posX>#label.posx</posX>
+        <posY>#label.posy</posY>
+        <width>#label.width</width>
+        <align>center</align>
+        <font>#label.font</font>
+        <wrapString> #scroll.wrap </wrapString>
+        <scrollStartDelaySec>#scroll.delay</scrollStartDelaySec>
+        <label>#(string.format('{0}.name',#editor.sub.use.6))</label>
+        <animation effect="slide" start="540,0" end="540,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture mask="basichome_button_mask.png">#(string.format('{0}.hover',#editor.sub.use.7))</texture>
+        <animation effect="slide" start="810,0" end="810,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <posX>#image.posx</posX>
+        <posY>#image.posy</posY>
+        <width>#image.width</width>
+        <height>#image.height</height>
+        <texture>basichome_label_overlay.png</texture>
+        <colordiffuse>ccffffff</colordiffuse>
+        <animation effect="slide" start="810,0" end="810,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <posX>#label.posx</posX>
+        <posY>#label.posy</posY>
+        <width>#label.width</width>
+        <font>#label.font</font>
+        <align>center</align>
+        <wrapString> #scroll.wrap </wrapString>
+        <scrollStartDelaySec>#scroll.delay</scrollStartDelaySec>
+        <label>#(string.format('{0}.name',#editor.sub.use.7))</label>
+        <animation effect="slide" start="810,0" end="810,0" time="0" condition="true">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b0)">conditional</animation>
+        <animation effect="slide" start="-270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,b1)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f0)">conditional</animation>
+        <animation effect="slide" start="270,0" end="0,0" time="250" acceleration="-0.5" reversible="false" condition="string.contains(#editor.sub.calc.nav,f1)">conditional</animation>
+      </control>
+
+    
+
+<!-- Render focus images and labels -->
+
+    <control>
+      <type>image</type>
+      <posX>#image.posx</posX>
+      <posY>#image.posy</posY>
+      <width>#image.width</width>
+      <height>#image.height</height>
+      <texture>basichome_button_focus.png</texture>
+      <animation effect="fade" start="0" end="100" time="250" delay="150">WindowOpen</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" time="0">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="250" delay="150" reversible="false" condition="string.contains(#editor.sub.calc.nav,0)">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="250" delay="150" reversible="false" condition="string.contains(#editor.sub.calc.nav,1)">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="250" delay="150" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="50" time="150" condition="!control.hasfocus(820201)+!control.hasfocus(820101)">conditional</animation>
+      <visible>string.contains(#editor.inuse,sub)</visible>
+    </control>
+    
+    
+<!-- Render indicator for Latest Media++++++++++-->
+
+    <control>
+      <description>Indicator</description>
+      <type>image</type>
+      <posX>930</posX>
+      <posY>600</posY>
+      <width>50</width>
+      <height>50</height>
+      <texture>scroll-up-focus.png</texture>
+      <animation effect="fade" start="0" end="100" time="250" delay="200" reversible="false" condition="string.contains(#editor.sub.calc.nav,0)">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="250" delay="200" reversible="false" condition="string.contains(#editor.sub.calc.nav,1)">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="250" delay="200" reversible="false">visible</animation>
+      <animation effect="fade" time="0" reversible="false">hidden</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <visible>string.contains(#editor.inuse,sub)+[string.contains(#highlightedbutton,TVSERIES)|string.contains(#highlightedbutton,VIDEO1)|string.contains(#highlightedbutton,VIDEO2)|string.contains(#highlightedbutton,MOVPIC)|string.contains(#highlightedbutton,TV3)|string.contains(#highlightedbutton,AUDIO1)|string.contains(#highlightedbutton,VIDEO4)|string.contains(#highlightedbutton,MUSIC)|string.contains(#highlightedbutton,TRAKT)|string.contains(#highlightedbutton,PICTURE)|string.contains(#highlightedbutton,AUDIO6)]</visible>
+    </control>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>35</id>
+  <defaultcontrol>810000</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:Home</define>
+  <define>#highlightedbutton:#(string.format('{0}',#highlightedbutton))</define>
+  <!--define>#usePlayFanart:Yes</define-->
+<controls>
+  <!-- :::::::::: BACKGROUND ::::::::::  -->
+
+  <import>common.default.background.xml</import>
+  <import>common.default.background.overlay.xml</import> 
+  
+  <!--     *******************************************************************************************  -->
+  <!--     **************************************  MENU BUTTONS  *************************************  -->
+  <!--     *******************************************************************************************  -->
+  <include>BasicHomeEditor.main.calc.xml</include>
+  <include>BasicHomeEditor.sub.calc.xml</include>
+  <include condition="#(eq(#editor.mode,'Carousel'))">BasicHomeEditor.main.Carousel.xml</include>
+  <include condition="#(eq(#editor.mode,'Carousel'))">BasicHomeEditor.sub.Carousel.xml</include>
+  <include condition="#(eq(#editor.mode,'Horizontal 2 Rows'))">BasicHomeEditor.main.horz.xml</include>
+  <include condition="#(eq(#editor.mode,'Horizontal 2 Rows'))">BasicHomeEditor.sub.horz.xml</include>
+  <include condition="#(eq(#editor.mode,'Text Only'))">BasicHomeEditor.main.text.xml</include>
+  <include condition="#(eq(#editor.mode,'Text Only'))">BasicHomeEditor.sub.text.xml</include>
+  <import>BasicHomeEditorDefines.xml</import>
+  
+  <!--            :: OTHER ::            -->
+
+  <control>
+    <description>Home ICON</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>66</posX>
+    <posY>38</posY>
+    <width>62</width>
+    <height>55</height>
+    <texture>icon_home.png</texture>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+  </control>
+
+  <!--            :: RSS ::            -->
+
+  <control>
+    <description>RSS BACKGROUND</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>52</posX>
+    <posY>958</posY>
+    <width>1820</width>
+    <height>84</height>
+    <texture>BasicHomeSubBGFlat.png</texture>  
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+  </control>
+  	
+  <include condition="#(and(plugin.isenabled('World News'),not(eq(#WorldNews.NewsTicker,''))))">MyHome.Main.RSS.WorldNews.xml</include>
+  <include condition="#(and(plugin.isenabled('InfoService'),eq(#infoservice.feed.enabled,'true')))">MyHome.Main.RSS.InfoServise.xml</include>
+  
+  <import>common.time.xml</import>
+  <import>common.Scraper.xml</import>
+  
+</controls>
+</window>
