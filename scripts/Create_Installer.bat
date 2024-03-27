@@ -22,5 +22,11 @@ SET version=%version: =%
 :: Set version
 SET version=5.0.1.%version%
 
+:: Temp xmp2 file
+copy "..\MPEI\Titan Extended.xmp2" "..\MPEI\Titan Extended Temp.xmp2"
+
 :: Build MPE1
-"%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" "..\MPEI\Titan Extended.xmp2" /B /V=%version% /UpdateXML
+"%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" "..\MPEI\Titan Extended Temp.xmp2" /B /V=%version% /UpdateXML
+
+:: Cleanup
+del "..\MPEI\Titan Extended Temp.xmp2"
