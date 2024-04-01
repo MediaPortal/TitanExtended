@@ -29,4 +29,4 @@ copy "..\MPEI\Titan Extended.xmp2" "..\MPEI\Titan Extended Temp.xmp2"
 "%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" "..\MPEI\Titan Extended Temp.xmp2" /B /V=%version% /UpdateXML
 
 :: Cleanup
-del "..\MPEI\Titan Extended Temp.xmp2"
+IF NOT [%1] == [git] (DEL "..\MPEI\Titan Extended Temp.xmp2")

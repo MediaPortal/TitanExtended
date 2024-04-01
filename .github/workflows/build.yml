@@ -59,14 +59,14 @@ jobs:
 
       - name: Build MPE1
         run: |
-          Create_Installer.bat
+          Create_Installer.bat git
         working-directory: ${{ github.workspace }}\scripts
         shell: cmd
  
       - name: Get Version
         id: version
         run: |
-          FOR /F "tokens=*" %%i IN ('call ..\MPE\XPath\xpath.cmd "Titan Extended.xmp2" "//PackageClass/GeneralInfo/Version" ^| ..\MPE\Tools\sed "s/ /./g"') DO (ECHO version=%%i >> %GITHUB_OUTPUT%)
+          FOR /F "tokens=*" %%i IN ('call ..\MPE\XPath\xpath.cmd "Titan Extended Temp.xmp2" "//PackageClass/GeneralInfo/Version" ^| ..\MPE\Tools\sed "s/ /./g"') DO (ECHO version=%%i >> %GITHUB_OUTPUT%)
         working-directory: ${{ github.workspace }}\MPEI
         shell: cmd
 
