@@ -30,6 +30,36 @@
 	</control>
   
 
+	<!-- ClearArt -->
+   	<control>
+   		<description>ClearArt</description>
+   		<type>image</type>
+   		<id>159357</id>
+   		<posX>1550</posX>
+   		<posY>150</posY>
+   		<width>250</width>
+   		<height>140</height>
+		<texture>#fanarthandler.movie.clearart.selected</texture>
+		<visible>Control.isvisible(50)+!Control.IsVisible(40)+!Control.IsVisible(37)+!Control.IsVisible(38)</visible>
+        <animation effect="fade" time="250">WindowOpen</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+   	</control>  
+
+	<!-- ClearLogo -->
+   	<control>
+   		<description>ClearLogo</description>
+   		<type>image</type>
+   		<id>0</id>
+   		<posX>1550</posX>
+   		<posY>150</posY>
+   		<width>250</width>
+   		<height>140</height>
+		<texture>#fanarthandler.movie.clearlogo.selected</texture>
+		<visible>!Control.HasThumb(159357)+Control.isvisible(50)+!Control.IsVisible(40)+!Control.IsVisible(37)+!Control.IsVisible(38)</visible>
+        <animation effect="fade" time="250">WindowOpen</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+   	</control>  
+
 	<!--            :: LISTVIEW ::            -->
 	
 	<control>

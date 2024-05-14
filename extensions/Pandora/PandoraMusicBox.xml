@@ -12,16 +12,7 @@
   <define>#header.label:Pandora</define>
   <controls>
 
-    <control>
-      <description>Default Background</description>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>background.png</texture>
-      <shouldCache>true</shouldCache>
-    </control>
+    <import>common.default.background.xml</import>
     <import>common.time.xml</import>
 
 <!--    <import>pandora.autofanart.xml</import>

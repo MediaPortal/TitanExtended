@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+
+    	<!-- ClearArt -->
+       	<control>
+       		<description>ClearArt</description>
+       		<type>image</type>
+       		<id>159357</id>
+       		<posX>1550</posX>
+       		<posY>150</posY>
+       		<width>250</width>
+       		<height>140</height>
+    		<texture>#fanarthandler.movie.clearart.selected</texture>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+       	</control>  
+
+    	<!-- ClearLogo -->
+       	<control>
+       		<description>ClearLogo</description>
+       		<type>image</type>
+       		<id>0</id>
+       		<posX>1550</posX>
+       		<posY>150</posY>
+       		<width>250</width>
+       		<height>140</height>
+        	<visible>!control.hasthumb(159357)</visible>
+    		<texture>#fanarthandler.movie.clearlogo.selected</texture>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+       	</control>  
+
+    <!--            :: LIST / THUMBVIEW ::            -->
+    <control Style="smallTitle">
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>395</posX>
+      <posY>1015</posY>
+      <label>#Trakt.Movie.Title</label>
+      <visible>control.isvisible(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Poster shadow</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>105</posX>
+      <posY>347</posY>
+      <width>429</width>
+      <height>613</height>
+      <texture>list_poster_shadow.png</texture>
+      <visible>facadeview.list+Control.IsVisible(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Default Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>123</posX>
+      <posY>360</posY>
+      <width>379</width>
+      <height>563</height>
+      <texture>defaultVideoBig.png</texture>
+      <visible>facadeview.list + Control.IsVisible(50) + !Control.HasThumb(60)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>60</id>
+      <posX>123</posX>
+      <posY>360</posY>
+      <width>379</width>
+      <height>563</height>
+      <texture>#selectedthumb</texture>
+      <visible>facadeview.list+Control.IsVisible(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+	<control>
+		<description>Cover Art Animated</description>
+		<type>image</type>
+		<id>609</id>
+		<posX>123</posX>
+		<posY>360</posY>
+		<width>379</width>
+		<height>563</height>
+		<texture>..\..\..\Thumbs\Skin FanArt\Animated\Movies\Poster\#(string.trim(#Trakt.Movie.ImdbId)).gif</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+system.idletime(10)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	<control>
+		<description>Cover Art Animated Logo</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>485</posX>
+		<posY>905</posY>
+		<width>15</width>
+		<height>15</height>
+		<texture>icon_animated.png</texture>
+		<visible>!control.IsVisible(609)+control.hasthumb(609)+facadeview.list+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+    <!--            :: LISTVIEW ::            -->
+    <control Style="InfoLabel">
+      <description>Released Label</description>
+      <type>label</type>
+      <label>#Trakt.Translation.Released.Label</label>
+      <posX>565</posX>
+      <posY>343</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Released,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Released</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Released</label>
+      <posX>798</posX>
+      <posY>343</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Released,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Runtime Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Runtime.Label</label>
+      <posX>565</posX>
+      <posY>379</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Runtime,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Runtime</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Runtime #Trakt.Translation.Minutes.Label</label>
+      <posX>798</posX>
+      <posY>379</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Runtime,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Rating Label</description>
+      <type>fadelabel</type>
+      <label>#Trakt.Translation.Rating.Label</label>
+      <id>0</id>
+      <posX>565</posX>
+      <posY>415</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Ratings.Percentage,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Numeric Rating</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Ratings.Percentage% (#(string.format('{0:#,0}', cint(#Trakt.Movie.Ratings.Votes))) #Trakt.Translation.Votes.Label)</label>
+      <posX>843</posX>
+      <posY>415</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Ratings.Percentage,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Rating Icon</description>
+      <type>image</type>
+      <id>1</id>
+      <width>39</width>
+      <height>36</height>
+      <posX>798</posX>
+      <posY>415</posY>
+      <texture>#Trakt.Movie.Ratings.Icon.png</texture>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Ratings.Icon,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Certification Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Certification.Label</label>
+      <posX>565</posX>
+      <posY>451</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Certification,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Certification</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Certification</label>
+      <posX>798</posX>
+      <posY>451</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Certification,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Genres Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Genre.Label</label>
+      <posX>565</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Genres,)+[!window.istopmost(87266)+!window.istopmost(87601)+!window.istopmost(87605)+!window.istopmost(87607)]</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Genres</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Genres</label>
+      <posX>798</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Genres,)+[!window.istopmost(87266)+!window.istopmost(87601)+!window.istopmost(87605)+!window.istopmost(87607)]</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Watchers Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Watchers.Label</label>
+      <posX>565</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Watchers,)+window.istopmost(87266)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Watchers</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Watchers.Extra</label>
+      <posX>798</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Watchers,)+window.istopmost(87266)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>ListCount Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Lists.Label</label>
+      <posX>565</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.ListCount,)+window.istopmost(87605)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>ListCount</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.ListCount.Extra</label>
+      <posX>798</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.ListCount,)+window.istopmost(87605)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Revenue Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Revenue.Label</label>
+      <posX>565</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Revenue,)+window.istopmost(87607)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Revenue</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Revenue</label>
+      <posX>798</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Revenue,)+window.istopmost(87607)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Character/Job Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Person.Movie.CreditType</label>
+      <posX>565</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Title,)+window.istopmost(87601)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Character/Job</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Person.Movie.CreditValue</label>
+      <posX>798</posX>
+      <posY>487</posY>
+      <visible>facadeview.list+!string.equals(#Trakt.Movie.Title,)+window.istopmost(87601)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Summary (list)</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>568</posX>
+      <posY>538</posY>
+      <width>555</width>
+      <height>410</height>
+      <label>#Trakt.Movie.Overview</label>
+      <seperator>---------------------------------------------------------------------------------------------------------</seperator>
+      <onleft>1026</onleft>
+      <onright>1026</onright>
+      <onup>1026</onup>
+      <ondown>1026</ondown>
+      <lineSpacing>0.92</lineSpacing>
+      <visible>facadeview.list+Control.IsVisible(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <!--            :: THUMBVIEW ::            -->
+    <control>
+      <description>Movie Title value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>118</posX>
+      <posY>332</posY>
+      <width>555</width>
+      <label>#Trakt.Movie.Title</label>
+      <font>fontB16</font>
+      <textcolor>FF00b7ff</textcolor>
+      <shadowAngle>120</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>FF000000</shadowColor>
+      <visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Release Date Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>118</posX>
+      <posY>445</posY>
+      <label>#Trakt.Translation.Released.Label</label>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Released,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueWide">
+      <description>Release Date Value</description>
+      <type>label</type>
+      <id>0</id>
+      <label>#Trakt.Movie.Released</label>
+      <posX>350</posX>
+      <posY>445</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Released,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Runtime Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>118</posX>
+      <posY>481</posY>
+      <label>#Trakt.Translation.Runtime.Label</label>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Runtime,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueWide">
+      <description>Runtime Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>350</posX>
+      <posY>481</posY>
+      <label>#Trakt.Movie.Runtime #Trakt.Translation.Minutes.Label</label>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Runtime,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueWide">
+      <description>Rating/Votes Value</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>168</posX>
+      <posY>399</posY>
+      <label>#Trakt.Movie.Ratings.Percentage% (#(string.format('{0:#,0}', cint(#Trakt.Movie.Ratings.Votes))) #Trakt.Translation.Votes.Label)</label>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Ratings.Percentage,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Rating Icon</description>
+      <type>image</type>
+      <id>1</id>
+      <width>39</width>
+      <height>36</height>
+      <posX>113</posX>
+      <posY>399</posY>
+      <texture>#Trakt.Movie.Ratings.Icon.png</texture>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Ratings.Icon,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Certification Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Certification.Label</label>
+      <posX>118</posX>
+      <posY>516</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Certification,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Certification</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Certification</label>
+      <posX>350</posX>
+      <posY>516</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Certification,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Genres Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Genre.Label</label>
+      <posX>118</posX>
+      <posY>554</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Genres,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Genres</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Genres</label>
+      <posX>350</posX>
+      <posY>554</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Genres,)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Watchers Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Watchers.Label</label>
+      <posX>118</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Watchers,)+window.istopmost(87266)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Watchers</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Watchers.Extra</label>
+      <posX>350</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Watchers,)+window.istopmost(87266)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>ListCount Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Lists.Label</label>
+      <posX>118</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.ListCount,)+window.istopmost(87605)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>ListCount</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.ListCount.Extra</label>
+      <posX>350</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.ListCount,)+window.istopmost(87605)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Revenue Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.Revenue.Label</label>
+      <posX>118</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Revenue,)+window.istopmost(87607)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Revenue</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Movie.Revenue</label>
+      <posX>350</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Movie.Revenue,)+window.istopmost(87607)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Character/Job Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Person.Movie.CreditType</label>
+      <posX>118</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Person.Name,)+window.istopmost(87601)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Character/Job</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Person.Movie.CreditValue</label>
+      <posX>350</posX>
+      <posY>592</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+!string.equals(#Trakt.Person.Name,)+window.istopmost(87601)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Summary (list)</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>118</posX>
+      <posY>635</posY>
+      <width>555</width>
+      <height>310</height>
+      <label>#Trakt.Movie.Overview</label>
+      <seperator>---------------------------------------------------------------------------------------------------------</seperator>
+      <onleft>1026</onleft>
+      <onright>1026</onright>
+      <onup>1026</onup>
+      <ondown>1026</ondown>
+      <lineSpacing>0.92</lineSpacing>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <!--            :: List Scrolling Popup ::            -->
+    <control>
+      <description>listscroller bg</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>210</posX>
+      <posY>542</posY>
+      <width>211</width>
+      <height>211</height>
+      <texture>listscroller_bg.png</texture>
+      <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+      <animation effect="fade" time="250">Visible</animation>
+      <animation effect="fade" time="0">Hidden</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>265</posX>
+      <posY>602</posY>
+      <width>96</width>
+      <height>96</height>
+      <font>TitanLight32</font>
+      <textcolor>ff000000</textcolor>
+      <label>#selecteditem.scrolllabel</label>
+      <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+      <align>center</align>
+      <valign>middle</valign>
+      <animation effect="fade" time="250">Visible</animation>
+      <animation effect="fade" time="0">Hidden</animation>
+    </control>
+
+    <!--            :: Page Data ::           	 -->
+    <control>
+      <description>Movies</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>565</posX>
+      <posY>360</posY>
+      <width>555</width>
+      <label>#Trakt.Translation.Movies.Label</label>
+      <font>fontB16</font>
+      <textcolor>FF00b7ff</textcolor>
+      <shadowAngle>120</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>FF000000</shadowColor>
+      <visible>facadeview.list+string.equals(#Trakt.Facade.IsPageItem,true)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    
+    <control Style="InfoLabel">
+      <description>Current Page</description>
+      <type>fadelabel</type>
+      <label>#Trakt.Translation.CurrentPage.Label</label>
+      <id>0</id>
+      <posX>565</posX>
+      <posY>415</posY>
+      <visible>facadeview.list+string.equals(#Trakt.Facade.IsPageItem,true)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Current Page</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Facade.CurrentPage</label>
+      <posX>843</posX>
+      <posY>415</posY>
+      <visible>facadeview.list+string.equals(#Trakt.Facade.IsPageItem,true)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Total Pages</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.TotalPages.Label</label>
+      <posX>565</posX>
+      <posY>451</posY>
+      <visible>facadeview.list+string.equals(#Trakt.Facade.IsPageItem,true)+!string.equals(#Trakt.Facade.TotalPages,0)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Total Pages</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Facade.TotalPages</label>
+      <posX>843</posX>
+      <posY>451</posY>
+      <visible>facadeview.list+string.equals(#Trakt.Facade.IsPageItem,true)+!string.equals(#Trakt.Facade.TotalPages,0)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+    <control>
+      <description>Summary (list)</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>568</posX>
+      <posY>500</posY>
+      <width>555</width>
+      <height>410</height>
+      <label>#Trakt.Trending.Description</label>
+      <seperator>---------------------------------------------------------------------------------------------------------</seperator>
+      <onleft>1026</onleft>
+      <onright>1026</onright>
+      <onup>1026</onup>
+      <ondown>1026</ondown>
+      <lineSpacing>0.92</lineSpacing>
+      <visible>facadeview.list+string.equals(#Trakt.Facade.IsPageItem,true)+window.istopmost(87266)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+    <control>
+      <description>Movies</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>118</posX>
+      <posY>360</posY>
+      <width>555</width>
+      <label>#Trakt.Translation.Movies.Label</label>
+      <font>fontB16</font>
+      <textcolor>FF00b7ff</textcolor>
+      <shadowAngle>120</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>FF000000</shadowColor>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+string.equals(#Trakt.Facade.IsPageItem,true)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+    <control Style="InfoLabel">
+      <description>Current Page</description>
+      <type>fadelabel</type>
+      <label>#Trakt.Translation.CurrentPage.Label</label>
+      <id>0</id>
+      <posX>118</posX>
+      <posY>415</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+string.equals(#Trakt.Facade.IsPageItem,true)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Current Page</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Facade.CurrentPage</label>
+      <posX>350</posX>
+      <posY>415</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+string.equals(#Trakt.Facade.IsPageItem,true)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoLabel">
+      <description>Total Pages</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Translation.TotalPages.Label</label>
+      <posX>118</posX>
+      <posY>451</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+string.equals(#Trakt.Facade.IsPageItem,true)+!string.equals(#Trakt.Facade.TotalPages,0)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control Style="InfoValueSmall">
+      <description>Total Pages</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#Trakt.Facade.TotalPages</label>
+      <posX>350</posX>
+      <posY>451</posY>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+string.equals(#Trakt.Facade.IsPageItem,true)+!string.equals(#Trakt.Facade.TotalPages,0)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+    <control>
+      <description>Summary (list)</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>118</posX>
+      <posY>500</posY>
+      <width>555</width>
+      <height>410</height>
+      <label>#Trakt.Trending.Description</label>
+      <seperator>---------------------------------------------------------------------------------------------------------</seperator>
+      <onleft>1026</onleft>
+      <onright>1026</onright>
+      <onup>1026</onup>
+      <ondown>1026</ondown>
+      <lineSpacing>0.92</lineSpacing>
+      <visible>[facadeview.smallicons | facadeview.largeicons]+string.equals(#Trakt.Facade.IsPageItem,true)+window.istopmost(87266)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+  </controls>
+</window>
