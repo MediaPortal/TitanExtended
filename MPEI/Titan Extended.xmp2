@@ -3711,6 +3711,13 @@
               <ZipFileName>Installer{CopyFile}\{01f9fdf1-9d62-4185-9e22-e9759052fce0}-hover_rockstar.png</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Media\hover_rockstar.png</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Extensions\Rockstar\rockstar.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{239d6c69-4d18-42dd-bf4b-b4767315361e}-rockstar.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\rockstar.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -4849,18 +4856,20 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Major>5</Major>
       <Minor>0</Minor>
       <Build>1</Build>
-      <Revision>116</Revision>
+      <Revision>117</Revision>
     </Version>
     <ExtensionDescription>Titan Extended adds support for a variety of community plugins to the Titan skin.
 
 
 
 The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</ExtensionDescription>
-    <VersionDescription>Add some hover files for Plugins
-Add DWHD Theme by catavolt (experemental)</VersionDescription>
+    <VersionDescription>Update for MyFilms
+Update for MyLyrics
+Update for Pandora
+Update for Rockstar</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/MediaPortal/TitanExtended/releases/download/v[Version]/Titan.Extended-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-03-26T13:07:34.1555589+02:00</ReleaseDate>
+    <ReleaseDate>2024-05-15T13:07:34</ReleaseDate>
     <Tags>titan, skin, widescreen</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\builds\Titan Extended-[Version].mpe1</Location>
@@ -8390,6 +8399,13 @@ Add DWHD Theme by catavolt (experemental)</VersionDescription>
         <LocalFileName>..\Extensions\Rockstar\Media\hover_rockstar.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{01f9fdf1-9d62-4185-9e22-e9759052fce0}-hover_rockstar.png</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Media\hover_rockstar.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Extensions\Rockstar\rockstar.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{239d6c69-4d18-42dd-bf4b-b4767315361e}-rockstar.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\rockstar.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
         <Param1 />
