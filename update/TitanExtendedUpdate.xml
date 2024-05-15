@@ -843,5 +843,428 @@ Add DWHD Theme by catavolt (experemental)</VersionDescription>
       </ProjectSettings>
       <IsSkin>true</IsSkin>
     </PackageClass>
+    <PackageClass>
+      <Version>2.0</Version>
+      <Groups>
+        <Items>
+          <GroupItem Name="Extension">
+            <DisplayName>Extension</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Extension</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Browser">
+            <DisplayName>Browser</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Browser</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="BrowseTheWeb">
+            <DisplayName>BrowseTheWeb</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>BrowseTheWeb</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="ClickfinderProgramGuide">
+            <DisplayName>ClickfinderProgramGuide</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>ClickfinderProgramGuide</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="CPG">
+            <DisplayName>CPG</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>CPG</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Games">
+            <DisplayName>Games</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Games</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="GobalMusicSearch">
+            <DisplayName>GobalMusicSearch</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>GobalMusicSearch</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="IMDb+">
+            <DisplayName>IMDb+</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>IMDb+</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="InfoService">
+            <DisplayName>InfoService</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>InfoService</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="LastFmRadio">
+            <DisplayName>LastFmRadio</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>LastFmRadio</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="MovingPictures">
+            <DisplayName>MovingPictures</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>MovingPictures</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="MPSteam">
+            <DisplayName>MPSteam</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>MPSteam</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="MyEmulator">
+            <DisplayName>MyEmulator</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>MyEmulator</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="MyExtensions">
+            <DisplayName>MyExtensions</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>MyExtensions</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="MyFilms">
+            <DisplayName>MyFilms</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>MyFilms</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="MyLyrics">
+            <DisplayName>MyLyrics</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>MyLyrics</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="OnlineVideos">
+            <DisplayName>OnlineVideos</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>OnlineVideos</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Pandora">
+            <DisplayName>Pandora</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Pandora</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="PlayDisc">
+            <DisplayName>PlayDisc</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>PlayDisc</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="PowerControl">
+            <DisplayName>PowerControl</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>PowerControl</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="RadioTime">
+            <DisplayName>RadioTime</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>RadioTime</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Rockstar">
+            <DisplayName>Rockstar</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Rockstar</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Shoutcast">
+            <DisplayName>Shoutcast</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Shoutcast</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="ShowTimes">
+            <DisplayName>ShowTimes</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>ShowTimes</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="SleepControl">
+            <DisplayName>SleepControl</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>SleepControl</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="SubCentral">
+            <DisplayName>SubCentral</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>SubCentral</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Trakt">
+            <DisplayName>Trakt</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Trakt</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="TVSeries">
+            <DisplayName>TVSeries</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>TVSeries</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="UpdateControl">
+            <DisplayName>UpdateControl</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>UpdateControl</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Weather">
+            <DisplayName>Weather</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Weather</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Wikipedia">
+            <DisplayName>Wikipedia</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Wikipedia</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="WorldNews">
+            <DisplayName>WorldNews</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>WorldNews</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="WorldWeather">
+            <DisplayName>WorldWeather</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>WorldWeather</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="WorldWeatherLite">
+            <DisplayName>WorldWeatherLite</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>WorldWeatherLite</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Youtube">
+            <DisplayName>Youtube</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Youtube</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Themes">
+            <DisplayName>Themes</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Themes</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Christmas">
+            <DisplayName>Christmas</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Christmas</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="DWHD Basic Home">
+            <DisplayName>DWHD Basic Home</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>DWHD Basic Home</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+        </Items>
+      </Groups>
+      <Sections>
+        <Items />
+      </Sections>
+      <Dependencies>
+        <Items>
+          <DependencyItem>
+            <Type>Skin</Type>
+            <Id />
+            <MinVersion>
+              <Major>1</Major>
+              <Minor>4</Minor>
+              <Build>0</Build>
+              <Revision>0</Revision>
+            </MinVersion>
+            <MaxVersion>
+              <Major>1</Major>
+              <Minor>4</Minor>
+              <Build>0</Build>
+              <Revision>0</Revision>
+            </MaxVersion>
+            <WarnOnly>true</WarnOnly>
+            <Message>requires Skin version 1.4.0.0 to 1.4.0.0.</Message>
+            <Name>Skin</Name>
+            <Condition>None</Condition>
+          </DependencyItem>
+          <DependencyItem>
+            <Type>MediaPortal</Type>
+            <Id />
+            <MinVersion>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
+            </MinVersion>
+            <MaxVersion>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
+            </MaxVersion>
+            <WarnOnly>true</WarnOnly>
+            <Message />
+            <Name>MediaPortal</Name>
+            <Condition>None</Condition>
+          </DependencyItem>
+        </Items>
+      </Dependencies>
+      <PluginDependencies>
+        <Items />
+      </PluginDependencies>
+      <GeneralInfo>
+        <Name>Titan Extended</Name>
+        <Id>d2c4076c-f3d0-4d84-9a74-83fbbd15c940</Id>
+        <Author>Team Titan, ncoH, Joostzilla, ajs</Author>
+        <HomePage>https://github.com/MediaPortal/TitanExtended</HomePage>
+        <ForumPage>https://forum.team-mediaportal.com/forums/titan-skin-feedback.644/</ForumPage>
+        <UpdateUrl>https://raw.githubusercontent.com/MediaPortal/TitanExtended/master/update/TitanExtendedUpdate.xml</UpdateUrl>
+        <Version>
+          <Major>5</Major>
+          <Minor>0</Minor>
+          <Build>1</Build>
+          <Revision>121</Revision>
+        </Version>
+        <ExtensionDescription>Titan Extended adds support for a variety of community plugins to the Titan skin.
+
+
+
+The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</ExtensionDescription>
+        <VersionDescription>Update for MyFilms
+Update for MyLyrics
+Update for Pandora
+Update for Rockstar</VersionDescription>
+        <DevelopmentStatus>Stable</DevelopmentStatus>
+        <OnlineLocation>https://github.com/MediaPortal/TitanExtended/releases/download/v5.0.1.121/Titan.Extended-5.0.1.121.mpe1</OnlineLocation>
+        <ReleaseDate>2024-05-15T15:56:05.6981726+00:00</ReleaseDate>
+        <Tags>titan, skin, widescreen</Tags>
+        <PlatformCompatibility>AnyCPU</PlatformCompatibility>
+        <Location>..\builds\Titan Extended-[Version].mpe1</Location>
+        <Params>
+          <Items>
+            <SectionParam Name="Online Icon">
+              <Value>https://github.com/MediaPortal/TitanExtended/raw/master/MPEI/Titan%20Extended.png</Value>
+              <ValueType>String</ValueType>
+              <Description>The icon file of the package stored online (jpg,png,bmp)</Description>
+            </SectionParam>
+            <SectionParam Name="Configuration file">
+              <Value />
+              <ValueType>Template</ValueType>
+              <Description>The file used to configure the extension.
+ If it has .exe extension the will be executed.
+ If it has .dll extension it's started like MP plugin configuration.</Description>
+            </SectionParam>
+            <SectionParam Name="Online Screenshots">
+              <Value>https://www.team-mediaportal.com/media/com_mtree/images/listings/o/1799.jpg</Value>
+              <ValueType>String</ValueType>
+              <Description>Online stored screenshot urls separated by ; </Description>
+            </SectionParam>
+            <SectionParam Name="Force to uninstall on update">
+              <Value>YES</Value>
+              <ValueType>Bool</ValueType>
+              <Description>Show dialog and force to uninstall previous version when updating an extension. Should only be disabled if you are using an NSIS/MSI installer.</Description>
+            </SectionParam>
+          </Items>
+        </Params>
+      </GeneralInfo>
+      <UniqueFileList>
+        <Items />
+      </UniqueFileList>
+      <ProjectSettings>
+        <FolderGroups />
+      </ProjectSettings>
+      <IsSkin>true</IsSkin>
+    </PackageClass>
   </Items>
 </ExtensionCollection>
