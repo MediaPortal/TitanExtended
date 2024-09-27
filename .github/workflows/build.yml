@@ -3,7 +3,7 @@ name: Build / Titan Extended
 on:
   push:
     # On Push to Master branch
-    branches: 
+    branches:
       - master
     # Ignore all Tags / Release
     tags-ignore:
@@ -32,7 +32,7 @@ jobs:
       - name: Git Checkout / MPE / XPath / Tools
         uses: actions/checkout@v4
         with:
-          repository: andrewjswan/MPE
+          repository: Mediaportal-Plugin-Team/Mediaportal-Tools
           path: MPE
 
       - name: MP folder for MPEMaker
@@ -62,7 +62,7 @@ jobs:
           Create_Installer.bat git
         working-directory: ${{ github.workspace }}\scripts
         shell: cmd
- 
+
       - name: Get Version
         id: version
         run: |
