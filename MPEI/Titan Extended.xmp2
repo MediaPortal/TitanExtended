@@ -4863,13 +4863,12 @@ Click Next to continue or Cancel to exit Setup.</Value>
 
 
 The Titan skin is included in MediaPortal, starting with version 1.3.0 beta.</ExtensionDescription>
-    <VersionDescription>Update for MyFilms
-Update for MyLyrics
-Update for Pandora
-Update for Rockstar</VersionDescription>
+    <VersionDescription>Update for Christmas theme
+Update for CPG
+</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/MediaPortal/TitanExtended/releases/download/v[Version]/Titan.Extended-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-05-15T13:07:34</ReleaseDate>
+    <ReleaseDate>2024-11-05T13:07:34</ReleaseDate>
     <Tags>titan, skin, widescreen</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\builds\Titan Extended-[Version].mpe1</Location>
