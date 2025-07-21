@@ -142,8 +142,8 @@ jobs:
       - name: Delete XML Artifact
         uses: geekyeggo/delete-artifact@v5
         with:
-            name: Titan Extended - XML
-            failOnError: false
+          name: Titan Extended - XML
+          failOnError: false
 
   release:
     name: Titan Extended / Release
