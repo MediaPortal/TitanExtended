@@ -25,12 +25,12 @@ jobs:
       version: ${{ steps.version.outputs.version }}
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Git Checkout / MPE / XPath / Tools
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: Mediaportal-Plugin-Team/Mediaportal-Tools
           path: MPE
@@ -123,7 +123,7 @@ jobs:
       contents: write
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
