@@ -128,7 +128,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: Titan Extended - XML
           path: ${{ github.workspace }}/update/
@@ -153,13 +153,13 @@ jobs:
       - xml
     steps:
       - name: Download Artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: Titan Extended - MPE1
           path: release-files
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: Titan Extended - Version Description
           path: release-description
